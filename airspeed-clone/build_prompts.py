@@ -386,7 +386,7 @@ def split(x):
     a=dict(x,text=' '.join(w[:best])); c=dict(x,text=' '.join(w[best:]))
     c['camera']=ALT[x['t']]; c['action']='continuing the same moment: '+x['action']
     return split(a)+split(c)
-B=[y for x in B for y in split(x)]
+B=[dict(y,parent=pi) for pi,x in enumerate(B) for y in split(x)]
 
 # ---------- CHECK + RENDER ----------
 script=open('spirit-of-st-louis-script.md').read()
@@ -409,4 +409,8 @@ for i,x in enumerate(B,1):
            f"- **Action:** {x['action']}",""]
     if wc>13: print("LONG",i,wc)
 open('spirit-of-st-louis-image-prompts.md','w').write('\n'.join(out))
+import json
+for x in B:
+    e,l=ENV[x['t']]; x['env_r']=x['env'] or e; x['light_r']=x['light'] or l
+json.dump(dict(style=STYLE,tag=TAG,tags=TAGS,beats=B),open('beats.json','w'),indent=1)
 print(len(B),"beats")
