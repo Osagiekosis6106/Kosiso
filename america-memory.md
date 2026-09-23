@@ -103,6 +103,12 @@ Group every real/stock beat **by source** so the user can download everything in
 - Beat 88, 90: search `abandoned factory drone`
 ### AI to generate: 26 images (prompts above), 8 of them with motion
 ```
+Under each Library of Congress and Prelinger group, also give the ready-to-paste download command for `archival_fetch.py` (see `archival-fetch-guide.md`), e.g.
+```
+python3 archival_fetch.py "steel mill" --count 10 --beat 3,7,22
+python3 archival_fetch.py "automobile assembly line" --source prelinger --count 3 --beat 14,31
+```
+Use `--source fsa` (default) for 1935–44 scenes, `--source fsa-color` for colour 1940s, `--source loc` for named companies or other eras, `--source prelinger` for moving film. Keep search words short (1–3 words).
 End with a filled-in **sourcing log** (see `america-sourcing-log.md`).
 
 ---
