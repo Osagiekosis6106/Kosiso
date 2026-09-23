@@ -36,17 +36,27 @@ for k,g in enumerate(G,1):
     seg=' '.join(x['text'] for x in g)
     beats_desc=[]
     for j,x in enumerate(g):
-        beats_desc.append(f"{'Opens on' if j==0 else 'Then transitions (seamless camera move, no hard cut) to'} {x['subject']}, {x['env_r']}; {x['action']} — camera: {x['camera']}")
+        if j==0:
+            beats_desc.append(f"Opens on {x['subject']}, {x['env_r']}; {x['action']} — framing: {x['camera']}")
+        elif x['parent']==g[j-1]['parent']:
+            beats_desc.append(f"Then, in the same continuous shot, the camera eases into a {x['camera']} while {x['action'].replace('continuing the same moment: ','')}")
+        else:
+            beats_desc.append(f"Then a seamless camera move (no hard cut) carries to {x['subject']}, {x['env_r']}; {x['action']} — framing: {x['camera']}")
     subj_motion='; '.join(beats_desc)
+    ms=[]
+    for x in g:
+        m=motion(x['camera'])
+        if m not in ms: ms.append(m)
+    cm=', then '.join(ms)
     note=TYPE_NOTE.get(first['t'],"Keep aircraft geometry rigid and accurate: no morphing, no extra wings, struts or engines; propeller blur only when the engine is running.")
-    prompt=(f"{STYLE}, {dur}-second clip. {subj_motion}. Camera motion: {motion(first['camera'])}. "
+    prompt=(f"{STYLE}, {dur}-second clip. {subj_motion}. Camera motion: {cm}. "
             f"Lighting: {first['light_r']}. Mood: {first['mood']}. {note} "
             f"Smooth, slow, cinematic pacing; physically plausible motion; no on-screen text, no watermark, no sound; 16:9, 24 fps.")
     out+=[f"## Video Prompt {k} — {ids} (~{dur}s)",
           f"**[Script Segment]** \"{seg}\"","",
           f"**Video Prompt:** {prompt}","",
           f"- **Duration:** ~{dur}s ({w} words)",
-          f"- **Camera Motion:** {motion(first['camera'])}",
+          f"- **Camera Motion:** {cm}",
           f"- **Subject Motion:** {'; '.join(x['action'] for x in g)}",""]
 open('spirit-of-st-louis-video-prompts.md','w').write('\n'.join(out))
 print(len(G),"video prompts; max dur",max(round(words(g)/2.5) for g in G))
