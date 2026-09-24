@@ -12,16 +12,16 @@ The user is a busy mom. Keep every workflow short, batchable and copy-paste read
 
 - **Name:** **Back When It Lasted** (handle to claim: `@BackWhenItLasted`)
 - **Promise:** things built to last, who built them, why America trusted them, and the exact decision that ended them.
-- **Banner line:** *"The American-made things your family trusted, and what happened to them · New documentary every Sunday"*
+- **Banner line:** *"The American-made things your family trusted, and what happened to them"*
 - **Sign-on line in every video:** "Welcome back to Back When It Lasted."
-- Every video must keep the promises in the description: **real archival footage, chapters, captions, a sources list**, and **reader memories read aloud** (from video 3 on).
+- Every video must keep the promises in the description: **real archival footage, chapters, captions, a sources list**. No upload day and no read-aloud comments (user's choice).
 
 **Channel keywords** (YouTube Studio → Settings → Channel → Keywords):
 ```
 American history, vintage America, nostalgia, Made in USA, American made, forgotten brands, lost American brands, old American companies, American manufacturing, factory towns, 1950s America, 1960s America, 1970s America, vintage appliances, Main Street America, middle class history, documentary, Back When It Lasted
 ```
 
-**Channel description (984 / 1,000 characters; first line fits in the ~150 characters shown in search):**
+**Channel description (945 / 1,000 characters; first line fits in the ~150 characters shown in search):**
 ```
 Back When It Lasted: American history documentaries on forgotten Made in USA brands, lost factories and old companies, and what happened to them.
 
@@ -31,8 +31,7 @@ What we cover: vintage appliances and kitchen brands, factory and mill towns, va
 
 Every episode uses real archival film and photos from the Library of Congress, National Archives and Prelinger Archives, with chapters, captions and sources.
 
-📅 New documentary every Sunday.
-💬 Tell us what your family owned or where your father worked. The best memories are read aloud in future episodes.
+💬 Tell us in the comments what your family owned or where your father worked. We'd love to hear your story.
 
 Subscribe and help keep these stories alive.
 ```
@@ -77,14 +76,14 @@ Cloned titles and thumbnails, thin 15–20 min scripts, all-AI visuals and gener
 | **Thumbnail** | AI pile of 8 products, AI-garbled logos, yellow/white banner text | **One hero object or one human moment**, not a pile. **2–4 words** of text, readable at phone size. Brand names only as clean overlay text or a real public-domain ad, never AI lettering. A colour scheme no competitor on the search page uses. Upload 3 variants to YouTube **Test & Compare**. |
 | **Hook** | Tragic anecdote, then an early subscribe ask | The **"Beat-the-field hook"** in section 1: the viewer's own home in the first 5 seconds, a real clip, a mystery and a reason to stay. No subscribe ask before the first entry. |
 | **Script** | Golden age → decline → end, repeated 30 times | Each entry adds **one surprising verified fact**, **one then-and-now price or number**, **one sensory "you remember" detail** and **one "what to look for today" payoff** (still working? collectible? what it sells for). Mark every uncertain fact `[VERIFY]`. Never invent facts. |
-| **Pacing** | Flat list | Strongest entries at #1, #2 and the last three. An **open loop every ~5 entries** ("the one at number 7 is probably in your kitchen right now"). A **"reader memory"** (a viewer's comment read aloud, username only) every ~10 entries from video 3 onward. |
+| **Pacing** | Flat list | Strongest entries at #1, #2 and the last three. An **open loop every ~5 entries** ("the one at number 7 is probably in your kitchen right now"). |
 | **Visuals / video prompts** | Mostly AI or reused stills | The section 2 mix (≥ 55% real archival). One **look bible** per video: one film stock and one colour grade for every AI prompt. No AI logos. No more than 3 AI beats in a row. AI motion ≤ 5 s. |
 | **Channel name** | Near-copies of "America Made…" | **Must not contain "America Made"** or "Forgotten Years". Choose something distinct and ownable. |
-| **Banner** | Slogan only | Promise + schedule + who it's for, e.g. *"The American-made things your family trusted, and what happened to them · New story every Sunday"*. Text inside the centre safe area (1546 × 423 px of the 2560 × 1440 image). Readable on a phone. Uses our own colour scheme, not the red-white-gold look the copycats share. |
-| **Channel description** | "Welcome to… celebrating brands…" | First 150 characters carry the keywords and the promise. Then: who it's for, what they'll get, the upload day, and an invitation: *"Tell us what your family owned. Your memories end up in our videos."* |
+| **Banner** | Slogan only | Promise + who it's for, e.g. *"The American-made things your family trusted, and what happened to them"*. No upload day. Text inside the centre safe area (1546 × 423 px of the 2560 × 1440 image). Readable on a phone. Uses our own colour scheme, not the red-white-gold look the copycats share. |
+| **Channel description** | "Welcome to… celebrating brands…" | First 150 characters carry the keywords and the promise. Then: who it's for, what they'll get, and an invitation to share memories in the comments. No upload day, no promise to read comments aloud. |
 | **Video description** | Copyright boilerplate | Line 1–2 (shown in search) = hook + main keyword. Then **chapters** (one per entry, `00:00 Intro`, `03:12 #30 Sunbeam`…), a **sources** list (Library of Congress, Prelinger… from the sourcing log) and one question for the comments. No copyright threats. |
 | **Captions** | None | Upload corrected SRT captions on every video (CapCut auto-captions → fix names and dates → export). |
-| **Comments** | Ignored | Reply to and heart the first ~50 comments in the first 2 hours. Pin a question ("What's the oldest American-made thing still working in your house?"). Save the best stories for "reader memory" segments. |
+| **Comments** | Ignored | Reply to and heart the first ~50 comments in the first 2 hours. Pin a question ("What's the oldest American-made thing still working in your house?"). |
 | **Series and playlists** | One mixed list | Group videos into series (Kitchen, Repair, Factory Towns, Single Brands) and a playlist for each, so one video leads to the next. |
 
 ### Beat check (output with every script or packaging request)
