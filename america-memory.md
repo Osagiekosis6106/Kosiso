@@ -8,17 +8,98 @@ The user is a busy mom. Keep every workflow short, batchable and copy-paste read
 
 ---
 
+## 0. Beat the field (this rule overrides "copy the reference")
+
+**The goal is not to copy When America Made Everything. The goal is to beat it, and to beat every channel copying it.** Model its topic and audience, never its exact titles, thumbnails or wording. Every title, thumbnail, hook, script, video prompt, banner and description you write must beat both the reference channel and the copycats on the points below. If a piece doesn't beat them, rewrite it before you hand it over.
+
+### Where things stand (checked Sep 24, 2026)
+
+| Channel | Same "30 Companies… Lasted 50 Years" video | Views |
+|---|---|---|
+| When America Made Everything (reference) | the original | 277,000 in 9 days |
+| daniel toledo | 15-entry copy, 21 min | 224 |
+| America Made This | copy of the thumbnail and title | 95 |
+| Stamped in the U.S.A. | shoe-brand version | 39 |
+| Ingeniería del Pasado | copy of the thumbnail and title | 36 |
+| America's Forgotten Years | 18-minute copy | 30 |
+
+**Lesson:** exact copies get almost no views. YouTube already has the original, and viewers who have seen it have no reason to click a clone. Even the reference gets 15–18K on its newer look-alike uploads, against 277K for the original.
+
+### Weak spots of the reference channel (our openings)
+
+- **No captions** (`hasCaption: false`). The audience is 55–75 and many watch with captions on. We always upload a corrected caption file.
+- **No chapters and no sources.** Its descriptions are copyright-warning boilerplate. A 60-minute list with no chapters is hard to navigate.
+- **Uploaded under "People & Blogs"** with no tags. We use **Education**.
+- **Thumbnails all look the same**: an AI pile of lantern, fan, Radio Flyer, Glidden and Craftsman with garbled AI logos. Every copycat uses the same pile.
+- **Titles get cut off on phones**: "…Lasted 50 Years — Then V…". The payoff words are lost in search results.
+- **The comments are the best part and it ignores them.** Viewers write stories such as "My Sunbeam toaster from February 1958 still works", "Our Kenmore microwave is 50 years old" and "You could test TV tubes at the grocery store". The channel doesn't reply to these or build on them.
+
+### Weak spots of the copycats
+
+Cloned titles and thumbnails, thin 15–20 min scripts, all-AI visuals and generic channel names ("America Made This", "America's Forgotten Years"). We are **never** any of these.
+
+### The standard for each piece
+
+| Piece | Reference / copycats do | We must do |
+|---|---|---|
+| **Title** | Same `30 … Lasted 50 Years — Then Vanished` pattern; payoff cut off on mobile | Our own angle. **Payoff inside the first ~50 characters.** ≤ 70 characters in total. One concrete detail no rival title has (a decade, a town, "still works", "your grandmother's"). Before finalising, search the keyword and make sure no top-10 result has a near-identical title. |
+| **Thumbnail** | AI pile of 8 products, AI-garbled logos, yellow/white banner text | **One hero object or one human moment**, not a pile. **2–4 words** of text, readable at phone size. Brand names only as clean overlay text or a real public-domain ad, never AI lettering. A colour scheme no competitor on the search page uses. Upload 3 variants to YouTube **Test & Compare**. |
+| **Hook** | Tragic anecdote, then an early subscribe ask | The **"Beat-the-field hook"** in section 1: the viewer's own home in the first 5 seconds, a real clip, a mystery and a reason to stay. No subscribe ask before the first entry. |
+| **Script** | Golden age → decline → end, repeated 30 times | Each entry adds **one surprising verified fact**, **one then-and-now price or number**, **one sensory "you remember" detail** and **one "what to look for today" payoff** (still working? collectible? what it sells for). Mark every uncertain fact `[VERIFY]`. Never invent facts. |
+| **Pacing** | Flat list | Strongest entries at #1, #2 and the last three. An **open loop every ~5 entries** ("the one at number 7 is probably in your kitchen right now"). A **"reader memory"** (a viewer's comment read aloud, username only) every ~10 entries from video 3 onward. |
+| **Visuals / video prompts** | Mostly AI or reused stills | The section 2 mix (≥ 55% real archival). One **look bible** per video: one film stock and one colour grade for every AI prompt. No AI logos. No more than 3 AI beats in a row. AI motion ≤ 5 s. |
+| **Channel name** | Near-copies of "America Made…" | **Must not contain "America Made"** or "Forgotten Years". Choose something distinct and ownable. |
+| **Banner** | Slogan only | Promise + schedule + who it's for, e.g. *"The American-made things your family trusted, and what happened to them · New story every Sunday"*. Text inside the centre safe area (1546 × 423 px of the 2560 × 1440 image). Readable on a phone. Uses our own colour scheme, not the red-white-gold look the copycats share. |
+| **Channel description** | "Welcome to… celebrating brands…" | First 150 characters carry the keywords and the promise. Then: who it's for, what they'll get, the upload day, and an invitation: *"Tell us what your family owned. Your memories end up in our videos."* |
+| **Video description** | Copyright boilerplate | Line 1–2 (shown in search) = hook + main keyword. Then **chapters** (one per entry, `00:00 Intro`, `03:12 #30 Sunbeam`…), a **sources** list (Library of Congress, Prelinger… from the sourcing log) and one question for the comments. No copyright threats. |
+| **Captions** | None | Upload corrected SRT captions on every video (CapCut auto-captions → fix names and dates → export). |
+| **Comments** | Ignored | Reply to and heart the first ~50 comments in the first 2 hours. Pin a question ("What's the oldest American-made thing still working in your house?"). Save the best stories for "reader memory" segments. |
+| **Series and playlists** | One mixed list | Group videos into series (Kitchen, Repair, Factory Towns, Single Brands) and a playlist for each, so one video leads to the next. |
+
+### Beat check (output with every script or packaging request)
+
+Add this block at the very top of every script, title, thumbnail, banner or description you produce. Every line must be ✅ before handing it over:
+
+```
+BEAT CHECK vs When America Made Everything + copycats
+✅ Title: own angle, payoff in first 50 chars, no near-duplicate in top-10 search
+✅ Thumbnail: 1 hero subject, ≤4 words, no AI logos, colours unlike rivals
+✅ Hook: home/viewer in first 5 s, real clip, open loop, no early subscribe ask
+✅ Script: fact + number + sensory detail + "today" payoff in every entry; [VERIFY] marked
+✅ Open loops every ~5 entries; best entries at #1, #2 and the end
+✅ Visual mix ≥55% real archival, ≤25% AI, look bible stated
+✅ Description: search-ready first 2 lines, chapters, sources, comment question
+✅ Captions file planned; category Education; series/playlist named
+```
+
+If the user asks for a live comparison, use the Nexlev tools (`youtube_search` on the target keyword, `youtube_channel_videos` on the reference) to check what currently ranks before writing.
+
+### Launch slate (gaps that neither the reference nor the copycats own yet)
+
+These came from the reference's top comments and from searches that found only short or weak videos on each topic:
+
+1. **"When America Fixed Things: 30 Repair Shops and Repairmen That Vanished"**: TV repairmen, tube testers at the grocery store, cobblers, the Maytag man, Sears lifetime tool swaps. Only 8–24-minute videos with 39–7K views exist.
+2. **"25 American Appliances From the 1950s That Still Work Today"**: built from the viewer comments (Sunbeam toaster from 1958, 50-year-old Kenmore, 1944 Philco radio). No long list like this exists. A similar 8-minute video, "11 Old Kitchen Features That Have Vanished" (American Rewind), has 1.3M views.
+3. **"30 Kitchen Brands Your Grandmother Trusted, and Who Killed Each One"**: a household angle. The top competing long video has only ~1K views.
+4. **"25 Company Towns Where One Factory Paid for Everything, Until It Left"**: Newton (Maytag), Kannapolis, Scotia, Schenectady. Existing videos are single-town and get under 300 views, except one Schenectady video with 46K.
+5. **"25 Free Things American Companies Used to Give You"**: Tappan salt shakers with a new stove, gas-station glassware, green stamps. Suggested by the comments. Check it with a search before scripting.
+
+---
+
 ## 1. Video format
 
 - **Length:** start at 30–40 min (the reference does 56–71 min). One upload per week.
-- **Titles:** `[25/30] American [Companies/Factories/Brands/Towns] That [emotional past] — [Then Vanished / Now Gone Forever / Until the Jobs Disappeared]`
-  - e.g. "30 American Companies That Made Products That Lasted 50 Years — Then Vanished"
-- **Hook (first ~45 s):**
-  1. Specific tragic anecdote (e.g. the day a named factory closed) (0–12 s)
-  2. Counter-intuitive claim: "Most people think these companies died because their products got worse. The truth is stranger." (12–20 s)
-  3. Tease two entries without naming them (20–32 s)
-  4. Subscribe ask + promise: "30 American companies whose products lasted 50 years… then vanished." (32–45 s)
-- **Each list entry (60–120 s):** number + name → the golden age (why people loved it) → the turning point / bad decision → the end (date closed or sold) → one-line moral ("The product never failed.")
+- **Titles:** the reference pattern is `[25/30] American [Companies/Factories/Brands/Towns] That [emotional past] — [Then Vanished / Now Gone Forever]`. Use it only as a starting point and apply section 0: our own angle, payoff in the first ~50 characters, ≤ 70 characters, one concrete detail.
+  - Reference (don't copy): "30 American Companies That Made Products That Lasted 50 Years — Then Vanished"
+  - Ours: "25 American Appliances From the 1950s That Still Work Today"; "When America Fixed Things: 30 Repair Shops That Vanished"
+  - Give 3 title options per video, each with its character count.
+- **Beat-the-field hook (first ~40 s):**
+  1. **The viewer's home (0–6 s):** a real archival clip + a line that puts the product in *their* house: "If there's a Sunbeam toaster in your kitchen, it may be older than your children, and it probably still works."
+  2. **Real proof (6–14 s):** one striking, verified fact or number on a graphic: "In 1958, this toaster cost $22. Today's version costs $30 and is built to last five years."
+  3. **The mystery (14–24 s):** "So why did the companies that built things to last almost all disappear? The answer isn't what most people think."
+  4. **The reason to stay (24–40 s):** tease the most surprising entry without naming it, plus a participation prompt: "Count how many of these were in your house. Number 7 is probably still there. Tell me your score at the end."
+  - **No subscribe ask in the hook.** Put a short one after entry #1 and again after the midpoint open loop.
+- **Each list entry (60–120 s):** number + name → the golden age (why people loved it, with one **sensory "you remember" detail**) → **one surprising verified fact** → **one then-and-now price or number** → the turning point / bad decision (named decision, buyer or year) → the end (date closed or sold) → **what it means today** (still working? collectible? what it sells for?) → one-line moral ("The product never failed.")
 - **Voice:** calm, deep, slow, respectful; middle-aged male in the reference. Pauses on dates and names.
 - **Finish on every visual:** film grain + dust/scratches, light vignette, slow Ken Burns zoom/pan on stills, occasional orange light leak, new visual every 3–5 s, low cinematic strings/synth music, big semi-transparent entry number (#30) on screen.
 
@@ -63,7 +144,7 @@ When turning a script into visuals, split it into beats of 3–5 seconds (about 
 
 ## 4. Output format for a script → visual plan
 
-When the user gives a script (or asks for one), output these three parts.
+When the user gives a script (or asks for one), start with the **Beat check** from section 0, then output these three parts, then Part D.
 
 ### Part A: Mix check (at the top)
 ```
@@ -110,6 +191,15 @@ python3 archival_fetch.py "automobile assembly line" --source prelinger --count 
 ```
 Use `--source fsa` (default) for 1935–44 scenes, `--source fsa-color` for colour 1940s, `--source loc` for named companies or other eras, `--source prelinger` for moving film. Keep search words short (1–3 words).
 End with a filled-in **sourcing log** (see `america-sourcing-log.md`).
+
+### Part D: Packaging (after the sourcing log)
+Every script comes with its packaging, all written to the section 0 standard:
+```
+TITLES (3 options, with character counts; payoff in first 50 chars)
+THUMBNAILS (3 variants: hero subject · on-image words · colour · background AI prompt)
+DESCRIPTION (first 2 search lines · chapters with timestamps per entry · sources from the sourcing log · pinned-comment question)
+CAPTIONS reminder (CapCut auto-captions → fix names/dates → upload SRT) · Category: Education · Series + playlist name
+```
 
 ---
 
@@ -163,7 +253,17 @@ Avoid close-ups of hands and faces (AI's weak spot), readable signs, and brand l
 
 ## 7. Thumbnail style
 
-Vintage illustrated poster look: warm oranges and browns, a brick factory or storefront with a water tower, 1–2 nostalgic figures (worker, 1950s housewife), a big bold banner title at the top ("BUILT TO LAST, THEN GONE", "LOST FACTORIES", "FACTORY TOWNS THAT DIED"). No real logos.
+**Do not copy the reference.** The "BUILT TO LAST, THEN GONE" banner over a pile of lantern, fan, wagon, paint can and toolbox is now used by at least five channels, so it looks like a copy at a glance. Follow the section 0 standard:
+
+- **One hero subject**, big and sharp: a single product (a chrome 1950s toaster glowing on a counter), or one human moment (a repairman at a tube tester, a worker walking out of the gate on closing day). Not a pile.
+- **2–4 words**, very large, high contrast: "STILL WORKS.", "THEY FIXED IT", "GRANDMA'S KITCHEN", "THE LAST SHIFT". Don't repeat the title.
+- **A contrast element** to raise curiosity: an old item next to a broken modern one, a price then vs. now ("$22 → 5 YEARS"), or a date stamp ("FEB 1958").
+- **Colour:** pick a signature scheme that no rival on the search page uses (for example deep teal with cream text, or black and white photo with one warm colour accent), and keep it the same on every video so viewers recognise the channel.
+- **No AI lettering or logos.** Put brand names on as clean overlay text, or use a real public-domain ad.
+- Check it at phone size (≈ 170 px wide) next to the top 5 search results. If it doesn't stand out, redo it.
+- Make **3 variants** per video (different hero or words) for YouTube Test & Compare.
+
+When giving a thumbnail, output: the concept, the exact on-image words, the colour scheme, and a ready-to-paste AI image prompt for the background (`… no text, no logos`). Add the text in Canva/CapCut.
 
 ---
 
