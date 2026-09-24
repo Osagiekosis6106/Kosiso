@@ -74,6 +74,12 @@ BEAT CHECK vs When America Made Everything + copycats
 
 If the user asks for a live comparison, use the Nexlev tools (`youtube_search` on the target keyword, `youtube_channel_videos` on the reference) to check what currently ranks before writing.
 
+### Topics already taken (checked Sep 24, 2026)
+
+- **When Main Street Was Alive** is a sister-style channel with the same description template as the reference. It posted "30 Five-and-Dime Stores…" (155K in 7 days) and "30 Department Stores That Once Anchored American Downtowns" (36K in 8 days). **Don't make department-store or five-and-dime lists** until those have cooled for a few months, and only then with a new angle.
+- "Before Supermarkets: How Did Americans Buy Food?" is being copied word for word by 3+ small channels right now (4–246 views). The grocery topic itself is proven (150K–188K views), so use a fresh angle, not that title.
+- One-income jobs: "25 One-Income Jobs That Could Buy a House, a Car, and Raise 4 Kids in 1970s America" has 150K views. Our version must use a different decade and structure (1960s, jobs that **vanished**).
+
 ### Launch slate (gaps that neither the reference nor the copycats own yet)
 
 These came from the reference's top comments and from searches that found only short or weak videos on each topic:
