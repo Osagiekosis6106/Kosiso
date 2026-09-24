@@ -4,3 +4,15 @@
 
 - **"america memory"**, or any mention of modeling **When America Made Everything** / a lost-American-brands or factory-towns channel → read `america-memory.md` and follow it. For every script, tag each 3–5 s beat as archival film, archival photo, archival ad, modern stock, graphic or AI image/motion; say exactly which free source and search terms to use for the real-footage beats; give AI prompts only for the rest; end with the free-footage shopping list (with ready-to-paste `archival_fetch.py` download commands, see `archival-fetch-guide.md`) and a filled `america-sourcing-log.md`.
 - **"airspeed"**, or any mention of modeling **@AirspeedChannel** / a 3D aircraft "Why did X have Y?" aviation channel → read `airspeed-model.md` and follow it: title and thumbnail formula, the "Airspeed+" script table, the research checklist, beat tags (`[3D]`, `[3D→AI]`, `[AI]`, `[ARCH]`, `[GFX]`, `[X-RAY]`), the packaging block, and the **prompt-labelling rule (section 8c)**: give every visual a type (`[3D]` Blender-only with setup notes / `[3D→AI]` Blender still + image-to-video prompt / `[AI]` direct / `[ARCH]` / `[GFX]`), a **⚠ VERIFY** (saying what to check, against what) or ✓ No check, and a Disclosure flag, then end with the 3D model shopping list and the combined verify list (see the XF-85 shot sheet in section 11). A recognisable real aircraft or person is never `[AI]` direct. If the user works in Grok instead of Blender, follow `airspeed-grok-prompts.md`: real reference photos → approved master images → lock text → a per-shot table saying REUSE / NEW from Mx / CHAIN, with image and video prompts. Never re-make a competitor's outlier within 90 days; use the same pattern on a different aircraft.
+
+## Standing preferences
+
+- **3D animation tool = Grok, not Blender.** The user makes 3D aircraft shots in Grok Imagine. For every "airspeed" script, deliver a Grok prompt pack modelled on `airspeed-grok-prompts.md` (the XF-85 video):
+  1. real reference photos to download (R1, R2…);
+  2. master images to generate and approve first (M1, M2…);
+  3. word-for-word lock text for each aircraft, plus the studio look, film look and `[VIDEO SAFE]` line;
+  4. a shot-by-shot table saying whether to **REUSE** a master, make a **NEW** image from a named master, **CHAIN** from the previous clip's last frame, or go AI direct with no reference, each with its image and video prompts;
+  5. fallbacks for shots AI handles badly (wings folding, X-ray, propeller counts);
+  6. a closing "what to upload for each shot" list.
+
+  Always start shots from an approved master, never from a frame of an earlier video. Mention Blender only if the user asks.
