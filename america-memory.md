@@ -168,6 +168,14 @@ When turning a script into visuals, split it into beats of 3–5 seconds (about 
 | 5 | contains **numbers, dates, money, a timeline, a map, a comparison or a list number** | `🔢 GRAPHIC` | CapCut text / timeline / map template |
 | 6 | is **generic mood or atmosphere** with no specific real subject: "imagine…", unnamed families, a lunch pail, a kitchen at dawn; **or** any beat where rules 1–4 would probably find nothing | `🎨 AI IMAGE` (+ optional `🎥 AI MOTION`) | ChatGPT / Gemini / Midjourney / Ideogram, then Kling / Veo / Runway for motion |
 
+**Real-footage rule (every 🎞️ / 📷 / 📰 / 🎬 beat):** always state all five, never just "find archival footage":
+1. **Media:** 🎥 VIDEO or 🖼️ IMAGE
+2. **Source:** the exact archive by name + link (e.g. "Library of Congress, FSA collection: loc.gov/collections/fsa-owi-black-and-white-negatives")
+3. **Search exactly:** the words to type, 1–3 words, in `code` so they can be copied
+4. **Look for:** what the right item shows; give the item's exact title/ID only if it has been verified, otherwise describe it
+5. **Download:** the button to click, plus a ready-to-paste `archival_fetch.py` command for Library of Congress and Prelinger beats
+Plus a **Fallback** (second source + search words, or an AI prompt).
+
 **Hard rules**
 - **Never** use AI for a real named person, a real brand logo or sign, or anything presented as a real photo of a specific real event. AI garbles lettering (e.g. "PACKARD" signs); put brand names in as a CapCut text overlay instead.
 - No more than 3 AI beats in a row. Break runs up with a real photo or a graphic.
@@ -188,11 +196,15 @@ Real share: 65% ✅ (target ≥55%) | AI share: 22% ✅ (target ≤25%)
 
 ### Part B: The beat list
 ```
-## Beat 14 (~4s) — 🎞️ ARCHIVAL FILM
+## Beat 14 (~4s) — 🎞️ ARCHIVAL FILM · Style 1
 **Script:** "By 1955, the Studebaker line in South Bend was turning out a car every minute."
-**Get it:** Prelinger Archives → search `automobile assembly line 1950s` · `Studebaker`
-**Fallback:** National Archives → `automobile production` · or 🎨 AI prompt below
-**Use:** 4 s of workers fitting car bodies; add grain + dust; slow push-in if it's a still.
+**Media:** 🎥 VIDEO
+**Source:** Prelinger Archives (archive.org/details/prelinger)
+**Search exactly:** `automobile assembly line` → then `Studebaker`
+**Look for:** a 1950s industrial film showing car bodies on a moving line (name the film title only if it has been checked)
+**Download:** Download options → MPEG4 · or `python3 archival_fetch.py "automobile assembly line" --source prelinger --count 3 --beat 14`
+**Fallback:** National Archives (catalog.archives.gov) → filter *Moving Images* → search `automobile production` · or 🎨 AI prompt below
+**Use:** 4 s of workers fitting car bodies; add grain + dust.
 **Fallback AI prompt:** 1950s black and white documentary photograph, American automobile assembly line, workers in overalls fitting car bodies, overhead factory lights, heavy film grain, 35mm Kodak Tri-X, candid, no text, no logos
 
 ## Beat 15 (~5s) — 🎨 AI IMAGE + 🎥 AI MOTION
@@ -337,12 +349,15 @@ Music is melancholic piano + soft strings, mixed low, with an orchestral build i
 
 ## 10. Frame styles (the 5 looks to rotate through)
 
-| Style | How to make it | AI? |
-|---|---|---|
-| **Archival film** (4:3 pillarbox, film-gate edge, scratches, gate weave) | Real Prelinger / National Archives clip → CapCut: 4:3 crop on black, film-gate + scratch overlay (Envato or free), slight wobble keyframes | ❌ Never AI for a named car, product or event. AI only for a generic, unnamed scene, then tag it `🎨 AI` |
-| **Grid-board collage** (photos pinned on cream graph paper, dashed borders) | Canva/CapCut template: graph-paper background + 2–3 **real** photos, white dashed border, slight tilt, slow slide-in | Background may be AI; photos stay real |
-| **Cinematic recreation** (e.g. 1980s boardroom) | AI image → AI motion (5 s, minimal movement) | ✅ Best use of AI: generic, unnamed people, seen from behind or at a distance, no readable text or logos |
-| **Product explainer** (product cut-out on graph paper, white doodles, "NAME \| YEAR" labels) | Real product photo (Smithsonian, Wikimedia, pre-1931 catalog) → remove the background in CapCut/Canva → drop on graph paper → add doodles and labels as editor text/stickers | Only an unbranded generic product may be AI. Labels are always typed in the editor, never AI |
-| **Restored archival photo** (crisp, high-contrast B&W) | Real LOC/NYPL photo → free upscale/restore (Upscayl, or CapCut's enhance) → contrast boost → slow Ken Burns | ❌ Restoring a real photo is fine; generating a fake "archival photo" is not (if a generic AI scene looks like a real old photo, tick YouTube's altered/synthetic box) |
+Each beat names its style number. The source column is where to get the footage for that style.
+
+| Style | Media | Get it from (exact source) | Example search | If nothing is found | AI allowed? |
+|---|---|---|---|---|---|
+| **1. Archival film** (4:3 pillarbox, film-gate edge, scratches, gate weave) | 🎥 VIDEO | **Prelinger Archives**: archive.org/details/prelinger | `automobile 1950s`, `car dealer`, `assembly line` | **National Archives**: catalog.archives.gov → filter *Moving Images* | ❌ Not for a named car, product or event. Only a generic unnamed scene (tag it `🎨 AI`) |
+| **2. Grid-board collage** (photos pinned on cream graph paper, dashed borders) | 🖼️ IMAGE | **Photos:** Library of Congress FSA collection: loc.gov/collections/fsa-owi-black-and-white-negatives · **Graph-paper background:** Canva (`graph paper`) or Envato | `auto show`, `car dealer 1940` | **NYPL**: digitalcollections.nypl.org (tick *public domain only*) | Background only; photos stay real |
+| **3. Cinematic recreation** (e.g. 1980s boardroom) | 🖼️ IMAGE → 🎥 VIDEO | **AI:** ChatGPT / Gemini / Midjourney for the image → **Kling** or **Veo** for 5 s motion | Prompt given in the script | **Envato Elements** stock clip (`1980s office`) | ✅ Generic, unnamed people, seen from behind or at a distance, no readable text or logos |
+| **4. Product explainer** (product cut-out on graph paper, white doodles, "NAME \| YEAR" labels) | 🖼️ IMAGE | **Product photo:** Wikimedia Commons (commons.wikimedia.org) or Smithsonian Open Access (si.edu/openaccess, *CC0* only) · **Doodles/labels:** CapCut or Canva stickers + text | `Zenith television 1956`, `Philco radio` | Pre-1931 catalogs on **Internet Archive** (archive.org, `Sears catalog 1927`), or an unbranded AI product | Only an unbranded generic product. Labels always typed in the editor |
+| **5. Restored archival photo** (crisp, high-contrast B&W) | 🖼️ IMAGE | **Library of Congress**: loc.gov/free-to-use → only *"No known restrictions"* · **Restore:** Upscayl (free) or CapCut *Enhance* | `jukebox`, `dance hall`, `soda fountain` | **Flickr Commons**: flickr.com/commons, or **NYPL** | ❌ Restoring a real photo is fine; a fake "archival photo" is not (if a generic AI scene looks like a real old photo, tick YouTube's altered/synthetic box) |
+| **Effects for every style** (film edge, scratches, grain) | 🎥 overlay | **Envato Elements** (`film overlay`, `film gate`) or free overlays on **Pixabay** (pixabay.com/videos, `film grain`) | — | CapCut built-in *Retro* effects | — |
 
 Rotate the styles so no single look runs longer than ~20 seconds. Build the grid-board and product-explainer layouts **once** as CapCut/Canva templates and reuse them in every video.
