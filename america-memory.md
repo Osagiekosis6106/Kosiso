@@ -238,6 +238,8 @@ python3 archival_fetch.py "automobile assembly line" --source prelinger --count 
 Use `--source fsa` (default) for 1935–44 scenes, `--source fsa-color` for colour 1940s, `--source loc` for named companies or other eras, `--source prelinger` for moving film. Keep search words short (1–3 words).
 End with a filled-in **sourcing log** (see `america-sourcing-log.md`).
 
+**Footage Vault (automatic):** after every script, add a section for the video to `footage-vault.md` with every real/stock beat's link as 📋 planned, then commit and push. Whenever the user sends links, a pasted `sourcing-log.csv`, or says a beat is used, update the vault the same way. Never make the user edit it.
+
 ### Part D: Packaging (after the sourcing log)
 Every script comes with its packaging, all written to the section 0 standard:
 ```
