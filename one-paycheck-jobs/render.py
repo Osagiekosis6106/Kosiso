@@ -187,5 +187,67 @@ def main():
     open("sourcing-log.md", "w", encoding="utf-8").write("\n".join(log) + "\n")
     print(f"{total} beats | film {count['FILM']} photo {count['PHOTO']} ad {count['AD']} stock {count['STOCK']} gfx {count['GFX']} ai {count['AI']} | real {rs:.0f}% ai {ai:.0f}% | {secs/60:.1f} min")
 
+
+# ---------------- video prompts (STATE 9) ----------------
+MOTION_TAIL = {
+    "A": "black and white, heavy film grain, drifting dust specks, one faint flickering scratch",
+    "B": "black and white 16mm look, film flicker, slight gate weave, grain",
+    "C": "faded warm 1970s colour film, soft grain",
+    "D": "graph-paper background stays perfectly still, the object stays crisp with no warping, a few dust specks drift",
+    "E": "halftone dot texture stays locked in place, soft grain",
+    "F": "natural muted modern colour, steady and calm",
+}
+
+def camera_move(cam, n):
+    c = cam.lower()
+    if "aerial" in c:
+        return "slow steady aerial drift forward"
+    if "top-down" in c:
+        return "very slow top-down push-in"
+    if "close" in c:
+        return "very slow push-in"
+    if "low angle" in c or "looking up" in c:
+        return "very slow tilt up"
+    if "wide" in c:
+        return "slow lateral pan " + ("left to right" if n % 2 else "right to left")
+    return "very slow push-in"
+
+def video_prompt(x, n):
+    secs = max(3, min(5, round(len(x["text"].split()) / WPS)))
+    return (f"Image-to-video, {secs}s: {camera_move(x['cam'], n)}; {x['action']}; everything else stays still. "
+            f"{MOTION_TAIL[x['mode']].capitalize()}, no morphing, keep faces and hands stable, no new objects, no text, 24 fps."), secs
+
+def render_video():
+    out = ["# Video Prompts: 25 One-Paycheck Jobs That Could Buy a House in 1960s America (Now Gone Forever)\n",
+           "One video prompt per image prompt in `image-prompts.md`, same beat numbers. Paste the image first, then the prompt, into Kling, Veo or Runway (image-to-video). Generate 5 s and trim to the beat length.\n",
+           "**Negative prompt (paste into every tool that has the box):** morphing, warping faces, extra fingers, distorted hands, flicker of new objects, readable text, logos, fast camera moves, zoom bursts, colour shifts, modern objects in period scenes.\n",
+           "**Rules for this channel:** motion stays minimal (one small movement per shot). On 🎞️ beats, use the real downloaded clip first. On 📷 📰 🎬 beats, use the real photo or clip with a CapCut Ken Burns move (100% → 110% over the beat); the prompt below is only for the fallback AI image. On 🔢 beats, animate the text and objects in CapCut; the prompt adds gentle life to the background plate.\n"]
+    section_starts = {}
+    heads = [l.strip()[1:-1] for l in open("script.md", encoding="utf-8") if re.fullmatch(r"\[.+\]", l.strip())]
+    si = 0
+    for i, x in enumerate(BEATS):
+        t = x["text"]
+        if i == 0 or re.match(r"Number \d+\. The ", t) or t.startswith(("First pattern break", "Second pattern break", "Third pattern break", "So here is what I want you to do")):
+            section_starts[i] = heads[si]; si += 1
+    for i, x in enumerate(BEATS):
+        if i in section_starts:
+            out.append(f"\n---\n\n## {section_starts[i].title()}\n")
+        n = i + 1
+        vp, secs = video_prompt(x, n)
+        label = TAGS[x["tag"]][0]
+        out.append(f"### Beat {n} (~{secs}s) — {label}")
+        out.append(f"**Script:** \"{x['text']}\"  ")
+        if x["tag"] == "FILM":
+            out.append(f"**First choice:** real clip from Prelinger (`{x['q']}`), trim to {secs}s, add grain.  ")
+        elif x["tag"] in ("PHOTO", "AD", "STOCK"):
+            out.append(f"**First choice:** real {'clip' if x['tag']=='STOCK' else 'image'} (`{x['q']}`) with a slow Ken Burns push-in in CapCut.  ")
+        elif x["tag"] == "GFX":
+            out.append(f"**CapCut animation:** {x['gfx']}  ")
+        lab = "Fallback video prompt" if x["tag"] in REAL else "Video prompt"
+        out.append(f"**{lab}:** {vp}  ")
+        out.append("")
+    open("video-prompts.md", "w", encoding="utf-8").write("\n".join(out) + "\n")
+
 if __name__ == "__main__":
     main()
+    render_video()
