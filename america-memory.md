@@ -16,18 +16,23 @@ The user is a busy mom. Keep every workflow short, batchable and copy-paste read
 - **Sign-on line in every video:** "Welcome back to Back When It Lasted."
 - Every video must keep the promises in the description: **real archival footage, chapters, captions, a sources list**, and **reader memories read aloud** (from video 3 on).
 
-**Channel description (966 / 1,000 characters; first line = the 150 characters shown in search):**
+**Channel keywords** (YouTube Studio → Settings → Channel → Keywords):
 ```
-Back When It Lasted: true stories of the American-made brands, factories and hometown jobs that built the middle class, and what happened to each one.
+American history, vintage America, nostalgia, Made in USA, American made, forgotten brands, lost American brands, old American companies, American manufacturing, factory towns, 1950s America, 1960s America, 1970s America, vintage appliances, Main Street America, middle class history, documentary, Back When It Lasted
+```
 
-The toaster still working after 60 years. The plant that paid for a whole town. The job that bought a house on one paycheck. We go back to when things were built to last, and find out who built them, why America trusted them, and the exact decision that ended them.
+**Channel description (984 / 1,000 characters; first line fits in the ~150 characters shown in search):**
+```
+Back When It Lasted: American history documentaries on forgotten Made in USA brands, lost factories and old companies, and what happened to them.
 
-Every documentary is made from real archival film, photographs and old catalogs from the Library of Congress, the National Archives and the Prelinger Archives. Every video has chapters, captions and a list of sources.
+The 1950s toaster that still works. The factory town that paid for everything. The 1960s job that bought a house on one paycheck. We tell the true stories of the American manufacturing and middle-class life your parents and grandparents knew: who built it, why families trusted it, and the decision that ended it.
 
-Made for everyone who remembers when things lasted, and for everyone who wishes they still did.
+What we cover: vintage appliances and kitchen brands, factory and mill towns, vanished jobs, Main Street, railroads, and the 1950s, 1960s and 1970s America you remember.
+
+Every episode uses real archival film and photos from the Library of Congress, National Archives and Prelinger Archives, with chapters, captions and sources.
 
 📅 New documentary every Sunday.
-💬 Tell us what your family owned, where your father worked, or what's still running in your kitchen. The best memories are read aloud in future episodes.
+💬 Tell us what your family owned or where your father worked. The best memories are read aloud in future episodes.
 
 Subscribe and help keep these stories alive.
 ```
