@@ -270,3 +270,30 @@ When giving a thumbnail, output: the concept, the exact on-image words, the colo
 ## 8. Growth angle for this user
 
 The niche is mostly male/industrial. The biggest recent breakouts in the wider niche are about **home life**: "Before Air Conditioning, How Did Americans Survive the Summer?" (906K), "American Malls Were Once Packed — So What Killed Them?" (687K), "25 One-Income Jobs That Could Buy a House… in 1970s America". Suggest household and family angles too: kitchen brands, the Sears catalog, department stores, Tupperware parties, 1960s housewives, and "before X, how did Americans…".
+
+---
+
+## 9. Voiceover (must beat the reference)
+
+**What the reference sounds like** (Nexlev AI video analysis of "30 American Companies…", Sep 24, 2026): deep, gravelly, middle-aged General American male, "movie-trailer storyteller" style. About **132 words per minute in the hook** and **~148 wpm by minute 40**. 1–2 s dramatic pauses in the hook. The opening sounds human, with audible breaths. By minute 40 it sounds like AI text-to-speech:
+- no breaths
+- the same falling pitch at the end of almost every sentence
+- years read digit by digit ("one-eight-four-two")
+- a stiff, "stitched" pause in "Number 12: … Gimbels"
+- the same sombre tone whether the story is sad or happy
+
+Music is melancholic piano + soft strings, mixed low, with an orchestral build in the intro. Sound effects are rare (hammer clinks, typewriter). The two analysis passes disagreed about human vs. AI, so treat that verdict as likely, not proven.
+
+**Our standard: sound like one of the audience, and stay alive for 60 minutes.**
+- **Tool:** ElevenLabs, using the **Eleven v3** model in **Studio** (long-form projects). Pick a Voice Library voice that is **older (60s), warm, grandfatherly** rather than trailer-deep, so viewers hear a peer telling the story. Search terms: `old storyteller`, `grandpa narrator`, `documentary warm`. Never use the reference's style of voice unchanged.
+- **Write for the voice:**
+  - Write years and prices in words ("nineteen fifty-eight", "twenty-two dollars") so they're never read digit by digit.
+  - Mix short and long sentences, and put in a question every ~30 s to break the falling-pitch pattern.
+  - Write the entry intro as one flowing line: "Number twelve… Gimbels." with the ellipsis written in.
+- **Direct the voice with v3 audio tags**, sparingly: `[warmly]` on golden-age memories, `[softly]` on closings, `[pause]` before a reveal, `[chuckles]` on a funny detail. About one tag per 2–3 sentences.
+- **Pronunciation:** add every brand and town name to a pronunciation dictionary before generating (Gimbels, Philco, Tappan, Schenectady, Kannapolis).
+- **Pace:** 135–145 wpm the whole way. Generate **one entry at a time**, listen, and regenerate any flat or wrongly stressed line. Don't generate 60 minutes in one go.
+- **Mix:** voice at about **−14 LUFS** for the final export. Music about **18–22 dB under the voice**, swelling only in pauses and between entries. Change the music mood per entry (sad closing vs. proud golden age), not one bed for 60 minutes. Add 2–3 light sound effects per entry (factory whistle, cash register, TV static).
+- **Music sources:** YouTube Audio Library or Pixabay Music (free for YouTube). Eleven Music is optional and uses credits.
+- **Credits:** 1 credit ≈ 1 character. A 40-min script ≈ 5,600 words ≈ 33,000 characters, or about 45,000 with retakes. One video a week (≈ 180,000 a month) needs the **Pro** plan. **Creator** covers about 2–3 videos a month. Check current prices at elevenlabs.io/pricing.
+- If a video's voice is a clone or close copy of a real person's voice, don't use it. Only use Voice Library voices or your own voice.
