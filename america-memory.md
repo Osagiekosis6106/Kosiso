@@ -250,6 +250,7 @@ CAPTIONS reminder (CapCut auto-captions → fix names/dates → upload SRT) · C
 | **Wikimedia Commons** (commons.wikimedia.org) | Company-specific photos, factory exteriors today | Check **every** file's licence; credit if CC BY |
 | **Flickr Commons** (flickr.com/commons) | Museum/library photos | Only "No known copyright restrictions" |
 | **Pexels / Pixabay / Mixkit** | Modern drone and abandoned-building footage | Free licences (not public domain), fine for YouTube |
+| **Envato Elements** (paid, user may subscribe) | Modern stock, music, sound effects, film-grain/dust overlays, vintage LUTs, retro title templates; *some* vintage clips | Not a real archive: most "vintage" clips are re-staged with actors or AI-made. Use them only as mood beats (tag `🎬 MODERN STOCK` or count as AI if AI-made), never as proof of a named company, person or event. **Register every download to the channel/project** (keep the licence certificate in the sourcing log). Music claims on YouTube are cleared with that licence. |
 
 **Never use:** Getty, Alamy, Shutterstock, British Pathé, CriticalPast, Periscope Film (all paid), screenshots of other YouTube videos, or random Google Images.
 
