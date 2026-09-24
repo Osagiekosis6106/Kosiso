@@ -332,3 +332,17 @@ Music is melancholic piano + soft strings, mixed low, with an orchestral build i
 - **Music sources:** YouTube Audio Library or Pixabay Music (free for YouTube). Eleven Music is optional and uses credits.
 - **Credits:** 1 credit ≈ 1 character. A 40-min script ≈ 5,600 words ≈ 33,000 characters, or about 45,000 with retakes. One video a week (≈ 180,000 a month) needs the **Pro** plan. **Creator** covers about 2–3 videos a month. Check current prices at elevenlabs.io/pricing.
 - If a video's voice is a clone or close copy of a real person's voice, don't use it. Only use Voice Library voices or your own voice.
+
+---
+
+## 10. Frame styles (the 5 looks to rotate through)
+
+| Style | How to make it | AI? |
+|---|---|---|
+| **Archival film** (4:3 pillarbox, film-gate edge, scratches, gate weave) | Real Prelinger / National Archives clip → CapCut: 4:3 crop on black, film-gate + scratch overlay (Envato or free), slight wobble keyframes | ❌ Never AI for a named car, product or event. AI only for a generic, unnamed scene, then tag it `🎨 AI` |
+| **Grid-board collage** (photos pinned on cream graph paper, dashed borders) | Canva/CapCut template: graph-paper background + 2–3 **real** photos, white dashed border, slight tilt, slow slide-in | Background may be AI; photos stay real |
+| **Cinematic recreation** (e.g. 1980s boardroom) | AI image → AI motion (5 s, minimal movement) | ✅ Best use of AI: generic, unnamed people, seen from behind or at a distance, no readable text or logos |
+| **Product explainer** (product cut-out on graph paper, white doodles, "NAME \| YEAR" labels) | Real product photo (Smithsonian, Wikimedia, pre-1931 catalog) → remove the background in CapCut/Canva → drop on graph paper → add doodles and labels as editor text/stickers | Only an unbranded generic product may be AI. Labels are always typed in the editor, never AI |
+| **Restored archival photo** (crisp, high-contrast B&W) | Real LOC/NYPL photo → free upscale/restore (Upscayl, or CapCut's enhance) → contrast boost → slow Ken Burns | ❌ Restoring a real photo is fine; generating a fake "archival photo" is not (if a generic AI scene looks like a real old photo, tick YouTube's altered/synthetic box) |
+
+Rotate the styles so no single look runs longer than ~20 seconds. Build the grid-board and product-explainer layouts **once** as CapCut/Canva templates and reuse them in every video.
