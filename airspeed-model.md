@@ -226,6 +226,80 @@ For Library of Congress and Prelinger material you can use the repo's `archival_
 
 **Budget path.** Month 1: Blender plus 3–4 bought models (~$20–80 each), plus one AI video subscription, plus a stock music subscription. That makes one video a week possible for one person once you've practised the Blender basics: a turntable, a camera path, a transparent-material X-ray.
 
+### 8a. Is a 3D model a video? No. Here's the difference
+
+| Word | What it is | File |
+|---|---|---|
+| **3D model** | The aircraft itself as a digital object. You can turn it, light it and film it from any angle, like a real toy in a room. | `.blend`, `.fbx`, `.obj`, `.glb` |
+| **Render (still)** | A photo you take of the model inside Blender | `.png` |
+| **Render (animation)** | A video you film of the model inside Blender, with a moving camera or moving parts | `.mp4`, or a folder of numbered `.png` frames |
+
+So every 3D shot goes one of two ways:
+
+- **`[3D]` Blender-only:** you animate the camera or the parts in Blender and render the **video** directly. Use this for turntables, walkarounds, wings folding, propellers spinning, the X-ray, and anything where the aircraft's shape must stay perfect. **No AI prompt needed.**
+- **`[3D→AI]` Blender still, then AI motion:** you render **one still** in Blender, upload it to Kling, Veo or Runway as the **first frame** ("start frame" or "image-to-video"), and write a motion prompt. Use this when the motion is hard in Blender: clouds, dust, turbulence, shattering glass, fire. Keep these clips to **3–5 seconds**, because the longer they run, the more the aircraft morphs.
+
+### 8b. Blender in 15 minutes (the only skills you need)
+
+**Download (free):** https://www.blender.org/download/ · **Manual:** https://docs.blender.org/manual/en/latest/ · **Free studio lighting (HDRIs):** https://polyhaven.com/hdris · **Models:** https://sketchfab.com and https://www.cgtrader.com (filter by *downloadable* and a licence that allows commercial use).
+
+For a guided start, search YouTube for **"Blender Guru donut tutorial"**, the standard beginner course. Parts 1–3 are enough.
+
+1. **Set up.** Install and open Blender, then choose **General**. Click the default cube and press **X → Delete**.
+2. **Bring in the aircraft.** Go to **File → Import** and pick the format you bought (`.fbx`, `.obj` or `.glb`/glTF). Press **N** to open the side panel and check **Dimensions**. Scale the model so its length matches the real aircraft (XF-85: ~4.52 m, verify).
+3. **Look around.** Middle mouse button orbits, scroll zooms, and Shift + middle mouse pans. Press **Numpad 1 / 3 / 7** for front, side and top views.
+4. **Dark studio (Airspeed look, in your colours):**
+   - **Add → Mesh → Plane**. Scale it big and bend it up behind the aircraft (a "cyclorama"), or skip it and just set the world colour to near-black under **World properties → Color**.
+   - Add **three lights** with **Add → Light → Area**: one soft white key light in front and above, plus two **rim lights** behind in your two brand colours (for example amber and steel blue).
+   - For realistic outdoor shots, go to **World properties → Color → Environment Texture** and open a Poly Haven sky HDRI instead.
+5. **Camera.**
+   - **Add → Camera**, then press **Numpad 0** to look through it.
+   - Press **N → View → tick "Camera to View"**, then move around to frame the shot. Untick it when you're done.
+   - Under **Output properties**, set 1920×1080 (or 3840×2160) and **Frame Rate 24 or 30**.
+6. **Animate the camera (keyframes).**
+   - At frame 1, select the camera and press **I → Location & Rotation**.
+   - Go to frame 120 (4 s at 30 fps), move the camera, and press **I** again. Blender fills in the motion between them.
+7. **Turntable (the classic orbit).**
+   - Add an **Empty** (**Add → Empty → Plain Axes**) at the aircraft's centre.
+   - Select the camera, Shift-click the Empty, then press **Ctrl + P → Object**.
+   - Key the Empty's **Rotation Z = 0°** at frame 1 and **360°** at frame 240.
+   - In the **Graph Editor**, select all and press **T → Linear** so the speed stays constant.
+8. **Moving parts** (wings folding, hook rising, propellers):
+   - This only works if the bought model has them as **separate objects**. Check the **Outliner** (top right).
+   - Set the part's pivot at its hinge: right-click → **Set Origin → Origin to 3D Cursor** after putting the 3D cursor on the hinge with **Shift + right-click**.
+   - Then key its rotation, as in step 6.
+9. **X-ray (your trademark).**
+   - Select the fuselage, open **Material properties**, and set **Alpha** to ~0.15 (in Eevee, also set the material's *Render Method* to *Blended* if it looks solid).
+   - Give the part you want to reveal (engine, fuel tank, centre-of-gravity marker) an **Emission** colour so it glows.
+   - For a blueprint look, use **Add Modifier → Generate → Wireframe**.
+10. **Render.**
+    - Set the render engine to **Eevee**, which is fast and good enough for most shots. Use **Cycles** only for hero shots.
+    - **Still:** **F12**, then **Image → Save As → PNG**. Use this for thumbnails and `[3D→AI]` first frames.
+    - **Video:** go to **Output properties → Output**, choose a folder and set **File Format: PNG** (safest). Then run **Render → Render Animation** (Ctrl + F12). Drop the numbered PNGs into CapCut or DaVinci Resolve as an image sequence.
+11. **Save your studio** as `studio.blend`. Next video, open it, import the new aircraft, and you're 80% done.
+
+**If a model you need doesn't exist to buy:** hire a modeller on Fiverr or CGTrader custom requests (~$50–250 for a mid-detail aircraft). Send them 3-view drawings and photos, and ask for **separate objects** for the wings, hook, canopy, propellers and control surfaces.
+
+### 8c. The prompt-labelling rule (use on every script)
+
+Every visual line in every script must carry **three labels**:
+
+1. **Type.** One of these:
+   - `[3D]` Blender-only animation. No AI prompt.
+   - `[3D→AI]` Blender still, then an image-to-video prompt.
+   - `[AI]` AI direct: text-to-image, then image-to-video.
+   - `[ARCH]` archival.
+   - `[GFX]` graphic.
+   - `[X-RAY]` Blender, your trademark shot.
+2. **⚠ VERIFY or ✓ No check.** Mark a shot **⚠ VERIFY** when viewers would notice if the image were wrong: the aircraft's shape, markings, number of engines or fins, the real location, the real event, a real person. Say **what** to check and **against which reference photo or source**. Mark mood-only shots **✓ No check**.
+3. **Disclosure.** If a realistic AI shot shows a **real event or real person**, mark **Disclosure ON**. That means switching on YouTube's "altered or synthetic content" at upload.
+
+**The golden rule:** *if the named aircraft (or any real, identifiable aircraft or person) is recognisable in the frame, it is never `[AI]` direct.* It is `[3D]` or `[3D→AI]`, or `[ARCH]`. AI direct is only for skies, landscapes, weather, crowds from behind, silhouettes and generic modern scenes.
+
+**Image-to-video prompt structure** (Kling, Veo, Runway, with your render uploaded as the first frame):
+`[camera move] + [what moves] + [what must NOT change] + [look] + duration 3–5 s`
+Always end with: *"Keep the aircraft's shape, markings, number of engines and propellers exactly as in the first frame. No morphing. Realistic motion blur."*
+
 ### Shot rhythm to copy and improve
 
 - 3.5–4.5 s average shot, with hard cuts on narration beats.
@@ -320,7 +394,7 @@ Check each on NexLev (`search_videos` / `get_similar_videos`) before scripting. 
 
 **Aircraft:** McDonnell XF-85 Goblin · **Target:** ~1,750 words · 11:40 · **Tone:** calm docent with three tension beats.
 
-**Beat tags:** `[3D]` your Blender render · `[3D→AI]` image-to-video from your render · `[AI]` AI atmosphere · `[ARCH]` archival · `[GFX]` graphic, map or spec card · `[X-RAY]` your trademark shot.
+**Beat tags:** `[3D]` Blender-only animation · `[3D→AI]` Blender still, then image-to-video · `[AI]` AI direct · `[ARCH]` archival · `[GFX]` graphic, map or spec card · `[X-RAY]` your trademark shot (Blender). The **shot sheet** after the packaging block gives every visual a number (S01–S41), the exact prompt, and whether it needs verifying.
 
 Facts marked **(verify)** must be checked against the National Museum of the US Air Force fact sheet and at least one book, for example Dennis R. Jenkins, *Magnesium Overcast* (B-36), before recording.
 
@@ -488,13 +562,149 @@ Facts marked **(verify)** must be checked against the National Museum of the US 
 - **Pinned comment:** *"Would you have volunteered to fly the Goblin? Knowing only 3 of 7 flights hooked back on?"* (verify the numbers first)
 - **Chapters:** 0:00 No Landing Gear? · 1:05 The Bomber Nobody Could Escort · 2:10 Fighters Carried by Aircraft · 3:05 Inside the Goblin · 5:15 The First Hook-Up · 8:10 What Killed It · 8:50 Why It Had No Wheels · 10:05 What It Led To
 
-### AI prompts (atmosphere shots only; hero aircraft shots come from your 3D model)
+### Shot sheet for video #1: every visual, labelled
 
-1. **Desert at dusk (belly-landing plate):** *"Wide cinematic shot of a vast cracked dry lakebed in the Mojave desert at golden hour, 1948, long shadows, dust haze, a small silver experimental jet skidding on its belly leaving a plume of dust, photoreal, 35mm film grain, muted Kodachrome colours, 16:9"*. Composite your rendered Goblin over it, or use image-to-video from your render as the first frame.
-2. **Turbulence under the bomber:** *"Close tracking shot beneath the polished aluminium belly of a four-engine 1940s bomber in flight, visible air turbulence and heat shimmer, clouds racing below, a steel trapeze bar swinging, cinematic, photoreal, 16:9"*
-3. **Arctic night threat:** *"Night over a frozen Arctic sea, a huge six-engine bomber silhouette under a storm, distant muzzle flashes and tracer fire in the clouds, ominous, cinematic, desaturated blue, film grain, 16:9"*
-4. **Cockpit POV (use with your 3D cockpit or on its own):** *"POV from inside a tiny 1948 jet fighter cockpit looking up through a bubble canopy at a steel hook and the underside of a giant bomber, wind-streaked glass, gauges glowing, tense, photoreal, 16:9"*
-5. **Image-to-video motion prompt (Kling / Veo, from your render):** *"Keep the aircraft geometry exactly as in the first frame. Slow camera push-in, subtle vibration, clouds moving past, no morphing of wings or propellers, realistic motion blur."*
+**How the 41 shots split:**
+
+| Type | Count | Shots |
+|---|---|---|
+| `[3D]` / `[X-RAY]` Blender-only, no prompt | 17 | S01 S02 S03 S07 S13 S14 S15 S16 S17 S18 S19 S21 S35 S36 S37 S38 S41 |
+| `[3D→AI]` Blender still, then video prompt | 8 | S04 S10 S20 S24 S25 S26 S27 S28 |
+| `[AI]` AI direct | 2 | S31 S40 |
+| `[ARCH]` archival | 10 | S05 S09 S11 S12 S22 S23 S29 S32 S34 S39 |
+| `[GFX]` graphics | 4 | S06 S08 S30 S33 |
+
+*(S23 and S39 have a `[3D→AI]` fallback if no archival film turns up.)*
+
+#### Step 0. 3D models to get before you open Blender
+
+| Model | Needed for | ⚠ VERIFY before buying |
+|---|---|---|
+| **McDonnell XF-85 Goblin**, with the wings, hook and canopy as **separate objects** | Most shots | Compare to the National Museum of the USAF photos and a 3-view drawing: egg-shaped fuselage, folding wings, the hook above the nose, the tail-fin layout, and the belly skid. If no accurate model is for sale, commission one (section 8b). |
+| **Boeing B-29**, which you'll turn into the EB-29B "Monstro" | S04 S20 S24–S27 | Add the trapeze yourself from cylinders in Blender. Copy its shape from the 1948 test photos (`[ARCH]` S22/S23). **Verify the trapeze shape.** |
+| **Convair B-36** | S07 S10 S14 S36 S41 | **Variant matters.** Early B-36s (1948) had **six propeller engines only**. The four extra jet pods came on later versions (B-36D onward, **verify**). Match the model to what the narration says at that moment. |
+| Human mannequin (~1.8 m) and a 1940s car | S15 S20 | Scale only. ✓ No check. |
+| A generic wheel and landing-gear strut | S21 | ✓ No check (illustration). |
+
+---
+
+#### A. `[3D]` / `[X-RAY]`: Blender-only (render the video in Blender, no AI prompt)
+
+| # | Time | What to set up in Blender | Check |
+|---|---|---|---|
+| **S01** | 0:00 | Dark studio. Goblin head-on, wings folded, hook up. **Turntable** (section 8b, step 7), 8 s. | **⚠ VERIFY** hook shape and angle, wing-fold angle, fin layout against museum photos |
+| **S02** | 0:07 | Camera under the belly, slow orbit, macro lens (focal length 85–100 mm). | **⚠ VERIFY** that the belly shows the emergency skid, not wheel wells |
+| **S03** | 0:11 | Pull back from the belly to a 3/4 view while the hook rotates up (keyframe the hook's rotation). | **⚠ VERIFY** that the hook's hinge point and travel match photos |
+| **S07** | 1:05 | B-36 side view in a sky HDRI. Camera tracks along the wing, 6 s. | **⚠ VERIFY** variant: an early 1948 B-36 has six props and **no jet pods** |
+| **S13** | 2:40 | Studio turntable. In the edit, overlay glowing outlines where wheels *would* be, then fade them. | ✓ No check |
+| **S14** | 3:05 | Goblin slides into a **wireframe box** the size of the B-36 bomb bay (Wireframe modifier). | **⚠ VERIFY** the bomb bay size relative to the Goblin (Jenkins, *Magnesium Overcast*) |
+| **S15** | 3:20 | Goblin beside the mannequin and the 1940s car, camera pans across all three. | **⚠ VERIFY** Goblin length ~4.52 m and span ~6.44 m before you scale |
+| **S16** | 3:35 | Wings unfold: key the wing rotation around the hinge, 3 s. | **⚠ VERIFY** that the wings folded **upward**, and the hinge position |
+| **S17** | 3:50 | Camera circles the tail, 5 s. | **⚠ VERIFY** the number and angle of the tail fins |
+| **S18** `[X-RAY]` | 4:05 | Fuselage at Alpha 0.15. A simple cylinder "engine" glowing orange inside, running from the nose intake to the tail exhaust. | **⚠ VERIFY** engine position and intake and exhaust locations |
+| **S19** | 4:30 | Macro close-up of the gun ports. | **⚠ VERIFY** that there are four guns and where the ports sit |
+| **S21** `[X-RAY]` | 5:00 | A wheel, strut and brake float toward the fuselage, turn red (Emission) and bounce off the bomb bay wireframe. | ✓ No check (illustration) |
+| **S35** | 8:50 | Reuse S01 (same file, same camera). | Same as S01 |
+| **S36** `[X-RAY]` | 9:00 | B-36 at Alpha 0.15 with the Goblin inside the bay. Pull the camera back; the globe/range arc is added in the edit (`[GFX]`). | **⚠ VERIFY** where the Goblin was meant to sit in the B-36 bay |
+| **S37** | 9:30 | Slow push-in on the hook, 5 s. | Same as S03 |
+| **S38** | 9:50 | Hook against pure black. Turn off every light except one rim light. | ✓ No check |
+| **S41** | 10:45 | B-36 at dusk (sunset HDRI), **six propellers spinning** behind the wing. Key prop rotation, linear, fast. Blender only: AI will morph propellers. | **⚠ VERIFY** that they're pushers (behind the wing) and the engine count matches the variant |
+
+---
+
+#### B. `[3D→AI]`: render one still in Blender, then turn it into video
+
+Upload the PNG as the **first frame** in Kling / Veo / Runway. Clip length 3–5 s.
+
+**S04: Goblin drops from the bomber** (0:15) · **⚠ VERIFY** trapeze shape; tests flew over the Muroc (Edwards) desert · **Disclosure ON**
+- **Blender still:** camera below and behind the B-29 belly, looking up. The Goblin hangs on the trapeze, wings spread. Desert sky HDRI.
+- **Video prompt:** *"The small jet releases from the steel trapeze and drops smoothly away and down, away from the camera, while the bomber above continues straight. Camera stays steady with slight handheld shake. Clouds drift below. Keep both aircraft's shape, markings, number of engines and propellers exactly as in the first frame. No morphing. Realistic motion blur. 4 seconds."*
+- *Fallback:* animate the drop in Blender (key the Goblin's Z location) if the AI warps it.
+
+**S10: B-36 alone in an empty sky** (1:55) · **⚠ VERIFY** variant (six props, no jets for 1948) · Disclosure off (it's generic)
+- **Blender still:** B-36 small in the frame, lower third, on a huge pale sky HDRI.
+- **Video prompt:** *"Very slow camera drift to the right, the bomber flies steadily left to right, thin clouds pass beneath, sunlight flickers on the aluminium. Keep the aircraft's shape, six propellers and markings exactly as in the first frame. No morphing. 5 seconds."*
+
+**S20: Cockpit, looking up at the hook** (4:45) · **⚠ VERIFY** canopy shape and hook position over the pilot's head · Disclosure off
+- **Blender still:** camera inside the canopy behind the mannequin pilot, looking up through the glass at the hook and the silver bomber belly above. If your model has no cockpit interior, use a blurred dark interior and focus on the canopy frame and the view up.
+- **Video prompt:** *"Subtle vibration and small up-and-down motion as if flying in rough air, the bomber belly above stays in place, light streaks across the canopy glass. Keep the canopy frame and hook exactly as in the first frame. No morphing. 4 seconds."*
+
+**S24: Release and engine start** (5:45) · **⚠ VERIFY** the first free flight date (23 Aug 1948) and pilot (Edwin Schoch) · **Disclosure ON**
+- **Blender still:** side view of the Goblin just below the trapeze, with a faint orange glow in the tail exhaust (Emission).
+- **Video prompt:** *"The jet falls a short distance away from the bomber, then its tail exhaust flares orange with heat shimmer as the engine lights, and it levels off. Camera tracks alongside. Keep the jet's shape, folded-out wings, tail fins and hook exactly as in the first frame. No morphing. 4 seconds."*
+
+**S25: Turbulence under the bomber** (6:00) · ✓ No check on the air · **⚠ VERIFY** the B-29 and trapeze look like S04 · Disclosure ON
+- **Blender still:** close under the B-29 belly and trapeze, with clouds below.
+- **Video prompt:** *"Strong visible air turbulence and heat-haze ripples under the bomber belly, the steel trapeze bar swings and shakes, clouds race past below, camera shakes gently. Keep the bomber's shape and the trapeze exactly as in the first frame. No morphing. 4 seconds."*
+
+**S26: Goblin bucks toward the swinging bar** (6:15) · **⚠ VERIFY** that the approach is from below and behind · Disclosure ON
+- **Blender still:** the Goblin close under and behind the trapeze, its hook reaching up.
+- **Video prompt:** *"The small jet rises and bounces unsteadily toward the swinging trapeze bar, rocking side to side in turbulent air, camera shakes. Keep the jet's egg-shaped body, wings, tail fins and hook exactly as in the first frame. No morphing. 3 seconds."*
+
+**S27: The bar hits the canopy** (6:25) · **⚠ VERIFY** that the canopy shattered and the helmet and mask were torn off (Air Force museum account or a flight test book) · **Disclosure ON**
+- **Blender still:** extreme close-up of the Goblin's canopy with the trapeze bar a few centimetres away.
+- **Video prompt:** *"The steel bar strikes the bubble canopy, the glass cracks and shatters outward in slow motion, fragments fly back in the wind. Camera stays locked. Keep the jet's shape exactly as in the first frame. 3 seconds."*
+
+**S28: Belly landing on the dry lake** (6:40) · **⚠ VERIFY** that it landed on the skid on the dry lakebed at Muroc · **Disclosure ON**
+- **Blender still:** the Goblin a metre above a flat desert ground plane at dusk. Use a Poly Haven desert HDRI, or use AI plate **S28-plate** below as the background image.
+- **S28-plate (AI direct, background only, no aircraft in it):** *"Wide empty cracked dry lakebed in the Mojave desert at golden hour, 1940s, long shadows, light dust haze, distant low mountains, photoreal, 35mm film grain, muted Kodachrome colours, 16:9, no people, no vehicles, no aircraft"* · ✓ No check
+- **Video prompt:** *"The small jet touches down on its belly and slides across the dry lakebed, throwing up a long plume of dust, slowing to a stop. Camera tracks low alongside. Keep the jet's shape, wings, tail fins and hook exactly as in the first frame. No wheels. No morphing. 5 seconds."*
+
+---
+
+#### C. `[AI]` direct: no 3D model needed (nothing identifiable in frame)
+
+**S31: "Imagine that at night, over enemy territory…"** (7:50) · ✓ No history check: it's a *hypothetical* scene. Add a small on-screen "Illustration" label. · Disclosure off (it isn't depicting a real event)
+- **Image prompt:** *"Night over a frozen Arctic sea under a violent storm, a huge bomber seen only as a dark distant silhouette against lightning, faint tracer fire in the clouds, ominous, cinematic, desaturated blue, film grain, 16:9"*
+- **Video prompt:** *"Lightning flickers, storm clouds roll, snow streaks past the camera, the distant silhouette drifts slowly across the frame. 5 seconds."*
+- ⚠ Keep the bomber a **tiny, unreadable silhouette**. If it's big enough to recognise, switch this to `[3D→AI]` using your B-36 render.
+
+**S40: Modern drones launched and caught by a big aircraft** (10:25) · **⚠ VERIFY** that if the narration **names** a real programme (e.g. DARPA Gremlins), you use **real released footage** (`[ARCH]`) instead of AI. Use AI only if the line stays generic. · Disclosure ON if it looks like a real programme
+- **Image prompt:** *"A large modern grey military transport aircraft in flight at sunset above the clouds, a small sleek unmarked drone approaching beneath it, photoreal, cinematic, 16:9, no insignia, no text"*
+- **Video prompt:** *"The drone rises slowly toward the transport's belly, both aircraft steady, clouds drift below. 4 seconds."*
+
+---
+
+#### D. `[ARCH]` and `[GFX]`: no prompts
+
+| # | Time | What | Source / how | Check |
+|---|---|---|---|---|
+| S05 | 0:28 | Real 1948 film of the Goblin under the EB-29B | USAF Museum, NARA, Wikimedia | **⚠ VERIFY** the clip really shows the XF-85 |
+| S06 | 0:35 | Title card "XF-85 GOBLIN · 1948" | CapCut / Blender text | ✓ |
+| S08 | 1:20 | Map: B-36 range arc against the fighter range circle | CapCut / After Effects | **⚠ VERIFY** both ranges before you draw them |
+| S09 | 1:40 | B-29 formations and flak | NARA, Internet Archive | ✓ |
+| S11 | 2:10 | USS Macon catching a Sparrowhawk | NARA, Naval History and Heritage Command | ✓ |
+| S12 | 2:25 | Soviet Zveno (a TB-3 carrying fighters) | Wikimedia (check each file's licence). **Don't use AI here**: it will draw the wrong aircraft. | **⚠ VERIFY** the photo is Zveno |
+| S22 | 5:15 | EB-29B on the ground at Muroc | USAF Museum, NARA | **⚠ VERIFY** the "Monstro" nickname |
+| S23 | 5:30 | Goblin hanging under the B-29 in flight | Archival first. **Fallback `[3D→AI]`**: render the S04 still with a slow drift prompt | ✓ |
+| S29 | 7:00 | A successful hook-up | NARA / USAF Museum | **⚠ VERIFY** the date (Oct 1948) |
+| S30 | 7:15 | 7-flight tally board, ✓ / ✗ | CapCut | **⚠ VERIFY** 7 flights and 3 hook-ups |
+| S32 | 8:10 | 1949 aerial refuelling | NARA, Internet Archive | ✓ |
+| S33 | 8:35 | "Programme cancelled · October 1949" stamp | CapCut | **⚠ VERIFY** the date |
+| S34 | 8:40 | Museum photos of the two Goblins | USAF Museum, SAC & Aerospace Museum (Nebraska) | **⚠ VERIFY** both locations |
+| S39 | 10:05 | FICON: RF-84K under a GRB-36 | NARA, Wikimedia. **Fallback `[3D→AI]`** only if you own both models | **⚠ VERIFY** the programme details |
+
+#### Everything to verify, in one list
+
+**Visual accuracy (check against the USAF Museum photos and a 3-view):**
+- the Goblin's hook, wing fold direction, tail fins, skid, gun ports and engine layout;
+- the B-29 trapeze shape;
+- the B-36 variant (jet pods or not).
+
+**Facts shown on screen:**
+- the dimensions;
+- the ranges on the map;
+- the 23 Aug 1948 date and pilot;
+- the canopy-strike details;
+- 7 flights / 3 hook-ups;
+- the Oct 1948 hook-up date;
+- the Oct 1949 cancellation;
+- the museum locations;
+- the Zveno photo;
+- the FICON details;
+- whether you name DARPA Gremlins.
+
+**Disclosure ON at upload** because of S04, S24–S28, and S40 if it shows a real programme.
 
 ### Footage shopping list (search terms)
 
