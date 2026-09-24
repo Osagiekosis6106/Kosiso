@@ -1,0 +1,578 @@
+# beat|mode|scene|action|camera|light|mood|search (source:terms;source:terms)
+# modes: F archival film, P archival photo, S modern stock, G graphic board, B AI b&w, C AI colour, R AI cinematic recreation
+1|G|Cream graph-paper board, typewriter-style date JULY 30, 1971 stamped in the center, a small pinned black and white photo of stockyard gates beside it|date stamps in, photo slides in|TOP|||
+2|P|the stone entrance gate of the Union Stock Yards in Chicago with cattle pens behind it|slow push-in on the gate|WS|DAY|GRIEF|loc:Union Stock Yards;fsa:stockyards
+3|F|1940s: the Chicago stockyards, thousands of cattle in wooden pens, men on horseback riding the alleys between them|cattle moving through the pens|AER|DAY|NOS|prelinger:stockyards;fsa:stockyards Chicago
+4|B|1950s: a working man in a flat cap and canvas work jacket walking toward massive factory gates, other workers streaming in around him|he walks away from camera toward the gates|BACK|DAWN|PRIDE|
+5|C|a young working-class couple standing on the lawn of their small new ranch house, the man in work clothes, the woman in a floral dress|the couple looks up proudly at the house|WS|DAY|NOS|
+6|C|a modest 1960s kitchen, a mother serving pot roast at the dinner table, the father still in his work shirt, three children seated|the mother sets the dish down|MS|TUNG|NOS|
+7|F|1950s: a family at home in their living room, father reading the paper, children on the rug|slow push-in on the family|MS|WIN|QUIET|prelinger:family home 1950s;prelinger:home movies family
+8|S|a present-day couple at a kitchen table at night surrounded by bills|the man rubs his forehead|OTS|TUNG|GRIEF|pexels:couple paying bills;pexels:stressed couple bills
+9|G|Grey graph-paper board, huge semi-transparent #14 on the left, a cut-out paper contract on the right with a red stamp JOB FOR LIFE|number fades in, stamp thumps down|TOP|||
+10|B|1970s: a dim print shop, a silent hot-metal typesetting machine with an empty stool, dust sheets over the other machines|dust motes falling through a shaft of light|MS|WIN|GRIEF|
+11|C|a modest suburban house at dusk with warm lights on in every window and a 1960s sedan in the driveway|slow push-in toward the front door|WS|DUSK|NOS|
+12|F|1950s: a suburban street, children on bicycles, fathers mowing lawns in front of new houses|children ride past the camera|WS|DAY|NOS|prelinger:suburbs 1950s;prelinger:home movies
+13|G|Cream graph-paper board, title 25 ONE-PAYCHECK JOBS in bold cream letters over a pinned black and white photo of a 1960s house, dashed border|title builds letter by letter|TOP|||
+14|P|1960s aerial view of new tract houses lined up in rows|slow pan across the rooftops|AER|DAY|NOS|loc:housing development;nara:housing development 1960s
+15|G|Grey graph-paper board, giant semi-transparent #25, curved white label ELEVATOR OPERATOR arcing over a cut-out brass elevator control lever, white hand-drawn doodles|number slams in, lever slides in|TOP|||
+16|P|New York skyscrapers seen from street level|slow tilt up the towers|LOW|DAY|PRIDE|loc:New York skyscrapers;fsa:New York office building
+17|B|1950s: an elevator operator in a pressed uniform, white gloves and a peaked cap, standing beside the open brass gate of an ornate elevator car|he stands at attention, hand resting on the lever|MS|TUNG|PRIDE|
+18|P|an elevator operator at the controls of his car|slow push-in on the hand lever|MS|TUNG|NOS|fsa:elevator operator;loc:elevator operator
+19|B|1950s: a white-gloved hand easing a brass elevator control lever as the floor edge lines up with the threshold|the hand eases the lever back|CU|TUNG|NOS|
+20|B|1950s: a department store elevator car crowded with shoppers in hats and coats, the operator's back to camera facing the gate|the gate slides open|OTS|TUNG|NOS|
+21|P|a busy department store floor, shoppers at glass counters|slow pan across the floor|WS|TUNG|NOS|loc:department store interior;nypl:department store
+22|C|1950s: an elevator operator tipping his cap to a regular customer, a woman in gloves and a pillbox hat stepping into his car|he tips his cap|MS|TUNG|NOS|
+23|R|1950s: a businessman in a grey suit and fedora walking toward a waiting elevator at closing time, the operator holding the gate, marble office lobby|the businessman walks toward the car|BACK|TUNG|NOS|
+24|G|Grey graph-paper board, a pinned cut-out union membership card, curved label UNION · STEADY WORK|card slides in, label arcs over it|TOP|||
+25|P|a crowded New York street in the 1940s|people walk past|WS|DAY|NOS|fsa:New York street;loc:New York City street
+26|C|1950s: a small city apartment kitchen, a mother feeding two children at a table by the window, a uniform cap hanging on a hook by the door|the mother pours milk|MS|WIN|NOS|
+27|G|Cream graph-paper board, 1945 stamped large in the center, label STRIKE underneath|year stamps in|TOP|||
+28|P|striking building workers on a New York sidewalk in 1945|slow push-in|MS|DAY|TENSE|loc:elevator strike 1945;loc:strike New York 1945
+29|B|1945: a crowd of office workers in hats and overcoats stranded on a Manhattan sidewalk outside a tall building|people stand looking up at the building|WS|OVC|TENSE|
+30|B|1945: office workers in suits and dresses climbing a long stairwell, one man mopping his brow with a handkerchief|they climb away from camera|HIGH|FLUOR|TENSE|
+31|R|1950s: building owners in a wood-panelled office studying a brochure for automatic elevators|one man taps the brochure|OTS|TUNG|COLD|
+32|F|1950s: an automatic push-button elevator, doors closing by themselves|the doors slide shut|MS|FLUOR|COLD|prelinger:elevator;prelinger:automatic elevator
+33|S|a vintage manual elevator with a brass folding gate in an old building today|the gate is pulled open|MS|TUNG|QUIET|pexels:vintage elevator;wiki:manual elevator operator
+34|B|1960s: an empty elevator car with its brass gate open, the operator's stool empty, a pair of white gloves left on the seat|slow push-in on the gloves|CU|TUNG|GRIEF|
+35|G|Grey graph-paper board, giant semi-transparent #24, curved label DRIVE-IN THEATER OWNER arcing over a cut-out metal drive-in speaker|number slams in, speaker slides in|TOP|||
+36|P|a 1950s drive-in theater full of cars at night|slow push-in toward the screen|WS|NIGHT|NOS|loc:drive-in theater;fsa:drive-in
+37|G|Cream graph-paper board, counter rolling from 0 to 4,000+ with label DRIVE-INS · LATE 1950s|counter rolls up|TOP|||
+38|C|1950s: a huge white drive-in screen glowing at dusk in the middle of cornfields, rows of cars facing it|light flickers across the screen|AER|DUSK|NOS|
+39|F|1950s: cars pulling into a drive-in theater at dusk|cars roll in one after another|WS|DUSK|NOS|prelinger:drive-in;prelinger:drive-in intermission
+40|C|1950s: a family-run drive-in snack bar, the husband behind the counter in a paper cap, his wife at the register|the husband hands over a box of popcorn|MS|TUNG|NOS|
+41|C|1950s: a man in shirtsleeves standing in an empty grass field at the edge of a small town, looking at the land|he surveys the field, hands on hips|BACK|DAY|HOPE|
+42|B|1950s: workers raising the wooden frame of a drive-in movie screen with ropes and a flatbed truck|they pull the frame upright|WS|DAY|PRIDE|
+43|G|Cream graph-paper board, a calendar strip MAY → SEPTEMBER and label 6 NIGHTS A WEEK|strip slides across|TOP|||
+44|C|1950s: a woman in a cardigan in a small drive-in ticket booth handing a ticket to a driver, teenagers behind a lit concession counter in the background|she hands the ticket through the window|MS|DUSK|NOS|
+45|F|1950s: station wagons full of families arriving at a drive-in|cars roll in|WS|DUSK|NOS|prelinger:drive-in theater;prelinger:station wagon
+46|C|1950s: children in pajamas peeking over the back seat of a station wagon, a glowing drive-in screen through the windshield|the kids giggle and point|OTS|NIGHT|NOS|
+47|B|1950s: a metal drive-in speaker hooked on a car window, the big screen blurred in the background|slow push-in on the speaker|CU|NIGHT|NOS|
+48|G|Cream graph-paper board, pinned photo of a drive-in lot, a rising arrow label LAND VALUE ↑|arrow climbs|TOP|||
+49|B|1960s: a family in a car at a drive-in waiting in bright evening daylight, the screen still blank, children restless in the back|the kids yawn and slump|MS|DUSK|QUIET|
+50|F|1950s: a family watching television together on the couch|the family laughs at the screen|MS|TUNG|NOS|prelinger:television family;prelinger:color television
+51|P|1960s aerial of a new shopping center surrounded by a huge parking lot|slow pan|AER|DAY|COLD|nara:shopping center 1960s;loc:shopping center
+52|G|Cream graph-paper board, counter falling 4,000 → 300, label TODAY|numbers roll down|TOP|||
+53|S|an abandoned drive-in screen overgrown with weeds|slow push-in|WS|OVC|STARK|pexels:abandoned drive-in;pixabay:drive-in theater
+54|S|rows of self-storage units|slow pan|WS|OVC|STARK|pexels:self storage units;pexels:storage units aerial
+55|B|1960s: an empty drive-in lot at dawn, rows of speaker posts standing in the grass, the blank screen behind|mist drifts across the lot|WS|DAWN|GRIEF|
+56|G|Grey graph-paper board, giant semi-transparent #23, curved label ENCYCLOPEDIA SALESMAN arcing over a cut-out stack of leather-bound books|number slams in, books slide in|TOP|||
+57|C|a neat 1960s suburban street with ranch houses and sedans, a man in a suit walking along the sidewalk with a briefcase|he walks along the sidewalk|WS|DAY|NOS|
+58|C|a 1960s salesman in a suit sitting in his parked sedan counting a stack of order forms and dollar bills|he smiles as he counts|MS|DAY|PRIDE|
+59|G|Cream graph-paper board, label COMMISSION arcing over a pinned black and white photo of a 1960s street|label slides in|TOP|||
+60|C|a 1960s salesman in a suit and tie ringing the doorbell of a small suburban house, a sample book under his arm|he presses the bell|BACK|DAY|NOS|
+61|B|1960s: a salesman on a front porch holding a leather sample volume as a housewife opens the screen door|the door swings open|MS|DAY|NOS|
+62|B|1960s: a salesman seated at a kitchen table with a young couple, brochures spread across the oilcloth|he opens the sample volume|OTS|TUNG|NOS|
+63|P|a family sitting together at a kitchen table|slow push-in|MS|WIN|NOS|fsa:family kitchen;loc:family at kitchen table
+64|C|two children in 1960s pajamas looking up in wonder at their parents in a living room|they smile up at their parents|MS|TUNG|HOPE|
+65|B|1960s: a full set of leather-bound encyclopedias with gold-tooled spines lined along a living room bookshelf, no readable lettering|camera slides along the spines|CU|WIN|PRIDE|
+66|G|Cream graph-paper board, cut-out installment coupon book with label $ EVERY MONTH|coupon pages flip|TOP|||
+67|C|a proud 1960s father placing the last encyclopedia volume on a living room shelf while his family watches|he slides the book into place|MS|TUNG|PRIDE|
+68|C|a 1960s boy doing homework at the dining table with a big open encyclopedia, his father leaning over to point at a page|the father points at the page|MS|TUNG|NOS|
+69|P|children reading books together|slow push-in|MS|WIN|NOS|fsa:children reading;loc:children reading books
+70|C|a 1960s mother tucking a book under her daughter's arm at the front door before school|she waves goodbye|MS|DAY|HOPE|
+71|G|Cream graph-paper board, label COMMISSION ONLY with a small house icon popping up beside it|house icon pops|TOP|||
+72|C|a 1960s salesman and his wife standing in front of their own new house holding up the keys|he holds up the keys|WS|DAY|PRIDE|
+73|S|a beige retro personal computer on a desk|slow push-in on the screen|MS|TUNG|COLD|pexels:retro computer;prelinger:computer
+74|R|1990s: a teenager at a beige desktop computer sliding in a disc, the monitor glow on the wall, a shelf of dusty encyclopedias behind him|he slides the disc into the drive|OTS|NIGHT|COLD|
+75|G|Cream graph-paper board, stamp 1996 — DOOR-TO-DOOR SALES FORCE DISMISSED|stamp thumps down|TOP|||
+76|G|Cream graph-paper board, timeline 1768 → 2012 with label 244 YEARS, then LAST PRINT EDITION|timeline draws left to right|TOP|||
+77|S|a hand scrolling through an article on a smartphone|thumb scrolls|CU|WIN|COLD|pexels:scrolling phone;pexels:reading on smartphone
+78|G|Grey graph-paper board, giant semi-transparent #22, curved label INSURANCE DEBIT MAN arcing over a cut-out small premium receipt book|number slams in, book slides in|TOP|||
+79|P|working-class row houses at dusk|slow pan along the houses|WS|DUSK|NOS|fsa:row houses;fsa:working class neighborhood
+80|B|1950s: a hand knocking on a wooden front door with a small glass window|knuckles rap on the door|CU|DUSK|NOS|
+81|C|1950s: an insurance man in a trench coat and fedora with a leather satchel on a front stoop as a housewife opens the door|he tips his hat|MS|DUSK|NOS|
+82|C|1950s: an insurance man seated at a kitchen table chatting with an elderly couple, coffee cups between them|he laughs with them|MS|TUNG|NOS|
+83|G|Cream graph-paper board, calendar page EVERY WEEK and falling coin icons 25¢ and 50¢|coins drop in|TOP|||
+84|B|1950s: a hand writing a small entry in a worn premium receipt book on an oilcloth kitchen table, coins stacked beside it|the pencil writes|CU|TUNG|NOS|
+85|C|1950s: a mother tucking a small receipt book into a kitchen drawer beside the flatware|she slides the drawer shut|MS|TUNG|NOS|
+86|P|an insurance agent visiting a family at their home|slow push-in|MS|DAY|NOS|fsa:insurance agent;loc:insurance agent
+87|C|1950s: an insurance man walking his route along a tree-lined street of wooden houses, satchel over his shoulder|he walks away down the sidewalk|BACK|DAY|NOS|
+88|B|1950s: an insurance man on a porch talking with a family, children hanging on the railing|the children wave|WS|DAY|NOS|
+89|C|1950s: a young mother on a porch showing her newborn baby to the insurance man|he smiles down at the baby|MS|DAY|NOS|
+90|P|mourners at a small-town funeral|slow push-in|MS|OVC|GRIEF|fsa:funeral;loc:funeral
+91|B|1950s: an insurance man in a dark suit at the door of a grieving household, hat held against his chest|he lowers his head|MS|OVC|GRIEF|
+92|B|1950s: a man's hand passing an envelope into a widow's hand at a doorway|the envelope passes between their hands|CU|OVC|GRIEF|
+93|C|1950s: an insurance man mowing the lawn of his own modest house on a Saturday, his wife on the porch|he pushes the mower|WS|DAY|PRIDE|
+94|G|Cream graph-paper board, cut-out pay stub with label PAYROLL DEDUCTION|stub slides in|TOP|||
+95|F|1950s: a bank teller window, customers depositing checks|the teller stamps a slip|MS|FLUOR|COLD|prelinger:bank;prelinger:checking account
+96|R|1970s: insurance executives around a conference table reviewing a chart of rising costs|a man pushes a folder forward|OTS|FLUOR|COLD|
+97|G|Cream graph-paper board, a hand-drawn route map of streets whose lines fade away one by one, label 1970s–1980s|route lines fade|TOP|||
+98|B|1970s: an empty porch with a closed front door at dusk, nobody knocking|the porch light flickers on|MS|DUSK|GRIEF|
+99|G|Grey graph-paper board, giant semi-transparent #21, curved label HATTER · DANBURY, CT arcing over a cut-out felt fedora|number slams in, hat slides in|TOP|||
+100|P|a city crowd where every man wears a hat|slow push-in|WS|DAY|NOS|fsa:men in hats crowd;loc:crowd men hats
+101|F|1940s: a busy downtown sidewalk, a sea of men in fedoras|the crowd moves past|WS|DAY|NOS|prelinger:crowd street 1940s;prelinger:city street
+102|P|Danbury, Connecticut and its hat factories|slow push-in|WS|DAY|PRIDE|loc:Danbury Connecticut;loc:hat factory
+103|G|Cream graph-paper board, label HAT CITY OF THE WORLD arcing over a pinned photo of the town|label arcs in|TOP|||
+104|P|workers inside a hat factory|slow pan|MS|WIN|PRIDE|loc:hat factory;loc:hatters
+105|B|1940s: a hat factory floor, workers shaping felt hat bodies on wooden blocks, steam rising|a worker presses a brim|MS|WIN|PRIDE|
+106|C|1950s: a hatter coming home to a small clapboard house, his wife and two sons waiting on the steps|the sons run to meet him|WS|DUSK|NOS|
+107|B|1950s: a father and teenage son side by side at a hat-making bench|the father shows the son how to steam a brim|MS|WIN|PRIDE|
+108|P|hat makers at hard work in a factory|slow push-in|MS|WIN|TENSE|loc:hat makers at work;fsa:factory worker
+109|B|1940s: hands working wet felt over a steaming bench, vapor rising|steam curls upward|CU|WIN|TENSE|
+110|G|Grey graph-paper board, cut-out chemical symbol Hg with label MERCURY and a small warning mark|symbol pulses|TOP|||
+111|B|1940s: an older hatter's trembling hands resting on a workbench beside his tools|his hands tremble slightly|CU|WIN|GRIEF|
+112|F|1960s: a city sidewalk where young men walk bareheaded|the crowd walks past|WS|DAY|QUIET|prelinger:1960s street scene;prelinger:city street 1960s
+113|C|1960s: young men with bare heads and short haircuts leaning against a low-roofed sedan|one of them laughs|MS|DAY|NOS|
+114|C|1960s: an old felt hat left on a coat rack in a hallway, gathering dust|dust drifts in the light|CU|WIN|GRIEF|
+115|B|1960s: an empty hat factory floor with idle wooden blocks and shelves of unsold hats|light falls through dusty windows|WS|WIN|GRIEF|
+116|G|Cream graph-paper board, stamp 1987 — LAST FACTORY CLOSED|stamp thumps down|TOP|||
+117|S|an old brick factory building in a New England town today|slow pan|WS|OVC|STARK|pexels:old brick factory;wiki:Danbury hat factory
+118|B|1960s: a single felt fedora lying on an empty factory floor in a shaft of light|slow push-in|CU|WIN|GRIEF|
+119|G|Grey graph-paper board, giant semi-transparent #20, curved label MOVIE PROJECTIONIST arcing over a cut-out film reel|number slams in, reel spins in|TOP|||
+120|B|1950s: a narrow stair leading up to a projection booth door behind a movie theater balcony|slow push up the stairs|LOW|TUNG|QUIET|
+121|P|a projectionist inside his booth|slow push-in|MS|BOOTH|NOS|fsa:projectionist;loc:motion picture projectionist
+122|B|1950s: a projectionist threading 35mm film through a large projector in a dark booth, hands in focus|he threads the film|CU|BOOTH|NOS|
+123|C|1950s: a movie screen seen through the small booth window, a bright beam of light cutting through the haze of the auditorium|the beam flickers|OTS|BOOTH|NOS|
+124|B|1950s: a projectionist watching the screen through a small port window, his hand ready on the changeover switch|he watches intently|OTS|BOOTH|TENSE|
+125|F|film running through a projector, reels spinning|the reels spin|CU|BOOTH|NOS|prelinger:projector;prelinger:movie projection
+126|P|a packed 1950s movie audience|slow push-in|WS|BOOTH|NOS|loc:movie theater audience;fsa:movie theater
+127|G|Cream graph-paper board, label SKILLED TRADE · UNION arcing over a pinned photo of a projection booth|label slides in|TOP|||
+128|C|1950s: a projectionist in shirtsleeves leaving the theater's back door at night, lunchbox in hand|he walks away down the alley|BACK|NIGHT|NOS|
+129|C|1950s: a small family house at night with a single porch light left on|the front door opens|WS|NIGHT|NOS|
+130|B|1950s: a projectionist climbing the dark booth stairs with a film canister under his arm|he climbs|BACK|BOOTH|QUIET|
+131|P|a movie theater lit up at night|slow push-in|WS|NIGHT|NOS|fsa:movie theater night;loc:theater marquee night
+132|B|1950s: a projectionist alone in his booth, a silhouette against the bright port window, arms folded proudly|he stands still as the beam flickers|MS|BOOTH|PRIDE|
+133|F|1950s: a theater audience laughing at a film|the audience laughs|WS|BOOTH|NOS|prelinger:movie audience;prelinger:theater audience
+134|R|1980s: a multiplex projection room with a long row of automated projectors and film platters, one young worker walking between them|he walks down the row|WS|FLUOR|COLD|
+135|S|a modern digital cinema projector|slow push-in|MS|BOOTH|COLD|pexels:digital cinema projector;pexels:movie theater projector
+136|G|Grey graph-paper board, stamp 2013 — FILM PRINTS END over a cut-out film can|stamp thumps down|TOP|||
+137|R|2010s: a darkened projection booth with one sleek digital projector and a laptop, old film reels stacked in a corner|a finger presses a button|CU|BOOTH|COLD|
+138|S|a modern cinema audience watching a film|slow push-in|WS|BOOTH|QUIET|pexels:cinema audience;pexels:movie theater audience
+139|B|1960s: an abandoned projection booth, dusty projector, film strips hanging, light leaking through the port window|dust drifts through the beam|WS|BOOTH|GRIEF|
+140|G|Grey graph-paper board, giant semi-transparent #19, curved label SERVICE STATION MAN arcing over a cut-out vintage gas pump with no logo|number slams in, pump slides in|TOP|||
+141|P|a small-town gas station|slow push-in|WS|DAY|NOS|fsa-color:gas station;fsa:filling station
+142|F|1950s: a car pulling into a service station, the attendant running out|the attendant jogs to the car|WS|DAY|NOS|prelinger:service station;prelinger:gas station attendant
+143|C|1960s: a service station attendant in a pressed uniform and cap jogging out to a family sedan|he jogs toward the car|MS|DAY|NOS|
+144|B|1960s: an attendant pumping gas into a sedan while checking the dipstick under the raised hood|he wipes the dipstick|MS|DAY|NOS|
+145|C|1960s: an attendant washing a windshield with a squeegee while children in the back seat watch|the squeegee sweeps across the glass|OTS|DAY|NOS|
+146|F|1950s: an attendant kneeling to check a car's tire pressure|he kneels at the tire|CU|DAY|NOS|prelinger:gas station service;prelinger:service station
+147|P|a family-run filling station with the owner out front|slow push-in|WS|DAY|NOS|fsa:gas station family;fsa-color:filling station
+148|B|1960s: a mechanic in coveralls under the hood of a car in a small service bay, tools hanging on the wall|he tightens a bolt|MS|TUNG|PRIDE|
+149|C|1960s: a mechanic chatting with a family at the pump, handing a lollipop to a small child|he hands over the lollipop|MS|DAY|NOS|
+150|C|1960s: a service station owner and his wife in front of their small house next to the station|they stand proudly together|WS|DUSK|PRIDE|
+151|G|Cream graph-paper board, three icons pop in a row HOUSE • SCHOOL • RETIREMENT|icons pop|TOP|||
+152|P|long lines of cars waiting at a gas station during the 1970s shortage|slow push-in|WS|DAY|TENSE|nara:gas line 1973;nara:DOCUMERICA gasoline shortage
+153|R|1970s: a long line of cars queuing at a gas station, a driver drumming his fingers on the steering wheel|his fingers drum|OTS|DAY|TENSE|
+154|R|1970s: a woman in a 1970s coat pumping her own gas at a self-service island|she lifts the nozzle|MS|DAY|COLD|
+155|S|a modern self-service gas station at night|slow push-in|WS|NIGHT|COLD|pexels:gas station night;pexels:self service gas pump
+156|S|a convenience store aisle|slow pan|MS|FLUOR|COLD|pexels:convenience store aisle
+157|G|Cream graph-paper board, cut-out outline of New Jersey with label STILL FULL SERVICE|state outline pops|TOP|||
+158|B|1960s: an empty service bay with a hanging work lamp and an old gas pump outside the open door|the lamp sways|WS|DUSK|GRIEF|
+159|G|Grey graph-paper board, giant semi-transparent #18, curved label TV REPAIRMAN arcing over a cut-out 1960s console television|number slams in, TV slides in|TOP|||
+160|B|1960s: a console television with a dark blank screen in a living room, a family standing around it looking worried|the father taps the set|MS|TUNG|TENSE|
+161|C|1960s: a mother on a wall telephone in the kitchen calling for help|she dials|MS|TUNG|NOS|
+162|F|1950s: a television repairman at work on a set|he pulls a tube|MS|TUNG|NOS|prelinger:television repair;prelinger:television servicing
+163|B|1960s: a repairman with the back off a television, pulling vacuum tubes to test them|he pulls a glowing tube|CU|TUNG|NOS|
+164|C|1960s: a family cheering as the television picture comes back, children on the rug|the kids clap|WS|TUNG|NOS|
+165|P|a small television repair shop storefront|slow push-in|WS|DAY|NOS|loc:television repair shop;nara:television repair
+166|B|1960s: the inside of a small repair shop, the counter piled with tubes and chassis, shelves of sets waiting|slow pan|WS|TUNG|NOS|
+167|C|1960s: a repair shop owner behind his counter greeting a customer carrying a radio|he takes the radio|MS|TUNG|NOS|
+168|C|1960s: Main Street shopkeepers waving to the repairman as he walks by with his tool case|they wave|WS|DAY|PRIDE|
+169|G|Cream graph-paper board, labels slide in EXPENSIVE → WORTH FIXING beside a cut-out TV|labels slide in|TOP|||
+170|C|1960s: a repairman's truck parked in front of his own small house, kids playing on the lawn|slow push-in|WS|DAY|PRIDE|
+171|F|close view of transistors and circuit boards|circuits in close-up|CU|FLUOR|COLD|prelinger:transistor;prelinger:electronics
+172|G|Cream graph-paper board, map with arrows drawing from overseas into the United States, label CHEAP SETS|arrows draw|TOP|||
+173|R|1970s: a discount store aisle stacked with plain boxed television sets, a shopper lifting one|a shopper lifts a box|MS|FLUOR|COLD|
+174|S|an old television left on a curb|slow push-in|MS|DAY|STARK|pexels:old tv trash;pexels:abandoned television
+175|S|a closed and empty small shop storefront|slow push-in|WS|OVC|STARK|pexels:closed shop;pexels:empty storefront
+176|B|1970s: an old repairman locking the door of his shop for the last time|he turns the key|BACK|DUSK|GRIEF|
+177|B|1960s: a workbench with a soldering iron, tubes and tools left untouched under a dusty lamp|slow push-in|CU|TUNG|GRIEF|
+178|G|Grey graph-paper board, giant semi-transparent #17, curved label SWITCHBOARD OPERATOR arcing over a cut-out operator headset|number slams in, headset slides in|TOP|||
+179|C|1950s: a woman lifting a candlestick telephone in a farmhouse kitchen|she lifts the receiver|MS|WIN|NOS|
+180|P|a telephone operator at a switchboard wearing a headset|slow push-in|MS|FLUOR|NOS|loc:telephone operator;loc:switchboard operators
+181|F|a long room of switchboard operators at work|operators plug in cords|WS|FLUOR|NOS|prelinger:telephone operators;prelinger:switchboard
+182|P|rows of switchboard operators in a telephone exchange|slow pan|WS|FLUOR|NOS|loc:telephone exchange operators;nara:telephone operators
+183|B|1950s: an operator's hands plugging cords into a jack panel at speed|her hands plug cords|CU|FLUOR|NOS|
+184|B|1950s: an operator seen from behind in front of a vast switchboard glowing with small lights|she reaches up to a jack|OTS|FLUOR|NOS|
+185|G|Cream graph-paper board, counter HUNDREDS OF THOUSANDS beside a headset icon|counter rolls|TOP|||
+186|C|1950s: a young widow in a cardigan walking her two children to school before her shift|she holds their hands|BACK|DAWN|HOPE|
+187|B|1950s: rows of women operators in headsets on a break, sharing coffee and laughing|they laugh together|MS|FLUOR|NOS|
+188|C|1950s: an operator receiving her pay envelope from a supervisor|she opens the envelope|MS|FLUOR|PRIDE|
+189|P|a small-town telephone switchboard and its operator|slow push-in|MS|WIN|NOS|fsa:telephone operator small town;fsa:switchboard
+190|B|1950s: a small-town night operator leaning into her switchboard, urgent, a fire glow visible through the window|she plugs a line fast|MS|NIGHT|TENSE|
+191|G|Grey graph-paper board, label 1951 · ENGLEWOOD, NJ arcing over a cut-out rotary dial|the dial spins|TOP|||
+192|F|1950s: a finger dialing a rotary telephone|the finger dials|CU|TUNG|NOS|prelinger:direct distance dialing;prelinger:dial telephone
+193|G|Cream graph-paper board, a map line drawing from New Jersey to California|line draws across the map|TOP|||
+194|F|automatic switching equipment clattering in a telephone exchange|relays click|CU|FLUOR|COLD|prelinger:crossbar switching;prelinger:telephone exchange
+195|G|Cream graph-paper board, label 1983 · BRYANT POND, MAINE over a pinned photo of a small Maine village|label arcs in|TOP|||
+196|B|1980s: an old hand-crank switchboard in a small-town front room, the operator's chair empty|slow push-in|MS|WIN|GRIEF|
+197|B|1960s: a telephone receiver left off the hook on a kitchen table|slow push-in|CU|TUNG|QUIET|
+198|G|Cream graph-paper board, label PATTERN BREAK #1, four pinned photos slide in: elevator, projector, switchboard, television|photos pin in one by one|TOP|||
+199|P|a proud worker portrait|slow push-in|MS|DAY|PRIDE|fsa:worker portrait;fsa:factory worker
+200|B|1950s: a switchboard operator at her board, backlit, seen from behind|she works steadily|OTS|FLUOR|PRIDE|
+201|C|1960s: a television repairman finishing a job, wiping his hands on a rag|he wipes his hands|MS|TUNG|PRIDE|
+202|F|1960s: automated machinery running with no workers|machines move on their own|MS|FLUOR|COLD|prelinger:automation;prelinger:automation factory
+203|G|Cream graph-paper board, three crossed-out stamps NO PAYCHECK • NO PENSION • NO DAY OFF|stamps thump down|TOP|||
+204|R|1960s: a man in a hat standing alone in an empty office corridor|he turns his head slightly|BACK|FLUOR|QUIET|
+205|C|1960s: a housewife pressing an automatic elevator button in a modern lobby|she presses the button|CU|FLUOR|NOS|
+206|F|1960s: a finger pressing buttons on a new push-button telephone|the finger presses the buttons|CU|TUNG|NOS|prelinger:touch-tone telephone;prelinger:push button telephone
+207|C|1970s: a family carrying a new boxed television out of a discount store to their car|they load it into the trunk|WS|DAY|NOS|
+208|P|shoppers crowding a store in the 1960s|slow push-in|WS|DAY|NOS|nara:shoppers 1960s;loc:shoppers
+209|B|1950s: a dim hallway where an elevator operator stands alone beside his car|he stands still|MS|TUNG|GRIEF|
+210|B|1950s: the silhouette of a worker standing in a doorway, bright light behind him|he steps out of frame|BACK|DAY|GRIEF|
+211|G|Cream graph-paper board, a small town map with four pins removed one by one|pins pop off|TOP|||
+212|P|an aerial view of a factory neighborhood|slow pan|AER|DAY|PRIDE|loc:factory town aerial;fsa:mill town
+213|F|industrial stamping presses pounding|the press stamps|CU|FLUOR|COLD|prelinger:stamping press;prelinger:machines
+214|G|Grey graph-paper board, giant semi-transparent #16, curved label MILKMAN arcing over a cut-out glass milk bottle|number slams in, bottle slides in|TOP|||
+215|G|Cream graph-paper board, a pie chart filling to one third, label 1 IN 3 QUARTS · 1963|pie fills|TOP|||
+216|F|1950s: a milk delivery truck driving through town at dawn|the truck moves down the street|WS|DAWN|NOS|prelinger:milk delivery;prelinger:milkman
+217|C|1960s: a white milk delivery truck creeping down a quiet suburban street at dawn, porch lights still on|the truck rolls slowly|WS|DAWN|NOS|
+218|B|1960s: a milkman in a white uniform and cap setting glass bottles on a front porch and collecting the empties|he sets the bottles down|MS|DAWN|NOS|
+219|P|a milkman delivering to a house|slow push-in|MS|DAWN|NOS|fsa:milkman;loc:milk delivery
+220|C|1960s: a folded note tucked into an empty milk bottle on a porch step, no readable words|slow push-in|CU|DAWN|NOS|
+221|C|1960s: a milkman chatting with a young mother holding a baby at her screen door|he smiles|MS|DAWN|NOS|
+222|B|1960s: a milkman removing his cap at the door of a house with a mourning wreath|he bows his head|MS|DAWN|GRIEF|
+223|F|children running after an ice or milk truck in summer|the kids run|WS|DAY|NOS|prelinger:ice truck;prelinger:children summer
+224|P|a milk truck driver with his truck|slow push-in|MS|DAY|PRIDE|loc:milk truck driver;fsa:milk truck
+225|G|Cream graph-paper board, label WAGE + COMMISSION arcing over a pinned milkman photo|label slides in|TOP|||
+226|C|1960s: a milkman, his wife and three kids on the steps of their own small house, sedan out front|the kids wave|WS|DAY|PRIDE|
+227|F|1950s: supermarket aisles full of shoppers pushing carts|shoppers push carts|WS|FLUOR|NOS|prelinger:supermarket 1950s;prelinger:grocery store
+228|B|1960s: a supermarket dairy case stacked with paper milk cartons and plastic jugs, no labels|a hand pulls out a carton|CU|FLUOR|COLD|
+229|C|1960s: a mother loading milk cartons into a new refrigerator in her kitchen|she closes the fridge door|MS|TUNG|NOS|
+230|G|Cream graph-paper board, bar chart 1963 30% → 1975 7%|bars drop|TOP|||
+231|B|1970s: an empty wire milk crate on a quiet porch at dawn|slow push-in|CU|DAWN|GRIEF|
+232|G|Cream graph-paper board, bar shrinking to TODAY: UNDER 1%|bar shrinks|TOP|||
+233|S|an empty front porch in the morning light|slow push-in|MS|DAWN|QUIET|pexels:front porch morning
+234|B|1960s: a milk truck driving away down an empty street at dawn|the truck fades into the distance|BACK|DAWN|GRIEF|
+235|G|Grey graph-paper board, giant semi-transparent #15, curved label RAILROAD FIREMAN arcing over a cut-out coal shovel|number slams in, shovel slides in|TOP|||
+236|F|a steam locomotive thundering across open country|the train thunders past|WS|DAY|PRIDE|prelinger:steam locomotive;prelinger:railroad
+237|P|an engineer and fireman in a locomotive cab|slow push-in|MS|FIRE|PRIDE|fsa:locomotive fireman;fsa-color:railroad engineer
+238|P|a fireman shoveling coal into the firebox|slow push-in|MS|FIRE|PRIDE|fsa:fireman shoveling coal;fsa:locomotive cab
+239|B|1950s: a fireman shoveling coal into a roaring locomotive firebox, lit orange, sweat on his brow, seen from the side|he swings the shovel|MS|FIRE|PRIDE|
+240|C|1950s: a fireman leaning out of a locomotive cab window watching the track ahead|he squints down the line|OTS|DAY|PRIDE|
+241|B|1950s: an engineer showing a young fireman the controls inside the cab|the engineer points at a gauge|OTS|FIRE|PRIDE|
+242|P|a busy railroad yard|slow pan|WS|DAY|NOS|fsa:rail yard;fsa-color:railroad yard
+243|C|1950s: a small brick house a block from a rail yard, a fireman in overalls walking home with his lunch pail|he walks home|BACK|DUSK|NOS|
+244|F|a diesel locomotive rolling past|the diesel rolls past|WS|DAY|COLD|prelinger:diesel locomotive;prelinger:diesel train
+245|P|railroad union men at a meeting|slow push-in|MS|TUNG|TENSE|loc:railroad union meeting;fsa:railroad workers
+246|R|1960s: railroad executives in a boardroom around a table with a model diesel locomotive|one pushes papers across the table|OTS|FLUOR|COLD|
+247|G|Cream graph-paper board, stamp 1963 · CONGRESS ORDERS ARBITRATION over a cut-out gavel|gavel strikes|TOP|||
+248|P|the United States Capitol|slow push-in|WS|DAY|COLD|loc:United States Capitol;nara:Capitol building
+249|G|Cream graph-paper board, ten fireman icons in a row, nine fade out|icons fade|TOP|||
+250|B|1960s: a diesel cab with one engineer at the controls and an empty second seat|slow push-in on the empty seat|CU|DAY|GRIEF|
+251|S|a long freight train rolling through the countryside today|the train passes|WS|DAY|QUIET|pexels:freight train;prelinger:freight train
+252|B|1960s: an empty fireman's seat in a locomotive cab, a coal shovel leaning against the wall|dust floats in the light|CU|DAY|GRIEF|
+253|G|Grey graph-paper board, giant semi-transparent #14, curved label TYPESETTER arcing over a cut-out bar of metal type|number slams in, type slides in|TOP|||
+254|G|Grey graph-paper board, the JOB FOR LIFE stamp from the opening reappears and pulses|stamp pulses|TOP|||
+255|B|1960s: a typesetter in shirtsleeves and a green visor, seen from behind at a large line-casting machine|he works the keyboard|OTS|TUNG|PRIDE|
+256|P|a newspaper composing room full of typesetting machines|slow pan|WS|FLUOR|PRIDE|fsa:linotype;loc:composing room newspaper
+257|F|a hot-metal typesetting machine in operation|the machine clatters|MS|TUNG|PRIDE|prelinger:linotype;prelinger:newspaper printing
+258|B|1960s: the molten lead pot and gears of a hot-metal typesetting machine, glowing metal|brass matrices drop into place|CU|TUNG|PRIDE|
+259|B|1960s: hands lifting a freshly cast bar of lead type from a machine tray|he lifts the shining bar|CU|TUNG|PRIDE|
+260|P|a typesetter at his machine|slow push-in|MS|TUNG|PRIDE|fsa:linotype operator;loc:linotype operator
+261|C|1960s: a group of printers in aprons standing proudly in a composing room|they fold their arms|WS|FLUOR|PRIDE|
+262|G|Cream graph-paper board, label ONE OF THE BEST-PAID UNIONS|label arcs in|TOP|||
+263|C|1960s: a typesetter and his wife in front of their brick house|they smile at each other|WS|DAY|PRIDE|
+264|C|1960s: a proud father in a suit hugging his son at a college graduation|they embrace|MS|DAY|PRIDE|
+265|F|1970s: computer typesetting equipment with a glowing screen|the screen glows with lines of text|CU|FLUOR|COLD|prelinger:phototypesetting;prelinger:computer 1970s
+266|G|Cream graph-paper board, label 1974 · THE DEAL over a pinned photo of a city newspaper building|label slides in|TOP|||
+267|R|1974: union men and newspaper executives shaking hands across a long negotiating table|two men shake hands|OTS|FLUOR|TENSE|
+268|G|Cream graph-paper board, stamp JOB FOR LIFE thumps onto a cut-out contract|stamp thumps|TOP|||
+269|G|Cream graph-paper board, date JULY 1, 1978 types out, label LAST NIGHT OF HOT METAL|date types out|TOP|||
+270|B|1978: a darkened composing room at night, one lamp still on over a silent typesetting machine|the lamp clicks off|WS|NIGHT|GRIEF|
+271|C|1980s: an older printer walking out of a newspaper building on his last day, carrying a small box|he walks away|BACK|DUSK|GRIEF|
+272|B|1980s: rows of silent hot-metal typesetting machines covered in dust sheets in an empty room|slow pan|WS|WIN|GRIEF|
+273|G|Grey graph-paper board, giant semi-transparent #13, curved label LONGSHOREMAN arcing over a cut-out steel cargo hook|number slams in, hook slides in|TOP|||
+274|F|1940s: longshoremen unloading a ship on the docks|men carry sacks down the gangway|WS|DAY|PRIDE|prelinger:longshoremen;prelinger:docks unloading
+275|P|a longshoreman carrying a heavy sack|slow push-in|MS|DAY|PRIDE|fsa:longshoremen;loc:stevedores
+276|B|1950s: longshoremen unloading coffee sacks and banana bunches from a cargo ship hold with hooks|a man hoists a sack|MS|DAY|PRIDE|
+277|P|a busy harbor waterfront lined with ships|slow pan|WS|DAY|PRIDE|loc:New York waterfront;loc:New Orleans docks
+278|F|cargo swung from a ship's hold in a rope sling|the sling rises|MS|DAY|PRIDE|prelinger:cargo ship loading;prelinger:harbor
+279|B|1950s: a longshoreman's hand gripping a steel cargo hook sunk into a burlap sack|he pulls|CU|DAY|PRIDE|
+280|P|dock workers gathered on a rough waterfront|slow push-in|MS|OVC|TENSE|loc:longshoremen shape-up;fsa:dock workers
+281|C|1950s: a longshoreman opening his pay envelope at the end of a shift on the pier|he counts the bills|MS|DUSK|PRIDE|
+282|P|a crowd of longshoremen on the pier|slow pan|WS|DAY|PRIDE|loc:longshoremen crowd;loc:longshoremen
+283|P|Brooklyn row houses|slow push-in|WS|DAY|NOS|fsa:Brooklyn row houses;loc:Hoboken
+284|G|Cream graph-paper board, label APRIL 1956 · 58 BOXES over a cut-out shipping container|container slides in|TOP|||
+285|G|Cream graph-paper board, a map line drawing from Port Newark to Houston|line draws|TOP|||
+286|F|a container crane lifting a box onto a ship|the crane lifts a box|WS|DAY|COLD|prelinger:container ship;nara:container port
+287|S|a modern container port with giant cranes|slow push-in|WS|DAY|COLD|pexels:container port crane
+288|B|1950s: a gang of longshoremen standing idle on a pier watching a crane lift a container|they watch|BACK|OVC|GRIEF|
+289|G|Cream graph-paper board, bar LOADING COST falling to a sliver|bar drops|TOP|||
+290|B|1960s: an empty old pier with rotting pilings and no ships|gulls drift overhead|WS|OVC|GRIEF|
+291|S|a huge container ship at sea from above|slow pan|AER|DAY|COLD|pexels:container ship aerial
+292|B|1970s: a row house street near an empty waterfront, boarded windows, an old man sitting on a stoop|he sits still|WS|OVC|GRIEF|
+293|G|Grey graph-paper board, giant semi-transparent #12, curved label TOOL & DIE MAKER arcing over a cut-out micrometer|number slams in, micrometer slides in|TOP|||
+294|F|a factory line turning out cans and parts|cans stream past|MS|FLUOR|PRIDE|prelinger:can manufacturing;prelinger:factory production
+295|P|a toolmaker at his machine|slow push-in|MS|FLUOR|PRIDE|fsa:tool and die;fsa:toolmaker
+296|B|1950s: a tool and die maker in safety glasses guiding a milling machine through a steel die block, metal curls flying|he turns the wheel|CU|FLUOR|PRIDE|
+297|B|1950s: a micrometer measuring a polished steel part|the thimble turns|CU|FLUOR|PRIDE|
+298|P|an apprentice working beside an older machinist|slow push-in|MS|FLUOR|PRIDE|fsa-color:machinist;fsa:apprentice machinist
+299|C|1960s: a proud tool and die maker in a clean shop apron standing by his machine while others look on|he folds his arms|MS|FLUOR|PRIDE|
+300|G|Cream graph-paper board, label TOP BLUE-COLLAR WAGE arcing over a pinned machinist photo|label arcs in|TOP|||
+301|C|1960s: a family hitching a small fishing boat on a trailer in front of their house|the father tightens a strap|WS|DAY|NOS|
+302|C|1960s: a lakeside cottage at sunset, a family on the wooden dock|the kids jump into the lake|WS|DUSK|NOS|
+303|B|1960s: a father showing his teenage son how to read a blueprint at a workbench|he points at the drawing|OTS|TUNG|PRIDE|
+304|P|a father and son working together|slow push-in|MS|DAY|PRIDE|fsa:father and son;fsa:young machinist
+305|G|Cream graph-paper board, map arrows drawing from the Midwest to the South, then to Mexico|arrows draw|TOP|||
+306|G|Cream graph-paper board, the arrow continues across the ocean to China, label AFTER 2000|arrow draws|TOP|||
+307|S|an abandoned machine shop|slow pan|WS|OVC|STARK|pexels:abandoned machine shop;pexels:abandoned factory interior
+308|R|2010s: a factory manager in a glass office looking at an empty shop floor through the window|he rubs his neck|OTS|FLUOR|COLD|
+309|B|1970s: an empty workbench with a dusty micrometer and a tool rack|slow push-in|CU|WIN|GRIEF|
+310|S|an empty modern factory aisle|slow push-in|WS|FLUOR|STARK|pexels:empty factory;pexels:empty warehouse
+311|G|Grey graph-paper board, giant semi-transparent #11, curved label COAL MINER arcing over a cut-out miner's helmet with lamp|number slams in, helmet slides in|TOP|||
+312|G|Cream graph-paper board, counter rolling to 400,000+ with label 1950|counter rolls|TOP|||
+313|F|coal miners riding the cage down into the mine|the cage descends|MS|NIGHT|PRIDE|prelinger:coal mining;nara:coal miners
+314|P|coal miners with dust-blackened faces|slow push-in|MS|OVC|PRIDE|fsa:coal miners;nara:DOCUMERICA coal miner
+315|P|coal miners on strike|slow push-in|WS|DAY|TENSE|loc:coal strike;fsa:mine union
+316|G|Cream graph-paper board, three stamps WAGES • HEALTH FUND • PENSION|stamps thump down|TOP|||
+317|P|coal camp houses on a hillside|slow pan|WS|OVC|NOS|fsa:coal camp;fsa:coal town houses
+318|C|1950s: a miner's children walking to school down a hollow road, their father watching from the porch|the kids wave back|BACK|DAWN|HOPE|
+319|B|1950s: miners with headlamps in a low dark tunnel, one lit by his lamp|he swings a pick|MS|NIGHT|TENSE|
+320|C|1950s: a miner's wife watching from her kitchen window as her husband walks toward the mine|she watches|OTS|DAWN|TENSE|
+321|F|a continuous mining machine tearing coal from the seam|the machine chews into the coal|MS|NIGHT|COLD|prelinger:continuous miner;prelinger:mining machinery
+322|B|1950s: a huge mining machine with a spinning cutting drum tearing coal from a seam, dust flying|the drum spins|MS|NIGHT|COLD|
+323|B|1960s: miners handing in their lamps at a window one last time|lamps are hung on hooks|MS|FLUOR|GRIEF|
+324|G|Cream graph-paper board, counter falling 400,000 → ABOUT 1/3|counter rolls down|TOP|||
+325|P|a 1970s coal town in decline|slow push-in|WS|OVC|GRIEF|nara:DOCUMERICA coal town;nara:DOCUMERICA Appalachia
+326|S|a strip mine from above|slow pan|AER|OVC|STARK|pexels:strip mine aerial;pexels:coal mine aerial
+327|F|a coal train rolling out of the mountains|the train rolls|WS|DAY|COLD|prelinger:coal train;pexels:coal train
+328|B|1970s: an out-of-work miner sitting on the porch of a hillside house in the hollow, mountains behind|he stares out|MS|OVC|GRIEF|
+329|C|1970s: an empty coal-town main street in a hollow, a closed store, a lone dog|the dog walks across the road|WS|OVC|GRIEF|
+330|G|Grey graph-paper board, giant semi-transparent #10, curved label MEATPACKER arcing over a cut-out butcher's hook|number slams in, hook slides in|TOP|||
+331|G|Cream graph-paper board, the JULY 30, 1971 date from the opening reappears and pulses|date pulses|TOP|||
+332|P|the Union Stock Yards of Chicago from above|slow pan|AER|DAY|PRIDE|loc:Union Stock Yards Chicago;loc:stockyards
+333|P|a big-city meat packing plant|slow push-in|WS|DAY|PRIDE|fsa:packing plant;fsa:meat packing
+334|F|packinghouse workers on the line|workers cut on the line|MS|FLUOR|PRIDE|prelinger:meat packing;prelinger:packing house
+335|B|1950s: packinghouse workers in white smocks and hard hats on a cold processing line, breath visible|they work the line|MS|FLUOR|TENSE|
+336|P|packinghouse workers at a union rally|slow push-in|WS|DAY|PRIDE|loc:packinghouse workers union;fsa:packinghouse workers
+337|G|Cream graph-paper board, two equal wage bars MEATPACKER ≈ AUTOWORKER|bars rise together|TOP|||
+338|C|1960s: a meatpacker and his family in front of a small house a few blocks from the plant, sedan in the driveway|the kids sit on the steps|WS|DAY|PRIDE|
+339|P|a father in work clothes with his children outside their home|slow push-in|MS|DUSK|NOS|fsa:father and children;fsa:worker family
+340|R|1960s: a sleek new windowless packing plant alone on open prairie, tiny cars in the lot|slow push-in|AER|DAY|COLD|
+341|R|1960s: executives in short sleeves and ties touring a new automated processing line|one of them points|OTS|FLUOR|COLD|
+342|G|Cream graph-paper board, map pins moving from big cities to small rural towns, label FAR FROM THE UNIONS|pins move|TOP|||
+343|B|1960s: boxed meat cartons sliding off a conveyor into a refrigerated truck|boxes slide down the conveyor|MS|FLUOR|COLD|
+344|P|an old city packinghouse building|slow push-in|WS|OVC|GRIEF|loc:packing house HAER;loc:meat packing plant
+345|S|the old stone stockyard gate in Chicago today|slow push-in|MS|OVC|GRIEF|wiki:Union Stock Yard Gate;pexels:old stone gate
+346|G|Cream graph-paper board, a wage bar cut in half with label 1980s|bar drops|TOP|||
+347|S|a modern meat processing plant exterior|slow push-in|WS|OVC|COLD|pexels:meat processing plant;pexels:food factory
+348|B|1970s: empty wooden stockyard pens with broken gates under a grey sky|wind moves the grass|WS|OVC|GRIEF|
+349|G|Grey graph-paper board, giant semi-transparent #9, curved label FAMILY DAIRY FARMER arcing over a cut-out milk can|number slams in, can slides in|TOP|||
+350|P|a family dairy farm|slow push-in|WS|DAY|NOS|fsa-color:dairy farm;fsa:dairy farm
+351|G|Cream graph-paper board, map of Wisconsin, New York, Vermont and Pennsylvania filling with dots, label HUNDREDS OF THOUSANDS OF FARMS|dots multiply|TOP|||
+352|C|1960s: a dairy farmer walking forty cows toward a red barn at dusk|the cows amble in|WS|DUSK|NOS|
+353|C|1960s: a classic red barn and silo on a green hillside farm|slow push-in|WS|DAY|NOS|
+354|B|1960s: husband and wife working side by side milking cows in a barn|she carries a full pail|MS|WIN|PRIDE|
+355|P|a farmer standing on his land|slow push-in|WS|DAY|PRIDE|fsa:dairy farmer;fsa-color:farmer
+356|F|a farmer and his son walking the fields together|father and son walk the field|WS|DAY|NOS|prelinger:dairy farm;prelinger:farm family
+357|B|1960s: a farmer milking by lantern light before dawn, snow outside the barn door|milk streams into the pail|CU|DAWN|PRIDE|
+358|C|1960s: farm families at a Sunday church potluck in a small-town church hall|people pass plates|WS|DAY|NOS|
+359|P|a small-town feed store|slow push-in|WS|DAY|NOS|fsa:feed store;fsa:farmers town
+360|P|a rural schoolhouse|slow push-in|WS|DAY|NOS|fsa:rural school;fsa:schoolhouse
+361|S|a large modern dairy barn full of cows|slow pan|WS|FLUOR|COLD|pexels:dairy farm cows;prelinger:milking machine
+362|G|Cream graph-paper board, icon comparison 40 COWS vs THOUSANDS|icons multiply|TOP|||
+363|C|1970s: a farm auction, neighbors in caps gathered around equipment in a muddy yard, the auctioneer on a wagon|the auctioneer gestures|WS|OVC|GRIEF|
+364|B|1970s: a farm couple on their porch watching a stranger drive their tractor away down the lane|the tractor recedes|OTS|OVC|GRIEF|
+365|G|Cream graph-paper board, counter falling to UNDER 30,000 DAIRY HERDS TODAY|counter drops|TOP|||
+366|S|an abandoned red barn|slow push-in|WS|OVC|STARK|pexels:abandoned barn;pixabay:old red barn
+367|B|1970s: an empty barn with stanchions and a single milk pail on the floor|slow push-in|CU|WIN|GRIEF|
+368|G|Cream graph-paper board, label PATTERN BREAK #2|label builds|TOP|||
+369|G|Cream graph-paper board, a blank ledger page with a pencil|the pencil moves across the page|TOP|||
+370|P|a brand new house in the 1960s|slow push-in|WS|DAY|NOS|loc:new house;nara:suburban house 1960s
+371|G|Cream graph-paper board, 1965 NEW HOUSE ≈ $20,000 types out|price types out|TOP|||
+372|G|Cream graph-paper board, FAMILY INCOME ≈ $7,000 A YEAR types out|figure types out|TOP|||
+373|C|1960s: a young couple signing mortgage papers at a bank desk|the pen signs|OTS|TUNG|HOPE|
+374|G|Cream graph-paper board, a house icon balanced against 3 paycheck icons, label ≈ 3 YEARS OF ONE PAYCHECK|icons stack|TOP|||
+375|G|Cream graph-paper board, the same house against 5+ paycheck icons from two earners, label TODAY: 5+ YEARS, 2 PAYCHECKS|icons stack|TOP|||
+376|S|a modern working couple exhausted at home|slow push-in|MS|TUNG|COLD|pexels:tired parents;pexels:couple working late
+377|P|a milkman on his route|slow push-in|MS|DAY|NOS|fsa:milkman;loc:milk delivery
+378|P|a coal miner portrait|slow push-in|MS|OVC|PRIDE|fsa:coal miner
+379|C|1960s: ordinary workers in different uniforms walking home down a residential street at dusk|they walk home|BACK|DUSK|PRIDE|
+380|G|Cream graph-paper board, a cut-out union contract with the stamp THE DEAL|stamp thumps down|TOP|||
+381|F|a factory shift change, workers pouring through the gates|workers pour out|WS|DAY|PRIDE|prelinger:shift change factory;prelinger:factory workers leaving
+382|P|a big factory in its prime|slow push-in|WS|DAY|PRIDE|loc:factory;fsa:factory
+383|G|Cream graph-paper board, label THE FINAL ENTRIES|label builds|TOP|||
+384|B|1960s: hands tearing a typed contract in two over a desk|the paper rips|CU|TUNG|COLD|
+385|G|Grey graph-paper board, giant semi-transparent #8, curved label LOOM FIXER arcing over a cut-out wrench and loom shuttle|number slams in, tools slide in|TOP|||
+386|P|the inside of a textile mill|slow pan|WS|WIN|PRIDE|fsa:textile mill;loc:cotton mill weave room
+387|F|weaving looms running at full speed|shuttles fly|MS|WIN|PRIDE|prelinger:textile mill;prelinger:weaving
+388|B|1950s: a loom fixer in overalls kneeling at a jammed loom, tools spread out|he reaches into the gears|MS|WIN|TENSE|
+389|B|1950s: a loom fixer's hands fitting a new part into a loom mechanism|the part clicks into place|CU|WIN|PRIDE|
+390|C|1950s: a long weave room full of looms, weavers waiting as the fixer walks down the aisle|he walks the aisle|BACK|WIN|PRIDE|
+391|P|a weave room full of looms and workers|slow push-in|WS|WIN|PRIDE|fsa:weave room;loc:weaving room mill
+392|G|Cream graph-paper board, label BEST-PAID JOB ON THE FLOOR|label arcs in|TOP|||
+393|C|1950s: a young mill hand watching the loom fixer work, admiring|he watches closely|OTS|WIN|HOPE|
+394|P|a Southern mill village|slow pan|WS|DAY|NOS|fsa:mill village;fsa:mill town houses
+395|C|1950s: a loom fixer and his wife in front of their own small white house, keys in hand|she hugs him|WS|DAY|PRIDE|
+396|P|rows of company-owned mill houses|slow push-in|WS|DAY|NOS|fsa:company houses mill;fsa:mill houses
+397|C|1950s: children walking into a new brick high school|they climb the steps|WS|DAY|HOPE|
+398|G|Cream graph-paper board, arrows drawing into the United States from overseas, label CHEAP CLOTH|arrows draw|TOP|||
+399|B|1970s: a mill department with half the looms covered in sheets, one fixer working alone|he looks around the empty room|WS|FLUOR|GRIEF|
+400|G|Cream graph-paper board, stamp 1990s–2000s · TRADE BARRIERS FALL|stamp thumps down|TOP|||
+401|S|an abandoned textile mill|slow pan|WS|OVC|STARK|pexels:abandoned textile mill;pexels:abandoned mill
+402|G|Cream graph-paper board, counter HUNDREDS OF MILLS CLOSED|counter rolls|TOP|||
+403|R|2000s: workers loading old looms onto a flatbed truck outside a brick mill|a forklift lifts a loom|WS|OVC|COLD|
+404|B|1950s: a loom fixer wiping his hands, looking over a running weave room|he nods|MS|WIN|PRIDE|
+405|S|an empty mill interior with tall windows|slow push-in|WS|WIN|STARK|pexels:empty mill interior;pexels:abandoned factory windows
+406|G|Grey graph-paper board, giant semi-transparent #7, curved label LONG-HAUL TRUCK DRIVER arcing over a cut-out steering wheel|number slams in, wheel slides in|TOP|||
+407|G|Cream graph-paper board, 1964 stamped large|year stamps in|TOP|||
+408|P|Teamsters leader Jimmy Hoffa|slow push-in|MS|FLASH|TENSE|loc:James Hoffa;loc:Hoffa Teamsters
+409|F|trucks rolling down a 1960s highway|a truck rolls past|WS|DAY|PRIDE|prelinger:trucking;prelinger:highway trucks
+410|G|Cream graph-paper board, label ONE OF THE BEST BLUE-COLLAR DEALS|label arcs in|TOP|||
+411|P|a truck driver with his rig|slow push-in|MS|DAY|PRIDE|fsa:truck driver;fsa-color:truck
+412|C|1960s: a trucker returning home to his small ranch house, kids running to the cab|he climbs down from the cab|WS|DUSK|NOS|
+413|C|1960s: a big rig on an open two-lane highway across wide plains at sunset|the truck rolls on|AER|DUSK|PRIDE|
+414|B|1960s: a trucker at a diner counter at night with a cup of coffee, a jukebox glowing behind him|he sips his coffee|OTS|NIGHT|NOS|
+415|G|Cream graph-paper board, stamp 1980 · DEREGULATION|stamp thumps down|TOP|||
+416|R|1980s: a new trucking company office, young men at desks, a fleet of plain trucks through the window|a man signs a contract|OTS|FLUOR|COLD|
+417|R|1980s: a closed truck terminal with chained gates and parked trucks|the chain sways|WS|OVC|GRIEF|
+418|G|Cream graph-paper board, counter HUNDREDS OF CARRIERS BANKRUPT|counter rolls|TOP|||
+419|R|1980s: a trucker reading a mileage pay sheet in his cab at night under the dome light|he rubs his eyes|OTS|NIGHT|COLD|
+420|S|a truck driver on the road at night|slow push-in|OTS|NIGHT|COLD|pexels:truck driver night;pexels:trucker night
+421|G|Cream graph-paper board, line chart REAL PAY falling across the decades|the line falls|TOP|||
+422|S|a highway full of trucks from above|slow pan|AER|DAY|COLD|pexels:highway trucks aerial
+423|S|a driver's view from a truck cab|slow push-in|OTS|DAY|QUIET|pexels:truck driver cab;pexels:truck cab driving
+424|B|1960s: a small house at night with one lit window, a truck parked outside|the light goes out|WS|NIGHT|GRIEF|
+425|S|an endless empty highway at dusk|slow push-in|WS|DUSK|QUIET|pexels:empty highway;pexels:empty road sunset
+426|G|Grey graph-paper board, giant semi-transparent #6, curved label BREWERY WORKER arcing over a cut-out wooden beer barrel|number slams in, barrel slides in|TOP|||
+427|P|a Milwaukee brewery in its heyday|slow push-in|WS|DAY|PRIDE|loc:Milwaukee brewery;loc:Milwaukee
+428|G|Cream graph-paper board, four text labels pop in SCHLITZ • PABST • BLATZ • MILLER (text only, no logos)|labels pop in|TOP|||
+429|F|beer bottles filling on a brewery line|bottles fill|MS|FLUOR|PRIDE|prelinger:brewery;prelinger:bottling
+430|P|a neighborhood tavern and houses|slow push-in|WS|DAY|NOS|fsa:tavern;loc:Milwaukee neighborhood
+431|B|1950s: brewery workers in white shirts and caps tending huge copper brew kettles|steam rises|MS|TUNG|PRIDE|
+432|C|1950s: brewery workers on break laughing around a table, glasses of beer in hand|they raise a toast|MS|TUNG|NOS|
+433|B|1950s: a foamy glass of beer on a break-room table, work gloves beside it|the foam settles|CU|TUNG|NOS|
+434|P|two-family duplex houses in Milwaukee|slow push-in|WS|DAY|NOS|loc:Milwaukee duplex;loc:Polish flat Milwaukee
+435|F|children lining up outside a parish school|the kids line up|WS|DAY|NOS|prelinger:parochial school;prelinger:school children 1950s
+436|G|Cream graph-paper board, many brewer icons merging into three large ones|icons merge|TOP|||
+437|F|a fast automated bottling line|the conveyor races|WS|FLUOR|COLD|prelinger:automated bottling plant;prelinger:bottling
+438|R|1970s: advertising executives reviewing television commercial storyboards in a conference room|one of them points|OTS|FLUOR|COLD|
+439|R|1970s: brewery executives around a boardroom table, one sliding a cost report forward|he slides the report|OTS|FLUOR|COLD|
+440|B|1970s: a customer in a tavern pushing a nearly full glass of beer away and leaving|the glass slides away|MS|TUNG|GRIEF|
+441|G|Cream graph-paper board, two stamps 1981 CLOSED and 1996 CLOSED|stamps thump down|TOP|||
+442|S|an old brewery complex standing empty|slow push-in|WS|OVC|STARK|pexels:abandoned brewery;wiki:Pabst brewery Milwaukee
+443|B|1980s: an empty brewhouse with cold copper kettles|slow pan|WS|WIN|GRIEF|
+444|G|Grey graph-paper board, giant semi-transparent #5, curved label FURNITURE MAKER arcing over a cut-out wooden chair|number slams in, chair slides in|TOP|||
+445|P|a Grand Rapids furniture factory|slow push-in|WS|DAY|PRIDE|loc:Grand Rapids furniture;loc:furniture factory
+446|G|Cream graph-paper board, map pins drop on HIGH POINT • HICKORY • BASSETT|pins drop|TOP|||
+447|F|craftsmen building furniture in a factory|a worker sands a table|MS|WIN|PRIDE|prelinger:furniture;prelinger:furniture factory
+448|C|1960s: a family around a solid wood dining table at Sunday dinner|the father carves the roast|WS|TUNG|NOS|
+449|C|1960s: a young couple admiring a new bedroom set in a furniture showroom|they run their hands over the dresser|MS|TUNG|NOS|
+450|B|1960s: an old couple's bedroom with the same wooden dresser, family photos on top|slow push-in|MS|WIN|NOS|
+451|P|a craftsman carving wood|slow push-in|CU|WIN|PRIDE|fsa:furniture maker;fsa:woodworker
+452|F|hands sanding and finishing hardwood|hands finish the wood|CU|WIN|PRIDE|prelinger:woodworking;prelinger:furniture making
+453|C|1960s: a furniture worker carrying a handmade chair into his small house as his wife holds the door|he carries the chair in|MS|DAY|PRIDE|
+454|B|1960s: a small living room furnished with handmade wooden pieces, a man sitting proudly in his rocker|he rocks slowly|MS|WIN|PRIDE|
+455|G|Cream graph-paper board, bar IMPORTS FROM CHINA rising sharply, label EARLY 2000s|bar rises|TOP|||
+456|S|a large modern mass-production furniture factory|slow pan|WS|FLUOR|COLD|pexels:furniture factory;pexels:factory production line
+457|R|2000s: a big-box furniture showroom full of identical bedroom sets|a salesman walks by|WS|FLUOR|COLD|
+458|R|2000s: a store worker rolling boxed furniture onto the showroom floor|he pushes the cart|MS|FLUOR|COLD|
+459|G|Cream graph-paper board, counter TENS OF THOUSANDS OF JOBS GONE|counter rolls|TOP|||
+460|S|an abandoned factory in the hills|slow push-in|WS|OVC|STARK|pexels:abandoned factory;pexels:abandoned furniture factory
+461|B|1960s: a solid wooden dining table set for dinner in an empty room, chairs pushed in|slow push-in|WS|WIN|QUIET|
+462|S|a flat-pack furniture box on a floor|slow push-in|CU|FLUOR|COLD|pexels:flat pack furniture box;pexels:cardboard box furniture
+463|G|Cream graph-paper board, label PATTERN BREAK #3, four pinned photos: meatpacker, trucker, brewery, furniture|photos pin in|TOP|||
+464|P|a truck driver portrait|slow push-in|MS|DAY|PRIDE|fsa:truck driver;fsa-color:truck driver
+465|G|Cream graph-paper board, a robot icon with a red cross, label NOT REPLACED BY A MACHINE|stamp thumps|TOP|||
+466|S|trucks rolling down a highway today|slow push-in|WS|DAY|QUIET|pexels:semi truck highway
+467|S|beer poured from a tap|slow push-in|CU|TUNG|QUIET|pexels:beer tap pour
+468|G|Cream graph-paper board, wage line falling from the 1970s to the 2000s, label THE PAY|the line falls|TOP|||
+469|R|1980s: men in dark suits around a boardroom table, CRT monitors on the wall and a map of the United States|they study papers|OTS|FLUOR|COLD|
+470|R|1980s: a hand drawing a red line through a column of a printed ledger, no readable text|the pen strikes through|CU|FLUOR|COLD|
+471|G|Cream graph-paper board, three cards slide in DEREGULATION • TRADE DEALS • MERGERS|cards slide in|TOP|||
+472|R|1980s: a hand signing a document at a desk with flags behind, face not visible|the pen signs|CU|TUNG|COLD|
+473|B|1970s: a kitchen table with a pay stub and a pile of bills, a man's hands spread over them|his hands press down|CU|TUNG|GRIEF|
+474|C|1980s: a couple at their kitchen table at night counting a thin paycheck|she shakes her head|OTS|TUNG|GRIEF|
+475|G|Cream graph-paper board, label THE ONE-INCOME FAMILY framed like a memorial plaque|label builds|TOP|||
+476|S|paper being torn in two|slow push-in|CU|TUNG|COLD|pexels:tearing paper;pexels:ripping paper
+477|G|Cream graph-paper board, numbers 4 • 3 • 2 • 1 flash, label THE FOUR BIGGEST|numbers flash|TOP|||
+478|G|Grey graph-paper board, giant semi-transparent #4, curved label STEELWORKER arcing over a cut-out hard hat|number slams in, hat slides in|TOP|||
+479|P|steelworkers' houses in a mill town|slow push-in|WS|OVC|NOS|fsa:steel town houses;fsa:steelworker home
+480|F|molten steel pouring in a mill|molten steel pours|WS|FIRE|PRIDE|prelinger:steel mill;prelinger:steel making
+481|G|Cream graph-paper board, counter ≈ 500,000 STEELWORKERS · 1960s|counter rolls|TOP|||
+482|P|steel mills along a river|slow pan|WS|OVC|PRIDE|loc:Pittsburgh steel mills;fsa:steel mill
+483|P|a steel valley from above|slow push-in|AER|OVC|PRIDE|loc:Monongahela valley steel;fsa:Aliquippa
+484|B|1950s: steelworkers in heat suits at an open hearth furnace, sparks flying|they tap the furnace|MS|FIRE|PRIDE|
+485|G|Cream graph-paper board, stamp 1959 · THE LONG STRIKE|stamp thumps down|TOP|||
+486|P|steelworkers on a picket line in 1959|slow push-in|WS|DAY|TENSE|loc:steel strike 1959;loc:steelworkers picket
+487|C|1960s: a steelworker in his work jacket holding his pay envelope at the mill gate, smiling|he pockets it|MS|DUSK|PRIDE|
+488|C|1960s: a brick house on a hill above a smoky steel mill|slow push-in|WS|DUSK|NOS|
+489|B|1960s: a new sedan parked in front of a brick house on a steep street above the mill|slow pan|WS|DAY|PRIDE|
+490|F|a family splashing at a lake on summer vacation|the kids splash|WS|DAY|NOS|prelinger:vacation lake;prelinger:home movies summer
+491|C|1960s: a steelworker's family loading the car for their summer vacation|the father closes the trunk|WS|DAY|NOS|
+492|B|1960s: a father and his teenage son walking together toward the mill gates|they walk side by side|BACK|DAWN|PRIDE|
+493|G|Cream graph-paper board, arrows drawing into the United States, label IMPORTED STEEL|arrows draw|TOP|||
+494|F|an old open hearth furnace roaring|the furnace roars|MS|FIRE|COLD|prelinger:open hearth;prelinger:steel furnace
+495|P|a 1970s steel town in decline|slow push-in|WS|OVC|GRIEF|nara:DOCUMERICA steel mill;nara:DOCUMERICA steel town
+496|G|Cream graph-paper board, counter ≈ HALF THE JOBS GONE|counter rolls|TOP|||
+497|S|old brick row houses on a steep hill today|slow pan|WS|OVC|STARK|pexels:pittsburgh houses hill;pexels:row houses hill
+498|S|an abandoned steel mill|slow push-in|WS|OVC|STARK|pexels:abandoned steel mill;pexels:rust belt factory
+499|G|Grey graph-paper board, giant semi-transparent #3, curved label APPLIANCE WORKER arcing over a cut-out 1960s refrigerator|number slams in, refrigerator slides in|TOP|||
+500|G|Cream graph-paper board, label 1951 · APPLIANCE PARK · LOUISVILLE, KY|label arcs in|TOP|||
+501|B|1950s: a vast new factory complex under construction on flat Kentucky farmland, cranes and steel frames|slow pan|AER|DAY|PRIDE|
+502|G|Cream graph-paper board, counter ≈ 23,000 WORKERS · EARLY 1970s|counter rolls|TOP|||
+503|F|refrigerators moving down an assembly line|refrigerators roll down the line|MS|FLUOR|PRIDE|prelinger:refrigerator manufacturing;prelinger:appliance factory
+504|F|a 1950s housewife in a gleaming new kitchen with new appliances|she opens the refrigerator|MS|WIN|NOS|prelinger:kitchen 1950s;prelinger:washing machine
+505|G|Cream graph-paper board, circle diagram WORKER → REFRIGERATOR → HOUSE|arrows loop around|TOP|||
+506|C|1960s: a factory worker at home opening his own refrigerator, his kids gathered around him|he opens the door|MS|TUNG|NOS|
+507|C|1960s: a young family moving into a new suburban house, carrying boxes|they carry boxes up the path|WS|DAY|HOPE|
+508|C|1960s: a delivery man wheeling a refrigerator into a sunny new kitchen|he wheels it in|MS|WIN|NOS|
+509|P|factory workers at a big plant|slow push-in|WS|DAY|PRIDE|nara:factory workers 1960s;loc:factory workers
+510|F|1950s suburbs from the air, rows of new houses|houses roll past below|AER|DAY|NOS|prelinger:suburbia 1950s;prelinger:suburbs
+511|R|1970s: an automated appliance line with robotic arms and only a few workers|a robotic arm swings|WS|FLUOR|COLD|
+512|G|Cream graph-paper board, counter falling 23,000 → A FRACTION|counter rolls down|TOP|||
+513|G|Cream graph-paper board, stamp 2016 · SOLD TO HAIER over a cut-out refrigerator|stamp thumps down|TOP|||
+514|S|a modern appliance factory line|slow push-in|WS|FLUOR|COLD|pexels:appliance factory;pexels:factory assembly line
+515|S|a modern kitchen with a new refrigerator|slow push-in|MS|WIN|QUIET|pexels:modern kitchen refrigerator
+516|B|1960s: an old refrigerator standing alone in the empty kitchen of an abandoned house|slow push-in|MS|WIN|GRIEF|
+517|G|Cream graph-paper board, the WORKER → REFRIGERATOR → HOUSE circle snapping apart|arrows snap apart|TOP|||
+518|G|Grey graph-paper board, giant semi-transparent #2, curved label HARDWARE STORE OWNER arcing over a cut-out skeleton key|number slams in, key slides in|TOP|||
+519|P|a Main Street hardware store|slow push-in|WS|DAY|NOS|fsa:hardware store;fsa-color:main street
+520|P|the inside of a small-town hardware store|slow pan|WS|WIN|NOS|fsa:hardware store interior;fsa:general store interior
+521|C|1960s: a hardware store owner in a canvas apron behind a wooden counter helping a customer|he holds up a bolt|MS|WIN|NOS|
+522|B|1960s: the owner's hands sorting bolts from small wooden drawers|his hands pick out a bolt|CU|WIN|NOS|
+523|B|1960s: nails being weighed on an old scale on the counter|the scoop pours|CU|WIN|NOS|
+524|F|a key being cut on a machine|the key grinds|CU|WIN|NOS|prelinger:hardware store;pexels:key cutting
+525|C|1960s: a hardware store owner shaking a paint can on a mixer while chatting with a farmer|the mixer shakes|MS|WIN|NOS|
+526|B|1960s: a store owner writing a family's purchase into a credit ledger|the pen writes|CU|WIN|NOS|
+527|C|1960s: a farmer shaking hands with the hardware store owner at the counter|they shake hands|MS|WIN|NOS|
+528|G|Cream graph-paper board, icons HOUSE • COLLEGE pop in|icons pop|TOP|||
+529|P|a shady small-town residential street|slow push-in|WS|DAY|NOS|fsa:small town street houses;fsa:small town street
+530|C|1960s: a hardware store owner's son in a graduation gown on the store steps with his parents|they pose together|MS|DAY|PRIDE|
+531|P|a store owner and his son behind their counter|slow push-in|MS|WIN|PRIDE|fsa:store owner and son;fsa:general store owner
+532|R|1990s: a giant big-box home improvement store beside a highway, a huge parking lot|slow pan|AER|DAY|COLD|
+533|S|a big-box store parking lot from above|slow push-in|AER|DAY|COLD|pexels:big box store parking lot aerial;pexels:parking lot aerial
+534|S|a long big-box hardware aisle|slow push-in|WS|FLUOR|COLD|pexels:hardware store aisle
+535|G|Cream graph-paper board, counter THOUSANDS OF STORES CLOSED|counter rolls|TOP|||
+536|S|an empty small-town Main Street with closed storefronts|slow pan|WS|OVC|STARK|pexels:empty main street;pexels:closed storefront
+537|B|1980s: an empty hardware store with bare shelves, the bell over the door still|the bell swings slightly|WS|WIN|GRIEF|
+538|G|Grey graph-paper board, giant semi-transparent #1, curved label AUTOWORKER arcing over a cut-out 1960s sedan|number slams in, car slides in|TOP|||
+539|F|an automobile assembly line in full motion|the line moves|WS|FLUOR|PRIDE|prelinger:assembly line;prelinger:Master Hands
+540|G|Cream graph-paper board, label 1950 · THE TREATY OF DETROIT|label arcs in|TOP|||
+541|P|autoworkers and union leaders in 1950|slow push-in|MS|FLASH|PRIDE|loc:United Auto Workers;loc:auto workers union
+542|G|Cream graph-paper board, stamps RAISE • COST OF LIVING • HEALTH • PENSION|stamps thump down|TOP|||
+543|P|autoworkers on the line|slow push-in|MS|FLUOR|PRIDE|fsa:automobile factory;loc:automobile assembly line
+544|F|car bodies dropping onto chassis in a big plant|a body drops onto the chassis|MS|FLUOR|PRIDE|prelinger:automobile factory;prelinger:car assembly
+545|G|Cream graph-paper board, $3+ AN HOUR · MID-1960s types out|figure types out|TOP|||
+546|C|1960s: an autoworker and his family in front of their new house, a new sedan in the driveway|the kids run to the car|WS|DAY|PRIDE|
+547|C|1960s: a family at a lakeside cottage up north, the father grilling|smoke drifts from the grill|WS|DUSK|NOS|
+548|B|1960s: an eighteen-year-old in a new work shirt walking through the factory gates on his first day|he walks through the gates|BACK|DAWN|HOPE|
+549|G|Cream graph-paper board, timeline AGE 18 → AGE 55 with labels PENSION + PAID-OFF HOUSE|timeline draws|TOP|||
+550|F|new cars rolling off the end of the line|cars roll off the line|WS|FLUOR|PRIDE|prelinger:new cars 1950s;prelinger:automobile production
+551|C|1960s: a gleaming new sedan rolling off the end of the assembly line, workers watching with pride|the car rolls out|WS|FLUOR|PRIDE|
+552|G|Cream graph-paper board, label WHY #1? and the opening line STILL EXISTS reappears|label pulses|TOP|||
+553|S|robots welding cars in a modern plant|slow push-in|WS|FLUOR|COLD|pexels:car factory robots;pexels:car assembly robots
+554|G|Cream graph-paper board, stamp 2007 · TWO-TIER CONTRACT|stamp thumps down|TOP|||
+555|G|Cream graph-paper board, NEW HIRES: ≈ $14 AN HOUR types out|figure types out|TOP|||
+556|G|Cream graph-paper board, two bars: 1965 WAGE IN 2007 DOLLARS ≈ $22 vs NEW HIRE $14|bars rise|TOP|||
+557|B|1960s: a family house at dusk seen from the street, lights on inside|the lights go off one by one|WS|DUSK|GRIEF|
+558|C|1960s: an elderly man in an armchair by a window with a family photo album on his lap|he opens the album|MS|WIN|NOS|
+559|S|a grandchild talking with a grandparent on a porch|slow push-in|MS|DAY|NOS|pexels:grandparent grandchild talking;pexels:grandfather and grandson
+560|P|a father at work in the 1940s|slow push-in|MS|DAY|PRIDE|fsa:worker portrait;fsa:factory worker
+561|G|Cream graph-paper board, question HOW MANY PAYCHECKS? types out|question types out|TOP|||
+562|P|a family in front of their home|slow push-in|WS|DAY|NOS|fsa-color:house family;loc:family home
+563|S|an elderly man telling a story|slow push-in|MS|WIN|NOS|pexels:elderly man talking;pexels:old man storytelling
+564|S|a hand scrolling house listings on a phone|slow push-in|CU|WIN|COLD|pexels:house price phone;pexels:real estate phone
+565|G|Cream graph-paper board, a comment bubble icon with label TELL ME IN THE COMMENTS|bubble pops|TOP|||
+566|G|Cream graph-paper board, a collage of all 25 job icons filling the grid|icons fill the grid|TOP|||
+567|P|a milkman, a trucker and a steelworker|slow pan|WS|DAY|NOS|fsa:milkman;fsa:truck driver
+568|P|a switchboard operator|slow push-in|MS|FLUOR|NOS|loc:telephone operator;fsa:switchboard
+569|P|an autoworker on the line|slow push-in|MS|FLUOR|PRIDE|fsa:automobile worker;loc:automobile assembly line
+570|P|a coal miner|slow push-in|MS|OVC|PRIDE|fsa:coal miner;nara:DOCUMERICA coal miner
+571|C|1960s: glass milk bottles on a porch step at sunrise|the light warms|CU|DAWN|NOS|
+572|F|a milkman setting bottles on a porch at dawn|bottles are set down|MS|DAWN|NOS|prelinger:milkman;prelinger:milk delivery
+573|B|1960s: a line of workers walking home at sunset past small houses|they walk home|BACK|DUSK|PRIDE|
+574|C|1960s: an ordinary family on their porch steps, the father in work clothes with his arm around his wife, kids in front|they smile|WS|DUSK|PRIDE|
+575|P|a small American town with a factory smokestack and a church steeple|slow push-in|AER|DUSK|NOS|fsa:small town;loc:small town aerial
+576|B|1960s: an empty front porch at dusk with one light on, a rocking chair slowly moving|the chair rocks|WS|DUSK|GRIEF|

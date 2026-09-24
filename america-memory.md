@@ -38,6 +38,8 @@ The reference's best video was ~80% real archival, 10% AI, 5% modern stock, 5% g
 
 Mostly-AI videos risk demonetization under YouTube's mass-produced/inauthentic content rules. Real footage also builds trust with this audience.
 
+**User's current choice (Sep 2026): Mix A, "more AI".** Real footage ≥35%, AI ≤50%, graphics the rest. Use this instead of the table above unless the user says otherwise. The Part A mix check uses these targets. The hard rules below still apply.
+
 ---
 
 ## 3. Beat-tagging rules (the core of this memory)
@@ -170,3 +172,24 @@ Vintage illustrated poster look: warm oranges and browns, a brick factory or sto
 ## 8. Growth angle for this user
 
 The niche is mostly male/industrial. The biggest recent breakouts in the wider niche are about **home life**: "Before Air Conditioning, How Did Americans Survive the Summer?" (906K), "American Malls Were Once Packed — So What Killed Them?" (687K), "25 One-Income Jobs That Could Buy a House… in 1970s America". Suggest household and family angles too: kitchen brands, the Sears catalog, department stores, Tupperware parties, 1960s housewives, and "before X, how did Americans…".
+
+---
+
+## 9. Visual Style Profile (measured from the channel's own frames)
+
+Every beat uses exactly one of five shot modes:
+
+| Mode | What it looks like |
+|---|---|
+| 🎞️ Archival film | Raw 4:3 film, pillarboxed in black; keep the gate weave, softness and scratches |
+| 📷 Archival photo | Restored high-contrast B&W, slow Ken Burns push |
+| 🔢 Grid board | Cream `#EDE8DC` or grey `#B9B6AF` graph paper, grid `#8F8C86`; photos pinned with a 2 px dashed `#6B6450` border; product cut-outs with white `#F5F5F0` ALL-CAPS labels arcing above ("NAME · YEAR"); white hand-drawn doodles |
+| 🎨 AI era photo | B&W Tri-X, or 1960s Kodachrome, candid |
+| 🎨 AI cinematic recreation | Colour 1970s–80s film still: boardrooms, decisions, closures; subjects seen from behind, faces not visible |
+
+## 10. Tools for the visual plan
+
+- `scripts/tools/split_beats.py SCRIPT.md` cuts a script into 3–5 s beats (≤12 words).
+- Write one shot line per beat in `scripts/data/<video>-shots.txt` (`n|mode|scene|action|camera|light|mood|source:terms;source:terms`). Modes are F, P, S, G, B, C, R.
+- `scripts/tools/build_visual_plan.py SCRIPT.md SHOTS.txt PLAN.md LOG.md "Title"` builds the mix check, the full beat list with standalone prompts, the shopping list with `archival_fetch.py` commands and the filled sourcing log. It refuses to build if there are 4+ AI beats in a row or a real beat has no search.
+
