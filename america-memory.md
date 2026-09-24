@@ -8,6 +8,32 @@ The user is a busy mom. Keep every workflow short, batchable and copy-paste read
 
 ---
 
+## Channel identity (decided)
+
+- **Name:** **Back When It Lasted** (handle to claim: `@BackWhenItLasted`)
+- **Promise:** things built to last, who built them, why America trusted them, and the exact decision that ended them.
+- **Banner line:** *"The American-made things your family trusted, and what happened to them · New documentary every Sunday"*
+- **Sign-on line in every video:** "Welcome back to Back When It Lasted."
+- Every video must keep the promises in the description: **real archival footage, chapters, captions, a sources list**, and **reader memories read aloud** (from video 3 on).
+
+**Channel description (966 / 1,000 characters; first line = the 150 characters shown in search):**
+```
+Back When It Lasted: true stories of the American-made brands, factories and hometown jobs that built the middle class, and what happened to each one.
+
+The toaster still working after 60 years. The plant that paid for a whole town. The job that bought a house on one paycheck. We go back to when things were built to last, and find out who built them, why America trusted them, and the exact decision that ended them.
+
+Every documentary is made from real archival film, photographs and old catalogs from the Library of Congress, the National Archives and the Prelinger Archives. Every video has chapters, captions and a list of sources.
+
+Made for everyone who remembers when things lasted, and for everyone who wishes they still did.
+
+📅 New documentary every Sunday.
+💬 Tell us what your family owned, where your father worked, or what's still running in your kitchen. The best memories are read aloud in future episodes.
+
+Subscribe and help keep these stories alive.
+```
+
+---
+
 ## 0. Beat the field (this rule overrides "copy the reference")
 
 **The goal is not to copy When America Made Everything. The goal is to beat it, and to beat every channel copying it.** Model its topic and audience, never its exact titles, thumbnails or wording. Every title, thumbnail, hook, script, video prompt, banner and description you write must beat both the reference channel and the copycats on the points below. If a piece doesn't beat them, rewrite it before you hand it over.
