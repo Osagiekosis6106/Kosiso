@@ -14,14 +14,14 @@ The user is a busy mom. Keep every workflow short, batchable and copy-paste read
 - **Promise:** things built to last, who built them, why America trusted them, and the exact decision that ended them.
 - **Banner line:** *"The American-made things your family trusted, and what happened to them"*
 - **Sign-on line in every video:** "Welcome back to Back When It Lasted."
-- Every video must keep the promises in the description: **real archival footage, chapters, captions, a sources list**. No upload day and no read-aloud comments (user's choice).
+- Every video must keep the promises in the description: **real archival footage, chapters and captions** (the channel description doesn't name sources, but each video description still lists credits where a licence requires it, e.g. Wikimedia CC BY, and the sourcing log is kept for Content ID disputes). No upload day and no read-aloud comments (user's choice).
 
 **Channel keywords** (YouTube Studio → Settings → Channel → Keywords):
 ```
 American history, vintage America, nostalgia, Made in USA, American made, forgotten brands, lost American brands, old American companies, American manufacturing, factory towns, 1950s America, 1960s America, 1970s America, vintage appliances, Main Street America, middle class history, documentary, Back When It Lasted
 ```
 
-**Channel description (945 / 1,000 characters; first line fits in the ~150 characters shown in search):**
+**Channel description (879 / 1,000 characters; first line fits in the ~150 characters shown in search):**
 ```
 Back When It Lasted: American history documentaries on forgotten Made in USA brands, lost factories and old companies, and what happened to them.
 
@@ -29,7 +29,7 @@ The 1950s toaster that still works. The factory town that paid for everything. T
 
 What we cover: vintage appliances and kitchen brands, factory and mill towns, vanished jobs, Main Street, railroads, and the 1950s, 1960s and 1970s America you remember.
 
-Every episode uses real archival film and photos from the Library of Congress, National Archives and Prelinger Archives, with chapters, captions and sources.
+Every episode is built from real archival film and photographs, with chapters and captions.
 
 💬 Tell us in the comments what your family owned or where your father worked. We'd love to hear your story.
 
