@@ -21,15 +21,13 @@ The user is a busy mom. Keep every workflow short, batchable and copy-paste read
 American history, vintage America, nostalgia, Made in USA, American made, forgotten brands, lost American brands, old American companies, American manufacturing, factory towns, 1950s America, 1960s America, 1970s America, vintage appliances, Main Street America, middle class history, documentary, Back When It Lasted
 ```
 
-**Channel description (879 / 1,000 characters; first line fits in the ~150 characters shown in search):**
+**Channel description (786 / 1,000 characters; first line fits in the ~150 characters shown in search):**
 ```
 Back When It Lasted: American history documentaries on forgotten Made in USA brands, lost factories and old companies, and what happened to them.
 
 The 1950s toaster that still works. The factory town that paid for everything. The 1960s job that bought a house on one paycheck. We tell the true stories of the American manufacturing and middle-class life your parents and grandparents knew: who built it, why families trusted it, and the decision that ended it.
 
 What we cover: vintage appliances and kitchen brands, factory and mill towns, vanished jobs, Main Street, railroads, and the 1950s, 1960s and 1970s America you remember.
-
-Every episode is built from real archival film and photographs, with chapters and captions.
 
 💬 Tell us in the comments what your family owned or where your father worked. We'd love to hear your story.
 
