@@ -300,6 +300,10 @@ Every visual line in every script must carry **three labels**:
 `[camera move] + [what moves] + [what must NOT change] + [look] + duration 3–5 s`
 Always end with: *"Keep the aircraft's shape, markings, number of engines and propellers exactly as in the first frame. No morphing. Realistic motion blur."*
 
+### 8d. No Blender? Use Grok
+
+`airspeed-grok-prompts.md` gives every 3D shot of video #1 as a Grok Imagine image and video prompt. It also says, shot by shot, whether to upload an existing master image (**REUSE**), generate a new image from one (**NEW**) or continue from the last frame of the previous clip (**CHAIN**), so the aircraft looks the same all video. For future scripts, build the same set: download real photos, make approved masters (M1, M2…), write lock text for each aircraft, then write one shot table.
+
 ### Shot rhythm to copy and improve
 
 - 3.5–4.5 s average shot, with hard cuts on narration beats.
