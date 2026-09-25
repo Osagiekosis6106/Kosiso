@@ -1,6 +1,6 @@
 # Why Did This Fighter Have No Landing Gear?
 
-**Status:** final, fact-checked 25 Sep 2026 (see `xf85-fact-check.md`). Cleared to record. ~1,600 words, about 10.5–11 minutes.
+**Status:** final, fact-checked 25 Sep 2026 (see `xf85-fact-check.md`). Cleared to record. ~1,200 words, about 8–9 minutes of narration at 140–150 words per minute.
 
 ---
 
