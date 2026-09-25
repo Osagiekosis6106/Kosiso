@@ -357,7 +357,7 @@ Target 1,650–1,900 words at 150 wpm, for **11–13 minutes**. That's long enou
 | # | Working title | Strange visible part | Why this topic | Chain |
 |---|---|---|---|---|
 | 1 | **Why Did This Fighter Have No Landing Gear?** (XF-85 Goblin) | No wheels, only a hook on its nose | Same **"had no [essential part]"** pattern as the 1.28M outlier. Proven demand (Rex's Hangar version 146K). Every 2026 version is a low-effort AI upload with 3–210 views. **No premium 3D version exists.** | Teases #2, the bomber it was built to live inside |
-| 2 | **Why the B-36's Propellers Faced Backward** | Six pusher propellers, *"six turnin', four burnin'"* | Huge, iconic Cold War bomber. The only 2026 attempt (Airlift) has 3 views. Links to the XF-85. **(Check demand with NexLev `search_videos` before scripting.)** | Teases #3 |
+| 2 | **Why the B-36's Propellers Faced Backward** | Six pusher propellers, *"six turnin', four burnin'"* | Huge, iconic Cold War bomber. 2026 attempts (Airlift, Aeroform, Mach & Motive) have 3–4,213 views. Links to the XF-85. **Demand checked 25 Sep 2026: go.** Full script and Grok pack: `airspeed-video2-b36.md`. | Teases #3 |
 | 3 | **Why Did This Fighter Have a Propeller on Its Tail?** (Dornier Do 335) | A second propeller behind the tail, and an ejection seat that first blew the tail off | Proven: Found And Explained 650K, IHYLS 336K, DroneScapes 1.5M (multi-aircraft). The last year has only small or AI versions. | Teases #1 |
 
 After that, **one long video a week, same day and time**, plus **three Shorts per long video**.

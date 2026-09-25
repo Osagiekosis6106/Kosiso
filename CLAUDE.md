@@ -8,6 +8,8 @@
   - `airspeed-grok-prompts.md`: how the user makes 3D shots in **Grok** (see standing preferences).
   - `airspeed-channel-kit.md`: name, description, colours, logo, banner, voiceover (with delivery marks and a pronunciation table), music, the upload checklist, the weekly schedule.
 
+  Finished per-video packs live in `airspeed-video<N>-<aircraft>.md` (video #2: `airspeed-video2-b36.md`). Read the latest one before writing the next, so masters, lock text and chains stay consistent.
+
   A recognisable real aircraft or person is never AI direct. Never re-make a competitor's outlier within 90 days (the Spirit of St. Louis copies got 1–4,000 views against Airspeed's 1.28M); use the same pattern on a different aircraft.
 
 ## What we established (Airspeed research, Sep 2026, via NexLev)
