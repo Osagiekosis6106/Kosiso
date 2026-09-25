@@ -53,7 +53,7 @@ Paste the **lock text** from Part 2 where it says `[GOBLIN LOCK]` etc.
 
 | Master | Upload as reference | Image prompt |
 |---|---|---|
-| **M1** Goblin, studio, head-on, wings folded | R1 | `[GOBLIN LOCK]` Head-on view, perfectly centred and symmetrical, wings folded upward, hook raised above the nose. `[STUDIO LOOK]` |
+| **M1** Goblin, studio, head-on, wings spread | R1 (cleaned museum photo) | `[GOBLIN LOCK]` Head-on view, perfectly centred and symmetrical, wings spread exactly as in the reference, hook raised above the nose, hovering just above the studio floor, no stand, no wheels, no landing gear. `[STUDIO LOOK]` |
 | **M2** Goblin, studio, front-3/4, wings spread | R2 **+ M1** | `[GOBLIN LOCK]` Front three-quarter view from the left, wings spread out, hook raised. Same aircraft as the second reference image. `[STUDIO LOOK]` |
 | **M3** Goblin, flying, side view | M2 | `[GOBLIN LOCK]` In flight, side view, wings spread, hook folded down, clear blue sky above a 1940s California desert far below. `[FILM LOOK]` |
 | **M4** The mother ship: B-29 with the Goblin on the trapeze | R3 **+ M3** | `[B-29 LOCK]` Seen from below and behind in flight, a steel trapeze lowered from the bomb bay with the small jet from the second reference hanging from it by its nose hook. Desert far below. `[FILM LOOK]` |
@@ -118,7 +118,7 @@ Only approved masters go into the shots.
 | **S13** "no wheels" | **REUSE M2** | — | Slow orbit to the left. *(In CapCut, draw glowing outlines where wheels would be, then fade them out.)* `[VIDEO SAFE]` |
 | **S14** bomb bay fit | **NEW** from M2 | `[GOBLIN LOCK]` Sitting inside a glowing blue wireframe outline of a narrow bomber bomb bay, only a hand's width of space around it, blueprint style. `[STUDIO LOOK]` | Slow push-in. `[VIDEO SAFE]` ⚠ **Weak in AI.** Fallback: M2 still plus a rectangle drawn in CapCut |
 | **S15** scale | **NEW** from M2 | `[GOBLIN LOCK]` Standing on the studio floor beside a grey faceless 1.8 m human mannequin and a 1940s family car for scale, the jet slightly shorter than the car. `[STUDIO LOOK]` | Slow pan from left to right across all three. `[VIDEO SAFE]` ⚠ sizes: Goblin ~4.5 m long |
-| **S16** wings unfold | **REUSE M1**, then **REUSE M2** | — | **Weak in AI; don't ask Grok to fold the wings.** Make a 1 s video from M1 ("tiny slow push-in `[VIDEO SAFE]`"), then cross-dissolve into a 1 s video from M2. It reads as the wings opening. |
+| **S16** wings unfold | **Archival first** | — | **Weak in AI; don't ask Grok to fold the wings.** M1 is now wings-spread (it matches the real R1 photo), so the M1-to-M2 cross-dissolve no longer shows a fold. Use a real photo or film of the Goblin with its wings folded if you find one. Otherwise skip the fold visual and hold on M2 while the line plays. |
 | **S17** tail fins | **NEW** from M2 | `[GOBLIN LOCK]` Rear three-quarter close-up of the cluster of tail fins and the jet exhaust. `[STUDIO LOOK]` | Slow orbit around the tail. `[VIDEO SAFE]` ⚠ fin count vs R2 |
 | **S18** X-ray engine | **NEW** from M2 | `[GOBLIN LOCK]` Ghosted semi-transparent X-ray cutaway: the aluminium skin see-through like glass, a single jet engine inside glowing orange running from the nose intake to the tail exhaust. `[STUDIO LOOK]` | Slow orbit, the orange glow pulses gently. `[VIDEO SAFE]` ⚠ **weak in AI**. Fallback: M2 with an orange glow drawn in CapCut |
 | **S19** guns | **NEW** from M2 | `[GOBLIN LOCK]` Extreme close-up of the nose showing the machine-gun ports. `[STUDIO LOOK]` | Slow slide along the nose. `[VIDEO SAFE]` ⚠ 4 guns and port positions |
