@@ -1,159 +1,117 @@
-# Grok workflow: worked example (XF-85 video)
+# Grok workflow: reference photo → video (worked example: XF-85)
 
-> **How to use this file.** It's the **format and method** for every Grok prompt pack: real photos → approved masters → lock text → REUSE / NEW / CHAIN per shot. The XF-85 content is only the example. Colours in `[STUDIO LOOK]` and the logo are placeholders until the user chooses the channel's palette (`airspeed-channel-kit.md`, section 3).
+> **How to use this file.** This is the **default method** for every Grok prompt pack. Prepare the real reference photos, then go **straight to video**: upload a reference, paste one video prompt, done. There's no image-generation step. Everything the old "master image" step did is merged into each video prompt. The XF-85 content is the worked example. Shot numbers (S01–S41) match the shot sheet in `airspeed-model.md`, section 11.
 
-This file is for making video #1 (*Why Did This Fighter Have No Landing Gear?*) in **Grok Imagine** instead of Blender. Shot numbers (S01–S41) match the shot sheet in `airspeed-model.md`, section 11.
+## How it works
 
-## How Grok works for this
+1. **Upload the reference photo** named for the shot (R1–R5) in Grok's video / "make video" option.
+2. **Paste the video prompt** for that shot, exactly as written. Every prompt already contains the aircraft description, the look and the no-morphing rules.
+3. **Check the clip** against the real photo. Throw away any clip where the plane changes shape.
+4. Trim each clip to 3–5 s in CapCut.
 
-1. **Make an image:** upload a reference image, then paste an **image prompt**.
-2. **Check it** against the real photo. If it's wrong, generate again. Don't move on with a wrong image.
-3. **Turn it into video:** use the approved image with Grok's video/"make video" option, then paste the **video prompt**. Grok clips are short (a few seconds). Trim each to 3–5 s in CapCut.
+**Two rules that make this work:**
 
-**The honest trade-off:** Grok is quicker to learn than Blender, but it can't keep an aircraft exactly the same from shot to shot. It may add a propeller, change the fins or move the hook. Three habits fix most of it:
+- **Your photo is the first frame.** Whatever is in the photo (background, colour, clutter) shows at the start of the clip. So **clean the reference first**: crop it, remove stands and clutter, put it on a plain dark background, as you did for R1. Cleaning an image is editing, not generating, so do it in Canva or with Magic Eraser.
+- **Small camera moves stay accurate; big ones morph.** A slow orbit or push-in from the photo's angle keeps the real shape. Asking the camera to fly to a completely different angle (under the belly, inside the cockpit, into a desert) is where AI invents parts. Those shots are marked **⚠ weak** and have a fallback.
 
-- **Build a small set of approved "master images" first (Part 1). Every shot starts from one of them, never from a text-only prompt.** That's what keeps the plane looking the same all video.
-- **Paste the same "lock" text (Part 2) into every prompt**, word for word.
-- **Throw away any clip where the plane changes shape.** It's faster to re-roll than to fix.
+**Look plan (it solves consistency for free):**
 
-Four shots are weak in AI: **wings folding (S16), X-ray see-through (S18, S21, S36), spinning propellers on the B-36 (S41) and the bomb-bay fit (S14).** Each one below has a simpler fallback.
-
-### What "NEW" and "REUSE" mean below
-
-- **NEW:** generate a new image first, using the reference listed, then make the video from that new image.
-- **REUSE:** upload an image you've already approved (M1, M2…) and go straight to the video prompt. Don't generate a new image.
-- **CHAIN:** screenshot the **last frame** of the previous clip and use it as the start image, so two shots join smoothly.
-
-Rule: **always reuse a master (M-image) rather than a frame from an earlier video.** Each generation drifts a little, so copying copies drifts further.
+- **Studio shots:** colour, dark graphite studio, from cleaned R1, R2 and R5.
+- **The 1948 test section (drop, hook-ups, crash):** **black-and-white test-film look**, from the real B&W archival photos (R3). It looks authentic, and you don't need to colourise anything.
+- **B-36 shots:** keep whatever R4 is (colour or B&W), and use the matching look line.
 
 ---
 
-## Camera-move vocabulary (mix these into video prompts)
+## Part 0. Prepare the reference photos (the only prep step)
 
-slow cinematic orbit · slow push-in · slow pull-back · low-angle dolly past the nose · tracking shot alongside in flight · top-down rotating overhead · slow tilt-up from the belly · static hero shot with subtle parallax. Keep calm documentary pacing, smooth motion, and 3–5 seconds per shot.
-
-## Part 0. Download the real photos first (your "truth")
-
-Save these in a folder called `XF85-refs`. They're the reference uploads for the masters and the photos you compare every result against.
-
-| Save as | What | Where to find it | Search |
+| Save as | What | Where | Status / what to do |
 |---|---|---|---|
-| **R1** | XF-85 front or front-3/4 photo | National Museum of the USAF (nationalmuseum.af.mil), Wikimedia Commons | `XF-85 Goblin` |
-| **R2** | XF-85 side view, wings spread | Same | `XF-85 Goblin side` |
-| **R3** | XF-85 hanging on the trapeze under the EB-29B | Same, or NARA (catalog.archives.gov) | `XF-85 EB-29B trapeze` |
-| **R4** | Early B-36 in flight (six propellers, **no jet pods**) | Wikimedia, NARA, SDASM Flickr | `B-36B Peacemaker` |
+| **R1** | XF-85 head-on, wings spread, hook raised | USAF Museum photo | ✅ **Approved** (cleaned: no stand, dark background, post under the nose removed) |
+| **R2** | XF-85 side or front-3/4 view, wings spread | nationalmuseum.af.mil, Wikimedia Commons (`XF-85 Goblin side`) | Send it to be checked. Then clean it the same way as R1: plain dark background, no stand. |
+| **R3** | XF-85 on the trapeze under the EB-29B | USAF Museum, NARA (`XF-85 EB-29B trapeze`) | Send it to be checked. Keep it black and white. |
+| **R4** | Early B-36 in flight: six propellers behind the wing, **no jet pods** | Wikimedia, NARA, SDASM Flickr (`B-36B Peacemaker`) | Send it to be checked |
+| **R5** | **Crop of R1**: just the nose, hook and canopy | Made from R1 (crop only, no AI) | Crop R1 tight around the nose and hook frame |
 
-US Air Force photos are usually public domain, but check the licence line on each file.
-
----
-
-## Part 1. Build your master images (do this once, before any shot)
-
-Paste the **lock text** from Part 2 where it says `[GOBLIN LOCK]` etc.
-
-| Master | Upload as reference | Image prompt |
-|---|---|---|
-| **M1** Goblin, studio, head-on, wings spread | R1 (cleaned museum photo) | `[GOBLIN LOCK]` Head-on view, perfectly centred and symmetrical, wings spread exactly as in the reference, hook raised above the nose, hovering just above the studio floor, no stand, no wheels, no landing gear. `[STUDIO LOOK]` |
-| **M2** Goblin, studio, front-3/4, wings spread | R2 **+ M1** | `[GOBLIN LOCK]` Front three-quarter view from the left, wings spread out, hook raised. Same aircraft as the second reference image. `[STUDIO LOOK]` |
-| **M3** Goblin, flying, side view | M2 | `[GOBLIN LOCK]` In flight, side view, wings spread, hook folded down, clear blue sky above a 1940s California desert far below. `[FILM LOOK]` |
-| **M4** The mother ship: B-29 with the Goblin on the trapeze | R3 **+ M3** | `[B-29 LOCK]` Seen from below and behind in flight, a steel trapeze lowered from the bomb bay with the small jet from the second reference hanging from it by its nose hook. Desert far below. `[FILM LOOK]` |
-| **M5** B-36 in flight | R4 | `[B-36 LOCK]` Side view in flight, high above the clouds, midday light. `[FILM LOOK]` |
-| **M6** B-36 at dusk | M5 | `[B-36 LOCK]` Same aircraft as the reference, three-quarter rear view at sunset, orange sky, propellers blurred into discs. `[FILM LOOK]` |
-
-**Check every master before using it (⚠ VERIFY):**
-- **M1 and M2:** the hook's shape and position, the wings fold *upward*, the number and angle of tail fins, the bubble canopy, and the nose intake. All must match R1 and R2.
-- **M4:** the trapeze looks like R3.
-- **M5 and M6:** six propellers **behind** the wing, no jet pods.
-
-Only approved masters go into the shots.
+US Air Force and National Archives photos are usually public domain; check each file's licence line.
 
 ---
 
-## Part 2. Lock text (paste word for word, every time)
+## Part 1. The lines already built into every prompt (for reference)
 
-**`[GOBLIN LOCK]`**
-> The McDonnell XF-85 Goblin, a tiny 1948 experimental jet fighter exactly like the reference image: short egg-shaped polished-aluminium fuselage, a round air intake in the nose, a dark anti-glare panel on top of the nose, bubble canopy, and the retractable skyhook: a short, sturdy, dark-grey boxy steel frame standing upright on the nose centreline just in front of the canopy, only slightly taller than the canopy, ending in a small jaw-shaped hook (NOT a small ring, NOT a thin rod, NOT a shepherd's crook). Small swept wings with a small vertical fin on each wingtip, two upswept tail fins behind the canopy exactly as in the reference, one USAF star-and-bar insignia on the upper left wing only, no propeller, no landing gear, no wheels.
+You don't need to paste these separately; they're already inside each shot's prompt. They're listed so you can reuse them for future aircraft.
 
-**`[B-29 LOCK]`**
-> A 1940s Boeing B-29 Superfortress bomber exactly like the reference: polished aluminium, long rounded glass nose, four propeller engines on a long straight wing, one tall tail fin.
-
-**`[B-36 LOCK]`**
-> An early Convair B-36 bomber exactly like the reference: enormous straight wings, polished aluminium, exactly six propeller engines mounted on the back edge of the wing with propellers facing backward, no jet pods, tall single tail.
-
-**`[STUDIO LOOK]`**
-> Photoreal 3D product render, dark [BACKGROUND]-to-[ACCENT] gradient studio background, soft white key light from the front, [ACCENT] and [SECOND COLOUR] rim lights from behind, glossy reflective floor, sharp focus, 16:9, no text.
-
-**`[FILM LOOK]`**
-> Photoreal cinematic 3D render, 1940s colour film look, muted Kodachrome colours, soft film grain, 16:9, no text.
-
-**`[VIDEO SAFE]`** (end every video prompt with this)
-> Keep the aircraft's shape, fins, hook, wings, markings and number of engines and propellers exactly as in the image. No morphing, no extra parts. Realistic motion blur. Smooth motion.
+- **Goblin lock:** *Keep the XF-85 Goblin exactly as in the image: egg-shaped polished-aluminium body, round nose intake, dark panel on top of the nose, bubble canopy, a short boxy dark hook frame on the nose just in front of the canopy, two upswept tail fins, a small fin on each wingtip, one star insignia, no wheels, no propeller.*
+- **B-29 lock:** *Keep the B-29 exactly as in the image: four propeller engines, rounded glass nose, one tall tail fin, the trapeze under the bomb bay.*
+- **B-36 lock:** *Keep the B-36 exactly as in the image: exactly six propellers mounted behind the wing, no jet pods, never add or remove engines.*
+- **Studio look:** *Dark graphite studio, soft white key light, warm gold and steel-blue rim lights, glossy reflective floor, photoreal, 16:9.*
+- **Test-film look:** *Black-and-white 1948 test film look, soft grain, gentle flicker, 16:9.*
+- **Safe ending:** *No morphing, no extra parts, smooth realistic motion.*
 
 ---
 
-## Part 3. Shot by shot
+## Part 2. Shot by shot: upload + one prompt
 
-⚠ = check the result against the real photo (R1–R4) before you keep it. **Disc ON** = switch on YouTube's "altered or synthetic content" at upload for this video.
+⚠ = check against the real photo before keeping it. **Disc ON** = switch on YouTube's "altered or synthetic content" at upload.
 
 ### Cold open
 
-| Shot | Start image | Image prompt (only if NEW) | Video prompt |
+| Shot | Upload | Video prompt (paste as is) | Check |
 |---|---|---|---|
-| **S01** studio turntable | **REUSE M1** | — | Slow smooth orbit around the aircraft, a quarter turn to the right, lights glinting on the metal. `[VIDEO SAFE]` ⚠ |
-| **S02** under the belly | **NEW** from M2 | `[GOBLIN LOCK]` Low camera looking up at the smooth underside from below: no wheels and no wheel wells, only a thin steel skid along the belly. `[STUDIO LOOK]` | Slow sideways slide under the belly, close macro shot. `[VIDEO SAFE]` ⚠ skid shape |
-| **S03** hook reveal | **REUSE M2** | — | Slow pull-back from a close-up of the hook on top of the nose to a full view of the aircraft. `[VIDEO SAFE]` ⚠ |
-| **S04** drop from the bomber · **Disc ON** | **REUSE M4** | — | The small jet releases from the trapeze and drops smoothly away below the bomber, the bomber flies on straight, clouds drift below. `[VIDEO SAFE]` ⚠ |
+| **S01** studio turntable | **R1** | Slow smooth quarter orbit to the right around the small jet hovering just above the floor, lights gliding across the polished metal. Keep the XF-85 Goblin exactly as in the image: egg-shaped polished-aluminium body, round nose intake, dark panel on top of the nose, bubble canopy, a short boxy dark hook frame on the nose just in front of the canopy, two upswept tail fins, a small fin on each wingtip, one star insignia, no wheels, no propeller. Dark graphite studio, soft white key light, warm gold and steel-blue rim lights, glossy reflective floor, photoreal, 16:9. No morphing, no extra parts, smooth realistic motion. | ⚠ hook, fins, no wheels |
+| **S02** under the belly | **R1** | The camera slowly lowers and glides under the nose, looking up at the smooth underside: no wheels, no wheel wells, only a thin steel skid along the belly. Keep the XF-85 Goblin exactly as in the image: egg-shaped polished-aluminium body, round nose intake, bubble canopy, two upswept tail fins, a small fin on each wingtip, no wheels, no propeller. Dark graphite studio, warm gold and steel-blue rim lights, glossy floor, photoreal, 16:9. No morphing, no extra parts, smooth realistic motion. | ⚠ **weak** (big camera move). No wheels must appear. Fallback: a slow push-in on R1 while the narration says "no wheels at all". |
+| **S03** hook reveal | **R5** | Slow pull-back from a close-up of the short boxy hook frame on the nose until the whole small jet is in view. Keep the XF-85 Goblin exactly as in the image: the hook frame, bubble canopy, dark nose panel, round nose intake, two upswept tail fins, wingtip fins, no wheels, no propeller. Dark graphite studio, warm gold and steel-blue rim lights, photoreal, 16:9. No morphing, no extra parts, smooth realistic motion. | ⚠ hook shape stays boxy |
+| **S04** drop from the bomber · **Disc ON** | **R3** | The small jet releases from the trapeze and drops smoothly away below the bomber while the bomber flies on straight, clouds drifting past below. Keep the B-29 exactly as in the image: four propeller engines, rounded glass nose, one tall tail fin, the trapeze under the bomb bay. Keep the small jet's egg-shaped body, canopy, hook and fins exactly as in the image, no wheels. Black-and-white 1948 test film look, soft grain, gentle flicker, 16:9. No morphing, no extra parts, smooth realistic motion. | ⚠ 4 engines on the B-29, trapeze shape |
 
 ### The problem of the era
 
-| Shot | Start image | Image prompt | Video prompt |
+| Shot | Upload | Video prompt | Check |
 |---|---|---|---|
-| **S07** B-36 wing | **REUSE M5** | — | Slow camera track along the enormous wing from the fuselage to the wingtip. `[VIDEO SAFE]` ⚠ six props, no jets |
-| **S10** lone bomber | **NEW** from M5 | `[B-36 LOCK]` Small in the lower third of the frame, flying alone across a vast empty pale sky. `[FILM LOOK]` | Very slow drift to the right, the bomber crosses left to right, thin clouds below. `[VIDEO SAFE]` |
+| **S07** B-36 wing | **R4** | Slow camera track along the enormous wing from the fuselage out to the wingtip, propellers spinning as blurred discs. Keep the B-36 exactly as in the image: exactly six propellers mounted behind the wing, no jet pods, never add or remove engines. Same look, colour and light as the image, 16:9. No morphing, no extra parts, smooth realistic motion. | ⚠ six props, no jets |
+| **S10** lone bomber | **R4** | Very slow pull-back and drift to the right until the bomber is small in a vast empty sky, thin clouds below. Keep the B-36 exactly as in the image: exactly six propellers behind the wing, no jet pods. Same look and colour as the image, 16:9. No morphing, no extra parts, smooth realistic motion. | ⚠ engine count |
 
 ### Partial answer and walkaround
 
-| Shot | Start image | Image prompt | Video prompt |
+| Shot | Upload | Video prompt | Check |
 |---|---|---|---|
-| **S13** "no wheels" | **REUSE M2** | — | Slow orbit to the left. *(In CapCut, draw glowing outlines where wheels would be, then fade them out.)* `[VIDEO SAFE]` |
-| **S14** bomb bay fit | **NEW** from M2 | `[GOBLIN LOCK]` Sitting inside a glowing blue wireframe outline of a narrow bomber bomb bay, only a hand's width of space around it, blueprint style. `[STUDIO LOOK]` | Slow push-in. `[VIDEO SAFE]` ⚠ **Weak in AI.** Fallback: M2 still plus a rectangle drawn in CapCut |
-| **S15** scale | **NEW** from M2 | `[GOBLIN LOCK]` Standing on the studio floor beside a grey faceless 1.8 m human mannequin and a 1940s family car for scale, the jet slightly shorter than the car. `[STUDIO LOOK]` | Slow pan from left to right across all three. `[VIDEO SAFE]` ⚠ sizes: Goblin ~4.5 m long |
-| **S16** wings unfold | **Archival first** | — | **Weak in AI; don't ask Grok to fold the wings.** M1 is now wings-spread (it matches the real R1 photo), so the M1-to-M2 cross-dissolve no longer shows a fold. Use a real photo or film of the Goblin with its wings folded if you find one. Otherwise skip the fold visual and hold on M2 while the line plays. |
-| **S17** tail fins | **NEW** from M2 | `[GOBLIN LOCK]` Rear three-quarter close-up of the cluster of tail fins and the jet exhaust. `[STUDIO LOOK]` | Slow orbit around the tail. `[VIDEO SAFE]` ⚠ fin count vs R2 |
-| **S18** X-ray engine | **NEW** from M2 | `[GOBLIN LOCK]` Ghosted semi-transparent X-ray cutaway: the aluminium skin see-through like glass, a single jet engine inside glowing orange running from the nose intake to the tail exhaust. `[STUDIO LOOK]` | Slow orbit, the orange glow pulses gently. `[VIDEO SAFE]` ⚠ **weak in AI**. Fallback: M2 with an orange glow drawn in CapCut |
-| **S19** guns | **NEW** from M2 | `[GOBLIN LOCK]` Extreme close-up of the nose showing the machine-gun ports. `[STUDIO LOOK]` | Slow slide along the nose. `[VIDEO SAFE]` ⚠ 4 guns and port positions |
-| **S20** cockpit, looking up | **NEW** from M4 | Point-of-view from inside the tiny cockpit of the jet in the reference, looking up through the bubble canopy at the steel hook and the silver bomber belly just above. `[FILM LOOK]` | Small shakes as if in rough air, light streaks across the canopy. `[VIDEO SAFE]` ⚠ canopy frame |
-| **S21** "no gear" X-ray | **REUSE S18 image** | — | **Weak in AI.** Use the S18 image and animate red wheel and strut icons bouncing off it in CapCut. No Grok video needed. |
+| **S13** "no wheels" | **R2** | Slow orbit to the left around the small jet hovering above the floor. Keep the XF-85 Goblin exactly as in the image: egg-shaped polished-aluminium body, round nose intake, bubble canopy, short boxy hook frame, two upswept tail fins, a small fin on each wingtip, no wheels, no propeller. Dark graphite studio, warm gold and steel-blue rim lights, glossy floor, photoreal, 16:9. No morphing, no extra parts, smooth realistic motion. *(In CapCut, draw glowing outlines where wheels would be, then fade them out.)* | ⚠ fins |
+| **S14** bomb bay fit | **R2 still** | **No Grok video.** Put the R2 still in CapCut and draw a glowing blue rectangle tightly around it, labelled "15 ft limit". | — |
+| **S15** scale | **R2** | Slow pull-back revealing a grey faceless human mannequin about 1.8 m tall standing beside the jet for scale, the jet about the length of a family car. Keep the XF-85 Goblin exactly as in the image: egg-shaped body, canopy, hook frame, two upswept tail fins, wingtip fins, no wheels. Dark graphite studio, warm gold and steel-blue rim lights, photoreal, 16:9. No morphing, no extra parts, smooth realistic motion. | ⚠ **weak** (adds new objects). Fallback: place a person silhouette next to the R2 still in CapCut. |
+| **S16** wings unfold | **Archival** | **No Grok video.** Use a real photo of the Goblin with its wings folded if you find one; otherwise hold on the S13 clip during this line. | — |
+| **S17** tail fins | **R2** | Slow orbit around to the rear of the small jet, ending on a close view of the tail fins and the jet exhaust. Keep the XF-85 Goblin exactly as in the image: two upswept tail fins, a small fin on each wingtip, egg-shaped body, hook frame, no wheels, no propeller. Dark graphite studio, warm gold and steel-blue rim lights, photoreal, 16:9. No morphing, no extra parts, smooth realistic motion. | ⚠ fin count vs R2 |
+| **S18** X-ray engine | **R2** | The aluminium skin slowly turns semi-transparent like glass, revealing a single jet engine inside glowing orange, running from the nose intake to the tail exhaust; slow orbit. Keep the XF-85 Goblin's outline exactly as in the image: egg-shaped body, canopy, hook frame, two upswept tail fins, wingtip fins, no wheels. Dark graphite studio, photoreal, 16:9. No morphing, no extra parts, smooth realistic motion. | ⚠ **weak**. Fallback: the R2 still with an orange glow drawn in CapCut |
+| **S19** guns | **R5** | Slow slide along the nose, close up, showing the machine-gun ports beside the nose intake. Keep the XF-85 Goblin exactly as in the image: round nose intake, dark nose panel, hook frame, canopy. Dark graphite studio, warm gold and steel-blue rim lights, photoreal, 16:9. No morphing, no extra parts, smooth realistic motion. | ⚠ port positions vs photos |
+| **S20** cockpit, looking up | **R3** | The camera slowly pushes in toward the small jet's bubble canopy until we are looking up through the glass at the hook and the bomber's belly just above; slight shaking as if in rough air. Keep both aircraft exactly as in the image. Black-and-white 1948 test film look, soft grain, 16:9. No morphing, no extra parts, smooth realistic motion. | ⚠ **weak** (big move). Fallback: a slow push-in on R3 without entering the cockpit. |
+| **S21** "no gear" X-ray | **S18 clip or R2 still** | **No Grok video.** Animate red wheel and strut icons bouncing off it in CapCut. | — |
 
-### The test (thriller section)
+### The test (black-and-white test-film look)
 
-| Shot | Start image | Image prompt | Video prompt |
+| Shot | Upload | Video prompt | Check |
 |---|---|---|---|
-| **S23** under the bomber *(only if you find no archival film)* · **Disc ON** | **REUSE M4** | — | Slow drift alongside, both aircraft steady. `[VIDEO SAFE]` |
-| **S24** release and engine start · **Disc ON** | **NEW** from M4 | `[GOBLIN LOCK]` Side view just below the bomber's trapeze, falling away, a faint orange glow in its tail exhaust. `[FILM LOOK]` | The jet falls a short way, its exhaust flares orange with heat shimmer, it levels off. Camera tracks alongside. `[VIDEO SAFE]` ⚠ |
-| **S25** turbulence · **Disc ON** | **NEW** from M4 | `[B-29 LOCK]` Close-up under the belly and the steel trapeze bar, clouds racing below, visible churning air. `[FILM LOOK]` | Heat-haze ripples under the belly, the trapeze bar swings and shakes, camera shakes. `[VIDEO SAFE]` |
-| **S26** the approach · **Disc ON** | **CHAIN** (last frame of S24) | — | The small jet rises and bounces toward the swinging trapeze bar, rocking side to side in rough air. `[VIDEO SAFE]` ⚠ |
-| **S27** canopy hit · **Disc ON** | **NEW** from M4 | `[GOBLIN LOCK]` Extreme close-up of the bubble canopy with the steel trapeze bar a few centimetres away. `[FILM LOOK]` | The bar strikes the canopy, the glass cracks and shatters outward in slow motion. `[VIDEO SAFE]` ⚠ event details |
-| **S28** belly landing · **Disc ON** | **NEW** from M3 | `[GOBLIN LOCK]` A metre above a vast cracked dry lakebed in the Mojave desert at golden hour, 1948, long shadows, about to touch down on its belly skid. `[FILM LOOK]` | The jet touches down on its belly and slides across the lakebed throwing up a long plume of dust, slowing to a stop. Camera tracks low alongside. No wheels. `[VIDEO SAFE]` ⚠ |
+| **S23** under the bomber · **Disc ON** *(only if you find no archival film)* | **R3** | Slow drift alongside, both aircraft flying steadily, clouds passing below. Keep the B-29 exactly as in the image: four propeller engines, rounded glass nose, one tall tail fin, the trapeze. Keep the small jet exactly as in the image, no wheels. Black-and-white 1948 test film look, soft grain, gentle flicker, 16:9. No morphing, no extra parts, smooth realistic motion. | ⚠ |
+| **S24** release and engine start · **Disc ON** | **R3** | The small jet unhooks and falls a short way below the bomber, its tail exhaust flares with heat shimmer as the engine lights, and it levels off; camera tracks alongside. Keep the small jet's egg-shaped body, canopy, hook frame, two upswept tail fins and wingtip fins exactly as in the image, no wheels. Keep the B-29 exactly as in the image. Black-and-white 1948 test film look, soft grain, 16:9. No morphing, no extra parts, smooth realistic motion. | ⚠ |
+| **S25** turbulence · **Disc ON** | **R3** | Close under the bomber's belly: visible churning air and heat-haze ripples, the steel trapeze bar swinging and shaking, clouds racing below, camera shaking. Keep the B-29 and trapeze exactly as in the image. Black-and-white 1948 test film look, soft grain, 16:9. No morphing, no extra parts. | ⚠ trapeze shape |
+| **S26** the approach · **Disc ON** | **CHAIN**: last frame of S24 | The small jet rises and bounces unsteadily toward the swinging trapeze bar, rocking side to side in rough air, camera shaking. Keep the small jet's body, canopy, hook frame and fins exactly as in the image, no wheels. Black-and-white 1948 test film look, 16:9. No morphing, no extra parts, smooth realistic motion. | ⚠ |
+| **S27** canopy hit · **Disc ON** | **CHAIN**: last frame of S26 | The steel trapeze bar strikes the small jet's bubble canopy; the glass cracks and shatters outward in slow motion, fragments whipping away in the wind. Keep the jet's shape exactly as in the image. Black-and-white 1948 test film look, 16:9. No morphing, no extra parts. | ⚠ event details (see fact-check) |
+| **S28** belly landing · **Disc ON** | **Archival first**, else **R2** | *(If no archival photo of the skid landing:)* The scene becomes a vast cracked dry lakebed in the California desert; the small jet touches down on its belly skid and slides, throwing up a long plume of dust, slowing to a stop; camera tracks low alongside. Keep the XF-85 Goblin exactly as in the image: egg-shaped body, canopy, hook frame, two upswept tail fins, wingtip fins, no wheels. Black-and-white 1948 test film look, soft grain, 16:9. No morphing, no extra parts, smooth realistic motion. | ⚠ **weak** (scene change). No wheels must appear. |
 
-### "Imagine that…" (AI direct: no reference image)
+### "Imagine that…" (AI direct: no upload)
 
-| Shot | Start image | Image prompt | Video prompt |
+| Shot | Upload | Video prompt | Check |
 |---|---|---|---|
-| **S31** Arctic night | **NEW, no reference** | Night over a frozen Arctic sea under a violent storm, a huge bomber only as a tiny dark distant silhouette against lightning, faint tracer fire in the clouds, ominous. `[FILM LOOK]` | Lightning flickers, storm clouds roll, snow streaks past the camera. Add an on-screen "Illustration" label in the edit. |
+| **S31** Arctic night | **None** (text to video) | Night over a frozen Arctic sea under a violent storm, a huge bomber seen only as a tiny dark distant silhouette against lightning, faint tracer fire in the clouds, snow streaking past the camera, ominous, cinematic, photoreal, 16:9. | Add an on-screen "Illustration" label in the edit |
 
 ### Payoff and ending
 
-| Shot | Start image | Image prompt | Video prompt |
+| Shot | Upload | Video prompt | Check |
 |---|---|---|---|
-| **S35** back to the studio | **REUSE M1** | — | Same as S01 but orbit to the left. `[VIDEO SAFE]` |
-| **S36** X-ray bomber | **NEW** from M5 **+ M1** | `[B-36 LOCK]` Ghosted semi-transparent X-ray view, the small jet from the second reference visible inside the bomb bay, blueprint glow. `[STUDIO LOOK]` | Slow pull-back. `[VIDEO SAFE]` ⚠ **weak in AI**. Fallback: M5 with M1 cut out and placed over it in CapCut |
-| **S37** push-in on hook | **REUSE M2** | — | Slow push-in onto the hook on top of the nose. `[VIDEO SAFE]` |
-| **S38** hook in the dark | **NEW** from M2 | `[GOBLIN LOCK]` Only the nose and hook visible, lit by one [ACCENT] rim light, everything else fading into pure black. `[STUDIO LOOK]` | Almost still, the light slowly brightens on the hook. `[VIDEO SAFE]` |
-| **S40** modern drones *(only if you don't name a real programme)* | **NEW, no reference** | A large modern grey military transport plane in flight at sunset above clouds, a small sleek unmarked drone approaching beneath it, no insignia. `[FILM LOOK]` | The drone rises slowly toward the transport's belly, clouds drift below. |
-| **S41** B-36 tease | **REUSE M6** | — | Slow push-in from behind, the six propellers spinning as blurred discs behind the wing. `[VIDEO SAFE]` ⚠ **Weak in AI**: count the propellers in every frame. If they change, use a slow zoom on the M6 still instead. |
+| **S35** back to the studio | **R1** | Slow smooth quarter orbit to the left around the small jet hovering just above the floor. Keep the XF-85 Goblin exactly as in the image: egg-shaped polished-aluminium body, round nose intake, dark nose panel, bubble canopy, short boxy hook frame, two upswept tail fins, a small fin on each wingtip, one star insignia, no wheels, no propeller. Dark graphite studio, soft white key light, warm gold and steel-blue rim lights, glossy reflective floor, photoreal, 16:9. No morphing, no extra parts, smooth realistic motion. | ⚠ |
+| **S36** X-ray bomber | **R4 + R1 stills** | **No Grok video.** In CapCut, place the R1 Goblin (background removed) small inside the R4 bomber with a blue glow and do a slow zoom out. | — |
+| **S37** push-in on hook | **R5** | Slow push-in onto the short boxy hook frame on the nose. Keep the hook, canopy and dark nose panel exactly as in the image. Dark graphite studio, warm gold and steel-blue rim lights, photoreal, 16:9. No morphing, no extra parts, smooth realistic motion. | ⚠ hook shape |
+| **S38** hook in the dark | **R5** | The studio lights slowly fade to black until only the hook frame and the top of the nose remain, lit by one warm gold rim light. Keep the hook exactly as in the image. Photoreal, 16:9. No morphing, no extra parts. | ⚠ |
+| **S40** modern drones *(only if you don't name a real programme)* | **None** (text to video) | A large modern grey military transport plane flying at sunset above the clouds, a small sleek unmarked drone rising slowly toward its belly, no insignia, photoreal, cinematic, 16:9. | — |
+| **S41** next-video tease | Depends on the next video's aircraft | Use that aircraft's approved reference photo and a slow push-in prompt with its own lock line. | ⚠ |
 
-Archival and graphics shots (S05, S06, S08, S09, S11, S12, S22, S29, S30, S32–S34, S39) are unchanged. See the table in `airspeed-model.md`.
+Archival and graphics shots (S05, S06, S08, S09, S11, S12, S22, S29, S30, S32–S34, S39) are unchanged. See `airspeed-model.md`.
 
 ---
 
@@ -161,18 +119,13 @@ Archival and graphics shots (S05, S06, S08, S09, S11, S12, S22, S29, S30, S32–
 
 | Upload | Shots |
 |---|---|
-| **M1** (reuse) | S01, S16 (part 1), S35 |
-| **M2** (reuse) | S03, S13, S16 (part 2), S37 |
-| **M4** (reuse) | S04, S23 |
-| **M5** (reuse) | S07 |
-| **M6** (reuse) | S41 |
-| **NEW from M2** | S02, S14, S15, S17, S18, S19, S38 |
-| **NEW from M3** | S28 |
-| **NEW from M4** | S20, S24, S25, S27 |
-| **NEW from M5** | S10 |
-| **NEW from M5 + M1** | S36 |
-| **CHAIN** (last frame of the previous clip) | S26 (after S24) |
-| **Reuse an earlier shot's image** | S21 (the S18 image) |
-| **NEW, no reference** (AI direct) | S31, S40 |
+| **R1** (head-on, cleaned) | S01, S02, S35 |
+| **R2** (side, cleaned) | S13, S15, S17, S18, (S28 fallback) |
+| **R3** (on the trapeze, B&W) | S04, S20, S23, S24, S25 |
+| **R4** (B-36) | S07, S10 |
+| **R5** (nose and hook crop) | S03, S19, S37, S38 |
+| **CHAIN** (last frame of the previous clip) | S26 (after S24), S27 (after S26) |
+| **None** (text to video) | S31, S40 |
+| **No Grok video** (CapCut or archival) | S14, S16, S21, S36 |
 
-Keep every approved image in a folder named `masters`, and name every file by shot (`S18.png`), so next video you can reuse your studio look straight away.
+**Fallback if one shot keeps failing:** make one still image of that exact frame first (upload the reference plus the prompt without the camera move), fix it, then animate it. Use this only for that shot.

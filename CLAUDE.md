@@ -23,15 +23,15 @@ The channel name, handle, description, colour palette, logo, banner, voice, topi
 ## Standing preferences
 
 - **The user:** works on a Mac, is a beginner with 3D tools, and has NexLev connected. Use NexLev for research, and verify names and topics with it before recommending them.
-- **3D animation tool = Grok, not Blender.** For every "airspeed" script, deliver a Grok prompt pack in the format of `airspeed-grok-prompts.md`:
-  1. real reference photos to download (R1, R2…);
-  2. master images to generate and approve first (M1, M2…);
-  3. word-for-word lock text for each aircraft, plus the studio look, film look and `[VIDEO SAFE]` line;
-  4. a shot-by-shot table saying whether to **REUSE** a master, make a **NEW** image from a named master, **CHAIN** from the previous clip's last frame, or go AI direct with no reference, each with its image and video prompts;
-  5. fallbacks for shots AI handles badly (wings folding, X-ray, propeller counts);
+- **3D animation tool = Grok, not Blender. Reference photo → video directly (no image step).** For every "airspeed" script, deliver a Grok pack in the format of `airspeed-grok-prompts.md`:
+  1. real reference photos to download and **clean** (crop, dark background, no stand or clutter), each checked by me before use (R1, R2…, including crops such as a nose/hook close-up);
+  2. a look plan (colour studio for 3D shots, B&W test-film look when the reference is archival);
+  3. one **paste-ready video prompt per shot**, with the aircraft lock line, the look and the no-morphing line merged in (no bracket placeholders);
+  4. for each shot: which reference to upload, or **CHAIN** (last frame of the previous clip), or text-to-video for AI-direct shots;
+  5. ⚠ weak shots (big camera moves, scene changes, X-ray, folding, adding objects) with a CapCut or archival fallback;
   6. a closing "what to upload for each shot" list.
 
-  Always start shots from an approved master, never from a frame of an earlier video. Mention Blender only if the user asks.
+  Make a still image first only as a fallback for a shot that keeps failing. Mention Blender only if the user asks.
 - **Every script also gets:** voiceover delivery marks, a pronunciation list for new names, 3 title + 3 thumbnail options, description with chapters and sources, pinned comment, 3 Shorts ideas, and the combined VERIFY list. Never claim "no AI" on the channel.
 - **Fact-checking is on for every video.** Whenever the user sends a script, a line, an image or a claim to verify, research it (WebSearch plus NexLev; museum, Air Force and archive sources first), give each claim a verdict (✅ / ✏️ fix the wording / ⚠️ check this) with the reason, and **always give links** the user can open to confirm. For an image, check it against real photos of that aircraft and name what's wrong (engine count, fins, markings, gear, canopy). Log results in `videos/<aircraft>-fact-check.md` (see `videos/xf85-fact-check.md`).
 - **Don't write scripts, names or prompts until the user asks.** When the user says to keep something in mind, confirm briefly and wait.
