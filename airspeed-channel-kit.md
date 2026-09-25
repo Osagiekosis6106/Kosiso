@@ -1,90 +1,77 @@
-# Channel kit: the channel that beats Airspeed
+# Channel kit: instructions for building a channel that beats Airspeed
 
-This is everything for setting up and running the channel: name, description, logo, banner, voice, music, upload settings and the weekly routine. It builds on the research in `airspeed-model.md` and the Grok workflow in `airspeed-grok-prompts.md`.
-
----
-
-## 1. Name
-
-**Recommended: Hangar Physics** (handle `@HangarPhysics`)
-
-- It says exactly what's different about you. Airspeed *tells* you why an aircraft is strange; you *show the physics* with your X-ray shot.
-- "Hangar" matches the studio-hangar look this audience already trusts.
-- A YouTube channel search on 25 Sep 2026 found no channel with this name. **Claim the handle today** before checking anything else.
-
-**Backups:** *Rivet & Reason* · *Airframe Physics* · *The Strange Airframe*. Check each on YouTube before you use it.
-
-**Don't use** (already taken or too close):
-- **Airframe**: a new 3D channel with a very similar promise ("one strange aircraft decision at a time"). It's another Airspeed clone; keep an eye on it.
-- **This Is Why It Flew**: an existing aviation-history channel.
-- **Inside the Airframe**, **The Aircraft Files**, **BUILT WEIRD** and **Oddgist**: all active channels in this niche.
-- Anything with "Air", "Speed" or "Airspeed" in it. It would look like a copy.
+These are **instructions, not decisions**. The channel name, description, colours, logo and banner **haven't been chosen yet**. Decide them with the user when they ask, following the steps below. Nothing here is fixed. The research behind these rules is in `airspeed-model.md`, and the Grok workflow is in `airspeed-grok-prompts.md`.
 
 ---
 
-## 2. Channel description (About)
+## 1. Name: how to choose it
 
-Paste this:
+Offer the user **5–8 candidates** and let them pick. A good name:
+- **says the channel's difference**: showing the physics or engineering reason, not just telling the story;
+- is **short** (1–3 words) and easy to say, spell and search;
+- has an **aviation cue** (hangar, airframe, rivet, wing, flight), but **nothing containing "Air", "Speed" or "Airspeed"**, which reads as a copy;
+- **is free on YouTube**. Check every candidate with NexLev `youtube_search` (type: channel) and say what you found. Then ask the user to check the @handle in YouTube Studio.
 
-> The strangest parts of famous aircraft, and the physics that explain them.
+**Names already taken in this niche (Sep 2026 search; re-check):** *Airframe* (a new 3D clone with a very similar promise, "one strange aircraft decision at a time"; watch it), *This Is Why It Flew*, *Inside the Airframe*, *The Aircraft Files*, *BUILT WEIRD*, *Oddgist*.
+
+---
+
+## 2. Channel description (About): how to write it
+
+Once the user has picked a name, write it in this shape:
+
+> [One-line promise: strange part of a famous aircraft + the reason behind it.]
 >
-> Why did a record-breaking plane have no front window? Why did a fighter have no landing gear? Every video takes one aircraft with one strange design choice, rebuilds it in 3D, and shows you — with X-ray animation — exactly why the engineers did it.
+> [Two example questions in the channel's title style.] [What every video does: one aircraft, one strange design choice, rebuilt in 3D, the answer shown visually.]
 >
-> Researched from primary sources, fact-checked, and animated in 3D. Sources for every video are listed in its description.
+> [Trust line: researched from primary sources, fact-checked, sources listed in every description.]
 >
-> New video every week.
+> [Upload promise, e.g. "New video every week."]
 
 Rules:
-- **Never write "made entirely by humans" or "no AI".** You use Grok, and claiming otherwise is the kind of claim that loses the audience for good. If someone asks, say it plainly: *"3D and AI-assisted animation, with a human-written, fact-checked script."*
-- **Keywords** (YouTube Studio → Settings → Channel → Basic info): `aviation history, aircraft engineering, aircraft design, 3D animation, aviation explained, military aviation, experimental aircraft, Cold War aircraft, WWII aircraft, how planes work`
+- **Never write "made entirely by humans" or "no AI".** The user uses Grok. If asked, the honest line is *"3D and AI-assisted animation, with a human-written, fact-checked script."*
+- **Keywords** (YouTube Studio → Settings → Channel → Basic info): `aviation history, aircraft engineering, aircraft design, 3D animation, aviation explained, military aviation, experimental aircraft, Cold War aircraft, WWII aircraft, how planes work`.
 - **Country:** set it truthfully.
 
 ---
 
-## 3. Colours and fonts (use them everywhere)
+## 3. Colours and fonts: how to choose them
 
-| Role | Colour | Hex |
-|---|---|---|
-| Background, dark | Graphite | `#16191E` |
-| Background, gradient end / accent | Amber | `#E8A33D` |
-| Second rim light / X-ray lines | Steel blue | `#6FA3C8` |
-| Text on dark | Off-white | `#F2EFE8` |
+When the user asks, propose **2–3 palettes**, each with:
+- a dark background colour and a gradient accent;
+- a rim or X-ray line colour;
+- an off-white text colour;
+- hex codes for all of them.
 
-**Fonts:** *Barlow Condensed* (headings and spec cards) plus *Inter* (small labels). Both are free from Google Fonts and available in Canva.
-
-These colours are deliberately different from Airspeed's navy-crimson. The graphite-to-amber gradient matches the `[STUDIO LOOK]` text in the Grok prompts, so your thumbnails and videos look like one brand.
-
----
-
-## 4. Logo (profile picture)
-
-**Concept:** a simple aircraft seen head-on, drawn as a thin amber X-ray outline, with one small steel-blue dot in the middle for the centre of gravity. It shows your trademark shot in one glance.
-
-**Make it in Grok (icon only; add no text, because AI spells badly):**
-> Minimal flat vector logo icon, a simple generic propeller aircraft seen perfectly head-on, drawn as clean thin glowing amber outline lines like an X-ray blueprint, a small steel-blue dot at its centre, on a solid graphite background, centred, symmetrical, lots of empty space around it, no text, no letters, no gradients, 1:1
-
-Then in **Canva**:
-1. Make an 800 × 800 px design.
-2. Put the icon in the centre, inside a circle-safe area (YouTube crops the picture to a circle).
-3. Export as PNG.
-
-Check at phone size: it must read as "aircraft" when it's a tiny circle.
-
-**Watermark** (YouTube Studio → Customisation → Branding): use the same icon at 150 × 150 px.
+Rules:
+- **Not Airspeed's navy-to-crimson.** The channel must be recognisable as different.
+- Colours must **work on a dark studio background** and stay readable on a phone.
+- Once chosen, the palette goes into the Grok `[STUDIO LOOK]` text, the thumbnails, the logo and the banner, **so everything looks like one brand**. Then record it in `CLAUDE.md`.
+- Fonts: suggest one condensed heading font plus one clean label font, both free on Google Fonts / Canva (e.g. Barlow Condensed + Inter).
 
 ---
 
-## 5. Banner
+## 4. Logo (profile picture): how to make it
 
-**Size:** 2560 × 1440 px. Keep all text and the aircraft inside the centre **1546 × 423 px** safe area, which is all that shows on phones.
+- **Concept rule:** one simple aircraft silhouette or outline that hints at the channel's difference (for example X-ray lines or a centre-of-gravity dot). It must read as "aircraft" at tiny circle size.
+- **Make the icon in Grok. Don't put text in it**, because AI spells badly. Prompt template:
+  > Minimal flat vector logo icon, a simple generic [aircraft type] seen perfectly head-on, drawn as clean thin glowing [ACCENT COLOUR] outline lines like an X-ray blueprint, [optional small detail in SECOND COLOUR], on a solid [BACKGROUND COLOUR] background, centred, symmetrical, lots of empty space around it, no text, no letters, 1:1
+- **Finish in Canva:**
+  1. Make an 800 × 800 px design and keep the icon inside a circle-safe area (YouTube crops to a circle).
+  2. Export as PNG.
+  3. Make a 150 × 150 px version for the watermark (YouTube Studio → Customisation → Branding).
 
-**Grok image prompt (background):**
-> Wide cinematic dark studio hangar, graphite-to-amber gradient back wall, polished reflective floor, a single silver 1940s propeller aircraft seen from the front three-quarter, soft white key light, amber and steel-blue rim lights, lots of empty dark space on both sides, photoreal 3D render, no text, 16:9
+---
 
-**In Canva, add:**
-- the channel name in Barlow Condensed, off-white, across the centre;
-- one line under it: **"Strange aircraft. Real physics."**;
-- small at the right: **"New video every week"**.
+## 5. Banner: how to make it
+
+- **Size:** 2560 × 1440 px. Keep everything important inside the centre **1546 × 423 px**, which is all that shows on phones.
+- **Grok background prompt template:**
+  > Wide cinematic dark studio hangar, [BACKGROUND]-to-[ACCENT] gradient back wall, polished reflective floor, a single silver [era] aircraft seen from the front three-quarter, soft white key light, [ACCENT] and [SECOND COLOUR] rim lights, lots of empty dark space on both sides, photoreal 3D render, no text, 16:9
+- **In Canva, add:**
+  - the channel name in the heading font across the centre;
+  - one short tagline under it (write 3 options for the user);
+  - the upload promise, small at the right.
 
 ---
 
@@ -148,7 +135,7 @@ Before recording a new aircraft, look up any foreign name on YouTube or Forvo.co
 ## 8. Every upload (settings checklist)
 
 - [ ] **Title:** one of the patterns in `airspeed-model.md` section 6, under 55 characters, with the aircraft named. Load **3 title and thumbnail pairs into Test & Compare**.
-- [ ] **Thumbnail:** one aircraft, the strange part visible without text, the graphite-amber studio, readable at phone size. Make it from the M1/M2 master in Grok, then add a subtle rim glow in Canva. No arrows, no meme text.
+- [ ] **Thumbnail:** one aircraft, the strange part visible without text, the channel's chosen studio colours, readable at phone size. Make it from the M1/M2 master in Grok, then add a subtle rim glow in Canva. No arrows, no meme text.
 - [ ] **Description:**
   1. two-sentence summary;
   2. chapters (the first must be `0:00`);
@@ -186,8 +173,8 @@ Before recording a new aircraft, look up any foreign name on YouTube or Forvo.co
 ## 10. What to say to get all this back
 
 In any new session in this repo, say **"airspeed"** plus what you want. For example:
-- *"airspeed: write video #2 about the B-36"*
-- *"airspeed: make the Grok prompts for the Do 335 video"*
-- *"airspeed: give me titles and thumbnails for this script"*
+- *"airspeed: help me choose the channel name"*
+- *"airspeed: write a script about [aircraft]"*
+- *"airspeed: make the Grok prompts for this script"*
 
-I'll load the research, the formulas, this kit and the Grok workflow automatically.
+That loads the research, the formulas, these instructions and the Grok workflow. Names, colours, topics and scripts are only decided when you ask.

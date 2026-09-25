@@ -1,4 +1,6 @@
-# XF-85 video in Grok (no Blender): prompts and reference-image plan
+# Grok workflow: worked example (XF-85 video)
+
+> **How to use this file.** It's the **format and method** for every Grok prompt pack: real photos → approved masters → lock text → REUSE / NEW / CHAIN per shot. The XF-85 content is only the example. Colours in `[STUDIO LOOK]` and the logo are placeholders until the user chooses the channel's palette (`airspeed-channel-kit.md`, section 3).
 
 This file is for making video #1 (*Why Did This Fighter Have No Landing Gear?*) in **Grok Imagine** instead of Blender. Shot numbers (S01–S41) match the shot sheet in `airspeed-model.md`, section 11.
 
@@ -79,7 +81,7 @@ Only approved masters go into the shots.
 > An early Convair B-36 bomber exactly like the reference: enormous straight wings, polished aluminium, exactly six propeller engines mounted on the back edge of the wing with propellers facing backward, no jet pods, tall single tail.
 
 **`[STUDIO LOOK]`**
-> Photoreal 3D product render, dark graphite-to-amber gradient studio background, soft white key light from the front, amber and steel-blue rim lights from behind, glossy reflective floor, sharp focus, 16:9, no text.
+> Photoreal 3D product render, dark [BACKGROUND]-to-[ACCENT] gradient studio background, soft white key light from the front, [ACCENT] and [SECOND COLOUR] rim lights from behind, glossy reflective floor, sharp focus, 16:9, no text.
 
 **`[FILM LOOK]`**
 > Photoreal cinematic 3D render, 1940s colour film look, muted Kodachrome colours, soft film grain, 16:9, no text.
@@ -147,7 +149,7 @@ Only approved masters go into the shots.
 | **S35** back to the studio | **REUSE M1** | — | Same as S01 but orbit to the left. `[VIDEO SAFE]` |
 | **S36** X-ray bomber | **NEW** from M5 **+ M1** | `[B-36 LOCK]` Ghosted semi-transparent X-ray view, the small jet from the second reference visible inside the bomb bay, blueprint glow. `[STUDIO LOOK]` | Slow pull-back. `[VIDEO SAFE]` ⚠ **weak in AI**. Fallback: M5 with M1 cut out and placed over it in CapCut |
 | **S37** push-in on hook | **REUSE M2** | — | Slow push-in onto the hook on top of the nose. `[VIDEO SAFE]` |
-| **S38** hook in the dark | **NEW** from M2 | `[GOBLIN LOCK]` Only the nose and hook visible, lit by one amber rim light, everything else fading into pure black. `[STUDIO LOOK]` | Almost still, the light slowly brightens on the hook. `[VIDEO SAFE]` |
+| **S38** hook in the dark | **NEW** from M2 | `[GOBLIN LOCK]` Only the nose and hook visible, lit by one [ACCENT] rim light, everything else fading into pure black. `[STUDIO LOOK]` | Almost still, the light slowly brightens on the hook. `[VIDEO SAFE]` |
 | **S40** modern drones *(only if you don't name a real programme)* | **NEW, no reference** | A large modern grey military transport plane in flight at sunset above clouds, a small sleek unmarked drone approaching beneath it, no insignia. `[FILM LOOK]` | The drone rises slowly toward the transport's belly, clouds drift below. |
 | **S41** B-36 tease | **REUSE M6** | — | Slow push-in from behind, the six propellers spinning as blurred discs behind the wing. `[VIDEO SAFE]` ⚠ **Weak in AI**: count the propellers in every frame. If they change, use a slow zoom on the M6 still instead. |
 

@@ -197,8 +197,8 @@ Suggested promise: **"The strangest parts of famous aircraft, and the physics th
 
 - Same audience and same "Why did X have Y?" hook.
 - **Your trademark (what Airspeed doesn't do):** every video has **one "X-ray" moment**. The aircraft turns semi-transparent and the answer is *animated*: centre-of-gravity markers, airflow lines, fuel draining, forces as arrows, stress glowing red. Viewers come back for that shot.
-- Name: **Hangar Physics** (recommended). The full brand kit (description, logo, banner, voice, upload settings) is in `airspeed-channel-kit.md`. "Airframe" and "This Is Why It Flew" are already taken.
-- Visual identity: **graphite `#16191E` to amber `#E8A33D`, with steel-blue `#6FA3C8` rim light**, on every thumbnail and studio shot. It's deliberately not Airspeed's navy-crimson.
+- Name, description, logo, banner: **not decided yet**. Follow the instructions in `airspeed-channel-kit.md` when the user asks. "Airframe" and "This Is Why It Flew" are already taken.
+- Visual identity: one dark-studio colour pair plus a rim-light colour, **not Airspeed's navy-crimson**, used on every thumbnail and studio shot. Choose it with the user (channel kit, section 3).
 
 ### Honesty about AI (this is important)
 
@@ -352,6 +352,8 @@ Target 1,650–1,900 words at 150 wpm, for **11–13 minutes**. That's long enou
 
 ## 10. Launch plan (built to get an outlier before upload #3)
 
+> **Candidates, not decisions.** Re-check every topic with NexLev when the user asks. The user chooses the real topics.
+
 **Launch three linked videos on the same day**, as Airspeed did on 24 Aug. Each one ends by teasing another, so a new viewer can binge all three.
 
 | # | Working title | Strange visible part | Why this topic | Chain |
@@ -394,7 +396,9 @@ Check each on NexLev (`search_videos` / `get_similar_videos`) before scripting. 
 
 ---
 
-## 11. Full script for video #1: *Why Did This Fighter Have No Landing Gear?*
+## 11. Worked example script: *Why Did This Fighter Have No Landing Gear?*
+
+> **A format reference, not a decision.** Use it to show how a finished script, shot sheet and packaging should look. Write real scripts only when the user asks.
 
 **Aircraft:** McDonnell XF-85 Goblin · **Target:** ~1,750 words · 11:40 · **Tone:** calm docent with three tension beats.
 
