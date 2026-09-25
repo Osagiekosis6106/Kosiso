@@ -30,7 +30,7 @@ Checked 25 Sep 2026 against the script the user is editing, "Why Did This Fighte
 | Early jets could fly only an hour or two | ✅ | General fact; no specific figure is claimed |
 | Navy airships caught biplane fighters on a trapeze in the 1930s | ✅ | Akron/Macon and Sparrowhawk. The Goblin's trapeze was based on theirs (S3). |
 | Zveno flew real combat missions in 1941 | ✅ | Attacks on Constanța (26 Jul 1941) and the Chernavodă bridge (Aug 1941) (S8) |
-| "one number: the size of a bomb bay" | ✅ ⭐ | The B-36 bomb bay was **15 ft × 5 ft 6 in** (S3). The Goblin was 14 ft 10 in, so **about 2 inches to spare**. Use this number in the script. |
+| "one number: the size of a bomb bay" / "15 ft bay, about 2 inches to spare" | ⚠️ **Don't say it this way** | **Corrected 25 Sep.** Online sources give **15 ft as the design limit** for the fighter ("no longer than 15 feet, no taller than 9 feet, folded wings no wider than 5 feet"; [National Interest](https://nationalinterest.org/blog/buzz/the-us-air-forces-xf-85-goblin-the-scary-parasite-fighter-15671), [Plane Historia](https://planehistoria.com/mcdonnell-xf-85/)). **Not** as the length of the bay: one summary puts a B-36 bay at about 33 ft. Jenkins, *Magnesium Overcast*, is a print book and couldn't be checked online. Safe line: *"The Air Force gave McDonnell a box to fit: no more than about 15 feet long. The Goblin came in at 14 feet 10."* Or drop the number. Use "two inches to spare" **only** if Jenkins confirms a 15-ft limit. |
 | Wings folded upward, span ~6.4 m / 21 ft | ✅ | 21 ft 1 in; swept wings folding upward (S1, S5) |
 | Multiple small tail fins | ✅ | Three vertical fins plus angled horizontal surfaces (S1) |
 | Westinghouse J34, ~3,000 lb thrust | ✅ | J34, 3,000 lbf |
@@ -40,7 +40,7 @@ Checked 25 Sep 2026 against the script the user is editing, "Why Did This Fighte
 | Ejection seat | ✅ | The pilot sat on the engine in an ejection seat |
 | Retractable hook plus a steel emergency skid | ✅ | Skid landings are recorded on the failed flights (S2) |
 | Tested on a modified B-29 because the B-36 wasn't available | ✅ | EB-29B, serial 44-84111 (S6) |
-| Nicknamed "Monstro" | ✅ | Named after the whale that swallowed Pinocchio (S6). Optional nice detail. |
+| Nicknamed "Monstro", after the whale that swallowed Pinocchio | ✅ | The Aviationist: "named Monstro, after the whale that swallowed Pinocchio" (S6); the SAC Museum exhibit page names the EB-29B "Monstro" (S4) |
 | Test pilot Edwin Schoch; first free flight 23 Aug 1948 | ✅ | Edwin F. Schoch, released at 20,000 ft (S2) |
 | Air under the bomber churns and pushes small aircraft away | ✅ | Turbulence under the EB-29 made recovery hard (S1, S2) |
 | The bar hit the canopy, the glass shattered, windblast tore off helmet and oxygen mask | ✅ | (S2, S3) |
@@ -49,7 +49,7 @@ Checked 25 Sep 2026 against the script the user is editing, "Why Did This Fighte
 | 7 free flights, only 3 hook-ups, the rest emergency landings | ✅ | 3 hook-ups, 4 belly landings, about 2 h 19 min in total, Aug 1948 – Apr 1949 (S3, S5) |
 | Cancelled; aerial refuelling was the better answer | ✅ | Cancelled 24 Oct 1949; in-flight refuelling of escort jets replaced the concept (S5) |
 | Only two built; one in Ohio, one in Nebraska | ✅ | 46-523 at the USAF Museum (Dayton, Ohio); 46-524 at the SAC & Aerospace Museum (Ashland, Nebraska) (S1, S4) |
-| Both "parked on stands… the hook is still raised" | ⚠️ | Confirmed for the **Ohio** Goblin: on a stand with the hook deployed. **Check the Nebraska one's photos (S10)** before saying "both", or say "the one in Ohio". |
+| "The one in Ohio… hook still raised" | ✅ | Script now says only Ohio (the USAF Museum Goblin, on a stand with the hook deployed). Nebraska photo if wanted: https://www.airhistory.net/photo/88628/46-524 |
 | "never once landed on [a runway] on purpose" | ✏️ | Every landing was a skid landing on the dry lakebed. "On purpose" suggests it once landed on a runway by accident. Say "and it never once landed on one." |
 | 1950s: a full-size reconnaissance jet under a modified B-36 | ✅ | FICON: RF-84K under a GRB-36 (S9) |
 | Today: big aircraft launching and catching drones | ✅ (generic) | If you **name** a programme (e.g. DARPA Gremlins), verify it first |
