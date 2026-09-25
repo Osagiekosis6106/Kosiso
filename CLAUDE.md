@@ -2,6 +2,7 @@
 
 ## Trigger phrases
 
+- **"channel model"**, **"channel clone"** or **"CLAUDE CHANNEL MODEL (v2)"** → read `channel-model-v2.md` and follow its 12 states exactly: one input at a time, stop after each state, no preambles. If the user pastes the prompt as a setup message, wait for their next message and then start at STATE 1.
 - **"america memory"**, or any mention of modeling **When America Made Everything** / a lost-American-brands or factory-towns channel → read `america-memory.md` and follow it. For every script, tag each 3–5 s beat as archival film, archival photo, archival ad, modern stock, graphic or AI image/motion; say exactly which free source and search terms to use for the real-footage beats; give AI prompts only for the rest; end with the free-footage shopping list (with ready-to-paste `archival_fetch.py` download commands, see `archival-fetch-guide.md`) and a filled `america-sourcing-log.md`.
 - **"airspeed"** or **"airspeed memory"**, or any mention of modeling **@AirspeedChannel**, of the user's aviation channel (**Hangar Physics**), or of a 3D aircraft "Why did X have Y?" video → read **all three** airspeed files before answering, and follow them:
   - `airspeed-model.md`: the research on Airspeed, its copycats and 74 similar channels; the title, thumbnail and script formulas; the "Airspeed+" script table; the research checklist; beat tags; the prompt-labelling rule (section 8c: type + ⚠ VERIFY / ✓ + Disclosure); the launch plan and topic backlog; the finished XF-85 Goblin script (section 11); the NexLev weekly routine.
