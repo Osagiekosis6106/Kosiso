@@ -1,6 +1,6 @@
 # Why Did This Fighter Have No Landing Gear?
 
-**Status: 🔒 LOCKED** (25 Sep 2026). Final and fact-checked (see `xf85-fact-check.md`). Record this version word for word. Any change needs a new fact-check. ~1,200 words, about 8–9 minutes of narration at 140–150 words per minute.
+**Status: 🔒 LOCKED** (25 Sep 2026, re-locked with the bridge line). Final and fact-checked (see `xf85-fact-check.md`). Record this version word for word. Any change needs a new fact-check. ~1,200 words, about 8–9 minutes of narration at 140–150 words per minute.
 
 ---
 
@@ -84,7 +84,7 @@ Landing gear would have made the Goblin heavier. Having none made it helpless.
 
 Today, the Goblin in Ohio sits on a stand, its hook still raised, reaching for a bomber that will never come back for it.
 
-That's what this channel is about. One aircraft. One strange design choice. And the physics that explains it.
+Every strange aircraft is the answer to a problem. That's what this channel is about. One aircraft. One strange design choice. And the physics that explains it.
 
 And the Goblin isn't the strangest one we'll rebuild. There's a fighter that took off standing on its tail, and its pilot had to land it looking over his shoulder.
 
