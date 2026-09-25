@@ -33,4 +33,5 @@ The channel name, handle, description, colour palette, logo, banner, voice, topi
 
   Always start shots from an approved master, never from a frame of an earlier video. Mention Blender only if the user asks.
 - **Every script also gets:** voiceover delivery marks, a pronunciation list for new names, 3 title + 3 thumbnail options, description with chapters and sources, pinned comment, 3 Shorts ideas, and the combined VERIFY list. Never claim "no AI" on the channel.
+- **Fact-checking is on for every video.** Whenever the user sends a script, a line, an image or a claim to verify, research it (WebSearch plus NexLev; museum, Air Force and archive sources first), give each claim a verdict (✅ / ✏️ fix the wording / ⚠️ check this) with the reason, and **always give links** the user can open to confirm. For an image, check it against real photos of that aircraft and name what's wrong (engine count, fins, markings, gear, canopy). Log results in `videos/<aircraft>-fact-check.md` (see `videos/xf85-fact-check.md`).
 - **Don't write scripts, names or prompts until the user asks.** When the user says to keep something in mind, confirm briefly and wait.
