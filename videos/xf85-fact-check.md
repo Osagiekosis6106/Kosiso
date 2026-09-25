@@ -54,3 +54,10 @@ Checked 25 Sep 2026 against the script the user is editing, "Why Did This Fighte
 | 1950s: a full-size reconnaissance jet under a modified B-36 | ✅ | FICON: RF-84K under a GRB-36 (S9) |
 | Today: big aircraft launching and catching drones | ✅ (generic) | If you **name** a programme (e.g. DARPA Gremlins), verify it first |
 | Teases: tail-sitter / lopsided warplane / jet that hung on a wire | ✅ | Convair XFY Pogo · Blohm & Voss BV 141 · Ryan X-13 Vertijet |
+
+## Reference-image checks (Grok masters)
+
+| Slot | Image the user sent | Verdict | Notes |
+|---|---|---|---|
+| **R1** | Colour head-on photo of the USAF Museum Goblin (46-523) on its yellow display stand | ✅ **Chosen for R1** | Real XF-85, sharp and symmetrical. Shows the nose intake, bubble canopy, **hook raised**, swept wings with wingtip fins, upper tail fins and USAF roundel. It also visually confirms the script's line "the Goblin in Ohio sits on a stand, its hook still raised". Wings are **spread**, not folded, so M1 should be generated wings-spread (safer than asking AI to invent the fold). Crop out the stand, curtains, electrical box, sign and rope before uploading. Credit: National Museum of the US Air Force (US government photo, public domain; confirm on the source page). |
+| R1 (alt) | B&W 1948 overhead photo of the Goblin on its ground dolly | ⚠️ Keep for archival B-roll, not for R1 | Real XF-85 period photo (hook up, "NO STEP" markings, wingtip fins). But it's top-down, not front/front-3/4, low resolution (800 px), and it shows the **wheeled ground dolly**, so Grok would likely add wheels. Use it in the edit as an `[ARCH]` shot, e.g. behind "no wheels at all" with a caption that the wheels are a ground dolly. |
