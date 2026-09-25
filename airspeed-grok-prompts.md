@@ -72,7 +72,7 @@ Only approved masters go into the shots.
 ## Part 2. Lock text (paste word for word, every time)
 
 **`[GOBLIN LOCK]`**
-> The McDonnell XF-85 Goblin, a tiny 1948 experimental jet fighter exactly like the reference image: short egg-shaped polished-aluminium fuselage, bubble canopy near the nose, a single steel hook on top of the nose in front of the canopy, small swept wings, a cluster of small tail fins at the rear exactly as in the reference, USAF markings, no landing gear, no wheels, no propeller.
+> The McDonnell XF-85 Goblin, a tiny 1948 experimental jet fighter exactly like the reference image: short egg-shaped polished-aluminium fuselage, a round air intake in the nose, a dark anti-glare panel on top of the nose, bubble canopy, and the retractable skyhook: a tall, dark-grey steel hook frame on the centreline just in front of the canopy, rising straight up higher than the canopy with a curved hook at its top (NOT a small ring or eyelet). Small swept wings with a small vertical fin on each wingtip, two upswept tail fins behind the canopy exactly as in the reference, one USAF star-and-bar insignia on the upper left wing only, no propeller, no landing gear, no wheels.
 
 **`[B-29 LOCK]`**
 > A 1940s Boeing B-29 Superfortress bomber exactly like the reference: polished aluminium, long rounded glass nose, four propeller engines on a long straight wing, one tall tail fin.
