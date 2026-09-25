@@ -3,29 +3,35 @@
 ## Trigger phrases
 
 - **"america memory"**, or any mention of modeling **When America Made Everything** / a lost-American-brands or factory-towns channel → read `america-memory.md` and follow it. For every script, tag each 3–5 s beat as archival film, archival photo, archival ad, modern stock, graphic or AI image/motion; say exactly which free source and search terms to use for the real-footage beats; give AI prompts only for the rest; end with the free-footage shopping list (with ready-to-paste `archival_fetch.py` download commands, see `archival-fetch-guide.md`) and a filled `america-sourcing-log.md`.
-- **"airspeed"** or **"airspeed memory"**, or any mention of modeling **@AirspeedChannel**, of the user's aviation channel (**Hangar Physics**), or of a 3D aircraft "Why did X have Y?" video → read **all three** airspeed files before answering, and follow them:
-  - `airspeed-model.md`: the research on Airspeed, its copycats and 74 similar channels; the title, thumbnail and script formulas; the "Airspeed+" script table; the research checklist; beat tags; the prompt-labelling rule (section 8c: type + ⚠ VERIFY / ✓ + Disclosure); the launch plan and topic backlog; the finished XF-85 Goblin script (section 11); the NexLev weekly routine.
-  - `airspeed-grok-prompts.md`: how the user makes 3D shots in **Grok** (see standing preferences).
-  - `airspeed-channel-kit.md`: name, description, colours, logo, banner, voiceover (with delivery marks and a pronunciation table), music, the upload checklist, the weekly schedule.
+- **"airspeed"** or **"airspeed memory"**, or any mention of modeling **@AirspeedChannel** or making a 3D aircraft "Why did X have Y?" channel or video → read **all three** airspeed files before answering, and follow them:
+  - `airspeed-model.md`: the research on Airspeed, its copycats and 74 similar channels; the title, thumbnail and script formulas; the "Airspeed+" script table; the research checklist; beat tags; the prompt-labelling rule (section 8c: type + ⚠ VERIFY / ✓ + Disclosure); topic-selection rules and candidate topics; a worked example script (section 11); the NexLev weekly routine.
+  - `airspeed-grok-prompts.md`: the method for making 3D shots in **Grok** (see standing preferences), shown on a worked example.
+  - `airspeed-channel-kit.md`: **instructions** for choosing the name, description, colours, logo and banner; the voiceover rules (delivery marks, pronunciation); music; the upload checklist; the weekly schedule.
 
   A recognisable real aircraft or person is never AI direct. Never re-make a competitor's outlier within 90 days (the Spirit of St. Louis copies got 1–4,000 views against Airspeed's 1.28M); use the same pattern on a different aircraft.
+
+## Still open (decide only when the user asks)
+
+The channel name, handle, description, colour palette, logo, banner, voice, topics and scripts are **not chosen yet**. The files hold instructions and examples, not decisions. When the user asks, offer options by following the instructions, let the user choose, then record the choice in this section.
 
 ## What we established (Airspeed research, Sep 2026, via NexLev)
 
 - Airspeed (@AirspeedChannel, Canada, started Aug 2026): 7 videos, ~371K views per video, outlier "Why Did the Spirit of St. Louis Have No Front Window?" (1.28M). It's a 7-person human studio using bought 3D models ("created entirely by humans"). Its audience is 82% male, mostly 25–44, 53% US; RPM is about $3.3.
 - Its method: proven topics, "Why did X have Y?" titles, a no-text dark-studio thumbnail, 3 videos on launch day, and every ending teasing another video. Its weak spots: factual slips corrected in top comments, a dead spec-sheet section, telling rather than showing the answer, no quotes, metric-first units, and no Shorts.
-- The user's edge: an X-ray physics shot in every video, stricter accuracy, both unit systems, primary quotes, Shorts, and weekly cadence. Launch trio: XF-85 Goblin → B-36 → Do 335.
+- Where to beat it: an X-ray physics shot in every video, stricter accuracy, both unit systems, primary quotes, Shorts, and weekly cadence.
 
 ## Standing preferences
 
 - **The user:** works on a Mac, is a beginner with 3D tools, and has NexLev connected. Use NexLev for research, and verify names and topics with it before recommending them.
-- **3D animation tool = Grok, not Blender.** For every "airspeed" script, deliver a Grok prompt pack modelled on `airspeed-grok-prompts.md` (the XF-85 video):
-  1. real reference photos to download (R1, R2…);
-  2. master images to generate and approve first (M1, M2…);
-  3. word-for-word lock text for each aircraft, plus the studio look, film look and `[VIDEO SAFE]` line;
-  4. a shot-by-shot table saying whether to **REUSE** a master, make a **NEW** image from a named master, **CHAIN** from the previous clip's last frame, or go AI direct with no reference, each with its image and video prompts;
-  5. fallbacks for shots AI handles badly (wings folding, X-ray, propeller counts);
+- **3D animation tool = Grok, not Blender. Reference photo → video directly (no image step).** For every "airspeed" script, deliver a Grok pack in the format of `airspeed-grok-prompts.md`:
+  1. real reference photos to download and **clean** (crop, dark background, no stand or clutter), each checked by me before use (R1, R2…, including crops such as a nose/hook close-up);
+  2. a look plan (colour studio for 3D shots, B&W test-film look when the reference is archival);
+  3. one **paste-ready video prompt per shot**, with the aircraft lock line, the look and the no-morphing line merged in (no bracket placeholders);
+  4. for each shot: which reference to upload, or **CHAIN** (last frame of the previous clip), or text-to-video for AI-direct shots;
+  5. ⚠ weak shots (big camera moves, scene changes, X-ray, folding, adding objects) with a CapCut or archival fallback;
   6. a closing "what to upload for each shot" list.
 
-  Always start shots from an approved master, never from a frame of an earlier video. Mention Blender only if the user asks.
-- **Every script also gets:** voiceover delivery marks, a pronunciation list for new names, 3 title + 3 thumbnail options, description with chapters and sources, pinned comment, 3 Shorts ideas, and the combined VERIFY list. Brand colours: graphite `#16191E`, amber `#E8A33D`, steel blue `#6FA3C8`. Never claim "no AI" on the channel.
+  Make a still image first only as a fallback for a shot that keeps failing. Mention Blender only if the user asks.
+- **Every script also gets:** voiceover delivery marks, a pronunciation list for new names, 3 title + 3 thumbnail options, description with chapters and sources, pinned comment, 3 Shorts ideas, and the combined VERIFY list. Never claim "no AI" on the channel.
+- **Fact-checking is on for every video.** Whenever the user sends a script, a line, an image or a claim to verify, research it (WebSearch plus NexLev; museum, Air Force and archive sources first), give each claim a verdict (✅ / ✏️ fix the wording / ⚠️ check this) with the reason, and **always give links** the user can open to confirm. For an image, check it against real photos of that aircraft and name what's wrong (engine count, fins, markings, gear, canopy). Log results in `videos/<aircraft>-fact-check.md` (see `videos/xf85-fact-check.md`).
+- **Don't write scripts, names or prompts until the user asks.** When the user says to keep something in mind, confirm briefly and wait.
