@@ -1,6 +1,6 @@
 # Why Did This Fighter Have No Landing Gear?
 
-**Status:** final, fact-checked 25 Sep 2026 (see `xf85-fact-check.md`). Cleared to record. ~1,200 words, about 8–9 minutes of narration at 140–150 words per minute.
+**Status: 🔒 LOCKED** (25 Sep 2026). Final and fact-checked (see `xf85-fact-check.md`). Record this version word for word. Any change needs a new fact-check. ~1,200 words, about 8–9 minutes of narration at 140–150 words per minute.
 
 ---
 
@@ -88,4 +88,4 @@ That's what this channel is about. One aircraft. One strange design choice. And 
 
 And the Goblin isn't the strangest one we'll rebuild. There's a fighter that took off standing on its tail, and its pilot had to land it looking over his shoulder.
 
-Subscribe, and that's the next one.
+That's next. Subscribe so you're here when it lands.
