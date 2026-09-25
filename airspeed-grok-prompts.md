@@ -26,6 +26,10 @@ Rule: **always reuse a master (M-image) rather than a frame from an earlier vide
 
 ---
 
+## Camera-move vocabulary (mix these into video prompts)
+
+slow cinematic orbit · slow push-in · slow pull-back · low-angle dolly past the nose · tracking shot alongside in flight · top-down rotating overhead · slow tilt-up from the belly · static hero shot with subtle parallax. Keep calm documentary pacing, smooth motion, and 3–5 seconds per shot.
+
 ## Part 0. Download the real photos first (your "truth")
 
 Save these in a folder called `XF85-refs`. They're the reference uploads for the masters and the photos you compare every result against.

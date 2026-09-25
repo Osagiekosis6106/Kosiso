@@ -197,8 +197,8 @@ Suggested promise: **"The strangest parts of famous aircraft, and the physics th
 
 - Same audience and same "Why did X have Y?" hook.
 - **Your trademark (what Airspeed doesn't do):** every video has **one "X-ray" moment**. The aircraft turns semi-transparent and the answer is *animated*: centre-of-gravity markers, airflow lines, fuel draining, forces as arrows, stress glowing red. Viewers come back for that shot.
-- Name ideas (check the handle is free): *Airframe Files*, *Hangar Physics*, *Why It Flew*, *Rivet & Reason*, *The Odd Airframe*.
-- Visual identity: pick **one** background colour pair that isn't Airspeed's navy-crimson (for example graphite to amber, or blueprint blue to white) and keep it on every thumbnail.
+- Name: **Hangar Physics** (recommended). The full brand kit (description, logo, banner, voice, upload settings) is in `airspeed-channel-kit.md`. "Airframe" and "This Is Why It Flew" are already taken.
+- Visual identity: **graphite `#16191E` to amber `#E8A33D`, with steel-blue `#6FA3C8` rim light**, on every thumbnail and studio shot. It's deliberately not Airspeed's navy-crimson.
 
 ### Honesty about AI (this is important)
 
