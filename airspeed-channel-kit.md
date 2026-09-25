@@ -12,12 +12,13 @@ This is everything for setting up and running the channel: name, description, lo
 - "Hangar" matches the studio-hangar look this audience already trusts.
 - A YouTube channel search on 25 Sep 2026 found no channel with this name. **Claim the handle today** before checking anything else.
 
-**Backups:** *Rivet & Reason* · *Airframe Physics* · *The Strange Airframe*. Check each on YouTube before you use it.
+**Backups** (a NexLev channel search on 25 Sep 2026 found none of them in use): *Hangar X-Ray* · *Drawing Board Physics* · *Centre of Lift* · *Wing & Why*. Check again on YouTube before you use one.
 
 **Don't use** (already taken or too close):
 - **Airframe**: a new 3D channel with a very similar promise ("one strange aircraft decision at a time"). It's another Airspeed clone; keep an eye on it.
 - **This Is Why It Flew**: an existing aviation-history channel.
 - **Inside the Airframe**, **The Aircraft Files**, **BUILT WEIRD** and **Oddgist**: all active channels in this niche.
+- **Rivet & Reason** (now an engineering-explainer channel), **Strange Wings**, **Wingroot**, **Slipstream Lab** and **Load Path**: all taken by Sep 2026.
 - Anything with "Air", "Speed" or "Airspeed" in it. It would look like a copy.
 
 ---
