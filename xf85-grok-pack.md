@@ -42,7 +42,7 @@ Nothing in Steps 2–4 works until these are saved in a folder called `XF85-refs
 |---|---|---|---|---|
 | **R5** | The Ohio Goblin on its stand, hook raised | nationalmuseum.af.mil | `XF-85 Goblin museum` | S40, S47 |
 | **R6** | The Nebraska Goblin | sacmuseum.org, Wikimedia | `XF-85 SAC Aerospace Museum` | S40 |
-| **A1** | 1948 Goblin/EB-29B test film | NARA; the San Diego Air & Space Museum's YouTube channel (film "MF 6") | `XF-85 Goblin film 1948` | S05, S27, S34 |
+| **A1** | 1948 Goblin/EB-29B test film | catalog.archives.gov → search **65009** (*Initial Flight Tests of Experimental Fighter and Research Aircraft*, Reel 1: the Goblin at Muroc) → Download. Backup: the San Diego Air & Space Museum Archives YouTube video "MF 6 McDonnell XF-85 Goblin Parasite Fighter" (check their usage terms). Don't use re-uploads from other channels. | `XF-85 Goblin` | S05, S27, S34 |
 | **A2** | USS Macon or Akron catching a Sparrowhawk | NARA, Naval History and Heritage Command | `F9C Sparrowhawk trapeze` | S14 |
 | **A3** | Zveno TB-3 carrying fighters | Wikimedia Commons | `Zveno TB-3` | S15 |
 | **A4** | B-29 formations and flak, 1944–45 | NARA, Wikimedia | `B-29 formation 1945` | S12 |
@@ -111,7 +111,7 @@ Each Grok clip is 3–5 s; trim it in CapCut. "2 clips" means making two videos 
 
 | Shot | Script | Upload | Type | Image prompt | Video prompt |
 |---|---|---|---|---|---|
-| S06 | "This is the McDonnell XF-85 Goblin, the smallest American jet fighter ever built." | ♻ **M2**, same as S02, S03 | REUSE + title card "XF-85 GOBLIN · 1948" | — | Very slow push-in, almost still. `[VIDEO SAFE]` |
+| S06 | "This is the McDonnell XF-85 Goblin, the smallest American jet fighter ever built." | ♻ **M2**, same as S02, S03 | REUSE + a CapCut title card "XF-85 GOBLIN · 1948" (Barlow Condensed, off-white) | — | Very slow push-in, almost still. `[VIDEO SAFE]` |
 | S07 | "about the length of a family car, and shaped like an egg with wings." | ♻ **M2**, same as S02, S03, S06 | NEW → save as **S07.png** | `[GOBLIN LOCK]` Standing on the studio floor beside a grey faceless 1.8 m human mannequin and a generic 1940s family car for scale, the jet about the same length as the car. `[STUDIO LOOK]` | Slow pan from left to right across all three. `[VIDEO SAFE]` ⚠ sizes |
 | S08 | "It only makes sense once you understand the problem… inside its bombers." | 🆕 **M5** (first shot use) | REUSE | — | Slow push-in toward the bomber's belly. `[VIDEO SAFE]` ⚠ six props |
 
