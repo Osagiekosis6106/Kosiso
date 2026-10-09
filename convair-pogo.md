@@ -9,7 +9,7 @@ Trigger phrase: **"convair pogo"**. In a new chat, say "convair pogo" and Claude
 | Step | What | State |
 |---|---|---|
 | 1 | Topic, title, hook and description chosen with VidIQ and NexLev | ✅ done (8 Oct 2026) |
-| 2 | Full script written and fact-checked | ✅ v4 (3 fact-check rounds + watch-time rewrite), **waiting for the user's final OK** |
+| 2 | Full script written and fact-checked | ✅ v5 (user's edit), 2 small tweaks suggested, **waiting for the user's final OK** |
 | 3 | Grok prompt pack (references R#, masters M#, lock text, shot table, fallbacks, upload list) | ⏳ next, after script OK |
 | 4 | Archival sourcing list (exact searches and links; the user downloads, because archive sites are blocked from Claude's container) | ⏳ |
 | 5 | Voiceover: the user records Parts 1–3 separately and sends them | ⏳ |
@@ -78,7 +78,13 @@ Some visuals are AI-generated or digitally enhanced illustrations, used to show 
 
 ---
 
-## Script (v4 FINAL candidate, 9 Oct 2026: all fact-checks applied, rewritten for watch time; ≈1,560 words ≈ 10:20)
+## Script (v5 = user's own edit of v4, 9 Oct 2026)
+
+v5 is v4 with the user's changes: the convoy paragraph rewritten (U-boats and aircraft; carriers expensive and limited); the radar altimeter reduced to "three warning lights to help Coleman judge his descent"; the landing-risk lines reworded ("impact could damage the aircraft or make it tip over", "narrow landing stance"); Lockheed's reason given as "the two programmes faced different engine and development challenges"; the ending reworded as "By 1955 the programme was being wound down, and by 1956 the Navy had ended its work on the Pogo."
+Claude's suggested tweaks (pending the user's answer): (1) restore the Smithsonian-backed Lockheed reason: "The Navy gave Convair the only engine cleared for both vertical and horizontal flight. Lockheed never got one."; (2) "any gust of wind was pushing" → "is pushing" (present tense, to match the scene).
+The full v5 text is in the chat of 9 Oct; on approval, paste the final text here.
+
+### Previous: Script (v4 FINAL candidate, 9 Oct 2026: all fact-checks applied, rewritten for watch time; ≈1,560 words ≈ 10:20)
 
 One continuous script for one video. Section labels in [brackets] are for the editor, not to be read aloud.
 
