@@ -146,7 +146,7 @@ It earned him the Harmon Trophy, one of aviation's highest awards. The Pogo work
 
 And remember the rival I mentioned at the start? Its story explains why the Navy got nervous.
 
-Lockheed's XFV-1 never got that far. It was waiting for a more powerful engine that never arrived. So it fitted temporary landing gear and flew its prototype off a runway like a normal plane.
+Lockheed's XFV-1 never got that far. It was waiting for a more powerful engine, the Allison T54, that never materialised. So it fitted temporary landing gear and flew its prototype off a runway like a normal plane.
 
 High in the air, its pilot did tip it up and hang it on its propellers. But the XFV-1 never once took off or landed vertically.
 
@@ -174,7 +174,7 @@ If you were in that seat, looking back over your shoulder at the ground, would y
 
 And the Pogo wasn't even the strangest answer to "how do you fight without a runway?" A few years earlier, the Air Force tried a fighter with no landing gear at all, one that lived inside a bomber. That story is right here. And if you want one strange aircraft explained every week, subscribe to Hangar Physics.
 
-All claims verified 9 Oct 2026. Wheels confirmed by the Smithsonian and USNI (castering wheels on struts at the tips of the wings and fins). Hangar One was built for the airship USS Macon (NPS). v7 changes: the Lockheed reason is now "waiting for a more powerful engine that never arrived" (the "only engine cleared" quote couldn't be confirmed); "Dozens of times" became "Over and over" (sources give about 60 hours, not a flight count).
+All claims verified 9 Oct 2026. Wheels confirmed by the Smithsonian and USNI (castering wheels on struts at the tips of the wings and fins). Hangar One was built for the airship USS Macon (NPS). v7 changes: the Lockheed reason is now "waiting for a more powerful engine that never arrived" (the "only engine cleared" quote couldn't be confirmed); "Dozens of times" became "Over and over" (sources give about 60 hours, not a flight count). v7.1: Lockheed engine named (Allison T54); the 7,100 hp figure was left out because it appears in only one secondary source and the same 7,100 figure is elsewhere given for the T40-A-14.
 
 
 ---
