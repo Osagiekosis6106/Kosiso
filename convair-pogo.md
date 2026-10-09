@@ -9,8 +9,8 @@ Trigger phrase: **"convair pogo"**. In a new chat, say "convair pogo" and Claude
 | Step | What | State |
 |---|---|---|
 | 1 | Topic, title, hook and description chosen with VidIQ and NexLev | ✅ done (8 Oct 2026) |
-| 2 | Full script written and fact-checked | ✅ **FINAL v7 locked and fully verified (9 Oct)** |
-| 3 | Grok prompt pack (references R#, masters M#, lock text, shot table, fallbacks, upload list) | ⏳ next, after script OK |
+| 2 | Full script written and fact-checked | ✅ **FINAL v8 CONFIRMED by the user (9 Oct)** |
+| 3 | Grok prompt pack (references R#, masters M#, lock text, shot table, fallbacks, upload list) | ✅ v1 sent 9 Oct, **waiting for the user's OK** |
 | 4 | Archival sourcing list (exact searches and links; the user downloads, because archive sites are blocked from Claude's container) | ⏳ |
 | 5 | Voiceover: the user records Parts 1–3 separately and sends them | ⏳ |
 | 6 | Claude builds what it can locally (graphics, spec cards, X-ray diagrams, timing sheet / edit list) | ⏳ |
@@ -78,13 +78,166 @@ Some visuals are AI-generated or digitally enhanced illustrations, used to show 
 
 ---
 
-## FINAL SCRIPT (v7, locked and fully verified 9 Oct 2026; ≈1,550 words ≈ 10:15)
+## Step 3: Grok prompt pack (v1, 9 Oct 2026, for FINAL script v8)
 
-In 1954, a test pilot brought a fighter in to land… backwards.
+Shot numbers S01–S55 follow the final script in order. Shot types: 🎞 archival film · 📷 archival photo · 🤖 Grok · 🩻 X-ray graphic · 📊 graphic. **Disc ON** = turn on YouTube's "altered or synthetic content" switch (one 🤖 Disc ON shot is enough to turn it on for the whole video). ⚠ = check against the real photo before keeping.
+Rules: the Pogo is a real aircraft and Coleman a real person, so **no AI-direct Pogo** (every 🤖 Pogo shot starts from an approved master) and **no AI faces of Coleman** (helmet from behind only). All Lockheed XFV-1 shots are archival.
 
-The ground wasn't in front of him. It was behind him. So he twisted round in his seat, looked back over his shoulder, and lowered more than five tonnes of fighter onto its tail.
+### Part 0. Reference photos to download first (folder `pogo-refs`)
+| Save as | What | Where | Search |
+|---|---|---|---|
+| R1 | Pogo standing on its tail, front 3/4, full aircraft | Wikimedia Commons, NARA, SDASM Flickr | `Convair XFY-1 Pogo` |
+| R2 | Pogo standing, side view (delta wing + top and bottom fins + tip wheels visible) | same | `XFY-1 Pogo side` |
+| R3 | Pogo in level flight | same / NARA | `XFY-1 Pogo in flight` |
+| R4 | Close-up of a tip wheel on its strut | same | `XFY-1 Pogo wheel` / zoom a high-res R1/R2 |
+| R5 | Nose and propellers close-up (count 3 + 3 blades) | same | `XFY-1 Pogo propeller` |
+| R6 | Lockheed XFV-1 on its temporary landing gear | Wikimedia, NARA, SDASM | `Lockheed XFV-1` |
+| R7 | Hangar One, Moffett Field (1950s or NASA photo) | NASA Ames image library, Wikimedia | `Hangar One Moffett Field` |
+US Navy photos are usually public domain; check the licence line on each file. SDASM Flickr images say "No known copyright restrictions" on most, but check each.
 
-His rival at Lockheed built a plane to do the same thing. It never once took off or landed vertically.
+### Part 1. Masters (make and approve these first)
+| Master | Upload | Image prompt |
+|---|---|---|
+| **M1** Pogo standing on its tail, studio, front 3/4 | R1 + R2 | `[POGO LOCK]` Standing upright on its tail on the four tip wheels, front three-quarter view from the left, nose and propellers pointing straight up. `[STUDIO LOOK]` |
+| **M2** Pogo standing, studio, side view | R2 + M1 | `[POGO LOCK]` Exact side view, standing upright on its tail, the delta wing and the large top and bottom fins clearly visible, same aircraft as the second reference. `[STUDIO LOOK]` |
+| **M3** Pogo in level flight | R3 + M1 | `[POGO LOCK]` In normal level flight, side view, wings horizontal, propellers blurred into discs, clear sky above a 1950s California desert far below. `[FILM LOOK]` |
+| **M4** Pogo hovering tail-down near the ground | M1 | `[POGO LOCK]` Hovering upright about 10 m above a concrete pad, nose and propellers pointing at the sky, the tail wheels facing the ground, propellers blurred into discs, light dust blowing outward on the pad, late-afternoon light. `[FILM LOOK]` |
+⚠ Check every master against R1–R5: six propeller blades in two rows of three; delta wing; one large fin on top and one underneath (a cross from behind); a wheel at each wing tip and fin tip; bubble canopy; markings as in the reference.
+
+### Part 2. Lock text (paste word for word)
+**`[POGO LOCK]`**
+> The Convair XFY-1 Pogo, a 1954 US Navy experimental tail-sitter fighter exactly like the reference image: short thick fuselage, bubble canopy near the nose, large delta wings, one very large swept fin on top and one equally large fin underneath so the wings and fins form a cross seen from behind, two three-bladed propellers in two rows at the nose turning in opposite directions with a pointed spinner, a small wheel on a short strut at the tip of each wing and each fin, no other landing gear, colours and markings exactly as in the reference.
+
+**`[STUDIO LOOK]`**
+> Photoreal 3D product render, dark graphite-to-amber gradient studio background, soft white key light, amber and steel-blue rim lights, glossy reflective floor, sharp focus, 16:9, no text.
+
+**`[FILM LOOK]`**
+> Photoreal cinematic 3D render, 1950s colour film look, muted colours, soft film grain, 16:9, no text.
+
+**`[VIDEO SAFE]`** (end every video prompt with this)
+> Keep the aircraft's shape, wings, fins, tip wheels, canopy, markings and exactly six propeller blades in two rows exactly as in the image. No morphing, no extra parts. Realistic motion blur. Smooth motion.
+
+### Part 3. Shot by shot
+
+**Cold open (0:00–0:30)**
+| Shot | Line | Type | Start image / source | Image prompt (NEW only) | Video prompt / edit note |
+|---|---|---|---|---|---|
+| S01 | "November 1954." | 🎞 + 📊 | Real film: Pogo descending tail-first (SDASM "XFY-1"; NARA "Pogo") | — | 2 s black + propeller roar, then film; small "November 1954" lower-third |
+| S02 | "hanging in the sky… propellers roaring" | 🤖 Disc ON | **REUSE M4** | — | Slow push-in from below, propellers blurred, dust swirling on the pad. `[VIDEO SAFE]` ⚠ |
+| S03 | "coming down… tail first" | 🎞 | Real film: the tail-first descent, closest angle you have | — | Cut on "tail first" |
+| S04 | "can't see the ground… looks back over his shoulder" | 🤖 Disc ON | **NEW** from M4 | `[POGO LOCK]` Close-up of the bubble canopy while hovering upright, a helmeted pilot seen from behind turning his head to look down over his shoulder, face not visible. `[FILM LOOK]` | The pilot's helmet turns slowly to look back and down, slight vibration. `[VIDEO SAFE]` ⚠ canopy shape |
+| S05 | "lowers more than five tonnes… mostly by eye" | 🤖 Disc ON | **NEW** from M4 | `[POGO LOCK]` Low camera on the concrete looking up at the tail wheels a few metres above the ground, the huge aircraft towering above, dust blowing. `[FILM LOOK]` | The aircraft sinks slowly toward the camera, dust thickens. `[VIDEO SAFE]` ⚠ wheels |
+| S06 | "too fast… slams… drift… tip over" | 🤖 Disc ON | **CHAIN** (last frame of S05) | — | A gust rocks the aircraft slightly sideways, it corrects, camera shakes. `[VIDEO SAFE]` |
+| S07 | "His rival at Lockheed…" | 📷 | **R6** XFV-1 | — | Slow Ken Burns push-in |
+| S08 | "This one did. This is the Convair XFY-1 Pogo." | 🤖 | **REUSE M1** | — | Slow hero orbit, a quarter turn, lights glinting. `[VIDEO SAFE]` |
+| S09 | — | 📊 | Title card: Hangar Physics | — | Hard cut, 2 s |
+
+**Curiosity loop**
+| S10 | "why would anyone build…" | 🤖 | **REUSE M2** | — | Slow push-in, studio lights dimming. `[VIDEO SAFE]` |
+| S11 | "comes down to one problem" | 🤖 | **NEW** from M1 | `[POGO LOCK]` Only the canopy and nose lit by one amber rim light, the rest fading into black. `[STUDIO LOOK]` | Almost still, the light slowly brightens. `[VIDEO SAFE]` |
+
+**The problem**
+| S12 | WWII convoys, U-boats and aircraft | 🎞 | NARA / Internet Archive (public domain): `Atlantic convoy 1942`, `U-boat` | — | 3–4 cuts |
+| S13 | "carriers… expensive and limited" | 📊 | Map: Atlantic convoy route, few carriers (Claude builds) | — | |
+| S14 | "What if any ship could carry its own fighter?" | 🤖 AI direct | **NEW, no reference** | A 1950s grey cargo ship at sea seen from above, a small empty square platform on its rear deck, calm grey Atlantic. `[FILM LOOK]` | Slow drift over the deck. Label "Illustration" in the edit |
+| S15 | "After years of study… 1951… Convair and Lockheed" | 📊 | Card: "1951: prototypes ordered from Convair and Lockheed" (Claude builds) | — | |
+| S16 | "same basic idea. A fighter that sits on its tail." | 📷 | Split screen: R1 (Pogo) + R6 (XFV-1) standing on tails | — | |
+| S17 | "the catch… pilot sits in the nose, at the very top" | 🤖 | **NEW** from M2 | `[POGO LOCK]` Low camera at the tail wheels looking straight up the fuselage to the canopy high above. `[STUDIO LOOK]` | Slow tilt up from the tail to the canopy. `[VIDEO SAFE]` |
+| S18 | "the ground is behind his back" | 🩻 | Side diagram on M2: pilot at top, arrow "ground" behind (Claude builds) | — | |
+| S19 | "Keep that in mind." | 🤖 | **REUSE M1** | — | Slow push-in to the canopy. `[VIDEO SAFE]` |
+
+**The machine**
+| S20 | fuselage, delta wing, cross | 🤖 | **NEW** from M1 | `[POGO LOCK]` Seen exactly from behind and below, wings and the top and bottom fins forming a perfect cross. `[STUDIO LOOK]` | Slow orbit from the side to directly behind. `[VIDEO SAFE]` ⚠ fins |
+| S21 | "no conventional landing gear… four small wheels" | 🤖 | **NEW** from M1 + R4 | `[POGO LOCK]` Close-up of one fin tip with its small wheel on a short strut resting on the studio floor. `[STUDIO LOOK]` | Slow slide along the strut to the wheel. `[VIDEO SAFE]` ⚠ wheel vs R4 |
+| S22 | "it didn't sit. It stood." | 📷 | **R1** real photo standing on the ramp | — | Slow push-in |
+| S23 | Allison T40, two propellers, opposite directions | 🤖 | **NEW** from M1 + R5 | `[POGO LOCK]` Close-up of the nose: the spinner and the two rows of three propeller blades. `[STUDIO LOOK]` | Propellers start turning slowly, front row clockwise, rear row anticlockwise. `[VIDEO SAFE]` ⚠ **weak in AI**: count the blades; fallback = still + slow zoom |
+
+**X-ray (physics)**
+| S24 | hover: thrust vs weight | 🩻 | M2 still + up/down arrows (Claude builds) | — | Thrust arrow grows → climbs; shrinks → sinks |
+| S25 | torque cancels | 🩻 | Top view of the propellers: one spin = red twist arrow on the body; two = green, cancelled (Claude builds) | — | |
+| S26 | "easy part… frightening" | 🎞 | Real film: vertical takeoff | — | |
+
+**Testing**
+| S27 | Moffett Field, Hangar One | 📷 | **R7** | — | Slow pan |
+| S28 | tethered inside the hangar | 🎞 | Real film: tethered hover (SDASM "XFY-1"; NARA) | — | |
+| S29 | James "Skeets" Coleman | 📷 | Real photo of Coleman with the Pogo (SDASM/Navy) | — | **Archival only** |
+| S30 | ladder, two storeys, on his back, seat 45° | 📷 or 🤖 Disc ON | Real photo of the boarding ladder if found; else **NEW** from M1 | `[POGO LOCK]` A tall boarding ladder leaning against the upright fuselage up to the open canopy, a helmeted pilot climbing seen from behind, no face. `[FILM LOOK]` | Slow tilt up the ladder. `[VIDEO SAFE]` |
+| S31 | 1 Aug 1954, cables off | 🎞 | Real film: first free flight outdoors | — | |
+| S32 | takeoff, nose over, flew like a normal plane | 🎞 + 🤖 | Real film of the transition, then **REUSE M3** | — | M3: camera tracks alongside in level flight. `[VIDEO SAFE]` |
+
+**Landing blind**
+| S33 | pull nose up, hang, come down tail-first | 🤖 Disc ON | **REUSE M3**, then **REUSE M4** | — | **Weak in AI; don't ask Grok to rotate the plane 90°.** 1 s of M3 → cross-dissolve → 1 s of M4 |
+| S34 | what he could see: sky / own aircraft / over shoulder | 🩻 | Sight-line diagram on M2 (Claude builds) | — | |
+| S35 | three questions | 📊 | Three lines on screen over real descent film | — | |
+| S36 | radar altimeter, three warning lights | 🩻 | M2 with the left wingtip pod highlighted + three unlabelled lights (Claude builds) | — | No colours shown |
+| S37 | too fast / drift / gusts | 🤖 Disc ON | **REUSE M4** | — | A gust pushes the aircraft sideways, it rocks and corrects, dust swirls. `[VIDEO SAFE]` |
+| S38 | "backwards, mostly by eye… four cars" | 🤖 Disc ON | **REUSE S04 image** | — | Very slow push-in on the helmet looking back. `[VIDEO SAFE]` |
+
+**Payoff**
+| S39 | 2 Nov 1954, the whole cycle | 🎞 | Real film: transitional flights (SDASM "F-0645") | — | Let it breathe, music up |
+| S40 | Harmon Trophy; Coleman's skill | 📷 + 📊 | Coleman photo + "Harmon Trophy" text | — | |
+
+**The rival**
+| S41 | "remember the rival" | 📷 | **R6** | — | Push-in |
+| S42 | waiting for the T54; temporary landing gear | 📷/🎞 | XFV-1 on its gear (photo or Lockheed film) | — | |
+| S43 | tipped it up at altitude; never VTOL | 📷/🎞 | XFV-1 in flight | — | |
+| S44 | "only one did the full cycle" | 📊 | Card: Pogo ✓ vertical takeoff and landing / XFV-1 ✗ (Claude builds) | — | |
+
+**Why it ended**
+| S45 | small ship, Atlantic, night, bad weather | 🤖 AI direct | **NEW, no reference** | Night storm at sea, the rear deck of a small 1950s warship pitching up and down in heavy waves, rain and spray, a small empty landing platform, no aircraft. `[FILM LOOK]` | Deck heaves, spray crosses the lens. Label "Illustration" |
+| S46 | demanded exceptional skill | 🤖 | **REUSE M2** | — | Slow pull-back, light dims. `[VIDEO SAFE]` |
+| S47 | faster jets; gearbox wearing out | 🎞 + 🩻 | 1950s Navy jet film (NARA, public domain) + M2 with the gearbox glowing red (Claude builds) | — | |
+| S48 | 1955 wound down, 1956 ended | 📊 | Timeline card (Claude builds) | — | |
+| S49 | three airframes, one flew, Smithsonian | 📷 + 📊 | Photo of the surviving Pogo (check licence) + "3 built · 1 flew" | — | |
+
+**What came next and ending**
+| S50 | Harrier, 1960s | 🎞 | DVIDS (US DoD, public domain): `AV-8B Harrier hover` | — | |
+| S51 | V-22 tilts rotors; tail-sitter drones | 🎞 + 🤖 AI direct | DVIDS `MV-22 Osprey conversion`; drone: **NEW, no reference** | A small unmarked modern tail-sitter drone standing on its tail on a ship's deck, then lifting off vertically. `[FILM LOOK]` | Lifts straight up. Label "Illustration" |
+| S52 | pilot never lands looking backwards | 🩻 | Split-screen sight lines: Pogo vs Harrier (Claude builds) | — | |
+| S53 | closing line | 🤖 | **REUSE M1** | — | Slow pull-back, lights fade to black. `[VIDEO SAFE]` |
+| S54 | comment question | 🤖 | **REUSE S04 image** | — | Hold, slow push |
+| S55 | XF-85 tease + subscribe | 🎞 | 4 s from your own XF-85 video + end screen | — | |
+
+### Part 4. Fallbacks
+- **Propellers (S23 and every Pogo clip):** Grok often adds or loses blades. Count six (3 + 3). If wrong, use the still with a slow zoom.
+- **Pitch-up from level to vertical (S33):** never ask Grok to rotate the aircraft. Dissolve M3 → M4.
+- **X-ray and physics (S18, S24, S25, S34, S36, S47, S52):** Claude builds these as graphic clips on the M2 still. Don't use Grok.
+- **Pilot:** no faces; helmet from behind only. Coleman = archival photos only.
+- **Wheels and fins:** if a Grok image loses the tip wheels or the bottom fin, throw it away and regenerate.
+
+### Part 5. What to upload for each shot
+| Upload | Shots |
+|---|---|
+| **M1** (reuse) | S08, S19, S32*, S53 |
+| **M2** (reuse) | S10, S46 |
+| **M3** (reuse) | S32, S33 (part 1) |
+| **M4** (reuse) | S02, S33 (part 2), S37 |
+| **NEW from M1** | S11, S20, S21 (+R4), S23 (+R5), S30 |
+| **NEW from M2** | S17 |
+| **NEW from M4** | S04, S05 |
+| **CHAIN** | S06 (after S05) |
+| **Reuse an earlier shot's image** | S38, S54 (S04 image) |
+| **NEW, no reference** (AI direct) | S14, S45, S51 (drone) |
+| **Archival (you download)** | S01, S03, S07, S12, S16, S22, S26–S29, S31, S32, S39–S43, S47, S49, S50, S51 |
+| **Claude builds** (graphics and X-ray) | S01 lower-third, S09, S13, S15, S18, S24, S25, S34–S36, S40 text, S44, S47 gearbox, S48, S49 text, S52 |
+*S32 uses M3, not M1 (the table row is the source of truth).
+
+
+---
+
+## FINAL SCRIPT (v8, CONFIRMED by the user 9 Oct 2026; fully verified; ≈1,580 words ≈ 10:30)
+
+November 1954.
+
+A fighter is hanging in the sky. Nose pointed straight up. Propellers roaring.
+
+And it's coming down… tail first.
+
+The pilot can't see the ground ahead of him. It's behind him. So he twists round in his seat, looks back over his shoulder, and lowers more than five tonnes of fighter toward the earth, mostly by eye.
+
+Come down too fast, and it slams onto its tail. Drift, and it can tip over.
+
+His rival at Lockheed built a plane to do exactly this. It never once managed it.
 
 This one did. This is the Convair XFY-1 Pogo.
 
@@ -98,7 +251,7 @@ After the war, the Navy asked a radical question. What if any ship could carry i
 
 After years of study, the Navy wanted a fighter that could take off straight up from a ship and land straight back down on it. In 1951, it ordered prototypes from Convair and Lockheed.
 
-And both companies came up with the same answer. A fighter that sits on its tail.
+And both companies came up with the same basic idea. A fighter that sits on its tail.
 
 And here's the catch nobody could design away. If a plane takes off pointing at the sky, it has to land pointing at the sky. The pilot sits in the nose, at the very top. So when he comes down to land, the ground is behind his back.
 
@@ -106,7 +259,7 @@ Keep that in mind. It's the whole story.
 
 Convair's answer looked like nothing else in the sky. A short, fat fuselage. A delta wing. And a huge tail fin above and below, so from behind it looked like a cross.
 
-It had no normal landing gear at all. Just four small wheels, on the tips of the wings and the fins. When it was parked, it didn't sit. It stood.
+It had no conventional landing gear. Just four small wheels, on the tips of the wings and the fins. When it was parked, it didn't sit. It stood.
 
 In the nose was an Allison T40, really two turbine engines driving one gearbox, about 5,850 horsepower. It turned two propellers, each with three blades, sixteen feet across, about five metres, spinning in opposite directions.
 
@@ -174,7 +327,7 @@ If you were in that seat, looking back over your shoulder at the ground, would y
 
 And the Pogo wasn't even the strangest answer to "how do you fight without a runway?" A few years earlier, the Air Force tried a fighter with no landing gear at all, one that lived inside a bomber. That story is right here. And if you want one strange aircraft explained every week, subscribe to Hangar Physics.
 
-All claims verified 9 Oct 2026. Wheels confirmed by the Smithsonian and USNI (castering wheels on struts at the tips of the wings and fins). Hangar One was built for the airship USS Macon (NPS). v7 changes: the Lockheed reason is now "waiting for a more powerful engine that never arrived" (the "only engine cleared" quote couldn't be confirmed); "Dozens of times" became "Over and over" (sources give about 60 hours, not a flight count). v7.1: Lockheed engine named (Allison T54); the 7,100 hp figure was left out because it appears in only one secondary source and the same 7,100 figure is elsewhere given for the T40-A-14.
+All claims verified 9 Oct 2026. Wheels confirmed by the Smithsonian and USNI (castering wheels on struts at the tips of the wings and fins). Hangar One was built for the airship USS Macon (NPS). v7 changes: the Lockheed reason is now "waiting for a more powerful engine that never arrived" (the "only engine cleared" quote couldn't be confirmed); "Dozens of times" became "Over and over" (sources give about 60 hours, not a flight count). v8: new present-tense cold open (Nov 1954), 'same basic idea', 'no conventional landing gear'. v7.1: Lockheed engine named (Allison T54); the 7,100 hp figure was left out because it appears in only one secondary source and the same 7,100 figure is elsewhere given for the T40-A-14.
 
 
 ---
