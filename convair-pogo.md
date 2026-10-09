@@ -29,6 +29,12 @@ Deadline: **upload this weekend** (10–11 Oct 2026). Don't publish on a Wednesd
 4. Claude **builds the full video** (graphics, X-ray, Ken Burns motion, timing to the voiceover, assembly with ffmpeg) from what the user sends.
 Open questions to the user: B-58 example (not in the repo), how files will be sent to Claude, and Option A (no Grok) vs Option B (hybrid).
 
+
+## Visual style = the B-58 film (no Grok), reviewed 9 Oct 2026
+
+The user's B-58 film (11:39, made with Claude in another session, no Grok) uses: archival photos and film with slow Ken Burns moves and small uppercase lower-third labels; a typewriter date opener; steel-blue (#6FA3C8) and amber (#E8A33D) blueprint-style vector diagrams of the aircraft on graphite (#16191E); comparison cards (54 FT vs CITY BUS); animated maps/radar sweeps; timelines; a trophy icon; cut-out objects on a gradient labelled ILLUSTRATION; a red record stamp; a Hangar Physics end screen ("Every strange aircraft is the answer to a problem." + WATCH NEXT + SUBSCRIBE). The B-58 build scripts are not in this repo, so rebuild the same style in `pogo-film/`.
+Pogo upgrades planned: much more real moving film (the 1954 Pogo flights were filmed); an animated vector Pogo that rotates from level flight to vertical (the shot Grok can't do); an animated pilot's sight-line cone; counter-rotating propeller discs with torque arrows; thrust-vs-weight arrows; three pulsing altimeter lights (no colours or numbers); a Pogo ✓ vs XFV-1 ✗ split screen; free stock footage for the storm at sea; propeller sound design. Deliver in 1080p.
+
 ## Why this topic (research, 8 Oct 2026)
 
 - VidIQ: **"convair xfy-1 pogo" ≈ 35,000 searches/month, +164%**, competition 22/100. "convair xfy pogo" ≈ 14,000. "convair pogo", "pogo plane", "tail sitter", "vertical takeoff fighter": all under 750.
