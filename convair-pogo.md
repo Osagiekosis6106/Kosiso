@@ -9,7 +9,7 @@ Trigger phrase: **"convair pogo"**. In a new chat, say "convair pogo" and Claude
 | Step | What | State |
 |---|---|---|
 | 1 | Topic, title, hook and description chosen with VidIQ and NexLev | ✅ done (8 Oct 2026) |
-| 2 | Full script written and fact-checked | ✅ v3 (both fact-check rounds applied), **waiting for the user's final OK** |
+| 2 | Full script written and fact-checked | ✅ v4 (3 fact-check rounds + watch-time rewrite), **waiting for the user's final OK** |
 | 3 | Grok prompt pack (references R#, masters M#, lock text, shot table, fallbacks, upload list) | ⏳ next, after script OK |
 | 4 | Archival sourcing list (exact searches and links; the user downloads, because archive sites are blocked from Claude's container) | ⏳ |
 | 5 | Voiceover: the user records Parts 1–3 separately and sends them | ⏳ |
@@ -78,37 +78,63 @@ Some visuals are AI-generated or digitally enhanced illustrations, used to show 
 
 ---
 
-## Script (v3, FINAL candidate: both of the user's fact-checks applied 8 Oct 2026; ≈1,510 words ≈ 10:00)
+## Script (v4 FINAL candidate, 9 Oct 2026: all fact-checks applied, rewritten for watch time; ≈1,560 words ≈ 10:20)
 
-One continuous script for one video. If the voiceover is split into files, split anywhere at a paragraph break. Shot numbers S01–S39 follow the paragraphs in order (one paragraph = one shot group).
+One continuous script for one video. Section labels in [brackets] are for the editor, not to be read aloud.
+
+[HOOK]
 
 In 1954, a test pilot brought a fighter in to land… backwards.
 
-He couldn't see the ground in front of him. The ground was behind him. So he twisted round in his seat, looked back over his shoulder, and lowered more than five tonnes of fighter onto its tail.
+The ground wasn't in front of him. It was behind him. So he twisted round in his seat, looked back over his shoulder, and lowered more than five tonnes of fighter onto its tail.
 
-Lockheed built a rival to this plane. It never once took off or landed vertically.
+His rival at Lockheed built a plane to do the same thing. It never once took off or landed vertically.
 
-This one did. This is the Convair XFY-1 Pogo. And today we're going to find out why it had to land backwards, and why that one problem helped kill it.
+This one did. This is the Convair XFY-1 Pogo.
 
-To understand the Pogo, start with the problem it was built to solve. In the Second World War, the convoys crossing the Atlantic were hunted from below by U-boats, and from above by long-range aircraft.
+[CURIOSITY LOOP]
 
-The best protection was a fighter overhead. But fighters needed carriers, and there were never enough carriers to go round. After the war, the bigger question was this: how do you fly fighters from ships that have no runway at all?
+So why would anyone build a fighter you have to land backwards? And if it actually worked, why has almost nobody heard of it?
 
-So the US Navy asked a radical question. What if any ship could carry its own fighter? No runway. No catapult. No carrier. Just a small platform on the deck.
+The answer comes down to one problem. And by the end of this video, you'll see exactly why it helped kill the Pogo.
 
-After two years of study, in 1950 the Navy asked for a fighter that could take off straight up from a ship, and land straight back down on it. In 1951, it ordered prototypes from Convair and Lockheed. And both came up with the same answer. A fighter that sits on its tail.
+[MAIN STORY: THE PROBLEM]
 
-And that's where our question starts. If a plane takes off pointing at the sky, it has to land pointing at the sky. And the pilot sits in the nose, at the very top. When he comes down to land, the ground is behind his back.
+It starts at sea. In the Second World War, the convoys crossing the Atlantic were hunted from below by U-boats, and from above by long-range aircraft.
 
-Convair's design was a short, fat fuselage with a delta wing, and a huge tail fin above and below, so it looked like a cross from behind.
+The best protection was a fighter overhead. But fighters needed carriers, and there were never enough carriers to go round.
 
-It had no normal landing gear at all. Just four small wheels, on the tips of the wings and the fins. When it was parked, it stood.
+After the war, the Navy asked a radical question. What if any ship could carry its own fighter? No runway. No catapult. No carrier. Just a small platform on the deck.
+
+After years of study, the Navy wanted a fighter that could take off straight up from a ship, and land straight back down on it. In 1951, it ordered prototypes from Convair and Lockheed.
+
+And both companies came up with the same answer. A fighter that sits on its tail.
+
+[KEY INSIGHT 1]
+
+And here's the catch nobody could design away. If a plane takes off pointing at the sky, it has to land pointing at the sky. The pilot sits in the nose, at the very top. So when he comes down to land, the ground is behind his back.
+
+Keep that in mind. It's the whole story.
+
+[THE MACHINE]
+
+Convair's answer looked like nothing else in the sky. A short, fat fuselage. A delta wing. And a huge tail fin above and below, so from behind it looked like a cross.
+
+It had no normal landing gear at all. Just four small wheels, on the tips of the wings and the fins. When it was parked, it didn't sit. It stood.
 
 In the nose was an Allison T40, really two turbine engines driving one gearbox, about 5,850 horsepower. It turned two propellers, each with three blades, sixteen feet across, about five metres, spinning in opposite directions.
 
-Here's the physics of hanging in the air. To hover, the propellers have to push upward harder than the whole aircraft weighs. At maximum takeoff weight, about sixteen thousand pounds, that's over seven tonnes. If thrust is more than weight, it climbs. Less, and it sinks. The throttle controls the climb and the sink. But the pilot still has to balance it on its tail with the controls, every second.
+[KEY INSIGHT 2: X-RAY]
 
-And there's a second problem. Spin one huge propeller one way, and the airframe wants to spin the other way. That's Newton's third law. That's why there are two. One turns clockwise, one turns anticlockwise, and their twist cancels out. Without that, the Pogo would just spin on its tail like a top.
+Here's how it hung in the air. To hover, the propellers have to push upward harder than the whole aircraft weighs. At maximum takeoff weight, about sixteen thousand pounds, that's over seven tonnes. More thrust than weight, it climbs. Less, and it sinks. The throttle controls the climb and the sink. But the pilot still has to balance it on its tail with the controls, every second.
+
+And there's a second problem. Spin one huge propeller one way, and the airframe wants to spin the other way. That's Newton's third law. So the Pogo has two. One turns clockwise, one turns anticlockwise, and their twist cancels out. Without that, it would just spin on its tail like a top.
+
+[RETENTION POINT]
+
+Getting it into the air turned out to be the easy part. Getting it back down is where this story gets frightening.
+
+[MAIN STORY: TESTING]
 
 In the spring of 1954, the Pogo was taken to Moffett Field in California, inside Hangar One, a building so big it was built to house a Navy airship.
 
@@ -116,35 +142,57 @@ For safety, it flew tied to cables, hovering under the roof. Dozens of times, it
 
 The man flying it was Convair's test pilot, James "Skeets" Coleman.
 
-Just getting in was strange. He climbed a ladder to a cockpit two storeys up, and settled in almost flat on his back, looking straight at the ceiling. His seat could rotate between the vertical and horizontal flight positions, but landing still left him struggling to see the ground.
+Just getting in was strange. He climbed a ladder to a cockpit two storeys up, and settled in almost flat on his back, looking straight at the ceiling. For vertical flight, his seat tilted about 45 degrees toward the instrument panel, but landing still left him struggling to see the ground.
 
 On the first of August, 1954, the cables came off. The Pogo took off outside, free, for the first time.
 
-Taking off was the easy part. Point it up, open the throttle, and climb. Once it was high enough, the pilot pushed the nose over, and it flew like a normal plane.
+Taking off was simple. Point it up, open the throttle, and climb. Once it was high enough, the pilot pushed the nose over, and it flew like a normal plane.
 
-Landing was the problem. To land, he had to slow down, pull the nose up until the whole aircraft was pointing at the sky, and hang there on the propellers. Then he had to come down tail-first.
+[KEY INSIGHT 3: LANDING BLIND]
 
-And now look at what he could see. In front of him, sky. Below him, his own aircraft. The only way to see the ground was to twist round and look back over his shoulder.
+Landing was the problem. He had to slow down, pull the nose up until the whole aircraft was pointing at the sky, and hang there on the propellers. Then he had to come down tail-first.
 
-From there, he had to judge three things at once. How high am I? How fast am I sinking? A radar altimeter in the wingtip flashed warning lights if he came down too fast. It helped, but it couldn't do the landing for him. And am I drifting sideways? Too fast, and the aircraft slams onto its tail. Drift, and it can tip over. And all the time, any gust of wind is pushing on that big wing and those tall fins.
+Now look at what he could actually see. In front of him, sky. Below him, his own aircraft. The only way to see the ground was to twist round and look back over his shoulder.
+
+From there, he had to judge three things at once. How high am I? How fast am I sinking? And am I drifting sideways?
+
+A radar altimeter in the wingtip drove three warning lights, from green for a safe descent to red for coming down too fast. It helped, but it couldn't do the landing for him.
+
+Come down too fast, and the aircraft slams onto its tail. Drift, and it can tip over. And all the time, any gust of wind is pushing on that big wing and those tall fins.
 
 He's doing this backwards, mostly by eye, in a fighter that weighs as much as four cars.
+
+[PAYOFF]
 
 On the second of November, 1954, Coleman did the whole thing. Straight up from the ground, over into level flight, back up to vertical, and down, backwards, onto its tail. No aircraft like it had ever done that before.
 
 It earned him the Harmon Trophy, one of aviation's highest awards. The Pogo worked. But it took a pilot of Coleman's skill to land it.
 
-Now, remember Lockheed's rival, the XFV-1. It never got that far. The Navy gave Convair the only engine cleared for both vertical and horizontal flight. Lockheed never got one. So it bolted on temporary landing gear, and flew it off a runway like a normal plane.
+[RETENTION POINT]
+
+And remember the rival I mentioned at the start? Its story explains why the Navy got nervous.
+
+[THE RIVAL]
+
+Lockheed's XFV-1 never got that far. The Navy gave Convair the only engine cleared for both vertical and horizontal flight. Lockheed never got one. So it bolted on temporary landing gear, and flew it off a runway like a normal plane.
 
 High in the air, its pilot did tip it up and hang it on its propellers. But without that engine, the XFV-1 never once took off, or landed, vertically.
 
-So only one tail-sitter fighter did the full cycle. And that's exactly what showed the Navy the problem.
+So only one tail-sitter fighter did the full cycle. And that one showed the Navy exactly where the problem was.
+
+[KEY INSIGHT 4: WHY IT ENDED]
 
 Think about where this fighter was meant to live. Not a calm airfield in California. A small platform on a ship, rolling in the Atlantic, at night, in bad weather. Flown by an ordinary squadron pilot, not one of the best test pilots in the country. Landing backwards, onto a deck that's moving.
 
-The testing made it clear. Landing the Pogo demanded exceptional skill, and that made it unfit for ordinary pilots on ordinary ships. And by then there was a second problem. New jet fighters were arriving that were faster than any propeller-driven fighter, Pogo included. By 1955 the programme was shelved, and in 1956 the Navy closed the books on it.
+The testing made it clear. Landing the Pogo demanded exceptional skill, and that made it unfit for ordinary pilots on ordinary ships.
 
-Three prototypes were ordered. Only one ever flew. That aircraft still exists, in the collection of the Smithsonian's National Air and Space Museum.
+And it wasn't the only problem. New jet fighters were arriving that were faster than any propeller-driven fighter, Pogo included. And the Pogo's huge gearbox was wearing out, shedding metal into its oil.
+
+By 1955 the programme was shelved, and in 1956 the Navy closed the books on it.
+
+Convair built three Pogo airframes. Only one ever flew. That aircraft still exists, in the collection of the Smithsonian's National Air and Space Museum.
+
+[WHAT CAME NEXT]
 
 But the idea didn't die. In the 1960s, the Harrier took a different route to vertical flight. It kept the pilot level and pointed the engine's thrust down instead.
 
@@ -152,17 +200,21 @@ The V-22 Osprey tilts its rotors, not the whole aircraft. And some modern drones
 
 Every answer that came after has one thing in common. The pilot never has to land looking backwards.
 
-The Pogo proved a fighter could take off from anywhere. It just couldn't prove that anyone could land it.
+[CLOSING LINE]
 
-And the Pogo wasn't the strangest answer to "how do you fight without a runway?" A few years earlier, the Air Force tried a fighter with no landing gear at all, one that lived inside a bomber. That story is right here.
+The Pogo proved a fighter could take off without a runway. It couldn't prove that ordinary pilots could land it safely, at sea.
+
+[CTA]
+
+If you were in that seat, looking back over your shoulder at the ground, would you have trusted it? Tell me in the comments.
+
+And the Pogo wasn't even the strangest answer to "how do you fight without a runway?" A few years earlier, the Air Force tried a fighter with no landing gear at all, one that lived inside a bomber. That story is right here. And if you want one strange aircraft explained every week, subscribe to Hangar Physics.
 
 ---
 
-Still to confirm in the sourcing step: the four wheels on the tips of the wings and fins (one source). Fallback line: "Just small wheels on the tips of its tail fins."
+Before recording, check on the Smithsonian page (object A19730274000): (1) the radar-altimeter light colours (green → red); (2) the gearbox-wear wording; (3) the four wheels on the tips of the wings and fins (photo). Fallbacks: "three warning lights that warned him if he came down too fast" / "small wheels on the tips of its tail fins".
 
-v2 changes from the user's checklist: 5,850 shp (NASM); "helped kill it"; postwar no-runway question; throttle line; seat tilts 45° (gimballed; canopy slid back); "it took a pilot of Coleman's skill" (NASM: two other pilots began training May 1956); Lockheed never received the engine; "exceptional skill" line; shelved 1955 / closed 1 Aug 1956 (NASM; Coleman's last flight 16 Jun 1955); "Three prototypes were ordered"; Harrier "different route"; "fully loaded" (16,250 lb MTOW). 
-
-v3 changes (2nd fact-check): 1948 study + 1950 request for designs + 1951 contracts; seat 'could rotate between vertical and horizontal flight positions'; radar altimeter added (NASM: Ryan-built, left wingtip pod, warning lights); 'mostly by eye'; 'at maximum takeoff weight'; Lockheed: 'the Navy gave Convair the only engine cleared for both vertical and horizontal flight' (NASM).
+v4 changes: no 1950 date; "Convair built three Pogo airframes. Only one ever flew."; seat tilted about 45° toward the instrument panel; radar altimeter, three lights (safe wording); gearbox wear added; new closing line; restructured for watch time (hook → curiosity loop → story → 4 key insights → 2 retention points → payoff → CTA).
 
 
 ## Pronunciation
