@@ -208,7 +208,7 @@ US Navy photos are usually public domain; check the licence line on each file. S
 ### Part 5. What to upload for each shot
 | Upload | Shots |
 |---|---|
-| **M1** (reuse) | S08, S19, S32*, S53 |
+| **M1** (reuse) | S08, S19, S53 |
 | **M2** (reuse) | S10, S46 |
 | **M3** (reuse) | S32, S33 (part 1) |
 | **M4** (reuse) | S02, S33 (part 2), S37 |
@@ -220,7 +220,6 @@ US Navy photos are usually public domain; check the licence line on each file. S
 | **NEW, no reference** (AI direct) | S14, S45, S51 (drone) |
 | **Archival (you download)** | S01, S03, S07, S12, S16, S22, S26–S29, S31, S32, S39–S43, S47, S49, S50, S51 |
 | **Claude builds** (graphics and X-ray) | S01 lower-third, S09, S13, S15, S18, S24, S25, S34–S36, S40 text, S44, S47 gearbox, S48, S49 text, S52 |
-*S32 uses M3, not M1 (the table row is the source of truth).
 
 
 ---
