@@ -20,6 +20,15 @@ Deadline: **upload this weekend** (10–11 Oct 2026). Don't publish on a Wednesd
 
 ---
 
+
+## Production workflow the user asked for (9 Oct 2026)
+
+1. Prompts one by one (like the Goblin video), **skipping Grok wherever possible**.
+2. Then the full step list.
+3. Then **sources one at a time**: Claude sends each source (link + search terms), the user downloads it and sends the file, Claude confirms it matches the script line, and then moves to the next.
+4. Claude **builds the full video** (graphics, X-ray, Ken Burns motion, timing to the voiceover, assembly with ffmpeg) from what the user sends.
+Open questions to the user: B-58 example (not in the repo), how files will be sent to Claude, and Option A (no Grok) vs Option B (hybrid).
+
 ## Why this topic (research, 8 Oct 2026)
 
 - VidIQ: **"convair xfy-1 pogo" ≈ 35,000 searches/month, +164%**, competition 22/100. "convair xfy pogo" ≈ 14,000. "convair pogo", "pogo plane", "tail sitter", "vertical takeoff fighter": all under 750.
