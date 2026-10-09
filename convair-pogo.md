@@ -9,7 +9,7 @@ Trigger phrase: **"convair pogo"**. In a new chat, say "convair pogo" and Claude
 | Step | What | State |
 |---|---|---|
 | 1 | Topic, title, hook and description chosen with VidIQ and NexLev | ✅ done (8 Oct 2026) |
-| 2 | Full script written and fact-checked | ✅ **FINAL v6 locked (9 Oct)** |
+| 2 | Full script written and fact-checked | ✅ **FINAL v7 locked and fully verified (9 Oct)** |
 | 3 | Grok prompt pack (references R#, masters M#, lock text, shot table, fallbacks, upload list) | ⏳ next, after script OK |
 | 4 | Archival sourcing list (exact searches and links; the user downloads, because archive sites are blocked from Claude's container) | ⏳ |
 | 5 | Voiceover: the user records Parts 1–3 separately and sends them | ⏳ |
@@ -78,7 +78,7 @@ Some visuals are AI-generated or digitally enhanced illustrations, used to show 
 
 ---
 
-## FINAL SCRIPT (v6, locked 9 Oct 2026: written by the user, all fact-checks applied; ≈1,560 words ≈ 10:20)
+## FINAL SCRIPT (v7, locked and fully verified 9 Oct 2026; ≈1,550 words ≈ 10:15)
 
 In 1954, a test pilot brought a fighter in to land… backwards.
 
@@ -118,7 +118,7 @@ Getting it into the air turned out to be the easy part. Getting it back down is 
 
 In the spring of 1954, the Pogo was taken to Moffett Field in California, inside Hangar One, a building so big it was built to house a Navy airship.
 
-For safety, it flew tied to cables, hovering under the roof. Dozens of times, it rose, hung there, and came back down.
+For safety, it flew tied to cables, hovering under the roof. Over and over, it rose, hung there, and came back down.
 
 The man flying it was Convair's test pilot, James "Skeets" Coleman.
 
@@ -146,7 +146,7 @@ It earned him the Harmon Trophy, one of aviation's highest awards. The Pogo work
 
 And remember the rival I mentioned at the start? Its story explains why the Navy got nervous.
 
-Lockheed's XFV-1 never got that far. The Navy gave Convair the only engine cleared for both vertical and horizontal flight. Lockheed never got one. So it fitted temporary landing gear and flew its prototype off a runway like a normal plane.
+Lockheed's XFV-1 never got that far. It was waiting for a more powerful engine that never arrived. So it fitted temporary landing gear and flew its prototype off a runway like a normal plane.
 
 High in the air, its pilot did tip it up and hang it on its propellers. But the XFV-1 never once took off or landed vertically.
 
@@ -174,7 +174,7 @@ If you were in that seat, looking back over your shoulder at the ground, would y
 
 And the Pogo wasn't even the strangest answer to "how do you fight without a runway?" A few years earlier, the Air Force tried a fighter with no landing gear at all, one that lived inside a bomber. That story is right here. And if you want one strange aircraft explained every week, subscribe to Hangar Physics.
 
-Still to check against a photo in step 4: the "four small wheels on the tips of the wings and the fins" (fallback: "small wheels on the tips of its tail fins").
+All claims verified 9 Oct 2026. Wheels confirmed by the Smithsonian and USNI (castering wheels on struts at the tips of the wings and fins). Hangar One was built for the airship USS Macon (NPS). v7 changes: the Lockheed reason is now "waiting for a more powerful engine that never arrived" (the "only engine cleared" quote couldn't be confirmed); "Dozens of times" became "Over and over" (sources give about 60 hours, not a flight count).
 
 
 ---
