@@ -35,6 +35,15 @@ Open questions to the user: B-58 example (not in the repo), how files will be se
 The user's B-58 film (11:39, made with Claude in another session, no Grok) uses: archival photos and film with slow Ken Burns moves and small uppercase lower-third labels; a typewriter date opener; steel-blue (#6FA3C8) and amber (#E8A33D) blueprint-style vector diagrams of the aircraft on graphite (#16191E); comparison cards (54 FT vs CITY BUS); animated maps/radar sweeps; timelines; a trophy icon; cut-out objects on a gradient labelled ILLUSTRATION; a red record stamp; a Hangar Physics end screen ("Every strange aircraft is the answer to a problem." + WATCH NEXT + SUBSCRIBE). The B-58 build scripts are not in this repo, so rebuild the same style in `pogo-film/`.
 Pogo upgrades planned: much more real moving film (the 1954 Pogo flights were filmed); an animated vector Pogo that rotates from level flight to vertical (the shot Grok can't do); an animated pilot's sight-line cone; counter-rotating propeller discs with torque arrows; thrust-vs-weight arrows; three pulsing altimeter lights (no colours or numbers); a Pogo ✓ vs XFV-1 ✗ split screen; free stock footage for the storm at sea; propeller sound design. Deliver in 1080p.
 
+
+## Sources log (step 4, one at a time)
+
+Licence rules found 9 Oct: San Diego Air & Space Museum (SDASM) films and YouTube uploads say "Please do not use without permission" / no commercial use without permission, so they're **not usable on a monetised channel without written OK from archives@sdasm.org** (credit "San Diego Air & Space Museum"). SDASM *Flickr Commons* photos marked "No known copyright restrictions" are fine. British Movietone and Pathé = licensed (AP Archive), so avoid. US Navy / NARA film = public domain. CriticalPast = US government footage, but its free previews are watermarked (buy the clip or get the NARA original).
+
+| # | Source | For shots | State |
+|---|---|---|---|
+| 1 | Main Pogo flight film (NARA original of "XFY-1 Pogo and Regulus I"); backup: email SDASM for permission | S01, S03, S26, S28, S31, S32, S39 | ⏳ sent to the user 10 Oct |
+
 ## Why this topic (research, 8 Oct 2026)
 
 - VidIQ: **"convair xfy-1 pogo" ≈ 35,000 searches/month, +164%**, competition 22/100. "convair xfy pogo" ≈ 14,000. "convair pogo", "pogo plane", "tail sitter", "vertical takeoff fighter": all under 750.
