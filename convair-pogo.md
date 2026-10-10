@@ -13,7 +13,7 @@ Trigger phrase: **"convair pogo"**. In a new chat, say "convair pogo" and Claude
 | 3 | Grok prompt pack (references R#, masters M#, lock text, shot table, fallbacks, upload list) | ✅ v1 sent 9 Oct, **waiting for the user's OK** |
 | 4 | Archival sourcing list (exact searches and links; the user downloads, because archive sites are blocked from Claude's container) | ⏳ |
 | 5 | Voiceover: the user records Parts 1–3 separately and sends them | ✅ all 3 parts received and checked 10 Oct (total 9:08.6) |
-| 6 | Claude builds what it can locally (graphics, spec cards, X-ray diagrams, timing sheet / edit list) | ⏳ |
+| 6 | Claude builds what it can locally (graphics, spec cards, X-ray diagrams, timing sheet / edit list) | 🔄 started 10 Oct: `pogo-film/gfx.py` + `scenes.py`; preview 1 = S01 typewriter, S09 title, S18 ground-behind, S33 pitch-up to tail-first touchdown, S34 sight-lines (`pogo-film/pogo_graphics_preview_1.mp4`), waiting for the user's look approval |
 | 7 | Package: thumbnails, pinned comment, Shorts, upload | ⏳ |
 
 Deadline: **upload this weekend** (10–11 Oct 2026). Don't publish on a Wednesday (Airspeed's day).
