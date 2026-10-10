@@ -11,7 +11,7 @@ Trigger phrase: **"convair pogo"**. In a new chat, say "convair pogo" and Claude
 | 1 | Topic, title, hook and description chosen with VidIQ and NexLev | ✅ done (8 Oct 2026) |
 | 2 | Full script written and fact-checked | ✅ **FINAL v8 CONFIRMED by the user (9 Oct)** |
 | 3 | Grok prompt pack (references R#, masters M#, lock text, shot table, fallbacks, upload list) | ✅ v1 sent 9 Oct, **waiting for the user's OK** |
-| 4 | Archival sourcing list (exact searches and links; the user downloads, because archive sites are blocked from Claude's container) | ⏳ |
+| 4 | Archival sourcing, one source at a time | 🔄 #1 NARA 428-NPC-1597 ✅ (11 shots A–J saved in `pogo-film/footage/`); #2 = the user searches catalog.archives.gov (`XFY-1`, `Pogo Stick`, `vertical takeoff fighter 1954`, `Coleman Convair`, Moving images) and sends screenshots, looking for Coleman, the tip-over into level flight, and the tethered hangar hover |
 | 5 | Voiceover: the user records Parts 1–3 separately and sends them | ✅ all 3 parts received and checked 10 Oct (total 9:08.6) |
 | 6 | Claude builds what it can locally (graphics, spec cards, X-ray diagrams, timing sheet / edit list) | 🔄 started 10 Oct: `pogo-film/gfx.py` + `scenes.py`; preview 1 = S01 typewriter, S09 title, S18 ground-behind, S33 pitch-up to tail-first touchdown, S34 sight-lines (`pogo-film/pogo_graphics_preview_1.mp4`), waiting for the user's look approval |
 | 7 | Package: thumbnails, pinned comment, Shorts, upload | ⏳ |
@@ -35,6 +35,17 @@ Open questions to the user: B-58 example (not in the repo), how files will be se
 The user's B-58 film (11:39, made with Claude in another session, no Grok) uses: archival photos and film with slow Ken Burns moves and small uppercase lower-third labels; a typewriter date opener; steel-blue (#6FA3C8) and amber (#E8A33D) blueprint-style vector diagrams of the aircraft on graphite (#16191E); comparison cards (54 FT vs CITY BUS); animated maps/radar sweeps; timelines; a trophy icon; cut-out objects on a gradient labelled ILLUSTRATION; a red record stamp; a Hangar Physics end screen ("Every strange aircraft is the answer to a problem." + WATCH NEXT + SUBSCRIBE). The B-58 build scripts are not in this repo, so rebuild the same style in `pogo-film/`.
 Pogo upgrades planned: much more real moving film (the 1954 Pogo flights were filmed); an animated vector Pogo that rotates from level flight to vertical (the shot Grok can't do); an animated pilot's sight-line cone; counter-rotating propeller discs with torque arrows; thrust-vs-weight arrows; three pulsing altimeter lights (no colours or numbers); a Pogo ✓ vs XFV-1 ✗ split screen; free stock footage for the storm at sea; propeller sound design. Deliver in 1080p.
 
+
+## Saved files in the repo (so a new chat can use them)
+
+Everything is in `pogo-film/` on branch `claude/convair-pogo`:
+- `footage/raw/nara1597_p1–p6.mov`: the National Archives film 428-NPC-1597 exactly as the user sent it, in 6 pieces (P1–P3 Regulus only; P4–P6 Pogo, cameraman, F3D jets). Public domain; credit "U.S. Navy film, National Archives (428-NPC-1597)".
+- `footage/shots/A–J*.mp4`: the usable shots, already cut (see source #1 in the Sources log for what each one shows and which script line it's for).
+- `nara_pogo_shots.png`: preview image of shots A–E.
+- `audio/VO_part1–3.mp3`: the approved ElevenLabs voiceover (Dan), 9:08.6 in total.
+- `reference/B58_full_film_style_reference.mp4`: the user's B-58 film, the style to copy.
+- `gfx.py`, `scenes.py`: the graphics code; `pogo_graphics_preview_1.mp4`: graphics preview 1 (waiting for the user's OK on the look).
+- The final script (v8), the description, tags, the prompt pack and the fact-check table are further down in this file.
 
 ## Sources log (step 4, one at a time)
 
