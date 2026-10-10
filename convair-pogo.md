@@ -42,6 +42,7 @@ Licence rules found 9 Oct: San Diego Air & Space Museum (SDASM) films and YouTub
 
 | # | Source | For shots | State |
 |---|---|---|---|
+| VO1 | `Convair_Part_1.mp3` (ElevenLabs, Dan): 3:37.6, 44.1 kHz mono 128 kbps, -24.7 LUFS (normalise in mix), peak -2.8 dBTP, ~143 wpm; rough offline transcript matches the script, every line present | narration Part 1 | ✅ approved 10 Oct |
 | 1 | Main Pogo flight film (NARA original of "XFY-1 Pogo and Regulus I"); backup: email SDASM for permission | S01, S03, S26, S28, S31, S32, S39 | ⏳ sent to the user 10 Oct |
 
 ## Why this topic (research, 8 Oct 2026)
