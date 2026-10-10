@@ -99,3 +99,105 @@ def render(path, seconds, frame_fn, alpha=False):
         im = frame_fn(i / FPS, i).resize((W, H), Image.LANCZOS)
         p.stdin.write(im.convert("RGBA" if alpha else "RGB").tobytes())
     p.stdin.close(); p.wait()
+
+# ---------------------------------------------------------------- v2 look: grid, glow, grain, camera, callouts, real footage
+import numpy as np
+
+def grid_background(t=0.0):
+    """Graphite blueprint: fine grid, major lines every 5 cells, vignette. Drifts slowly with t."""
+    img = background(); d = ImageDraw.Draw(img, "RGBA")
+    off = (t * 6) % 40
+    for k in range(-1, W // 40 + 2):
+        x = (k * 40 - off) * SS; major = (k + int((t * 6) // 40)) % 5 == 0
+        d.line([(x, 0), (x, H * SS)], fill=STEEL + (34 if major else 14,), width=SS)
+    for k in range(H // 40 + 2):
+        y = k * 40 * SS; d.line([(0, y), (W * SS, y)], fill=STEEL + (34 if k % 5 == 0 else 14,), width=SS)
+    return img
+
+def glow(img, layer, radius=10, strength=1.0):
+    """Paste an RGBA line layer with a soft bloom under it."""
+    if strength > 0:
+        b = layer.filter(ImageFilter.GaussianBlur(radius * SS))
+        if strength != 1.0:
+            a = b.getchannel("A").point(lambda v: int(min(255, v * strength))); b.putalpha(a)
+        img.paste(b, (0, 0), b)
+    img.paste(layer, (0, 0), layer)
+
+def finish(img, i, grain=7, vignette=True):
+    """Downscale to 1080p, add film grain and a dark vignette (call last; returns a 1x RGB image)."""
+    im = img.convert("RGB").resize((W, H), Image.LANCZOS)
+    a = np.asarray(im).astype(np.int16)
+    if grain:
+        rng = np.random.default_rng(i); a += rng.integers(-grain, grain + 1, (H, W, 1), dtype=np.int16)
+    if vignette:
+        a = (a * _VIG).astype(np.int16)
+    return Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
+
+_yy, _xx = np.mgrid[0:H, 0:W]
+_VIG = (1 - 0.20 * (((_xx - W / 2) / (W / 2)) ** 2 + ((_yy - H / 2) / (H / 2)) ** 2) ** 1.6).clip(0.7, 1)[..., None]
+
+def camera(img, zoom=1.0, cx=None, cy=None):
+    """Zoom an SS-sized frame about (cx, cy) in 1x screen pixels; keeps the frame filled."""
+    if zoom == 1.0: return img
+    cx = W / 2 if cx is None else cx; cy = H / 2 if cy is None else cy
+    w, h = W / zoom, H / zoom
+    x0 = min(max(cx - w / 2, 0), W - w); y0 = min(max(cy - h / 2, 0), H - h)
+    return img.crop((int(x0 * SS), int(y0 * SS), int((x0 + w) * SS), int((y0 + h) * SS))).resize((W * SS, H * SS), Image.BICUBIC)
+
+def callout(img, anchor, label_xy, lines, color=AMBER, k=1.0, size=28, sub=None):
+    """Dot on the anchor, leader line drawn on over k (0..1), then a label that slides and fades in."""
+    if k <= 0: return
+    d = ImageDraw.Draw(img, "RGBA")
+    ax, ay = anchor; lx, ly = label_xy
+    a = ease(k / 0.5); r = 7 * SS
+    d.ellipse([ax * SS - r, ay * SS - r, ax * SS + r, ay * SS + r], fill=color + (int(255 * a),))
+    d.ellipse([ax * SS - 2.4 * r, ay * SS - 2.4 * r, ax * SS + 2.4 * r, ay * SS + 2.4 * r], outline=color + (int(140 * a),), width=2 * SS)
+    e = ease((k - 0.15) / 0.45)
+    if e > 0:
+        ex, ey = ax + (lx - ax) * e, ay + (ly - ay) * e
+        d.line([(ax * SS, ay * SS), (ex * SS, ey * SS)], fill=color + (230,), width=3 * SS)
+    f = ease((k - 0.55) / 0.45)
+    if f > 0:
+        right = lx >= ax; sl = (1 - f) * 30 * (1 if right else -1)
+        tx = lx + (14 if right else -14) + sl; anchor_ = "ls" if right else "rs"
+        fnt = font(size); y = ly - 6
+        for n, s in enumerate(lines):
+            d.text((tx * SS, (y + n * (size + 8)) * SS), s, font=fnt, fill=color + (int(255 * f),), anchor=anchor_)
+        if sub:
+            d.text((tx * SS, (y + len(lines) * (size + 8)) * SS), sub, font=font(int(size * 0.72)), fill=OFFWHITE + (int(200 * f),), anchor=anchor_)
+
+def prop_disc(img, center, rx, ry, color=AMBER, spin=0.0):
+    """A blurred spinning propeller disc seen at an angle (ellipse), with a faint blade sweep."""
+    layer = Image.new("RGBA", img.size, (0, 0, 0, 0)); d = ImageDraw.Draw(layer)
+    cx, cy = center[0] * SS, center[1] * SS
+    d.ellipse([cx - rx * SS, cy - ry * SS, cx + rx * SS, cy + ry * SS], fill=color + (40,), outline=color + (150,), width=2 * SS)
+    for b in range(3):
+        a = spin * 2 * math.pi + b * 2 * math.pi / 3
+        d.line([(cx, cy), (cx + math.cos(a) * rx * SS, cy + math.sin(a) * ry * SS)], fill=color + (90,), width=5 * SS)
+    img.paste(layer.filter(ImageFilter.GaussianBlur(2 * SS)), (0, 0), layer.filter(ImageFilter.GaussianBlur(2 * SS)))
+
+class Footage:
+    """Sequential frame reader for an archival clip: crops 4:3 film to 16:9, scales to 1080p, light grade.
+    frame(n) returns frame n as a 2x (SS) RGB image; asking for the same or a later frame is cheap."""
+    def __init__(self, path, start=0.0, crop_y=0.5, contrast=1.08):
+        vf = (f"fps={FPS},crop=iw:iw*9/16:0:(ih-iw*9/16)*{crop_y},scale={W}:{H}:flags=lanczos,"
+              f"eq=contrast={contrast}:brightness=-0.02,format=rgb24")
+        self.p = subprocess.Popen(["ffmpeg", "-v", "error", "-ss", str(start), "-i", path, "-vf", vf,
+                                   "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
+        self.n = -1; self.last = None
+    def frame(self, n):
+        while self.n < n:
+            buf = self.p.stdout.read(W * H * 3)
+            if len(buf) < W * H * 3: break
+            self.last = Image.frombytes("RGB", (W, H), buf); self.n += 1
+        return self.last.resize((W * SS, H * SS), Image.BICUBIC)
+
+def render1x(path, seconds, frame_fn):
+    """Like render(), but frame_fn returns a finished 1x RGB frame (from finish())."""
+    n = int(seconds * FPS)
+    cmd = ["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
+           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "16", "-pix_fmt", "yuv420p", path]
+    p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
+    for i in range(n):
+        p.stdin.write(frame_fn(i / FPS, i).tobytes())
+    p.stdin.close(); p.wait()
