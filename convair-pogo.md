@@ -12,7 +12,7 @@ Trigger phrase: **"convair pogo"**. In a new chat, say "convair pogo" and Claude
 | 2 | Full script written and fact-checked | ✅ **FINAL v8 CONFIRMED by the user (9 Oct)** |
 | 3 | Grok prompt pack (references R#, masters M#, lock text, shot table, fallbacks, upload list) | ✅ v1 sent 9 Oct, **waiting for the user's OK** |
 | 4 | Archival sourcing list (exact searches and links; the user downloads, because archive sites are blocked from Claude's container) | ⏳ |
-| 5 | Voiceover: the user records Parts 1–3 separately and sends them | ⏳ |
+| 5 | Voiceover: the user records Parts 1–3 separately and sends them | ✅ all 3 parts received and checked 10 Oct (total 9:08.6) |
 | 6 | Claude builds what it can locally (graphics, spec cards, X-ray diagrams, timing sheet / edit list) | ⏳ |
 | 7 | Package: thumbnails, pinned comment, Shorts, upload | ⏳ |
 
@@ -43,6 +43,8 @@ Licence rules found 9 Oct: San Diego Air & Space Museum (SDASM) films and YouTub
 | # | Source | For shots | State |
 |---|---|---|---|
 | VO1 | `Convair_Part_1.mp3` (ElevenLabs, Dan): 3:37.6, 44.1 kHz mono 128 kbps, -24.7 LUFS (normalise in mix), peak -2.8 dBTP, ~143 wpm; rough offline transcript matches the script, every line present | narration Part 1 | ✅ approved 10 Oct |
+| VO2 | `Convair_part_2.mp3`: 2:43.1, -24.5 LUFS, peak -2.3 dBTP; transcript matches, all lines present | narration Part 2 | ✅ approved 10 Oct |
+| VO3 | `Convair_part_3.mp3`: 2:47.9, -24.5 LUFS, peak -2.1 dBTP; transcript matches, all lines present | narration Part 3 | ✅ approved 10 Oct |
 | 1 | Main Pogo flight film (NARA original of "XFY-1 Pogo and Regulus I"); backup: email SDASM for permission | S01, S03, S26, S28, S31, S32, S39 | ⏳ sent to the user 10 Oct |
 
 ## Why this topic (research, 8 Oct 2026)
