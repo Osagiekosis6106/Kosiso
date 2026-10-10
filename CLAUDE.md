@@ -10,6 +10,8 @@
 
   A recognisable real aircraft or person is never AI direct. Never re-make a competitor's outlier within 90 days (the Spirit of St. Louis copies got 1–4,000 views against Airspeed's 1.28M); use the same pattern on a different aircraft.
 
+- **"convair pogo"** → read `convair-pogo.md` first (plus the three airspeed files), check its **Status** table, and continue from the next unfinished step. It holds the chosen title, description, tags, the full script, the fact-check table and what's blocked from the container. Work one step at a time and wait for the user's OK before the next step. Update the Status table after every step.
+
 ## What we established (Airspeed research, Sep 2026, via NexLev)
 
 - Airspeed (@AirspeedChannel, Canada, started Aug 2026): 7 videos, ~371K views per video, outlier "Why Did the Spirit of St. Louis Have No Front Window?" (1.28M). It's a 7-person human studio using bought 3D models ("created entirely by humans"). Its audience is 82% male, mostly 25–44, 53% US; RPM is about $3.3.
