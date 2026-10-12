@@ -64,6 +64,7 @@ Licence rules found 9 Oct: San Diego Air & Space Museum (SDASM) films and YouTub
 | 6a | Commons "Harrier hover demo.ogv": licence CC BY-SA 3.0 (Mr.Z-man): **rejected and deleted**. Use US Navy/USMC public-domain Harrier + V-22 photos instead (Commons image search) | ❌ |
 | 6b | **Harrier photos, US Navy, PD** (USS Bonhomme Richard, Mar 2003), in `photos/cleared/modern/`: **H01 030321-N-1665B-015 vertical landing, pilot visible looking forward and down at the deck** → S50 + S52 (Pogo vs Harrier sight lines); H02 030321-N-4928M-006 night-vision vertical landing → S50 alt; H03 030323-N-3181R-012 Harrier descending over a parked Harrier → S50. Still need V-22 Osprey (S51) | ✅ |
 | 6c | **V-22 Osprey photos, US Navy, PD**, in `photos/cleared/modern/`: **V01 121029-N-QP351-068 MV-22 lifting off USS Boxer, rotors up, close (best)** → S51; V02 160924-N-VK310-067 landing on USS Wasp (wide, ship + sea); V03 120201-N-GZ228-355 approaching USS Wasp; V04 "MV-22 Osprey 2.jpg" on USS Saipan deck 2002 (PD). No rotors-forward flight photo; show the tilt as a blueprint graphic | ✅ |
+| 7 | **User's own XF-85 video excerpt** (38 s, 720p, music baked in; `footage/own/`). Cut silent: **P 0:19.6–0:25 archival Goblin hanging on the B-29 trapeze, released**; **Q 0:26.6–0:31.6 Goblin flying up to the trapeze (hook-up approach)** → S55 end tease ("watch next"); R 0:04.6–0:09.6 3D studio hero shot → end-screen background. Use P or Q under "the fighter that rode inside a bomber" | ✅ |
 
 ## Why this topic (research, 8 Oct 2026)
 
