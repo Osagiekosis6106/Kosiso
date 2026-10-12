@@ -469,7 +469,7 @@ def sc_engine(tl, D):
     lay3 = layer()
     gfx.callout(lay3, (ex, ey - 30), (ex - 220, 250), ["ALLISON T40"], AMBER, min(1, tl / 1.0), 36)
     gfx.callout(lay3, P((23.5, -1.3), 0, cx, cy, sc), (ex - 120, 880), ["REALLY TWO TURBINE ENGINES"], AMBER, max(0, min(1, (tl - 2.0) / 0.9)), 30)
-    gfx.callout(lay3, P((30.6, 1.35), 0, cx, cy, sc), (1250, 880), ["DRIVING ONE GEARBOX"], RED, max(0, min(1, (tl - 3.9) / 0.9)), 30)
+    gfx.callout(lay3, P((30.6, 1.35), 0, cx, cy, sc), (1050, 330), ["DRIVING ONE GEARBOX"], RED, max(0, min(1, (tl - 3.9) / 0.9)), 30)
     img.paste(lay3, (0, 0), lay3); d = ImageDraw.Draw(img, "RGBA")
     a4 = e(tl, 6.6, 7.2)
     T(d, (1500, 820), "≈ 5,850", 86, OFFWHITE, a4, font=FDB)

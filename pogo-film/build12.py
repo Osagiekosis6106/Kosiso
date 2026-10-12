@@ -350,7 +350,7 @@ def build_timeline():
     add(g1(2.62), Film("D_lowangle_hanging.mp4", speed=0.55, keys=((0, 1.0, .5, .45), (5.0, 1.12, .58, .4)), overlays=[source_tag(NAVY)]))
     add(g1(7.0), Film("A_hover_high.mp4", src_in=1.0, speed=0.7, keys=((0, 1.05, .5, .5), (2.2, 1.12, .5, .45))))
     add(g1(9.0), Film("B_descent_touchdown.mp4", src_in=0.5, speed=0.8, keys=((0, 1.0, .5, .5), (3.3, 1.08, .5, .55))))
-    add(g1(12.2), Photo(PH("C16_Richie_pilot_by_Pogo_1955_noknown.jpg"), ((0, 1.0, .5, .78), (4.0, 1.25, .48, .35)), mode="cover", bw=True))
+    add(g1(12.2), Photo(PH("C16_Richie_pilot_by_Pogo_1955_noknown.jpg"), ((0, 1.0, .5, .55), (4.0, 1.18, .5, .35)), mode="card", bw=True))
     add(g1(16.1), Film("C_hover_descent2.mp4", speed=0.72, keys=((0, 1.0, .5, .5), (8.7, 1.1, .5, .5)), overlays=[lower_third("LANDING TAIL-FIRST", "CONVAIR XFY-1 · 1954")]))
     add(g1(25.7), Gfx(gfx2.sc_danger))
     add(g1(31.7), Photo(PH("xfv1/X01_XFV1_standing_crew_Edwards_USN_PD.jpg"), ((0, 1.0, .5, .5), (6.2, 1.12, .5, .42)), mode="card",
@@ -503,6 +503,9 @@ def main():
                    "shots": [[round(s, 3), type(x).__name__, getattr(x, "name", getattr(x, "path", getattr(getattr(x, "fn", None), "__name__", "")))] for s, x in S]},
                   open(f"{out}/cues.json", "w"), indent=1)
         return
+    if "--range" in sys.argv:
+        i = sys.argv.index("--range"); f0, f1 = int(sys.argv[i + 1]), int(sys.argv[i + 2])
+        render_range(S, f0, f1, f"{out}/r_{f0:05d}.mp4"); return
     k, n = int(sys.argv[2]), int(sys.argv[3])
     # split on shot boundaries closest to equal frame counts
     bounds = [0] + [int(N * j / n) for j in range(1, n)] + [N]
