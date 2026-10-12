@@ -209,8 +209,15 @@ def score():
     # resolve
     prog(t_tail, B.END, ["Bb", "Dm9"], 4.0, 0.5, 6)
     drone(t_tail, B.END, 0.5)
-    music = reverb(pads * 0.5 + arp * 0.9, 3.2, 0.38) + lowpass(low, 220) * 0.6 + reverb(perc, 1.6, 0.2) * 0.9 + reverb(fx, 2.5, 0.3) * 0.9
-    return music
+    bed = reverb(pads * 0.5 + arp * 0.9, 3.2, 0.38) + lowpass(low, 220) * 0.6 + reverb(perc, 1.6, 0.2) * 0.9
+    # level the bed so every section sits at a similar loudness (hits in fx stay on top)
+    hop = SR // 10; w = 30
+    r = np.sqrt(np.convolve(bed[::hop] ** 2 if False else (bed ** 2)[::hop], np.ones(w) / w, "same")) + 1e-5
+    target = np.median(r[r > np.percentile(r, 20)])
+    g = np.clip(target / r, 0.35, 2.0)
+    g = np.convolve(g, np.ones(20) / 20, "same")
+    bed = bed * np.interp(np.arange(len(bed)) / hop, np.arange(len(g)), g).astype(np.float32)
+    return bed + reverb(fx, 2.5, 0.3) * 0.9
 
 # ---------------------------------------------------------------- sound design
 def sfx():
