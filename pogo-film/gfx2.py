@@ -757,3 +757,176 @@ def sc_full_cycle(tl, D):
     T(d, (960, 100), "2 NOVEMBER 1954 · THE FULL CYCLE", 40, AMBER, e(tl, 0, 0.4), spacing=3)
     stamp(d, (960, 560), "FIRST EVER", AMBER, e(tl, 7.0, 7.3), 46)
     return img
+
+
+# ================================================================ Part 3 scenes
+def _mark(d, xy, ok, a=1.0, s=26):
+    x, y = xy
+    if ok:
+        line(d, [(x - s * 0.6, y), (x - s * 0.15, y + s * 0.5), (x + s * 0.7, y - s * 0.55)], GREEN, 7, a)
+    else:
+        line(d, [(x - s * 0.5, y - s * 0.5), (x + s * 0.5, y + s * 0.5)], RED, 7, a); line(d, [(x - s * 0.5, y + s * 0.5), (x + s * 0.5, y - s * 0.5)], RED, 7, a)
+
+
+def sc_scorecard(tl, D):
+    """XFV-1 vs Pogo: which parts of the cycle each one did."""
+    img = bg("grid"); d = ImageDraw.Draw(img, "RGBA")
+    rows = ["VERTICAL TAKEOFF", "HOVER", "LEVEL FLIGHT", "VERTICAL LANDING"]
+    xv = [False, True, True, False]
+    T(d, (960, 110), "WHO DID THE FULL CYCLE?", 44, OFFWHITE, e(tl, 0, 0.4), font=FDB, spacing=3)
+    T(d, (1180, 260), "LOCKHEED XFV-1", 34, OFFWHITE, e(tl, 0.1, 0.5), font=FDB, spacing=2)
+    T(d, (1560, 260), "CONVAIR XFY-1", 34, AMBER, e(tl, 0.1, 0.5), font=FDB, spacing=2)
+    hl = e(tl, 8.4, 8.9) * (0.7 + 0.3 * math.sin(tl * 6))
+    for i, r in enumerate(rows):
+        y = 380 + i * 130
+        if i == 3 and hl > 0:
+            d.rounded_rectangle([200 * SS, (y - 52) * SS, 1760 * SS, (y + 52) * SS], radius=14 * SS, outline=AMBER + (int(255 * hl),), width=4 * SS, fill=AMBER + (int(30 * hl),))
+        T(d, (260, y), r, 36, OFFWHITE, e(tl, 0.2 + 0.1 * i, 0.6 + 0.1 * i), anchor="lm", font=FDB, spacing=2)
+        line(d, [(240, y + 65), (1720, y + 65)], GREY, 1, 0.4)
+        _mark(d, (1180, y), xv[i], e(tl, 0.4 + 0.35 * i, 0.6 + 0.35 * i))
+        _mark(d, (1560, y), True, e(tl, 4.8 + 0.25 * i, 5.0 + 0.25 * i))
+    stamp(d, (1560, 930), "FULL CYCLE", GREEN, e(tl, 6.0, 6.3), 34)
+    T(d, (960, 1010), "AND THAT ONE SHOWED THE NAVY EXACTLY WHERE THE PROBLEM WAS", 28, AMBER, e(tl, 8.5, 9.0), font=FSB, spacing=1)
+    return img
+
+
+def sc_moving_deck(tl, D):
+    """Landing backwards onto a deck that's moving."""
+    img = bg("grid"); d = ImageDraw.Draw(img, "RGBA")
+    roll = 5 * math.sin(tl * 1.6); heave = 26 * math.sin(tl * 1.1)
+    sx, sy, s = 1000, 860 + heave, 40
+    def R(pts, cx, cy, sc): return rot([(x * sc, y * sc) for x, y in pts], roll, cx, cy, 1)
+    for p in (SHIP, SHIP_SUP):
+        q = R(p, sx, sy, s); d.polygon([(x * SS, y * SS) for x, y in q], fill=STEEL + (70,), outline=STEEL + (255,), width=3 * SS)
+    waves(d, 866, tl * 2.5, 1)
+    waves(d, 900, -tl * 3, 0.6)
+    pad = R([(-9.4, -4.4)], sx, sy, s)[0]
+    q = R([(-10.25, -4.55), (-8.55, -4.55), (-8.55, -4.3), (-10.25, -4.3)], sx, sy, s)
+    d.polygon([(x * SS, y * SS) for x, y in q], fill=AMBER + (255,))
+    sc = 9; cy = 300 + (pad[1] - (17 + 0.4 + 0.55) * sc - 300) * min(1, e(tl, 0.2, D) * 0.92)
+    lay = layer(); pogo(lay, 90 + 3 * math.sin(tl * 2.3), pad[0] + 6 * math.sin(tl * 1.7), cy, sc, spin=tl * 5); fglow(img, lay, 8, 0.8)
+    d = ImageDraw.Draw(img, "RGBA")
+    for i in range(14):
+        x = (i * 151 + tl * 900) % 1920; y = (i * 97 + tl * 1300) % 1080
+        line(d, [(x, y), (x - 14, y + 38)], STEEL, 2, 0.35)
+    T(d, (960, 100), "BACKWARDS — ONTO A DECK THAT'S MOVING", 40, OFFWHITE, e(tl, 0.1, 0.5), font=FDB, spacing=2)
+    return img
+
+
+def sc_gearbox(tl, D):
+    img = bg("grid"); d = ImageDraw.Draw(img, "RGBA")
+    cx, cy, sc = 860, 560, 34
+    lay = layer(); pogo(lay, 0, cx, cy, sc, spin=tl * 3, alpha=60); fglow(img, lay, 6, 0.5)
+    lay2 = layer(); d2 = ImageDraw.Draw(lay2)
+    pulse = 0.6 + 0.4 * math.sin(tl * 7)
+    gx0, gy0 = P((29.0, 1.35), 0, cx, cy, sc); gx1, gy1 = P((32.2, -1.35), 0, cx, cy, sc)
+    d2.rounded_rectangle([gx0 * SS, gy0 * SS, gx1 * SS, gy1 * SS], radius=12 * SS, fill=RED + (int(170 * pulse),), outline=RED + (255,), width=3 * SS)
+    for i in range(22):
+        ph = (tl * 0.6 + i / 22) % 1.0
+        x = (gx0 + gx1) / 2 + math.sin(i * 7.3) * 50 * ph; y = gy1 + 10 + ph * 260
+        circle(d2, (x, y), 4, fill=(220, 220, 225, 255), w=1, a=(1 - ph) * e(tl, 1.0, 1.6))
+    fglow(img, lay2, 12, 1.2); d = ImageDraw.Draw(img, "RGBA")
+    lay3 = layer(); gfx.callout(lay3, ((gx0 + gx1) / 2, gy0), (1250, 260), ["THE GEARBOX WAS WEARING OUT"], RED, min(1, tl / 0.9), 32)
+    img.paste(lay3, (0, 0), lay3); d = ImageDraw.Draw(img, "RGBA")
+    T(d, ((gx0 + gx1) / 2, gy1 + 330), "SHEDDING METAL INTO ITS OIL", 32, OFFWHITE, e(tl, 1.4, 1.9), font=FDB, spacing=2)
+    return img
+
+
+def sc_timeline(tl, D):
+    img = bg("grid"); d = ImageDraw.Draw(img, "RGBA")
+    ev = [(1951, "PROTOTYPES ORDERED", STEEL, 0.0), (1954, "FIRST FLIGHTS · FULL CYCLE", AMBER, 0.6), (1955, "PROGRAMME WOUND DOWN", RED, 1.0), (1956, "NAVY ENDS ITS WORK", RED, 4.6)]
+    x0, x1, y = 260, 1660, 560
+    line(d, [(x0, y), (x0 + (x1 - x0) * e(tl, 0, 1.0), y)], DIM, 4)
+    for yr, lab, col, t0 in ev:
+        x = x0 + (yr - 1951) / 5 * (x1 - x0)
+        a = e(tl, t0, t0 + 0.4)
+        circle(d, (x, y), 16, col, fill=col + (255,), w=3, a=a)
+        T(d, (x, y - 70), str(yr), 58, col, a, font=FDB)
+        row = 70 if yr in (1951, 1955) else 125
+        T(d, (x, y + row), lab, 24, OFFWHITE, a, font=FSB, spacing=2)
+    x55 = x0 + 4 / 5 * (x1 - x0); x56 = x1
+    if tl > 1.0:
+        k = e(tl, 1.0, 4.6)
+        line(d, [(x55, y), (x55 + (x56 - x55) * k, y)], RED, 8)
+    T(d, (960, 110), "THE END OF THE POGO", 44, OFFWHITE, e(tl, 0, 0.4), font=FDB, spacing=4)
+    return img
+
+
+def sc_three_built(tl, D):
+    img = bg("grid"); d = ImageDraw.Draw(img, "RGBA")
+    sc = 11
+    for i in range(3):
+        cx = 560 + i * 400; cy = gfx.stand_cy(GROUND - 40, sc)
+        flew = i == 1
+        a = e(tl, 0.1 + 0.25 * i, 0.5 + 0.25 * i)
+        lay = layer(); pogo(lay, 90, cx, cy, sc, spin=0, fill=AMBER if (flew and tl > 2.0) else STEEL, alpha=int((110 if flew or tl < 2.0 else 40) * a))
+        fglow(img, lay, 8, 0.7 if (flew and tl > 2.0) else 0.3)
+    d = ImageDraw.Draw(img, "RGBA")
+    ground(d, 1, GROUND - 40)
+    T(d, (960, 120), "3 AIRFRAMES BUILT", 52, OFFWHITE, e(tl, 0.1, 0.5), font=FDB, spacing=4)
+    T(d, (960, 190), "ONLY 1 EVER FLEW", 44, AMBER, e(tl, 2.0, 2.4), font=FDB, spacing=4)
+    return img
+
+
+HARRIER = [(0, 0), (3, -0.6), (5.5, -0.8), (9, -0.7), (11.5, -0.3), (13.6, 0.2), (11.5, 0.7), (9, 0.9), (2, 0.6), (0, 0.4)]
+def sc_compare(tl, D):
+    """Pogo: lands looking back over his shoulder. Harrier: level, looking ahead at the deck."""
+    img = bg("grid"); d = ImageDraw.Draw(img, "RGBA")
+    line(d, [(960, 180), (960, 1000)], AMBER, 3, 0.8)
+    ground(d, 1, 900, 120, 900); ground(d, 1, 900, 1020, 1800)
+    sc = 13; cx = 520; cy = gfx.stand_cy(900, sc) - 70
+    lay = layer(); pogo(lay, 90, cx, cy, sc, spin=tl * 4); fglow(img, lay, 8, 0.8)
+    d = ImageDraw.Draw(img, "RGBA")
+    px, py = P(gfx.COCKPIT, 90, cx, cy, sc)
+    k = e(tl, 0.4, 1.6)
+    pts = [(px - 15 - 300 * math.sin(u * math.pi / 2), py + 15 + (880 - py) * (u ** 1.8)) for u in [i / 30 for i in range(31)]]
+    lay2 = layer(); dashed(ImageDraw.Draw(lay2), pts, RED, 5, 1.0, k=k); fglow(img, lay2, 8)
+    d = ImageDraw.Draw(img, "RGBA")
+    T(d, (520, 130), "POGO", 46, OFFWHITE, e(tl, 0.1, 0.5), font=FDB, spacing=4)
+    T(d, (520, 190), "LANDS LOOKING BACKWARDS", 28, RED, e(tl, 1.2, 1.6), font=FSB, spacing=2)
+    # Harrier: level, thrust down, pilot looks ahead/down
+    hx, hy, s = 1150, 690, 42
+    lay = layer(); d3 = ImageDraw.Draw(lay)
+    q = [((hx + x * s) * SS, (hy + y * s) * SS) for x, y in HARRIER]
+    d3.polygon(q, fill=STEEL + (110,), outline=(171, 223, 255, 255), width=3 * SS)
+    for part in ([(0.6, -0.4), (2.4, -0.6), (1.2, -2.6), (0.2, -2.6)], [(6.0, 0.2), (9.0, 0.3), (5.6, 1.6), (4.4, 1.6)]):
+        q2 = [((hx + x * s) * SS, (hy + y * s) * SS) for x, y in part]
+        d3.polygon(q2, fill=STEEL + (90,), outline=(171, 223, 255, 255), width=3 * SS)
+    for nx in (5.0, 7.2):
+        for j in range(3):
+            yy = hy + 1.0 * s + j * 34 + (tl * 120) % 34
+            arrow(d3, (hx + nx * s, yy), (hx + nx * s, yy + 24), STEEL, 4, 12, 0.7)
+    fglow(img, lay, 8, 0.8); d = ImageDraw.Draw(img, "RGBA")
+    cpx, cpy = hx + 11.2 * s, hy - 0.5 * s
+    k2 = e(tl, 2.0, 3.0)
+    lay2 = layer(); dashed(ImageDraw.Draw(lay2), [(cpx, cpy), (cpx + (1640 - cpx) * k2, cpy + (880 - cpy) * k2)], GREEN, 5, 1.0); fglow(img, lay2, 8)
+    d = ImageDraw.Draw(img, "RGBA")
+    T(d, (1400, 130), "HARRIER", 46, OFFWHITE, e(tl, 1.8, 2.2), font=FDB, spacing=4)
+    T(d, (1400, 190), "PILOT LEVEL, LOOKING AHEAD", 28, GREEN, e(tl, 2.6, 3.0), font=FSB, spacing=2)
+    T(d, (960, 1010), "THE PILOT NEVER HAS TO LAND LOOKING BACKWARDS", 34, AMBER, e(tl, 3.6, 4.1), font=FDB, spacing=2)
+    return img
+
+
+def sc_drone(tl, D):
+    img = bg("grid"); d = ImageDraw.Draw(img, "RGBA")
+    sx, sy, s = 1000, 860, 40
+    poly(d, SHIP, sx, sy, s, STEEL, 1, 70); poly(d, SHIP_SUP, sx, sy, s, STEEL, 1, 70); waves(d, sy + 6, tl, 1)
+    pad_x, pad_y = sx - 9.4 * s, sy - 4.4 * s
+    d.rectangle([(pad_x - 34) * SS, (pad_y - 6) * SS, (pad_x + 34) * SS, (pad_y + 4) * SS], fill=AMBER + (255,))
+    up = e(tl, 1.0, 4.0) * (1 - e(tl, 4.6, 7.4))
+    dy = pad_y - 70 - 330 * up
+    lay = layer(); d2 = ImageDraw.Draw(lay)
+    body = [(pad_x - 9, dy + 60), (pad_x - 12, dy - 10), (pad_x, dy - 50), (pad_x + 12, dy - 10), (pad_x + 9, dy + 60)]
+    d2.polygon([(x * SS, y * SS) for x, y in body], fill=STEEL + (120,), outline=(171, 223, 255, 255), width=3 * SS)
+    line(d2, [(pad_x - 70, dy + 10), (pad_x + 70, dy + 10)], (171, 223, 255), 4)
+    for sxn in (-70, 70):
+        w_ = 26 * abs(math.sin(tl * 30 + sxn))
+        line(d2, [(pad_x + sxn - 30, dy - 20), (pad_x + sxn + 30, dy - 20)], AMBER, 3, 0.7)
+        line(d2, [(pad_x + sxn, dy + 10), (pad_x + sxn, dy - 20)], (171, 223, 255), 3)
+    line(d2, [(pad_x - 30, dy + 60), (pad_x - 40, dy + 70)], (171, 223, 255), 3); line(d2, [(pad_x + 30, dy + 60), (pad_x + 40, dy + 70)], (171, 223, 255), 3)
+    fglow(img, lay, 8, 0.8); d = ImageDraw.Draw(img, "RGBA")
+    T(d, (960, 100), "MODERN TAIL-SITTER DRONES", 44, OFFWHITE, e(tl, 0, 0.4), font=FDB, spacing=3)
+    T(d, (pad_x + 130, pad_y - 300), "NOBODY ON BOARD", 34, AMBER, e(tl, 3.5, 4.0), anchor="lm", font=FDB)
+    T(d, (pad_x + 130, pad_y - 255), "WHO HAS TO LOOK BACK", 34, AMBER, e(tl, 3.5, 4.0), anchor="lm", font=FDB)
+    T(d, (1840, 1040), "ILLUSTRATION", 20, DIM, 0.8, anchor="rs", font=FSB, spacing=3)
+    return img

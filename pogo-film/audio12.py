@@ -6,7 +6,7 @@ import build12 as B
 
 SR = 48000
 HERE = os.path.dirname(os.path.abspath(__file__))
-VO = [os.path.join(HERE, "audio", f"VO_part{i}.mp3") for i in (1, 2)]
+VO = [os.path.join(HERE, "audio", f"VO_part{i}.mp3") for i in (1, 2, 3)]
 N = int(B.END * SR) + SR
 rng = np.random.default_rng(3)
 
@@ -206,9 +206,38 @@ def score():
     # triumph
     prog(t_nov, t_tail + 1, ["F", "C", "Dm", "Bb"], 5.5, 0.6, 9)
     arpeggio(t_nov + 0.3, t_tail, ["F", "C", "Dm", "Bb"], 5.5, 100, 0.32, 12, 1.3)
-    # resolve
-    prog(t_tail, B.END, ["Bb", "Dm9"], 4.0, 0.5, 6)
-    drone(t_tail, B.END, 0.5)
+    # end of part 2 -> part 3
+    g3 = B.g3; t3 = g3(0)
+    prog(t_tail, t3 + 0.5, ["Bb", "Dm9"], 4.0, 0.5, 6)
+    drone(t_tail, t3 + 1, 0.5)
+    t_sea = g3(38.9); t_dec = g3(70.2); t_idea = g3(101.4); t_refl = g3(132.3); t_gob = g3(148.1); t_end = g3(160.4)
+    # the rival
+    prog(t3, t_sea, ["Dm", "Bb", "Gm", "A"], 5.0, 0.48, 6)
+    ticks(g3(26.6), t_sea - 0.5, 88, 0.22)
+    # where it was meant to live: storm, ordinary pilots
+    prog(t_sea, t_dec, ["Dm9", "Bb", "Dm9", "Eb"], 7.0, 0.45, 5)
+    drone(t_sea, t_dec + 1, 0.8)
+    heartbeat(g3(44.6), t_dec - 1.0, 64, 74, 0.45)
+    # decline
+    prog(t_dec, t_idea, ["Gm", "Dm", "Bb", "A"], 6.0, 0.48, 6)
+    for k, tt in enumerate(np.arange(t_dec + 2, t_idea - 1, 3.0)):
+        add(arp, tt, pluck(mhz(nm(["D5", "Bb4", "A4", "F4"][k % 4])), 2.0, 0.5) * 0.2)
+    # the idea didn't die
+    add(fx, t_idea - 1.4, riser(1.4) * 0.3)
+    prog(t_idea, t_refl, ["F", "C", "Dm", "Bb"], 5.0, 0.5, 8)
+    arpeggio(t_idea + 0.2, t_refl - 0.3, ["F", "C", "Dm", "Bb"], 5.0, 96, 0.30, 12, 1.2)
+    # reflection + question
+    prog(t_refl, t_gob, ["Bb", "F", "Gm", "Dm"], 4.0, 0.45, 6)
+    # Goblin tease: rising, then the outro theme
+    prog(t_gob, t_end, ["Dm9", "Bb"], 6.0, 0.5, 6)
+    heartbeat(t_gob + 0.5, t_end - 0.6, 80, 100, 0.4)
+    add(fx, t_end - 2.0, riser(2.0) * 0.4)
+    add(fx, t_end, boom(3.0) * 0.6)
+    prog(t_end, B.END + 3, ["Dm", "Bb", "F", "C"], 4.0, 0.6, 8)
+    arpeggio(t_end + 0.2, B.END - 2.5, ["Dm", "Bb", "F", "C"], 4.0, 100, 0.32, 12, 1.2)
+    fade = np.ones(N, dtype=np.float32); i0 = int((B.END - 3.0) * SR); i1 = int(B.END * SR)
+    fade[i0:i1] = np.linspace(1, 0, i1 - i0); fade[i1:] = 0
+    pads *= fade; arp *= fade; low *= fade; perc *= fade
     bed = reverb(pads * 0.5 + arp * 0.9, 3.2, 0.38) + lowpass(low, 220) * 0.6 + reverb(perc, 1.6, 0.2) * 0.9
     # level the bed so every section sits at a similar loudness (hits in fx stay on top)
     hop = SR // 10; w = 30
@@ -225,7 +254,7 @@ def sfx():
     S = B.build_timeline()
     starts = [t for t, _ in S] + [B.END]
     flying = {"D_lowangle_hanging.mp4": 0.9, "A_hover_high.mp4": 0.8, "B_descent_touchdown.mp4": 0.8, "C_hover_descent2.mp4": 0.8,
-              "G_takeoff1.mp4": 1.0, "H_takeoff2.mp4": 1.0, "F_standing_wide.mp4": 0.35, "I_cameraman.mp4": 0.45, "E_on_ground_crew.mp4": 0.25}
+              "G_takeoff1.mp4": 1.0, "H_takeoff2.mp4": 1.0, "F_standing_wide.mp4": 0.35, "I_cameraman.mp4": 0.45, "E_on_ground_crew.mp4": 0.25, "E2_crew_prep_long.mp4": 0.2, "J_F3D_carrier_deck.mp4": 0.0}
     for i, (t0, shot) in enumerate(S):
         t1 = starts[i + 1]
         name = getattr(shot, "name", None)
@@ -241,7 +270,7 @@ def sfx():
     for t0, t_off, text in ((B.g1(100.05), 0.2, "1951"), (B.g2(7.5), 0.2, "SPRING 1954"), (B.g2(52.75), 0.1, "1 AUGUST 1954"), (B.g2(137.8), 0.1, "2 NOVEMBER 1954")):
         for k in range(len(text)): add(s, t0 + t_off + 0.09 * k, keyclack() * 0.45)
     add(s, B.g2(85.8) + 1.2, shutter() * 0.9)
-    for t in (B.g1(31.7) + 3.95, B.g1(25.7) + 4.9, B.g2(142.6) + 7.0, B.g1(197.55) + 13.6):
+    for t in (B.g1(31.7) + 3.95, B.g1(25.7) + 4.9, B.g2(142.6) + 7.0, B.g1(197.55) + 13.6, B.g3(6.9) + 6.9, B.g3(26.6) + 6.0):
         add(s, t, thump(0.5, 120, 60, 10) * 0.6)
     add(s, B.g1(25.7) + 1.5, boom(1.5) * 0.6)
     add(s, B.g2(115.65) + 1.6, boom(1.5) * 0.5)
@@ -250,10 +279,10 @@ def sfx():
 # ---------------------------------------------------------------- mix
 def main():
     out = sys.argv[1]; os.makedirs(out, exist_ok=True)
-    p1 = load(VO[0], VOICE_CHAIN); p2 = load(VO[1], VOICE_CHAIN)
+    p1 = load(VO[0], VOICE_CHAIN); p2 = load(VO[1], VOICE_CHAIN); p3 = load(VO[2], VOICE_CHAIN)
     voice = np.zeros(N, dtype=np.float32)
     cut = int(B.VO_A_END * SR)
-    add(voice, B.VO_A_OFF, p1[:cut]); add(voice, B.VO_B_OFF + B.VO_A_END, p1[cut:]); add(voice, B.VO_C_OFF, p2)
+    add(voice, B.VO_A_OFF, p1[:cut]); add(voice, B.VO_B_OFF + B.VO_A_END, p1[cut:]); add(voice, B.VO_C_OFF, p2); add(voice, B.VO_D_OFF, p3)
     # duck envelope from the voice (attack 60 ms, release 500 ms)
     hop = SR // 100
     rms = np.sqrt(np.convolve(voice ** 2, np.ones(hop) / hop, "same"))[::hop]

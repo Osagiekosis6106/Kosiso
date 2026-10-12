@@ -19,9 +19,12 @@ TITLE_GAP = 3.0
 VO_B_OFF = VO_A_OFF + TITLE_GAP       # part 1 [43.4, end) after the title card
 P1_LEN, P2_LEN = 217.6, 163.1
 VO_C_OFF = VO_B_OFF + P1_LEN + 1.5    # part 2
-END = VO_C_OFF + P2_LEN + 4.0
+P3_LEN = 167.9
+VO_D_OFF = VO_C_OFF + P2_LEN + 1.2
+END = VO_D_OFF + 160.44 + 22.0          # end screen runs ~22 s after "That story is right here"
 def g1(t): return t + (VO_A_OFF if t < VO_A_END else VO_B_OFF)
 def g2(t): return t + VO_C_OFF
+def g3(t): return t + VO_D_OFF
 
 # ---------------------------------------------------------------- finishing
 _yy, _xx = np.mgrid[0:H, 0:W]
@@ -438,6 +441,56 @@ def build_timeline():
     add(g2(153.85), Photo(PH("C08_Coleman_by_FY-1_SDASM_000423_PD.jpg"), ((0, 1.0, .5, .5), (4.5, 1.1, .5, .45)), mode="card", bw=True, overlays=[trophy(0.3)]))
     add(g2(158.3), Film("D_lowangle_hanging.mp4", src_in=0.5, speed=0.6, keys=((0, 1.0, .5, .45), (1.8, 1.08, .55, .42))))
     add(g2(160.05), Photo(PH("C07_Coleman_portrait_SDASM_000419_PD.jpg"), ((0, 1.15, .5, .4), (7.0, 1.35, .5, .33)), mode="card", bw=True))
+    # --- Part 3
+    X = lambda n: PH("xfv1/" + n); M = lambda n: PH("modern/" + n)
+    add(g3(-0.3), Photo(X("X01_XFV1_standing_crew_Edwards_USN_PD.jpg"), ((0, 1.0, .5, .5), (7.2, 1.12, .5, .4)), mode="card",
+                        overlays=[lower_third("LOCKHEED XFV-1", "THE RIVAL")]))
+    add(g3(6.9), Photo(X("X02_XFV1_maintenance_rack_USN_PD.jpg"), ((0, 1.0, .5, .5), (9.2, 1.15, .5, .38)), mode="card",
+                       overlays=[text_lines([(2.9, (1650, 300), "WAITING FOR A", OFFWHITE, "mm"), (3.2, (1650, 360), "MORE POWERFUL ENGINE", OFFWHITE, "mm"), (3.6, (1650, 430), "ALLISON T54", AMBER, "mm")], 32),
+                                 red_stamp("NEVER MATERIALISED", 6.9, (1650, 620))]))
+    add(g3(16.1), Photo(X("X03_XFV1_on_temp_gear_desert_23Jun1954_USN_PD.jpg"), ((0, 1.0, .5, .5), (3.5, 1.1, .5, .5)), mode="cover", bw=True,
+                        overlays=[lower_third("TEMPORARY LANDING GEAR", "XFV-1 · 1954")]))
+    add(g3(19.6), Photo(X("X10_XFV1_flight_gear_underside_SDASM_17-000178_PD.jpg"), ((0, 1.0, .5, .5), (2.4, 1.1, .5, .48)), mode="cover", bw=True,
+                        overlays=[text_lines([(0.2, (960, 980), "OFF A RUNWAY, LIKE A NORMAL PLANE", OFFWHITE, "mm")], 36)]))
+    add(g3(22.0), Photo(X("X09_XFV1_vertical_at_altitude_USN_PD.jpg"), ((0, 1.0, .5, .5), (4.6, 1.2, .5, .45)), mode="card",
+                        overlays=[text_lines([(0.6, (1650, 470), "HIGH IN THE AIR,", OFFWHITE, "mm"), (1.6, (1650, 530), "HANGING ON ITS", OFFWHITE, "mm"), (1.6, (1650, 590), "PROPELLERS", AMBER, "mm")], 32)]))
+    add(g3(26.6), Gfx(gfx2.sc_scorecard))
+    add(g3(38.9), Film("E2_crew_prep_long.mp4", src_in=3.0, speed=0.85, keys=((0, 1.0, .5, .5), (5.7, 1.08, .5, .5)),
+                       overlays=[text_lines([(3.1, (960, 980), "NOT A CALM AIRFIELD IN CALIFORNIA", OFFWHITE, "mm")], 40)]))
+    add(g3(44.6), Film("N_gale_ships_rough_water.mp4", src_in=15.0, mode="framed", tint=0.15,
+                       overlays=[text_lines([(0.4, (960, 120), "A SMALL SHIP · THE ATLANTIC", OFFWHITE, "mm"), (3.6, (960, 980), "AT NIGHT · IN BAD WEATHER", AMBER, "mm")], 36)]))
+    add(g3(50.8), Film("J_F3D_carrier_deck.mp4", src_in=12.0, speed=0.9, keys=((0, 1.0, .5, .5), (5.7, 1.08, .5, .5)),
+                       overlays=[lower_third("AN ORDINARY SQUADRON PILOT", "NOT A TOP TEST PILOT")]))
+    add(g3(56.5), Gfx(gfx2.sc_moving_deck))
+    add(g3(60.2), Photo(PH("C14_Coleman_cockpit_SDASM_000429_PD.jpg"), ((0, 1.0, .5, .5), (10.0, 1.2, .5, .38)), mode="card", bw=True,
+                        overlays=[text_lines([(2.2, (1650, 420), "EXCEPTIONAL SKILL", AMBER, "mm"), (6.4, (1650, 540), "UNSUITABLE FOR", OFFWHITE, "mm"), (6.8, (1650, 600), "ORDINARY PILOTS", OFFWHITE, "mm"), (7.6, (1650, 660), "ON ORDINARY SHIPS", OFFWHITE, "mm")], 32)]))
+    add(g3(70.2), Film("J_F3D_carrier_deck.mp4", src_in=20.0, speed=0.9, keys=((0, 1.0, .5, .5), (7.8, 1.1, .5, .5)),
+                       overlays=[lower_third("NEW JET FIGHTERS", "FASTER THAN ANY PROPELLER FIGHTER")]))
+    add(g3(78.0), Gfx(gfx2.sc_gearbox))
+    add(g3(83.0), Gfx(gfx2.sc_timeline))
+    add(g3(91.95), Gfx(gfx2.sc_three_built))
+    add(g3(95.8), Photo(PH("C04_on_launching_cart_NAN5-54_USN_PD.jpg"), ((0, 1.0, .5, .5), (5.6, 1.12, .45, .45)), mode="cover", bw=True,
+                        overlays=[lower_third("THE ONE THAT FLEW STILL EXISTS", "SMITHSONIAN NATIONAL AIR AND SPACE MUSEUM COLLECTION", 1.2)]))
+    add(g3(101.4), Film("A_hover_high.mp4", src_in=0.0, speed=0.7, keys=((0, 1.0, .5, .5), (2.1, 1.08, .5, .5)),
+                        overlays=[text_lines([(0.2, (960, 980), "BUT THE IDEA DIDN'T DIE", OFFWHITE, "mm")], 40)]))
+    add(g3(103.5), Photo(M("H03_AV8B_landing_over_parked_Harrier_030323-N-3181R-012_USN_PD.jpg"), ((0, 1.0, .5, .4), (4.3, 1.12, .55, .3)), mode="cover",
+                         overlays=[lower_third("HARRIER", "1960s · A DIFFERENT ROUTE TO VERTICAL FLIGHT"), source_tag("U.S. NAVY PHOTO")]))
+    add(g3(107.8), Photo(M("H01_AV8B_vertical_landing_LHD6_030321-N-1665B-015_USN_PD.jpg"), ((0, 1.0, .5, .5), (4.9, 1.06, .52, .5)), mode="cover",
+                         overlays=[harrier_overlay(), source_tag("U.S. NAVY PHOTO")]))
+    add(g3(112.7), Film("T_osprey_transition_rotors_tilting.mp4", src_in=0.5, mode="framed", bw=False,
+                        overlays=[lower_third("V-22 OSPREY", "TILTS ITS ROTORS, NOT THE WHOLE AIRCRAFT"), source_tag("U.S. AIR FORCE FILM")]))
+    add(g3(117.1), Gfx(gfx2.sc_drone))
+    add(g3(125.3), Gfx(gfx2.sc_compare))
+    add(g3(132.3), Film("G_takeoff1.mp4", src_in=9.0, speed=1.0, keys=((0, 1.0, .5, .5), (3.7, 1.08, .5, .45)),
+                        overlays=[text_lines([(0.3, (960, 980), "IT COULD TAKE OFF WITHOUT A RUNWAY", OFFWHITE, "mm")], 38)]))
+    add(g3(136.0), Film("O_gale_steamer_wrecked_seaplanes.mp4", src_in=1.0, mode="framed", tint=0.2,
+                        overlays=[text_lines([(0.3, (960, 980), "BUT COULD ORDINARY PILOTS LAND IT, AT SEA?", AMBER, "mm")], 36)]))
+    add(g3(141.0), Photo(PH("C10_Coleman_cockpit_close_SDASM_000411_PD.jpg"), ((0, 1.0, .5, .45), (7.1, 1.25, .5, .4)), mode="card", bw=True,
+                         overlays=[text_lines([(2.6, (1650, 450), "WOULD YOU HAVE", OFFWHITE, "mm"), (2.9, (1650, 510), "TRUSTED IT?", AMBER, "mm"), (5.5, (1650, 650), "TELL ME IN THE COMMENTS", OFFWHITE, "mm")], 32)]))
+    add(g3(148.1), Gfx(gfx2.sc_text_card(["HOW DO YOU FIGHT", "WITHOUT A RUNWAY?"])))
+    add(g3(152.5), Film("Q_goblin_hookup_approach.mp4", src_in=0.0, speed=0.64, bw=False, contrast=1.0, keys=((0, 1.0, .5, .5), (7.9, 1.1, .5, .45)),
+                        overlays=[lower_third("McDONNELL XF-85 GOBLIN · 1948", "THE FIGHTER THAT LIVED INSIDE A BOMBER")]))
+    add(g3(160.4), EndScreen())
     S.sort(key=lambda x: x[0])
     return S
 
@@ -460,6 +513,52 @@ def split_screen(tl, D):
     T(d, (1440, 880), "LOCKHEED XFV-1", 40, OFFWHITE, e(tl, 0.1, 0.5), font=FDB, spacing=3)
     T(d, (960, 990), "THE SAME BASIC IDEA: A FIGHTER THAT SITS ON ITS TAIL", 34, AMBER, e(tl, 0.5, 1.0), font=FSB, spacing=2)
     return img
+
+
+def harrier_overlay():
+    """H01: the pilot sits level and looks ahead at the deck; thrust points down."""
+    def f(d, tl, D, Pmap):
+        lay = f.lay; dl = ImageDraw.Draw(lay)
+        cp = Pmap(0.665, 0.31); deck = Pmap(0.86, 0.87)
+        k = e(tl, 0.6, 1.8)
+        dashed(dl, [cp, (cp[0] + (deck[0] - cp[0]) * k, cp[1] + (deck[1] - cp[1]) * k)], GREEN, 6, 1.0)
+        if k > 0.95:
+            dl.rounded_rectangle([1280 * SS, 110 * SS, 1880 * SS, 225 * SS], radius=12 * SS, fill=(8, 10, 13, int(160 * e(tl, 1.8, 2.2))))
+            T(dl, (1300, 150), "PILOT LEVEL,", 34, GREEN, e(tl, 1.8, 2.2), anchor="lm", font=FDB)
+            T(dl, (1300, 195), "LOOKING AHEAD AT THE DECK", 34, GREEN, e(tl, 1.8, 2.2), anchor="lm", font=FDB)
+        a = e(tl, 2.6, 3.2)
+        for nx in (0.44, 0.53):
+            p = Pmap(nx, 0.66)
+            for j in range(3):
+                yy = p[1] + 20 + j * 46 + (tl * 120) % 46
+                arrow(dl, (p[0], yy), (p[0], yy + 32), STEEL, 6, 16, a * 0.9)
+        dl.rounded_rectangle([280 * SS, 945 * SS, 760 * SS, 1015 * SS], radius=12 * SS, fill=(8, 10, 13, int(160 * a)))
+        T(dl, (300, 980), "THRUST POINTED DOWN", 36, STEEL, a, anchor="lm", font=FDB)
+    f.needs_layer = True
+    return f
+
+class EndScreen(Shot):
+    """End screen: Goblin clip in the 'watch next' box (left), subscribe circle (right)."""
+    def __init__(self):
+        super().__init__(); self.film = Film("R_goblin_studio_hero.mp4", speed=0.5, bw=False, contrast=1.0)
+    def render(self, tl, D, fi):
+        img = gfx2.bg("grid"); d = ImageDraw.Draw(img, "RGBA")
+        lay = gfx2.layer(); gfx2.pogo(lay, 90, 1440, 560, 9, spin=tl * 3, alpha=35); img.paste(lay, (0, 0), lay)
+        a = e(tl, 0.2, 0.8)
+        T(d, (960, 150), "HANGAR PHYSICS", 72, OFFWHITE, a, font=FDB, spacing=12)
+        T(d, (960, 220), "Every strange aircraft is the answer to a problem.", 28, AMBER, e(tl, 0.6, 1.2), font=FSB)
+        bx0, by0, bx1, by1 = 180, 340, 900, 745
+        d.rounded_rectangle([(bx0 - 6) * SS, (by0 - 6) * SS, (bx1 + 6) * SS, (by1 + 6) * SS], radius=16 * SS, outline=AMBER + (int(255 * a),), width=4 * SS)
+        T(d, ((bx0 + bx1) / 2, by1 + 60), "WATCH NEXT · THE XF-85 GOBLIN", 30, OFFWHITE, a, font=FDB, spacing=3)
+        circle(d, (1440, 545), 175, AMBER, w=4, a=a)
+        T(d, (1440, 790), "SUBSCRIBE", 36, OFFWHITE, a, font=FDB, spacing=6)
+        T(d, (1440, 840), "ONE STRANGE AIRCRAFT, EVERY WEEK", 22, AMBER, a, font=FSB, spacing=2)
+        base = down(img)
+        fr = self.film.frame(tl % 9.5).resize((bx1 - bx0, by1 - by0), Image.BICUBIC)
+        if a < 1: fr = Image.blend(Image.new("RGB", fr.size, (12, 14, 18)), fr, a)
+        base.paste(fr, (bx0, by0))
+        return base
+    def close(self): self.film.close()
 
 # ---------------------------------------------------------------- render
 def render_range(S, f0, f1, out):
@@ -499,7 +598,7 @@ def main():
             finish(shot.render(t - st, D, int(t * FPS)), 0).save(f"{out}/still_{t:07.2f}.png"); shot.close()
         return
     if "--cues" in sys.argv:
-        json.dump({"END": END, "VO": [[VO_A_OFF, 0, VO_A_END], [VO_B_OFF, VO_A_END, P1_LEN], [VO_C_OFF, 0, P2_LEN]],
+        json.dump({"END": END, "VO": [[VO_A_OFF, 0, VO_A_END], [VO_B_OFF, VO_A_END, P1_LEN], [VO_C_OFF, 0, P2_LEN], [VO_D_OFF, 0, P3_LEN]],
                    "shots": [[round(s, 3), type(x).__name__, getattr(x, "name", getattr(x, "path", getattr(getattr(x, "fn", None), "__name__", "")))] for s, x in S]},
                   open(f"{out}/cues.json", "w"), indent=1)
         return
