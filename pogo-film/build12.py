@@ -21,7 +21,7 @@ P1_LEN, P2_LEN = 217.6, 163.1
 VO_C_OFF = VO_B_OFF + P1_LEN + 1.5    # part 2
 P3_LEN = 167.9
 VO_D_OFF = VO_C_OFF + P2_LEN + 1.2
-END = VO_D_OFF + 160.44 + 22.0          # end screen runs ~22 s after "That story is right here"
+END = VO_D_OFF + 160.44 + 20.0          # end screen runs 20 s (YouTube's end-screen maximum) after "That story is right here"
 def g1(t): return t + (VO_A_OFF if t < VO_A_END else VO_B_OFF)
 def g2(t): return t + VO_C_OFF
 def g3(t): return t + VO_D_OFF
@@ -378,7 +378,7 @@ def build_timeline():
     add(g1(100.05), Photo(PH("C06_in_production_hangar_SDASM_0074978_PD.jpg"), ((0, 1.0, .5, .4), (4.6, 1.15, .5, .35)), mode="cover", bw=True,
                           overlays=[typewriter("1951", "THE NAVY ORDERS PROTOTYPES: CONVAIR AND LOCKHEED", (110, 170), 0.2, 64)]))
     add(g1(104.65), Photo("photos/DoD_newsreel_release_38-54_17Mar1954.jpg" if False else os.path.join(HERE, "photos", "DoD_newsreel_release_38-54_17Mar1954.jpg"),
-                          ((0, 1.6, .5, .3), (1.4, 2.3, .48, .43), (3.0, 2.3, .48, .43)), mode="card",
+                          ((0, 2.6, .47, .25), (1.4, 3.0, .46, .27), (3.0, 3.0, .46, .27)), mode="card",
                           overlays=[highlight_boxes([(0.4, (0.32, 0.225, 0.61, 0.25)), (1.5, (0.085, 0.398, 0.82, 0.445))]), source_tag("DEPARTMENT OF DEFENSE · 17 MARCH 1954")]))
     add(g1(107.65), Gfx(split_screen))
     add(g1(110.7), Photo(PH("C03_Convair_test_pilot_c1954_USN_PD.jpg"), ((0, 1.0, .5, .8), (3.1, 1.2, .55, .3)), mode="cover", bw=True))
