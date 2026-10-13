@@ -152,17 +152,28 @@ Scene: a premium museum-style hero shot like a luxury car commercial. The Pogo S
 
 ---
 
-## 9. Shorts (3 ideas, cut from this video)
+## 9. Shorts (3 finished files, ready to upload)
 
-| # | Clip | Hook text on screen | Title |
+All three are vertical 1080×1920, 30 fps, high bitrate, with sound at -14 LUFS. Captions are burned in (most people scroll with the sound off), and there's a hook title for the first 2.6 seconds and a "FULL STORY" prompt at the end.
+
+| Post | File | Length | Title (paste exactly) |
 |---|---|---|---|
-| 1 | 0:00–0:45 (cold open) | "He had to land this BACKWARDS" | The Fighter You Had to Land Backwards |
-| 2 | 4:55–6:01 (landing blind) | "He couldn't see the ground" | How Do You Land Looking Over Your Shoulder? |
-| 3 | 3:22–3:51 (two propellers) | "Why two propellers?" | Why the Pogo Needed Two Propellers |
+| Day 1, **2 hours after** the long video | `Pogo_Short1_Land_It_Backwards.mp4` | 41 s | He Had to Land This Fighter Backwards #shorts |
+| Day 2, same time | `Pogo_Short2_Landing_Blind.mp4` | ~47 s | How Do You Land Looking Over Your Shoulder? #shorts |
+| Day 3, same time | `Pogo_Short3_Two_Propellers.mp4` | ~40 s | Why This Fighter Needed Two Propellers #shorts |
 
-Post one Short a day for 3 days after the video. Under each Short, use YouTube's **"Related video"** link to point to the full video.
+**Description for each Short** (same for all three):
+```
+The full story of the Convair XFY-1 Pogo, the Navy fighter that had to land backwards, is in the related video. #aviation #aviationhistory #VTOL
+```
 
----
+**How to post each one (YouTube app on your phone is easiest):**
+1. **+** → **Short** → **Upload** (bottom left) → choose the file. Don't trim it and don't add music: the music is already in it.
+2. Tap **Next**, paste the title, then go to **Related video** and choose **Why Did the Convair XFY-1 Pogo Have to Land Backwards?** This puts a link on the Short that opens the full video.
+3. **Select audience** → No, it's not made for kids. **Visibility** → Public (or Schedule).
+4. After it's posted, pin a comment: *"Full video is linked above the title 👆 Would you have trusted it?"*
+
+**Why this order:** Short 1 is the strongest hook, so it goes out first, while the long video is newest. Each Short sends viewers to the long video, so spacing them over 3 days gives the long video three separate pushes.
 
 ## 10. When to upload
 

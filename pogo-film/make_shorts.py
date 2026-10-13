@@ -18,15 +18,15 @@ TMP = os.path.join(OUT, "tmp"); os.makedirs(TMP, exist_ok=True)
 SHORTS = {
     "Short1_Land_It_Backwards": dict(
         title="HE HAD TO LAND THIS FIGHTER BACKWARDS", hook="LANDING\nBACKWARDS?!", audio="mix",
-        pieces=[(4.10, 8.50, "tall", (0.47, 0.80)), (8.50, 10.50, "tall", 0.48), (10.50, 13.70, "tall", 0.46),
-                (13.70, 17.60, "tall", 0.50), (17.60, 27.20, "tall", 0.45), (27.20, 33.20, "mid", 0.50),
-                (33.20, 39.40, "mid", 0.52), (39.40, 41.80, "tall", 0.50), (41.80, 45.20, "wide", 0.50)]),
+        pieces=[(4.10, 8.50, "tall", (0.47, 0.80)), (8.50, 10.50, "tall", 0.48), (10.50, 13.70, "tall", 0.49),
+                (13.70, 17.60, "tall", 0.50), (17.60, 27.20, "tall", 0.50), (27.20, 33.20, "mid", 0.50),
+                (33.20, 39.40, "mid", 0.60), (39.40, 41.80, "tall", 0.50), (41.80, 45.20, "wide", 0.50)]),
     "Short2_Landing_Blind": dict(
         title="HOW DO YOU LAND LOOKING BACKWARDS?", hook="AS HEAVY AS\n4 CARS", audio="stems",
         pieces=[(354.80, 358.15, "tall", 0.50), (358.15, 361.05, "mid", 0.52),
-                (295.65, 297.55, "tall", 0.45), (305.30, 309.20, "tall", 0.46),
+                (295.65, 297.55, "tall", 0.45), (305.30, 309.20, "tall", 0.49),
                 (311.95, 322.00, "wide", 0.50), (322.00, 330.60, "mid", 0.50),
-                (361.30, 366.20, "mid", 0.45), (366.20, 374.05, "wide", 0.50), (374.05, 377.30, "mid", 0.45)]),
+                (361.30, 366.20, "mid", 0.55), (366.20, 374.05, "wide", 0.50), (374.05, 377.30, "mid", 0.45)]),
     "Short3_Two_Propellers": dict(
         title="WHY DID THIS FIGHTER NEED TWO PROPELLERS?", hook="WHY TWO\nPROPELLERS?", audio="stems",
         pieces=[(204.00, 211.05, "wide", 0.50), (211.05, 222.10, "mid", 0.50),
@@ -46,9 +46,9 @@ def render_piece(i, a, b, mode, cx, path):
     fg = (f"[v]crop={cw}:{ch}:'{xexp}':0,scale={ow}:{oh}:flags=lanczos,"
           f"scale=w='{ow}*(1+0.045*t/{d})':h=-2:eval=frame:flags=bicubic,crop={ow}:{oh}[fg]")
     bg = "[w]scale=-2:1920,crop=1080:1920,boxblur=40:2,eq=brightness=-0.20:saturation=0.6[bg]"
-    flt = (f"[0:v]trim={a}:{b},setpts=PTS-STARTPTS,fps=30,split[v][w];{fg};{bg};"
+    flt = (f"[0:v]trim=0:{d},setpts=PTS-STARTPTS,fps=30,split[v][w];{fg};{bg};"
            f"[bg][fg]overlay=(W-w)/2:{y0}:shortest=1,format=yuv420p[o]")
-    run(["ffmpeg", "-v", "error", "-y", "-i", os.path.join(F13, "master_v.mp4"), "-filter_complex", flt, "-map", "[o]",
+    run(["ffmpeg", "-v", "error", "-y", "-ss", f"{a:.3f}", "-t", f"{d + 0.2:.3f}", "-i", os.path.join(F13, "master_v.mp4"), "-filter_complex", flt, "-map", "[o]",
          "-c:v", "libx264", "-preset", "medium", "-crf", "14", "-an", path])
 
 def whoosh(sr=48000, dur=0.45, seed=0):
@@ -105,7 +105,7 @@ Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour,
 Style: Title,Inter Display Black,52,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,1,0,1,4,3,8,70,70,170,1
 Style: Hook,Inter Display Black,118,&H003DA3E8,&H003DA3E8,&H00000000,&HA0000000,0,0,0,0,100,100,2,0,1,7,5,5,60,60,0,1
 Style: Cap,Inter Display Black,76,&H00FFFFFF,&H00FFFFFF,&H00000000,&HA0000000,0,0,0,0,100,100,1,0,1,6,3,2,90,90,430,1
-Style: CTA,Inter Display Black,50,&H00161 91E,&H00FFFFFF,&H003DA3E8,&H003DA3E8,0,0,0,0,100,100,1,0,3,14,0,2,120,120,330,1
+Style: CTA,Inter Display Black,46,&H00161 91E,&H00FFFFFF,&H003DA3E8,&H003DA3E8,0,0,0,0,100,100,1,0,3,14,0,8,120,120,330,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -141,10 +141,14 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     open(path, "w").write(head + "\n".join(ev) + "\n")
 
 for name, spec in SHORTS.items():
+    if os.environ.get("ONLY") and name not in os.environ["ONLY"].split(","): continue
     print("==", name, flush=True)
     pieces = spec["pieces"]; parts = []
     for i, (a, b, mode, cx) in enumerate(pieces):
-        p = os.path.join(TMP, f"{name}_{i:02d}.mp4"); render_piece(i, a, b, mode, cx, p); parts.append(p)
+        key = f"{a}_{b}_{mode}_{cx}".replace(" ", "").replace("(", "").replace(")", "").replace(",", "-")
+        p = os.path.join(TMP, f"{name}_{i:02d}_{key}.mp4")
+        if not (os.path.exists(p) and os.path.getsize(p) > 0): render_piece(i, a, b, mode, cx, p)
+        parts.append(p)
     lst = os.path.join(TMP, f"{name}.txt"); open(lst, "w").write("".join(f"file '{p}'\n" for p in parts))
     vid = os.path.join(TMP, f"{name}_v.mp4")
     run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", vid])
