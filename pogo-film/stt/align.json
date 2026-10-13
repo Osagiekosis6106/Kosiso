@@ -1,0 +1,594 @@
+{
+ "p1": [
+  [
+   "November 1954.",
+   0.03,
+   1.57,
+   0.75
+  ],
+  [
+   "A fighter is hanging in the sky.",
+   2.74,
+   4.02,
+   0.71
+  ],
+  [
+   "Nose pointed straight up.",
+   5.58,
+   6.73,
+   0.75
+  ],
+  [
+   "Propellers roaring.",
+   7.08,
+   8.33,
+   1.0
+  ],
+  [
+   "And it's coming down\u2026",
+   9.08,
+   10.15,
+   1.0
+  ],
+  [
+   "tail first.",
+   11.0,
+   11.61,
+   0.5
+  ],
+  [
+   "The pilot can't see the ground ahead of him.",
+   12.28,
+   14.35,
+   0.89
+  ],
+  [
+   "It's behind him.",
+   14.82,
+   15.72,
+   1.0
+  ],
+  [
+   "So he twists round in his seat, looks back over his shoulder, and lowers more than five tonnes of fighter toward the earth, mostly by eye.",
+   16.16,
+   24.75,
+   0.88
+  ],
+  [
+   "Come down too fast, and it slams onto its tail.",
+   25.759999999999998,
+   28.82,
+   0.8
+  ],
+  [
+   "Drift, and it can tip over.",
+   29.310000000000002,
+   30.35,
+   0.33
+  ],
+  [
+   "His rival at Lockheed built a plane to do exactly this.",
+   31.78,
+   35.2,
+   0.82
+  ],
+  [
+   "It never once managed it.",
+   35.66,
+   37.35,
+   1.0
+  ],
+  [
+   "This one did.",
+   37.989999999999995,
+   39.03,
+   1.0
+  ],
+  [
+   "This is the Convair XFY-1 Pogo.",
+   40.41,
+   43.11,
+   0.67
+  ],
+  [
+   "So why would anyone build a fighter you have to land backwards?",
+   43.67,
+   47.64,
+   1.0
+  ],
+  [
+   "And if it actually worked, why has almost nobody heard of it?",
+   48.06,
+   51.519999999999996,
+   1.0
+  ],
+  [
+   "The answer comes down to one problem.",
+   52.06,
+   54.230000000000004,
+   1.0
+  ],
+  [
+   "And by the end of this video, you'll see exactly why it helped kill the Pogo.",
+   54.74,
+   59.2,
+   1.0
+  ],
+  [
+   "It starts at sea.",
+   59.879999999999995,
+   61.19,
+   1.0
+  ],
+  [
+   "During the Second World War, Allied convoys crossing the Atlantic faced attacks from German U-boats and aircraft.",
+   61.8,
+   68.41,
+   0.94
+  ],
+  [
+   "Protecting those ships meant getting fighters over the ocean\u2014but conventional fighters needed runways or aircraft carriers, and carriers were expensive and limited in number.",
+   68.91,
+   79.15,
+   0.84
+  ],
+  [
+   "After the war, the Navy asked a radical question.",
+   80.03,
+   82.93,
+   0.78
+  ],
+  [
+   "What if any ship could carry its own fighter?",
+   83.48,
+   86.2,
+   0.89
+  ],
+  [
+   "No runway.",
+   86.83,
+   87.43,
+   0.5
+  ],
+  [
+   "No catapult.",
+   87.79,
+   88.47,
+   0.5
+  ],
+  [
+   "No carrier.",
+   88.66,
+   89.45,
+   1.0
+  ],
+  [
+   "Just a small platform on the deck.",
+   89.83,
+   91.87,
+   1.0
+  ],
+  [
+   "After years of study, the Navy wanted a fighter that could take off straight up from a ship and land straight back down on it.",
+   92.53999999999999,
+   99.5,
+   0.84
+  ],
+  [
+   "In 1951, it ordered prototypes from Convair and Lockheed.",
+   100.11,
+   102.83,
+   0.64
+  ],
+  [
+   "And both companies came up with the same basic idea.",
+   104.71,
+   107.66,
+   1.0
+  ],
+  [
+   "A fighter that sits on its tail.",
+   108.21000000000001,
+   110.22,
+   0.86
+  ],
+  [
+   "And here's the catch nobody could design away.",
+   110.78,
+   113.39,
+   1.0
+  ],
+  [
+   "If a plane takes off pointing at the sky, it has to land pointing at the sky.",
+   113.87,
+   118.7,
+   0.76
+  ],
+  [
+   "The pilot sits in the nose, at the very top.",
+   119.22,
+   121.9,
+   0.8
+  ],
+  [
+   "So when he comes down to land, the ground is behind his back.",
+   122.34,
+   126.25,
+   1.0
+  ],
+  [
+   "Keep that in mind.",
+   127.01,
+   127.76,
+   0.75
+  ],
+  [
+   "It's the whole story.",
+   128.13,
+   129.34,
+   1.0
+  ],
+  [
+   "Convair's answer looked like nothing else in the sky.",
+   130.48,
+   132.79,
+   0.78
+  ],
+  [
+   "A short, fat fuselage.",
+   133.27,
+   135.07,
+   1.0
+  ],
+  [
+   "A delta wing.",
+   135.43,
+   136.16,
+   0.67
+  ],
+  [
+   "And a huge tail fin above and below, so from behind it looked like a cross.",
+   136.51,
+   141.56,
+   0.88
+  ],
+  [
+   "It had no conventional landing gear.",
+   142.1,
+   144.04,
+   1.0
+  ],
+  [
+   "Just four small wheels, on the tips of the wings and the fins.",
+   144.34,
+   147.45,
+   0.77
+  ],
+  [
+   "When it was parked, it didn't sit.",
+   148.54,
+   149.97,
+   0.86
+  ],
+  [
+   "It stood.",
+   150.9,
+   151.67,
+   1.0
+  ],
+  [
+   "In the nose was an Allison T40, really two turbine engines driving one gearbox, about 5,850 horsepower.",
+   152.26,
+   161.45,
+   0.86
+  ],
+  [
+   "It turned two propellers, each with three blades, sixteen feet across, about five metres, spinning in opposite directions.",
+   161.94,
+   169.99,
+   0.83
+  ],
+  [
+   "Here's how it hung in the air.",
+   170.52,
+   172.08,
+   1.0
+  ],
+  [
+   "To hover, the propellers have to push upward harder than the whole aircraft weighs.",
+   172.15,
+   176.79,
+   0.86
+  ],
+  [
+   "At maximum takeoff weight, about sixteen thousand pounds, that's over seven tonnes.",
+   177.99,
+   182.94,
+   0.83
+  ],
+  [
+   "More thrust than weight, it climbs.",
+   184.15,
+   186.45,
+   0.67
+  ],
+  [
+   "Less, and it sinks.",
+   186.83,
+   188.39,
+   0.75
+  ],
+  [
+   "The throttle controls the climb and the sink.",
+   188.91,
+   191.61,
+   0.88
+  ],
+  [
+   "But the pilot still has to balance it on its tail with the controls, every second.",
+   192.15,
+   197.12,
+   0.94
+  ],
+  [
+   "And there's a second problem.",
+   197.62,
+   199.29,
+   1.0
+  ],
+  [
+   "Spin one huge propeller one way, and the airframe wants to spin the other way.",
+   199.62,
+   204.44,
+   1.0
+  ],
+  [
+   "That's Newton's third law.",
+   204.82,
+   206.26,
+   0.75
+  ],
+  [
+   "So the Pogo has two.",
+   206.72,
+   207.84,
+   0.8
+  ],
+  [
+   "One turns clockwise, one turns anticlockwise, and their twist cancels out.",
+   208.77,
+   213.82,
+   0.91
+  ],
+  [
+   "Without that, it would just spin on its tail like a top.",
+   214.35,
+   217.46,
+   1.0
+  ]
+ ],
+ "p2": [
+  [
+   "Getting it into the air turned out to be the easy part.",
+   0.04,
+   2.93,
+   0.92
+  ],
+  [
+   "Getting it back down is where this story gets frightening.",
+   3.56,
+   6.86,
+   0.7
+  ],
+  [
+   "In the spring of 1954, the Pogo was taken to Moffett Field in California, inside Hangar One, a building so big it was built to house a Navy airship.",
+   7.54,
+   17.43,
+   0.77
+  ],
+  [
+   "For safety, it flew tied to cables, hovering under the roof.",
+   19.21,
+   23.32,
+   0.91
+  ],
+  [
+   "Over and over, it rose, hung there, and came back down.",
+   23.96,
+   28.380000000000003,
+   0.91
+  ],
+  [
+   "The man flying it was Convair's test pilot, James \"Skeets\" Coleman.",
+   29.009999999999998,
+   32.42,
+   0.64
+  ],
+  [
+   "Just getting in was strange.",
+   34.24,
+   35.93,
+   0.8
+  ],
+  [
+   "He climbed a ladder to a cockpit two storeys up, and settled in almost flat on his back, looking straight at the ceiling.",
+   37.33,
+   43.47,
+   0.74
+  ],
+  [
+   "For vertical flight, his seat tilted about 45 degrees toward the instrument panel, but landing still left him struggling to see the ground.",
+   43.96,
+   52.2,
+   1.0
+  ],
+  [
+   "On the first of August, 1954, the cables came off.",
+   52.8,
+   56.9,
+   0.92
+  ],
+  [
+   "The Pogo took off outside, free, for the first time.",
+   57.39,
+   61.38,
+   0.7
+  ],
+  [
+   "Taking off was simple.",
+   61.92,
+   63.22,
+   1.0
+  ],
+  [
+   "Point it up, open the throttle, and climb.",
+   64.03,
+   66.31,
+   0.75
+  ],
+  [
+   "Once it was high enough, the pilot pushed the nose over, and it flew like a normal plane.",
+   66.87,
+   71.64,
+   0.94
+  ],
+  [
+   "Landing was the problem.",
+   72.21000000000001,
+   73.7,
+   1.0
+  ],
+  [
+   "He had to slow down, pull the nose up until the whole aircraft was pointing at the sky, and hang there on the propellers.",
+   74.17,
+   81.36,
+   0.71
+  ],
+  [
+   "Then he had to come down tail-first.",
+   81.9,
+   85.28,
+   0.88
+  ],
+  [
+   "Now look at what he could actually see.",
+   85.88,
+   88.03,
+   1.0
+  ],
+  [
+   "In front of him, sky.",
+   88.56,
+   90.25,
+   1.0
+  ],
+  [
+   "Below him, his own aircraft.",
+   90.74,
+   92.85,
+   1.0
+  ],
+  [
+   "The only way to see the ground was to twist round and look back over his shoulder.",
+   93.34,
+   97.95,
+   1.0
+  ],
+  [
+   "From there, he had to judge three things at once.",
+   98.41,
+   101.4,
+   1.0
+  ],
+  [
+   "How high am I?",
+   101.87,
+   102.07,
+   0.25
+  ],
+  [
+   "How fast am I sinking?",
+   103.22,
+   104.54,
+   0.6
+  ],
+  [
+   "And am I drifting sideways?",
+   104.89,
+   106.77,
+   0.6
+  ],
+  [
+   "A radar altimeter in the wingtip drove three warning lights to help Coleman judge his descent.",
+   107.39,
+   112.43,
+   0.88
+  ],
+  [
+   "But the lights couldn't do the landing for him.",
+   112.91,
+   115.23,
+   1.0
+  ],
+  [
+   "Come down too fast, and the impact could damage the aircraft or make it tip over.",
+   115.73,
+   120.48,
+   0.88
+  ],
+  [
+   "Drift sideways, and the narrow landing stance left little room for error.",
+   121.16,
+   125.0,
+   0.92
+  ],
+  [
+   "And all the time, any gust of wind is pushing on that big wing and those tall fins.",
+   125.47,
+   129.71,
+   0.72
+  ],
+  [
+   "He's doing this backwards, mostly by eye, in a fighter that weighs as much as four cars.",
+   131.33,
+   137.32,
+   0.82
+  ],
+  [
+   "On the second of November, 1954, Coleman did the whole thing.",
+   137.85,
+   142.25,
+   0.85
+  ],
+  [
+   "Straight up from the ground, over into level flight, back up to vertical, and down, backwards, onto its tail.",
+   142.69,
+   150.01,
+   1.0
+  ],
+  [
+   "No aircraft like it had ever done that before.",
+   150.52,
+   153.42,
+   1.0
+  ],
+  [
+   "It earned him the Harmon Trophy, one of aviation's highest awards.",
+   153.93,
+   155.6,
+   0.45
+  ],
+  [
+   "The Pogo worked.",
+   158.38,
+   159.67000000000002,
+   1.0
+  ],
+  [
+   "But it took a pilot of Coleman's skill to land it.",
+   160.11,
+   162.89,
+   0.91
+  ]
+ ]
+}
