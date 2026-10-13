@@ -20,26 +20,27 @@ SHORTS = {
         title="HE HAD TO LAND THIS FIGHTER BACKWARDS", hook="LANDING\nBACKWARDS?!", audio="mix",
         pieces=[(4.10, 8.50, "tall", (0.47, 0.80)), (8.50, 10.50, "tall", 0.48), (10.50, 13.70, "tall", 0.49),
                 (13.70, 17.60, "tall", 0.50), (17.60, 27.20, "tall", 0.50), (27.20, 33.20, "mid", 0.50),
-                (33.20, 39.40, "mid", 0.65), (39.40, 41.80, "tall", 0.50), (41.80, 45.20, "wide", 0.50)]),
+                (33.20, 39.40, "tall", 0.53), (39.40, 41.80, "tall", 0.50), (41.80, 45.20, "wide", 0.50)]),
     "Short2_Landing_Blind": dict(
         title="HOW DO YOU LAND LOOKING BACKWARDS?", hook="AS HEAVY AS\n4 CARS", audio="stems",
         pieces=[(354.80, 358.15, "tall", 0.50), (358.15, 361.05, "mid", 0.52),
                 (295.65, 297.55, "tall", 0.45), (305.30, 309.20, "tall", 0.49),
                 (311.95, 322.00, "wide", 0.50), (322.00, 330.60, "mid", 0.50),
-                (361.30, 366.20, "mid", 0.62), (366.20, 374.05, "wide", 0.50), (374.05, 377.30, "mid", 0.45)]),
+                (361.30, 366.20, "mid", 0.80), (366.20, 374.05, "wide", 0.50), (374.05, 377.30, "mid", 0.45)]),
     "Short3_Two_Propellers": dict(
         title="WHY DID THIS FIGHTER NEED TWO PROPELLERS?", hook="WHY TWO\nPROPELLERS?", audio="stems",
         pieces=[(204.00, 211.05, "wide", 0.50), (211.05, 222.10, "mid", 0.50),
-                (176.50, 193.10, "mid", 0.50), (196.50, 202.00, "tall", 0.53)]),
+                (176.50, 193.10, "mid", 0.50), (196.50, 202.00, "tall", 0.50, 19.00)]),
 }
 CENTER_Y = 975
 LAYOUT = {"tall": (864, 1080, 1080, 1350), "mid": (1440, 1080, 1080, 810), "wide": (1920, 1080, 1080, 608)}
 
 def run(cmd): subprocess.run(cmd, check=True)
 
-def render_piece(i, a, b, mode, cx, path):
+def render_piece(i, a, b, mode, cx, path, vsrc=None):
     cw, ch, ow, oh = LAYOUT[mode]
     d = b - a
+    if vsrc is not None: a = vsrc
     c0, c1 = (cx, cx) if not isinstance(cx, tuple) else cx
     xexp = f"(iw-{cw})*0+min(max(({c0}+({c1}-{c0})*t/{d})*iw-{cw}/2,0),iw-{cw})"
     y0 = CENTER_Y - oh // 2
@@ -144,10 +145,11 @@ for name, spec in SHORTS.items():
     if os.environ.get("ONLY") and name not in os.environ["ONLY"].split(","): continue
     print("==", name, flush=True)
     pieces = spec["pieces"]; parts = []
-    for i, (a, b, mode, cx) in enumerate(pieces):
-        key = f"{a}_{b}_{mode}_{cx}".replace(" ", "").replace("(", "").replace(")", "").replace(",", "-")
+    for i, (a, b, mode, cx, *vs) in enumerate(pieces):
+        vsrc = vs[0] if vs else None
+        key = f"{a}_{b}_{mode}_{cx}_{vsrc}".replace(" ", "").replace("(", "").replace(")", "").replace(",", "-")
         p = os.path.join(TMP, f"{name}_{i:02d}_{key}.mp4")
-        if not (os.path.exists(p) and os.path.getsize(p) > 0): render_piece(i, a, b, mode, cx, p)
+        if not (os.path.exists(p) and os.path.getsize(p) > 0): render_piece(i, a, b, mode, cx, p, vsrc)
         parts.append(p)
     lst = os.path.join(TMP, f"{name}.txt"); open(lst, "w").write("".join(f"file '{p}'\n" for p in parts))
     vid = os.path.join(TMP, f"{name}_v.mp4")
