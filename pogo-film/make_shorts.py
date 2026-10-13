@@ -20,17 +20,17 @@ SHORTS = {
         title="HE HAD TO LAND THIS FIGHTER BACKWARDS", hook="LANDING\nBACKWARDS?!", audio="mix",
         pieces=[(4.10, 8.50, "tall", (0.47, 0.80)), (8.50, 10.50, "tall", 0.48), (10.50, 13.70, "tall", 0.49),
                 (13.70, 17.60, "tall", 0.50), (17.60, 27.20, "tall", 0.50), (27.20, 33.20, "mid", 0.50),
-                (33.20, 39.40, "mid", 0.60), (39.40, 41.80, "tall", 0.50), (41.80, 45.20, "wide", 0.50)]),
+                (33.20, 39.40, "mid", 0.65), (39.40, 41.80, "tall", 0.50), (41.80, 45.20, "wide", 0.50)]),
     "Short2_Landing_Blind": dict(
         title="HOW DO YOU LAND LOOKING BACKWARDS?", hook="AS HEAVY AS\n4 CARS", audio="stems",
         pieces=[(354.80, 358.15, "tall", 0.50), (358.15, 361.05, "mid", 0.52),
                 (295.65, 297.55, "tall", 0.45), (305.30, 309.20, "tall", 0.49),
                 (311.95, 322.00, "wide", 0.50), (322.00, 330.60, "mid", 0.50),
-                (361.30, 366.20, "mid", 0.55), (366.20, 374.05, "wide", 0.50), (374.05, 377.30, "mid", 0.45)]),
+                (361.30, 366.20, "mid", 0.62), (366.20, 374.05, "wide", 0.50), (374.05, 377.30, "mid", 0.45)]),
     "Short3_Two_Propellers": dict(
         title="WHY DID THIS FIGHTER NEED TWO PROPELLERS?", hook="WHY TWO\nPROPELLERS?", audio="stems",
         pieces=[(204.00, 211.05, "wide", 0.50), (211.05, 222.10, "mid", 0.50),
-                (176.50, 193.10, "mid", 0.50), (196.50, 202.00, "tall", 0.45)]),
+                (176.50, 193.10, "mid", 0.50), (196.50, 202.00, "tall", 0.53)]),
 }
 CENTER_Y = 975
 LAYOUT = {"tall": (864, 1080, 1080, 1350), "mid": (1440, 1080, 1080, 810), "wide": (1920, 1080, 1080, 608)}
@@ -80,7 +80,7 @@ def build_audio(spec, pieces, path):
         mus = read_wav(os.path.join(F13, "audio", "music_only.wav"), pieces[0][0], tot + 1)
         voice_env = np.convolve(np.abs(out[:, 0]), np.ones(4800) / 4800, "same")
         duck = 1 - 0.55 * np.clip(voice_env / (voice_env.max() * 0.15 + 1e-9), 0, 1)
-        out[:len(mus)] += mus * 1.4 * duck[:len(mus), None]
+        m = min(len(mus), len(out)); out[:m] += mus[:m] * 1.4 * duck[:m, None]
     w = whoosh()
     for c in cuts:
         i = int((c - 0.22) * sr); out[i:i + len(w)] += w[:, None] * np.array([0.9, 1.0])
