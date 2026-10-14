@@ -26,6 +26,15 @@ Trigger phrase: **"xb42"** or **"mixmaster"**. In a new chat, say it and Claude 
 - Archival: US Army Air Forces / USAF film and photos are public domain (NARA, NMUSAF, SDASM Flickr Commons with "no known copyright restrictions").
 - Chain: the ending teases the **Convair Pogo** (contra-rotating propellers again), which will be live by then, so the end screen can point to it.
 
+## Competitor check (14 Oct 2026, NexLev)
+
+- **Dark Skies**, *Mixmaster to Jetmaster - America's First Jet Bomber: Douglas XB-42 & XB-43* (Jul 2020, 10:37, **572K views, 11.8K likes**, 484 comments). Strong title, but the video is mostly about the XB-43. Its description says the XB-43 gave Glen Edwards his record flight, but the record was the **XB-42** (Warden + Edwards). It says it uses "similar historical images… for dramatic effect". No captions. Top comments mock the narrator ("side effects on drug commercials", 229 likes), say the jet/propeller switch is confusing, dispute "first jet bomber" (Canberra/B-57), and raise the **Douglas DC-8 piston airliner** planned on the XB-42 layout.
+- **WWII Sky Stories**, *The Plane Too Fast for WWII | Douglas XB-42 Mixmaster – America's Forgotten Supersonic-Era Bomber* (Jan 2026, 18:43, 463 views, 1 like). "Supersonic-Era" is misleading; the AI thumbnail shows the wrong aircraft (engines on the wings plus a fan); its tags are about "nazi wonder weapons"; no captions.
+- **Our edges:** real photos of the actual aircraft, one clear question all the way through (no jet/propeller confusion), a calm voice, captions, the correct record aircraft, the museum news, and the bailout story told properly.
+- **Thumbnail decision:** Dark Skies' thumbnail is a side-on colourised photo with the propellers at the tail, so **don't use a side-on photo**. Main thumbnail = **#2 X-ray** (engines and shafts glowing inside); test #3 against it.
+- **Search volume: NOT measured.** vidIQ has 2 credits (keyword research = 5; refills 7 Nov). Demand evidence is recommended views (Dark Skies 572K, Only Planes 359K, museum video 45.7K in 4 days), not search. Check YouTube Studio → Research for "XB-42" before relying on search.
+- **Possible v2 addition:** one line on Douglas's piston DC-8 airliner design that used the same buried-engine, tail-propeller layout (⚠ VERIFY), because Dark Skies' viewers asked about it.
+
 ---
 
 ## SCRIPT v1 (14 Oct 2026; ≈1,420 words ≈ 9:30 at 150 wpm)
@@ -254,8 +263,8 @@ Say numbers in full as written. Imperial first, then metric (the channel rule), 
 - Why the XB-42 Mixmaster Hid Its Engines Inside the Body
 
 **Thumbnails:**
-1. Real USAAF photo of the XB-42, side-on, tail propellers circled in amber; text **"PROPELLERS… BACK HERE?"**
-2. X-ray cutaway: two buried engines, shafts and the tail propellers glowing amber on graphite; text **"ENGINES INSIDE"**
+1. Real USAAF photo of the XB-42, rear three-quarter (NOT side-on, which is Dark Skies' look), tail propellers circled in amber; text **"PROPELLERS… BACK HERE?"**
+2. **(MAIN)** X-ray cutaway: two buried engines, shafts and the tail propellers glowing amber on graphite; text **"ENGINES INSIDE"**
 3. Dark-studio, no text: low rear three-quarter view, propellers spinning, amber key light, steel-blue rim
 
 **Description (draft; chapters are estimates until the edit):**
