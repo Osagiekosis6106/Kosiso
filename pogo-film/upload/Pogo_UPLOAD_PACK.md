@@ -12,8 +12,10 @@ Video file: `Pogo_FINAL_4K.mp4` (9:28). Subtitles: `Pogo_subtitles_EN.srt`.
 It's in the same "Why did X have Y?" pattern as your Goblin and B-58 titles, and it starts with the exact name people search for.
 
 **Two others for YouTube's title test** (Studio → Test & Compare):
-- The Navy Fighter That Had to Land Backwards
-- Why the Navy Gave Up on Its Tail-Sitting Fighter
+- The Convair XFY-1 Pogo Had to Land Backwards. Here's Why.
+- How Do You Land a Fighter Backwards? (Convair XFY-1 Pogo)
+
+Keep "Convair XFY-1 Pogo" in every test title (14 Oct competitor check: search is where this video wins, and Lost Engineering Files' 10 Oct upload and the 2026 KovaDocs/Tecnologia Incrível titles already use the "Navy fighter that landed backwards/on its tail" wording without leading with the name).
 
 ---
 
@@ -21,6 +23,8 @@ It's in the same "Why did X have Y?" pattern as your Goblin and B-58 titles, and
 
 ```
 The Convair XFY-1 Pogo was a 1954 US Navy VTOL fighter that took off standing on its tail, and to land it, test pilot Skeets Coleman had to come down backwards, looking over his shoulder at ground he couldn't see. Here's the physics of why, and why that one problem ended the programme.
+
+Covered in this video: Convair XFY-1 Pogo · Lockheed XFV-1 Salmon · Skeets Coleman · Allison T40 turboprop · contra-rotating propellers · tail-sitter VTOL fighters · the V-22 Osprey and the Harrier
 
 Fifty years before the V-22 Osprey, the Navy wanted a fighter that could fly from any ship. Convair and Lockheed both built tail-sitters. Lockheed's XFV-1 never once took off or landed vertically. Convair's Pogo did, on 2 November 1954, with test pilot James "Skeets" Coleman at the controls.
 
@@ -66,7 +70,7 @@ Every strange aircraft is the answer to a problem. New episode every week. Subsc
 ## 3. Tags (copy the whole line into the Tags box)
 
 ```
-Convair XFY-1 Pogo, Convair Pogo, XFY-1 Pogo, XFY-1, Convair XFY Pogo, Pogo plane, tail sitter, tailsitter aircraft, VTOL fighter, VTOL aircraft, vertical takeoff fighter, vertical takeoff and landing, Skeets Coleman, Lockheed XFV-1 Salmon, US Navy experimental aircraft, Cold War aircraft, experimental aircraft, strange aircraft, aviation history, V-22 Osprey, Hangar Physics
+Convair XFY-1 Pogo, Convair Pogo, XFY-1 Pogo, XFY-1, Convair XFY Pogo, Pogo plane, land backwards, tail sitter, tailsitter fighter, VTOL fighter, first VTOL fighter, vertical takeoff fighter, vertical takeoff and landing, contra-rotating propellers, Allison T40, Skeets Coleman, Lockheed XFV-1 Salmon, US Navy experimental aircraft, naval aviation, Cold War aircraft, experimental aircraft, strange aircraft, aviation history, V-22 Osprey, Hangar Physics
 ```
 
 ---
@@ -115,6 +119,8 @@ Would you have trusted it? And which strange aircraft should we take into the ha
 ---
 
 ## 8. Thumbnails (two to test)
+
+**Finished thumbnails (14 Oct pick):** test `Pogo_Thumbnail_A_channel_style.jpg` (real 1950s photo) against `Pogo_Thumbnail_PREMIUM.jpg` in Test & Compare. Lost Engineering Files' Pogo video (10 Oct) uses an AI Pogo, a stormy orange sunset, a ship deck and big yellow text, which is close to PREMIUM. Next to it in search, the **real-photo A** looks different and more authentic, so start with A as the main thumbnail.
 
 NexLev's thumbnail maker needs a paid plan, and vidIQ has only 2 credits left (a thumbnail costs 22), so make these in **Grok**. Attach **both reference photos** to each prompt:
 - `Thumbnail_REF1_Pogo_hover_from_below.jpg`
