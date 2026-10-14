@@ -20,7 +20,7 @@ It's in the same "Why did X have Y?" pattern as your Goblin and B-58 titles, and
 ## 2. Description (copy everything inside the box)
 
 ```
-In 1954, a US Navy test pilot brought a fighter in to land… backwards. The Convair XFY-1 Pogo took off standing on its tail, and to land it the pilot had to twist round and look over his shoulder at ground he couldn't see. Here's the physics of why it had to be that way, and why that one problem ended the programme.
+The Convair XFY-1 Pogo was a 1954 US Navy VTOL fighter that took off standing on its tail, and to land it, test pilot Skeets Coleman had to come down backwards, looking over his shoulder at ground he couldn't see. Here's the physics of why, and why that one problem ended the programme.
 
 Fifty years before the V-22 Osprey, the Navy wanted a fighter that could fly from any ship. Convair and Lockheed both built tail-sitters. Lockheed's XFV-1 never once took off or landed vertically. Convair's Pogo did, on 2 November 1954, with test pilot James "Skeets" Coleman at the controls.
 
@@ -66,7 +66,7 @@ Every strange aircraft is the answer to a problem. New episode every week. Subsc
 ## 3. Tags (copy the whole line into the Tags box)
 
 ```
-Convair XFY-1 Pogo, Convair Pogo, XFY-1 Pogo, Convair XFY Pogo, tail sitter aircraft, VTOL fighter, vertical takeoff fighter, Skeets Coleman, Lockheed XFV-1, Lockheed Salmon, US Navy experimental aircraft, Cold War aircraft, experimental aircraft, strange aircraft, aviation history, V-22 Osprey history, Harrier history, Hangar Physics
+Convair XFY-1 Pogo, Convair Pogo, XFY-1 Pogo, XFY-1, Convair XFY Pogo, Pogo plane, tail sitter, tailsitter aircraft, VTOL fighter, VTOL aircraft, vertical takeoff fighter, vertical takeoff and landing, Skeets Coleman, Lockheed XFV-1 Salmon, US Navy experimental aircraft, Cold War aircraft, experimental aircraft, strange aircraft, aviation history, V-22 Osprey, Hangar Physics
 ```
 
 ---
@@ -82,7 +82,7 @@ Upload `Pogo_subtitles_EN.srt`: **Studio → Subtitles → English → Add → U
 | Setting | Choose |
 |---|---|
 | Audience | No, it's not made for kids |
-| Category | Science & Technology |
+| Category | Education (same as the Goblin and B-58) |
 | Video language and caption language | English |
 | Altered or synthetic content | **Yes** (the Goblin 3D clip at the end is AI-assisted; ticking it doesn't reduce views) |
 | Playlist | Make one called **"Strange Aircraft Explained"** and put all 3 videos in it |
@@ -177,4 +177,4 @@ The full story of the Convair XFY-1 Pogo, the Navy fighter that had to land back
 
 ## 10. When to upload
 
-Not on a Wednesday (Airspeed's upload day). Best slot: **Thursday or Saturday, around 2 PM US Eastern** (your audience is mostly in the US). Upload it as Private first, add the subtitles, end screen and card, then schedule it.
+**Thursday 15 October 2026, 2:00 PM US Eastern (18:00 UTC)** (channel review, 14 Oct). Upload it as **Private** on Wednesday, add the subtitles, end screen and card, then **schedule** it. Shorts: Thursday, Friday and Saturday at 4:00 PM ET. From now on, every long video goes out on **Thursday at 2:00 PM ET**. Never post on a Wednesday (Airspeed's day).

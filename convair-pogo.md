@@ -18,8 +18,20 @@ Trigger phrase: **"convair pogo"**. In a new chat, say "convair pogo" and Claude
 | 6e | 13 Oct: user approved the full film. Fixes: DoD release framed above its wrong "turbo-jet engines" paragraph; end screen cut to 20 s (YouTube max), film now 9:28.3, end screen from 9:08. Final masters `pogo-film/Pogo_FINAL_1080p.mp4` + `Pogo_FINAL_4K.mp4` (lanczos upscale, 40 Mbps; not in git). User wants the 4K saved to **Downloads/Hangar Physics on her husband's Mac** via computer use: tell her "4k is ready open MacBook", she opens the Claude desktop app and replies "Go ahead". | 🔄 |
 | 7b | 13 Oct: 4K done (`pogo-film/for_mac/Pogo_FINAL_4K.mp4`, 3840×2160, 40 Mbps, veryfast preset after the medium encode hit the 2 h job limit). 3 Shorts built by `pogo-film/make_shorts.py` (vertical, burned-in captions, hook, CTA, whooshes): Land It Backwards 41 s, Landing Blind 47 s, Two Propellers 40 s; phone copies sent, full-quality copies in `for_mac/`. Thumbnails A + B made locally from the PD C12 photo (`make_thumbs.py`). Transfer to the Mac is blocked from cloud sessions (no device link; GitHub releases not permitted for this session type; chat limit 30 MB). **Next: user runs a Claude session on the Mac and follows `pogo-film/HANDOFF_MAC.md` to rebuild the 4K there.** Voice timing files now in `pogo-film/stt/`. | 🔄 |
 | 7 | Package: `pogo-film/upload/Pogo_UPLOAD_PACK.md` (title + 2 test titles, description with real chapters, sources and credits, tags, settings, end screen + card, pinned comment, 2 Grok thumbnail prompts + 2 PD reference photos, 3 Shorts, timing) and `Pogo_subtitles_EN.srt` (built by `pogo-film/make_srt.py` from the script + VO word timings). NexLev thumbnail generation needs a paid plan; vidIQ had 2 credits (thumbnail = 22) | ✅ 13 Oct |
+| 8 | Publish (channel review 14 Oct, see below) | ⏳ **Thu 15 Oct 2026, 2:00 PM ET (18:00 UTC)**: upload Private on 14 Oct, add .srt + end screen + card, schedule. Shorts Thu/Fri/Sat at 4:00 PM ET. Upload pack updated 14 Oct (new opening line, tags, category = Education, posting time) |
 
 Deadline: **upload this weekend** (10–11 Oct 2026). Don't publish on a Wednesday (Airspeed's day).
+
+---
+
+
+## Channel review, 14 Oct 2026 (vidIQ + NexLev)
+
+Hangar Physics (`UCtWWfaet0y7Igp_F84pQ2Fg`): 4 subs, 2 videos. Goblin (Wed 7 Oct): 36 views, avg 4:01 = **49% watched** (good). B-58 (Sun 11 Oct): 18 views, avg 2:47 = **24% watched** (weak). Neither video has captions. No Shorts yet.
+Traffic 1–14 Oct: channel page 14, subscribers 9, playlist 7, other YouTube pages 6, search 6, end screen 2, **Browse 0, Suggested 0**: YouTube hasn't started recommending the channel yet.
+Why: (1) far too early (2 videos, 6 days old); (2) the B-58 came 10 days after **Airspeed's "Why the B-58 Hustler Became Obsolete So Quickly" (1 Oct, 655K)**, which broke the 90-day rule; (3) the Goblin went out on a Wednesday, the same day as Airspeed's V-22 (431K); (4) no Shorts and no captions; (5) no fixed upload day.
+Credits: vidIQ has 2 left (refills 7 Nov); NexLev is on the Free plan (no private analytics).
+Next-topic research: **#1 XB-42 Mixmaster** (put on display at NMUSAF on 8 Oct 2026, and the museum's video got 45K in 4 days; proven by Dark Skies 572K and Only Planes 359K; no strong 2026 version; search volume not yet checked); #2 Harrier (Yarnhub 5.3M in Aug; VTOL follow-up to the Pogo; the bottom of the market is flooded with tiny uploads); #3 Me 163 Komet ("me 163" ≈ 12.2K searches/month, +246%; "messerschmitt me 163 komet" 8.7K, competition 29), but about 15 uploads this month, Inside the Steel 89K in 4 days. **Wait until ~Jan 2027.** Fixed slot from now on: **Thursday 2:00 PM ET**.
 
 ---
 
