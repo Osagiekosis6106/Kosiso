@@ -12,6 +12,8 @@
 
 - **"convair pogo"** → read `convair-pogo.md` first (plus the three airspeed files), check its **Status** table, and continue from the next unfinished step. It holds the chosen title, description, tags, the full script, the fact-check table and what's blocked from the container. Work one step at a time and wait for the user's OK before the next step. Update the Status table after every step.
 
+- **"xb42"** or **"mixmaster"** → read `xb42-mixmaster.md` first (plus the three airspeed files, and `convair-pogo.md` for the production workflow), check its **Status** table, and continue from the next unfinished step. Same rules as the Pogo: one step at a time, wait for the user's OK, update the Status table after every step.
+
 ## What we established (Airspeed research, Sep 2026, via NexLev)
 
 - Airspeed (@AirspeedChannel, Canada, started Aug 2026): 7 videos, ~371K views per video, outlier "Why Did the Spirit of St. Louis Have No Front Window?" (1.28M). It's a 7-person human studio using bought 3D models ("created entirely by humans"). Its audience is 82% male, mostly 25–44, 53% US; RPM is about $3.3.
