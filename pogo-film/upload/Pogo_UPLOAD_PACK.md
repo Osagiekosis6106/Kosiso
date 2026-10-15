@@ -70,7 +70,7 @@ Every strange aircraft is the answer to a problem. New episode every week. Subsc
 ## 3. Tags (copy the whole line into the Tags box)
 
 ```
-Convair XFY-1 Pogo, Convair Pogo, XFY-1 Pogo, XFY-1, Convair XFY Pogo, Pogo plane, land backwards, tail sitter, tailsitter fighter, VTOL fighter, first VTOL fighter, vertical takeoff fighter, vertical takeoff and landing, VTOL aircraft, US Navy aircraft, contra-rotating propellers, Allison T40, Skeets Coleman, Lockheed XFV-1 Salmon, US Navy experimental aircraft, naval aviation, Cold War aircraft, experimental aircraft, strange aircraft, aviation history, V-22 Osprey, Hangar Physics
+Convair XFY-1 Pogo, Convair Pogo, XFY-1 Pogo, XFY-1, Convair XFY Pogo, Pogo plane, tail sitter, VTOL fighter, vertical takeoff fighter, vertical takeoff and landing, VTOL aircraft, US Navy aircraft, contra-rotating propellers, Allison T40, Skeets Coleman, Lockheed XFV-1 Salmon, naval aviation, Cold War aircraft, experimental aircraft, aviation history, V-22 Osprey, Hangar Physics
 ```
 
 ---
