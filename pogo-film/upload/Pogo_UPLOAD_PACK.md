@@ -70,7 +70,7 @@ Every strange aircraft is the answer to a problem. New episode every week. Subsc
 ## 3. Tags (copy the whole line into the Tags box)
 
 ```
-Convair XFY-1 Pogo, Convair Pogo, XFY-1 Pogo, XFY-1, Convair XFY Pogo, Pogo plane, land backwards, tail sitter, tailsitter fighter, VTOL fighter, first VTOL fighter, vertical takeoff fighter, vertical takeoff and landing, contra-rotating propellers, Allison T40, Skeets Coleman, Lockheed XFV-1 Salmon, US Navy experimental aircraft, naval aviation, Cold War aircraft, experimental aircraft, strange aircraft, aviation history, V-22 Osprey, Hangar Physics
+Convair XFY-1 Pogo, Convair Pogo, XFY-1 Pogo, XFY-1, Convair XFY Pogo, Pogo plane, land backwards, tail sitter, tailsitter fighter, VTOL fighter, first VTOL fighter, vertical takeoff fighter, vertical takeoff and landing, VTOL aircraft, US Navy aircraft, contra-rotating propellers, Allison T40, Skeets Coleman, Lockheed XFV-1 Salmon, US Navy experimental aircraft, naval aviation, Cold War aircraft, experimental aircraft, strange aircraft, aviation history, V-22 Osprey, Hangar Physics
 ```
 
 ---
@@ -183,4 +183,6 @@ The full story of the Convair XFY-1 Pogo, the Navy fighter that had to land back
 
 ## 10. When to upload
 
-**Thursday 15 October 2026, 2:00 PM US Eastern (18:00 UTC)** (channel review, 14 Oct). Upload it as **Private** on Wednesday, add the subtitles, end screen and card, then **schedule** it. Shorts: Thursday, Friday and Saturday at 4:00 PM ET. From now on, every long video goes out on **Thursday at 2:00 PM ET**. Never post on a Wednesday (Airspeed's day).
+**Thursday 15 October 2:00 PM ET couldn't be scheduled. New slot: Saturday 17 October 2026, 2:00 PM US Eastern (7:00 PM in Nigeria, 18:00 UTC).** Check the time zone shown in YouTube's schedule picker before choosing the time. Shorts: Saturday, Sunday and Monday at 4:00 PM ET. After this, go back to **Thursday at 2:00 PM ET** for every long video. Never post on a Wednesday (Airspeed's day).
+
+**vidIQ keyword check (15 Oct):** "convair xfy-1 pogo" is the best search term: about 38,000 searches a month, up 188% on its 30-day average, with low competition (22/100). The title already starts with it, and vidIQ scores the title 90/100, so keep it unchanged. Other useful terms (in the description and tags): VTOL aircraft (7.9K a month), experimental aircraft (9K), vertical takeoff (3.4K), US Navy aircraft (5K), naval aviation (4.7K). "Tail sitter", "VTOL fighter" and "Skeets Coleman" get fewer than 750 searches a month, so they're fine as tags but not worth adding to the title.
