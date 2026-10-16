@@ -8,7 +8,7 @@ Trigger phrase: **"xb42"** or **"mixmaster"**. In a new chat, say it and Claude 
 
 | Step | What | State |
 |---|---|---|
-| 1 | Topic and title chosen with vidIQ and NexLev (channel review, 14 Oct; see `convair-pogo.md`) | ✅ 14 Oct 2026. Title confirmed by the user: **Why Did the XB-42 Mixmaster Have Its Propellers on Its Tail?** |
+| 1 | Topic and title chosen with vidIQ and NexLev (channel review, 14 Oct; see `convair-pogo.md`) | ✅ 14 Oct 2026. Title: **Why Did the Douglas XB-42 Mixmaster Have Its Propellers on Its Tail?** (vidIQ 16 Oct: score 92, same as without "Douglas", but "douglas xb-42 mixmaster" = 6,170 searches/month, +82%, competition 29, while "xb-42 mixmaster" < 750) |
 | 2 | Full script written and fact-checked | 🔄 **v1 written 14 Oct**, waiting for the user's OK. Open ⚠ VERIFY items are listed under the fact check |
 | 3 | Shot sheet + sourcing plan (archival first, like the Pogo; Grok only where nothing real exists) | ⏳ |
 | 4 | Archival sourcing, one source at a time | ⏳ |
@@ -22,7 +22,7 @@ Trigger phrase: **"xb42"** or **"mixmaster"**. In a new chat, say it and Claude 
 
 - The National Museum of the USAF put the XB-42 on temporary public display in October 2026 (Ryan G | Aviation video description: "placed … on temporary display on October 8, 2026"; museum fact sheet: "plans call for public display in September of 2026"). The museum's own move video got **45.7K views in 4 days**. That's the news hook.
 - Proven demand: Dark Skies *Mixmaster to Jetmaster* 572K (6 y), Only Planes *One of the Fastest Strangest Airplanes Ever Built* 359K (2 y), IHYLS 63K (1 y). No strong 2026 version.
-- Search volume not measured yet (vidIQ out of credits until 7 Nov).
+- vidIQ 16 Oct: **"douglas xb-42 mixmaster" ≈ 6,170 searches/month, +82%, competition 29 (low)**. "xb-42 mixmaster", "xb-42", "douglas xb-42", "jetmaster", "pusher propeller plane" all < 750. Related: "experimental aircraft" 8,990 (+159%), "douglas aircraft company" 3,833 (competition 31), "aviation history" 47.6K, "military aircraft" 30.2K, "us air force" 58.8K (+17%), "propeller" 19.2K (+469%).
 - Archival: US Army Air Forces / USAF film and photos are public domain (NARA, NMUSAF, SDASM Flickr Commons with "no known copyright restrictions").
 - Chain: the ending teases the **Convair Pogo** (contra-rotating propellers again), which will be live by then, so the end screen can point to it.
 
@@ -257,7 +257,7 @@ Say numbers in full as written. Imperial first, then metric (the channel rule), 
 
 ## Packaging (draft)
 
-**Title (confirmed):** Why Did the XB-42 Mixmaster Have Its Propellers on Its Tail?
+**Title (vidIQ 92):** Why Did the Douglas XB-42 Mixmaster Have Its Propellers on Its Tail?
 **Test titles:**
 - The XB-42 Mixmaster: Why Douglas Put the Propellers Behind the Tail
 - Why the XB-42 Mixmaster Hid Its Engines Inside the Body
@@ -269,7 +269,7 @@ Say numbers in full as written. Imperial first, then metric (the channel rule), 
 
 **Description (draft; chapters are estimates until the edit):**
 ```
-The Douglas XB-42 Mixmaster was a 1944 US bomber with its two engines buried inside the fuselage and both propellers on its tail. It flew at about 410 mph, set a coast-to-coast speed record in 1945, and had to be able to throw its own propellers away so the crew could bail out. Here's the physics of why Douglas built it this way, and why it still lost.
+The Douglas XB-42 Mixmaster was a 1944 experimental US Army Air Forces bomber with its two engines buried inside the fuselage and both propellers on its tail. It flew at about 410 mph, set a coast-to-coast speed record in 1945, and had to be able to throw its own propellers away so the crew could bail out. Here's the physics of why Douglas built it this way, and why it still lost.
 
 Covered in this video: Douglas XB-42 Mixmaster · Allison V-1710 · contra-rotating pusher propellers · Henry Warden and Glen Edwards' 1945 transcontinental record · Fred Ascani's bailout · XB-42A · XB-43 Jetmaster · National Museum of the US Air Force
 
@@ -294,10 +294,10 @@ SOURCES
 
 Every strange aircraft is the answer to a problem. New episode every Thursday. Subscribe: https://www.youtube.com/@HangarPhysics
 
-#XB42 #Mixmaster #AviationHistory
+#DouglasXB42 #ExperimentalAircraft #AviationHistory
 ```
 
-**Tags (draft):** XB-42 Mixmaster, Douglas XB-42, Douglas XB-42 Mixmaster, XB-42, Mixmaster bomber, pusher propeller, contra-rotating propellers, pusher bomber, XB-43 Jetmaster, XB-42A, Allison V-1710, Glen Edwards, Fred Ascani, experimental bomber, WW2 bomber, strange aircraft, aviation history, National Museum of the US Air Force, Hangar Physics
+**Tags (vidIQ-checked 16 Oct):** Douglas XB-42 Mixmaster, XB-42 Mixmaster, Douglas XB-42, XB-42, Mixmaster bomber, Douglas Aircraft Company, experimental aircraft, pusher propeller, contra-rotating propellers, propeller, XB-43 Jetmaster, XB-42A, Allison V-1710, Glen Edwards, Fred Ascani, experimental bomber, WW2 bomber, military aircraft, US Air Force, aviation history, National Museum of the US Air Force, strange aircraft, Hangar Physics
 
 **Pinned comment:**
 > Ascani had seconds to decide: throw the propellers away, or jump into them. Would you have gone back for the switch? And which strange aircraft should we take into the hangar next?
