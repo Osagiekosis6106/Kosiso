@@ -24,7 +24,7 @@ Keep "Convair XFY-1 Pogo" in every test title (14 Oct competitor check: search i
 ```
 The Convair XFY-1 Pogo was a 1954 US Navy VTOL fighter that took off standing on its tail, and to land it, test pilot Skeets Coleman had to come down backwards, looking over his shoulder at ground he couldn't see. Here's the physics of why, and why that one problem ended the programme.
 
-Covered in this video: Convair XFY-1 Pogo · Lockheed XFV-1 Salmon · Skeets Coleman · Allison T40 turboprop · contra-rotating propellers · tail-sitter VTOL fighters · the V-22 Osprey and the Harrier
+Covered in this video: Convair XFY-1 Pogo · Lockheed XFV-1 Salmon · Skeets Coleman · Allison T40 turboprop · contra-rotating propellers · tail-sitter VTOL fighters · vertical takeoff and landing · US Navy experimental aircraft · naval aviation history · the V-22 Osprey and the Harrier
 
 Fifty years before the V-22 Osprey, the Navy wanted a fighter that could fly from any ship. Convair and Lockheed both built tail-sitters. Lockheed's XFV-1 never once took off or landed vertically. Convair's Pogo did, on 2 November 1954, with test pilot James "Skeets" Coleman at the controls.
 
@@ -122,7 +122,7 @@ Would you have trusted it? And which strange aircraft should we take into the ha
 
 **Finished thumbnails (14 Oct pick):** test `Pogo_Thumbnail_A_channel_style.jpg` (real 1950s photo) against `Pogo_Thumbnail_PREMIUM.jpg` in Test & Compare. Lost Engineering Files' Pogo video (10 Oct) uses an AI Pogo, a stormy orange sunset, a ship deck and big yellow text, which is close to PREMIUM. Next to it in search, the **real-photo A** looks different and more authentic, so start with A as the main thumbnail.
 
-NexLev's thumbnail maker needs a paid plan, and vidIQ has only 2 credits left (a thumbnail costs 22), so make these in **Grok**. Attach **both reference photos** to each prompt:
+Both finished thumbnails are ready (no need to make new ones). The Grok prompts below are only if you want to try more versions. Attach **both reference photos** to each prompt:
 - `Thumbnail_REF1_Pogo_hover_from_below.jpg`
 - `Thumbnail_REF2_Pogo_hover_front.jpg`
 
@@ -170,7 +170,7 @@ All three are vertical 1080×1920, 30 fps, high bitrate, with sound at -14 LUFS.
 
 **Description for each Short** (same for all three):
 ```
-The full story of the Convair XFY-1 Pogo, the Navy fighter that had to land backwards, is in the related video. #aviation #aviationhistory #VTOL
+The Convair XFY-1 Pogo: the 1954 US Navy VTOL fighter that took off on its tail and had to land backwards. Full story in the related video. #ConvairPogo #VTOL #aviationhistory
 ```
 
 **How to post each one (YouTube app on your phone is easiest):**
