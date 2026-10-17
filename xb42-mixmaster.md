@@ -18,6 +18,20 @@ Trigger phrase: **"xb42"** or **"mixmaster"**. In a new chat, say it and Claude 
 
 ---
 
+## Search check, 17 Oct 2026 (YouTube Studio + vidIQ): XB-42 put on hold
+
+The user's YouTube Studio Trends search for "douglas xb-42 mixmaster" shows only **low volume**, so vidIQ's 6,170 estimate is too high. vidIQ comparison (monthly searches / competition):
+| Topic | Main phrase | Searches | Competition | This month's uploads |
+|---|---|---|---|---|
+| **XB-70 Valkyrie** | "xb-70 valkyrie" | **27,538 (+63%)** | 56 | ~15, almost all < 1.5K views |
+| | "north american xb-70 valkyrie" | 21,898 | **21.8** | |
+| B-36 Peacemaker | "convair b-36 peacemaker" | 23,653 (+43%) | 32 | ~15; "backward propellers" and "ten engines" angles already used 5+ times |
+| Harrier | "harrier" 32K (+107%, generic); "harrier jet" 5.3K; "harrier jump jet" 3.3K | | 51–62 | many |
+| Do 335 | "dornier do 335 pfeil" | 9,606 | 42 | |
+| XB-42 | "douglas xb-42 mixmaster" | 6,170 (Studio: low) | 29 | few |
+
+Recommendation: **next video = XB-70 Valkyrie**, *Why Did the XB-70 Valkyrie Fold Its Wingtips Down?* (vidIQ title score **89**). The XB-42 script v1 stays here for a later slot.
+
 ## Why this topic (14 Oct 2026)
 
 - The National Museum of the USAF put the XB-42 on temporary public display in October 2026 (Ryan G | Aviation video description: "placed … on temporary display on October 8, 2026"; museum fact sheet: "plans call for public display in September of 2026"). The museum's own move video got **45.7K views in 4 days**. That's the news hook.
