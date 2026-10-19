@@ -133,7 +133,7 @@ All carry the searched word "Thunderscreech" or "XF-84H" and avoid Combat Debrie
 
 ---
 
-## FINAL SCRIPT (v1, 19 Oct 2026; every fact is from the ✓ rows of the fact-check table; ≈1,500 words ≈ 10:00 at ~150 wpm)
+## FINAL SCRIPT (v1, 19 Oct 2026; every fact is from the ✓ rows of the fact-check table; ≈1,250 spoken words ≈ 8:30–9:00 with the pauses)
 
 Delivery marks: `/` short breath · `//` one-second pause · **bold** = stress · `[slower]…[/slower]` · `[quiet]`. For ElevenLabs, use "—", "…" and new paragraphs for pauses.
 
