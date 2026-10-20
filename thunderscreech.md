@@ -10,7 +10,7 @@ Trigger phrase: **"thunderscreech"**. In a new chat, say "thunderscreech" and Cl
 |---|---|---|
 | 1 | Topic validated with vidIQ and NexLev | ✅ done (19 Oct 2026), see "Why this topic" |
 | 1b | Title chosen | ✅ 19 Oct: user picked option 1; Claude added "XF-84H" for search (see Final package) |
-| 2 | Full script written and fact-checked | 🔄 **v1 sent 19 Oct, waiting for the user's OK** (see FINAL SCRIPT v1) |
+| 2 | Full script written and fact-checked | 🔄 **v1 sent 19 Oct; clean voiceover copy in `thunderscreech-script.md` sent 20 Oct; waiting for the user's OK** |
 | 3 | Visual plan (archival + B-58-style graphics first, Grok only where nothing real exists) | ⏳ |
 | 4 | Archival sourcing, one source at a time | ⏳ |
 | 5 | Voiceover recorded and checked | ⏳ |
@@ -235,7 +235,7 @@ On the ground, / the noise was its own problem. / Beaird remembered the day his 
 
 The tower kept flashing its red light / because it couldn't hear its own radios. / So the engine runs were moved to the far side of the base. //
 
-In the end, / the Thunderscreech wasn't cancelled for being loud. / It was cancelled because it **didn't work well enough.** / Aerodynamic problems. / An unreliable engine. / Hours of maintenance for minutes of flying. / And jet engines were getting better every year. //
+In the end, / the Thunderscreech wasn't cancelled for being loud. / It was cancelled because it **didn't work well enough.** / Aerodynamic problems. / An unreliable engine. / Constant maintenance. / And jet engines were getting better every year. //
 
 The problem it was built to solve / was solving itself. //
 
@@ -245,7 +245,7 @@ Because that was the only way to get instant thrust. / Hold the engine at one sp
 
 But hold a twelve-foot propeller at two thousand one hundred r-p-m, / and the tips break the sound barrier before the wheels have even turned. / The same idea that gave it instant power / made it the loudest aircraft ever built. [/slower] //
 
-The first prototype survived. / In 1999, / the National Museum of the U.S. Air Force brought it home from Kern County, California, / and today it stands in Dayton, Ohio. / Silent. //
+The first prototype survived. / In 1999, / the National Museum of the U.S. Air Force collected it from Kern County, California, / and today it stands in Dayton, Ohio. / Silent. //
 
 But the XF-84H wasn't the only aircraft built around this engine. //
 
