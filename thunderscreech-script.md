@@ -114,7 +114,7 @@ So why did the Thunderscreech's propeller never slow down?
 
 Because that was the only way to get instant thrust. Hold the engine at one speed, twist the blades, and the power arrives the moment you ask for it.
 
-But hold a twelve-foot propeller at two thousand one hundred r-p-m, and the tips break the sound barrier before the wheels have even turned. The same idea that gave it instant power made it the loudest aircraft ever built.
+But hold a twelve-foot propeller at two thousand one hundred r-p-m, and the tips break the sound barrier before the wheels have even turned. The same idea that gave it instant power made it, very probably, the loudest aircraft ever flown.
 
 The first prototype survived. In 1999, the National Museum of the U.S. Air Force collected it from Kern County, California, and today it stands in Dayton, Ohio. Silent.
 
