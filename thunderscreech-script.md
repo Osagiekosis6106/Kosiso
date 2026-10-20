@@ -1,6 +1,6 @@
 # Why Did the XF-84H Thunderscreech's Propeller Never Slow Down?
 
-**Hangar Physics, video #3 · Script v1 (20 Oct 2026) · ≈1,250 words ≈ 8:30–9:00**
+**Hangar Physics, video #3 · Script v2 (20 Oct 2026) · ≈1,250 words ≈ 8:30–9:00**
 
 This is the clean version to paste into ElevenLabs: no delivery marks, pauses come from full stops, dashes and new paragraphs. Record it in the three parts below, as with the Pogo. The marked-up version (stress, pauses, slow sections) is in `thunderscreech.md`.
 
@@ -16,7 +16,7 @@ Not because something's wrong with the plane. Because the tower can't hear its o
 
 After one engine run, the crew chief is found on the floor of a nearby transport plane, arms and legs flailing, knocked down by the noise.
 
-This is the Republic XF-84H. The Thunderscreech. Guinness still lists it as the loudest aircraft ever built.
+This is the Republic XF-84H. The Thunderscreech. Guinness calls it probably the loudest aircraft ever flown — though nobody ever actually measured it.
 
 But here's the strange part. The noise didn't come from the engine. It came from the propeller. A propeller that, once it started, never slowed down.
 
@@ -24,13 +24,13 @@ Not on the ground. Not at idle. Not in flight. It turned at the same speed the e
 
 So why would anyone build a propeller like that? And why did that one decision make it the loudest machine in the sky — and doom it?
 
-And the number the internet loves to quote is almost nine times too high. We're going to do the maths.
+And the numbers the internet loves to quote don't survive the maths. So we'll do it ourselves.
 
 It starts with a problem every jet pilot in the early fifties knew.
 
 Jet engines were slow to respond. Push the throttle forward, and the turbine had to spin up before the thrust arrived. Seconds. On a long runway, fine. On the short deck of an aircraft carrier, seconds were the difference between flying and going into the sea.
 
-The U.S. Navy wanted a carrier fighter that could get off the deck without a catapult. The Air Force's Wright Air Development Center picked up the idea and became its main sponsor.
+The idea started with the U.S. Navy, which wanted a carrier fighter that could get off the deck without a catapult. The Air Force's Wright Air Development Center became its main sponsor. The goal: close to jet speed, with a propeller's instant response and better fuel economy.
 
 And the answer they reached for was the propeller.
 
@@ -50,7 +50,7 @@ In a car, you press the pedal and the engine speeds up. The XF-84H didn't work l
 
 The turbine ran at one fixed speed: about fourteen thousand three hundred r-p-m. A gearbox stepped that down by six point eight to one. So the propeller turned at about two thousand one hundred r-p-m, all the time.
 
-To get more thrust, the pilot didn't spin the propeller faster. He twisted the blades. Flat blades slice the air and push almost nothing. Twist them, and each blade grabs a bigger bite. Instant thrust, no spool-up. That was the point.
+To get more thrust, the pilot didn't spin the propeller faster. He twisted the blades. At a fine, flat pitch, the blades make little thrust. Increase the pitch, and each blade takes a bigger bite of air. Instant thrust, no spool-up. That was the point.
 
 But a fixed speed has a price. And it shows up at the tips.
 
@@ -70,11 +70,13 @@ And anything moving faster than sound drags a shock wave behind it. Each of the 
 
 Now the maths.
 
-You'll see it everywhere: "nine hundred sonic booms per second." Let's check.
+You'll see two numbers everywhere: "nine hundred sonic booms a second" and "nine hundred a minute." Let's check.
 
-Three blades. Thirty-five turns a second. Three times thirty-five is one hundred and five.
+Three blades. Thirty-five turns a second. Three times thirty-five is about one hundred and five blade-tip passes every second. That's six thousand three hundred a minute.
 
-So if you stood beside it, a shock went past you about a hundred and five times a second. That matches what Guinness says: "more than a hundred a second."
+So nine hundred a second is far too high. And nine hundred a minute is far too low.
+
+If you stood beside it, a shock went past you about a hundred and five times a second. The real acoustics are more complicated than counting separate booms, but Guinness puts it the same way: "more than a hundred a second."
 
 Not nine hundred. A hundred and five.
 
