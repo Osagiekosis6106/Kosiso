@@ -112,7 +112,7 @@ The problem it was built to solve was solving itself.
 
 So why did the Thunderscreech's propeller never slow down?
 
-Because that was the only way to get instant thrust. Hold the engine at one speed, twist the blades, and the power arrives the moment you ask for it.
+Because that was the design's solution to getting thrust without waiting for the turbine to spool up. Hold the engine at one speed, twist the blades, and the power arrives the moment you ask for it.
 
 But hold a twelve-foot propeller at two thousand one hundred r-p-m, and the tips break the sound barrier before the wheels have even turned. The same idea that gave it instant power made it, very probably, the loudest aircraft ever flown.
 
