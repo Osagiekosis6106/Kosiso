@@ -1,6 +1,6 @@
 # Why Did the XF-84H Thunderscreech's Propeller Never Slow Down?
 
-**Hangar Physics, video #3 · Script v3 (21 Oct 2026) · ≈1,250 words ≈ 8:30–9:00**
+**Hangar Physics, video #3 · Script v3, LOCKED (21 Oct 2026) · ≈1,250 words ≈ 8:30–9:00**
 
 This is the clean version to paste into ElevenLabs: no delivery marks, pauses come from full stops, dashes and new paragraphs. Record it in the three parts below, as with the Pogo. The marked-up version (stress, pauses, slow sections) is in `thunderscreech.md`.
 
@@ -80,7 +80,7 @@ But there's an important distinction: one hundred and five blade passages per se
 
 What we can say is that the blade-pass frequency was about one hundred and five times a second — an extraordinarily rapid repetition that helps explain the aircraft's terrifying noise.
 
-At that rate, your ear doesn't hear separate bangs. It hears one continuous, brutal tone. A screech. Which is exactly what the crews called it.
+At that rate, the individual pulses blur together into one continuous, brutal tone. A screech. Which is exactly what the crews called it.
 
 And that same torque the propeller was putting into the air was trying to roll the whole aircraft the other way.
 

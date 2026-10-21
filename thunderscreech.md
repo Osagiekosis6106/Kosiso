@@ -10,10 +10,10 @@ Trigger phrase: **"thunderscreech"**. In a new chat, say "thunderscreech" and Cl
 |---|---|---|
 | 1 | Topic validated with vidIQ and NexLev | ✅ done (19 Oct 2026), see "Why this topic" |
 | 1b | Title chosen | ✅ 19 Oct: user picked option 1; Claude added "XF-84H" for search (see Final package) |
-| 2 | Full script written and fact-checked | 🔄 **v3 (21 Oct): user rewrote the maths section (blade-pass frequency, not 105 separate booms). Waiting for the user's final OK, then lock** |
+| 2 | Full script written and fact-checked | ✅ **v3 LOCKED by the user (21 Oct)**. Clean copy: `thunderscreech-script.md` |
 | 3 | Visual plan (archival + B-58-style graphics first, Grok only where nothing real exists) | ⏳ |
 | 4 | Archival sourcing, one source at a time | ⏳ |
-| 5 | Voiceover recorded and checked | ⏳ |
+| 5 | Voiceover recorded and checked | ⏳ the user records Parts 1–3 (ElevenLabs) and sends them; target 21 Oct |
 | 6 | Claude builds graphics, X-ray, timing sheet, assembly | ⏳ |
 | 7 | Package: thumbnail, description, tags, pinned comment, 3 Shorts | ⏳ |
 | 8 | Publish | ⏳ **Saturday 24 Oct 2026, 18:00 UTC** (same slot as the Pogo) |
@@ -133,7 +133,7 @@ All carry the searched word "Thunderscreech" or "XF-84H" and avoid Combat Debrie
 
 ---
 
-## FINAL SCRIPT (v3, 21 Oct 2026; every fact is from the ✓ rows of the fact-check table; ≈1,250 spoken words ≈ 8:30–9:00 with the pauses)
+## FINAL SCRIPT (v3, LOCKED 21 Oct 2026; every fact is from the ✓ rows of the fact-check table; ≈1,250 spoken words ≈ 8:30–9:00 with the pauses)
 
 Delivery marks: `/` short breath · `//` one-second pause · **bold** = stress · `[slower]…[/slower]` · `[quiet]`. For ElevenLabs, use "—", "…" and new paragraphs for pauses.
 
@@ -211,7 +211,7 @@ But there's an important distinction: / one hundred and five blade passages per 
 
 What we **can** say / is that the blade-pass frequency was about **one hundred and five times a second** / — an extraordinarily rapid repetition / that helps explain the aircraft's terrifying noise. //
 
-At that rate, / your ear doesn't hear separate bangs. / It hears one continuous, / brutal **tone.** / A screech. / Which is exactly what the crews called it. //
+At that rate, / the individual pulses blur together / into one continuous, / brutal **tone.** / A screech. / Which is exactly what the crews called it. //
 
 And that same torque / the propeller was putting into the air / was trying to roll the whole aircraft the other way. //
 
