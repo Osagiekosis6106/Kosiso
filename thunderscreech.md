@@ -10,7 +10,7 @@ Trigger phrase: **"thunderscreech"**. In a new chat, say "thunderscreech" and Cl
 |---|---|---|
 | 1 | Topic validated with vidIQ and NexLev | ✅ done (19 Oct 2026), see "Why this topic" |
 | 1b | Title chosen | ✅ 19 Oct: user picked option 1; Claude added "XF-84H" for search (see Final package) |
-| 2 | Full script written and fact-checked | 🔄 **v2 (20 Oct): user's review applied (900/second vs /minute, blade pitch, origin, Guinness wording). Waiting for the user's final OK, then lock** |
+| 2 | Full script written and fact-checked | 🔄 **v3 (21 Oct): user rewrote the maths section (blade-pass frequency, not 105 separate booms). Waiting for the user's final OK, then lock** |
 | 3 | Visual plan (archival + B-58-style graphics first, Grok only where nothing real exists) | ⏳ |
 | 4 | Archival sourcing, one source at a time | ⏳ |
 | 5 | Voiceover recorded and checked | ⏳ |
@@ -133,7 +133,7 @@ All carry the searched word "Thunderscreech" or "XF-84H" and avoid Combat Debrie
 
 ---
 
-## FINAL SCRIPT (v2, 20 Oct 2026; every fact is from the ✓ rows of the fact-check table; ≈1,250 spoken words ≈ 8:30–9:00 with the pauses)
+## FINAL SCRIPT (v3, 21 Oct 2026; every fact is from the ✓ rows of the fact-check table; ≈1,250 spoken words ≈ 8:30–9:00 with the pauses)
 
 Delivery marks: `/` short breath · `//` one-second pause · **bold** = stress · `[slower]…[/slower]` · `[quiet]`. For ElevenLabs, use "—", "…" and new paragraphs for pauses.
 
@@ -203,15 +203,15 @@ Now / the maths. //
 
 You'll see two numbers everywhere: / "nine hundred sonic booms a **second**" / and "nine hundred a **minute**." / Let's check. //
 
-Three blades. / Thirty-five turns a second. / Three times thirty-five / is about **one hundred and five** blade-tip passes every second. / That's six thousand three hundred a minute. //
+Three blades. / Thirty-five turns a second. / Three times thirty-five / is about **one hundred and five** blade passages every second. / That's six thousand three hundred a minute. //
 
 So nine hundred a second is far too **high.** / And nine hundred a minute is far too **low.** //
 
-If you stood beside it, / a shock went past you about **a hundred and five times a second.** / The real acoustics are more complicated than counting separate booms, / but Guinness puts it the same way: / "more than a hundred a second." //
+But there's an important distinction: / one hundred and five blade passages per second / doesn't automatically mean one hundred and five separate sonic booms reaching your ears. / The shock waves and the sound they produce / are more complicated than that. //
 
-[quiet] Not nine hundred. / A hundred and five. [/quiet] //
+What we **can** say / is that the blade-pass frequency was about **one hundred and five times a second** / — an extraordinarily rapid repetition / that helps explain the aircraft's terrifying noise. //
 
-But here's why that's still terrible. / A hundred and five pulses a second / isn't a series of bangs. / Your ear hears it as one continuous, / brutal **tone.** / A screech. / Which is exactly what the crews called it. //
+At that rate, / your ear doesn't hear separate bangs. / It hears one continuous, / brutal **tone.** / A screech. / Which is exactly what the crews called it. //
 
 And that same torque / the propeller was putting into the air / was trying to roll the whole aircraft the other way. //
 

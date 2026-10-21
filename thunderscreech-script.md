@@ -1,6 +1,6 @@
 # Why Did the XF-84H Thunderscreech's Propeller Never Slow Down?
 
-**Hangar Physics, video #3 · Script v2 (20 Oct 2026) · ≈1,250 words ≈ 8:30–9:00**
+**Hangar Physics, video #3 · Script v3 (21 Oct 2026) · ≈1,250 words ≈ 8:30–9:00**
 
 This is the clean version to paste into ElevenLabs: no delivery marks, pauses come from full stops, dashes and new paragraphs. Record it in the three parts below, as with the Pogo. The marked-up version (stress, pauses, slow sections) is in `thunderscreech.md`.
 
@@ -72,15 +72,15 @@ Now the maths.
 
 You'll see two numbers everywhere: "nine hundred sonic booms a second" and "nine hundred a minute." Let's check.
 
-Three blades. Thirty-five turns a second. Three times thirty-five is about one hundred and five blade-tip passes every second. That's six thousand three hundred a minute.
+Three blades. Thirty-five turns a second. Three times thirty-five is about one hundred and five blade passages every second. That's six thousand three hundred a minute.
 
 So nine hundred a second is far too high. And nine hundred a minute is far too low.
 
-If you stood beside it, a shock went past you about a hundred and five times a second. The real acoustics are more complicated than counting separate booms, but Guinness puts it the same way: "more than a hundred a second."
+But there's an important distinction: one hundred and five blade passages per second doesn't automatically mean one hundred and five separate sonic booms reaching your ears. The shock waves and the sound they produce are more complicated than that.
 
-Not nine hundred. A hundred and five.
+What we can say is that the blade-pass frequency was about one hundred and five times a second — an extraordinarily rapid repetition that helps explain the aircraft's terrifying noise.
 
-But here's why that's still terrible. A hundred and five pulses a second isn't a series of bangs. Your ear hears it as one continuous, brutal tone. A screech. Which is exactly what the crews called it.
+At that rate, your ear doesn't hear separate bangs. It hears one continuous, brutal tone. A screech. Which is exactly what the crews called it.
 
 And that same torque the propeller was putting into the air was trying to roll the whole aircraft the other way.
 
